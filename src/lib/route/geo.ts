@@ -15,3 +15,23 @@ export const ROAD_FACTOR = 1.35;
 export const WALK_KMH = 4.5;
 
 export const toLngLat = (p: Point): LngLat => [p.lng, p.lat];
+
+import { isFood, type Place } from "../schema";
+
+/** Finds food places near leg endpoints or midpoint, excluding already-added stops. */
+export function findNearbyFood(from: Point, to: Point, allPlaces: Place[], excludeSlugs: string[], maxKm = 0.7): Place[] {
+  const midPoint = { lat: (from.lat + to.lat) / 2, lng: (from.lng + to.lng) / 2 };
+  const foodOnly = allPlaces.filter((p) => isFood(p.category) && !excludeSlugs.includes(p.slug) && !p.closed);
+
+  return foodOnly
+    .map((p) => {
+      const distFrom = haversineKm(from, p);
+      const distTo = haversineKm(to, p);
+      const distMid = haversineKm(midPoint, p);
+      const minDist = Math.min(distFrom, distTo, distMid);
+      return { place: p, dist: minDist };
+    })
+    .filter((item) => item.dist <= maxKm)
+    .sort((a, b) => a.dist - b.dist)
+    .map((item) => item.place);
+}

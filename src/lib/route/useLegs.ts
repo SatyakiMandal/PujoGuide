@@ -4,7 +4,7 @@ import { useEffect, useMemo } from "react";
 import { placeBySlug } from "@/lib/data";
 import { isFood, type Place } from "@/lib/schema";
 import { useUI } from "@/store/ui";
-import { DWELL_MIN } from "./dwell";
+import { DWELL_MIN, placeDwellMin } from "./dwell";
 import { legOptions, pickMode } from "./estimate";
 import { fetchRouted } from "./osrm";
 import type { LegOption, Mode } from "./types";
@@ -84,11 +84,22 @@ export function useLegs(): Leg[] {
   }, [stops, override, pujaNight, geom]);
 }
 
-export function summarise(legs: Leg[], places: Place[]) {
+export function summarise(legs: Leg[], places: Place[], options?: { pujaNight?: boolean }) {
   const travel = legs.reduce((s, l) => s + l.option.minutes, 0);
-  const dwell = places.reduce((s, p) => s + DWELL_MIN[p.category], 0);
+  const dwellDetails = places.map((p) => placeDwellMin(p, options));
+  const dwell = dwellDetails.reduce((s, d) => s + d.total, 0);
+  const totalQueue = dwellDetails.reduce((s, d) => s + d.queue, 0);
   const fareMin = legs.reduce((s, l) => s + (l.option.fare?.min ?? 0), 0);
   const fareMax = legs.reduce((s, l) => s + (l.option.fare?.max ?? 0), 0);
   const km = legs.reduce((s, l) => s + l.option.km, 0);
-  return { travel, dwell, total: travel + dwell, fareMin, fareMax, km, foodStops: places.filter((p) => isFood(p.category)).length };
+  return {
+    travel,
+    dwell,
+    totalQueue,
+    total: travel + dwell,
+    fareMin,
+    fareMax,
+    km,
+    foodStops: places.filter((p) => isFood(p.category)).length,
+  };
 }

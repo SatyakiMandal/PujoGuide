@@ -48,6 +48,7 @@ type UIState = {
   setTab: (t: Tab) => void;
   toggleMetro: () => void;
   addStop: (slug: string) => void;
+  insertStop: (slug: string, afterSlug: string) => void;
   removeStop: (slug: string) => void;
   setStops: (slugs: string[]) => void;
   /** Loads an auto-planned day: the stops plus their times. */
@@ -110,6 +111,15 @@ export const useUI = create<UIState>()(
             ? s
             : { route: { ...s.route, stops: [...s.route.stops, slug], schedule: undefined, day: undefined } },
         ),
+      insertStop: (slug, afterSlug) =>
+        set((s) => {
+          if (s.route.stops.includes(slug)) return s;
+          const i = s.route.stops.indexOf(afterSlug);
+          if (i === -1) return { route: { ...s.route, stops: [...s.route.stops, slug], schedule: undefined, day: undefined } };
+          const next = [...s.route.stops];
+          next.splice(i + 1, 0, slug);
+          return { route: { ...s.route, stops: next, schedule: undefined, day: undefined } };
+        }),
       removeStop: (slug) =>
         set((s) => ({ route: { ...s.route, stops: s.route.stops.filter((x) => x !== slug), schedule: undefined, day: undefined } })),
       setStops: (stops) => set((s) => ({ route: { ...s.route, stops, schedule: undefined, day: undefined } })),

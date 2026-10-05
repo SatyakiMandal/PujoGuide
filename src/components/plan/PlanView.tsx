@@ -5,26 +5,32 @@ import { pujaDay } from "@/lib/calendar";
 import { fmtClock } from "@/lib/hours";
 import {
   ArrowSquareOut,
+  CaretDown,
   Clock,
   CurrencyInr,
   DotsSixVertical,
+  ForkKnife,
+  Hourglass,
   Lightning,
   LinkSimple,
   Moon,
   Path,
+  Plus,
   Ruler,
   Shuffle,
   Trash,
   X,
 } from "@phosphor-icons/react";
-import { Reorder, useDragControls } from "motion/react";
-import { useState } from "react";
+import { AnimatePresence, Reorder, useDragControls, motion } from "motion/react";
+import { useMemo, useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
-import { zoneName } from "@/lib/data";
+import { places, zoneName } from "@/lib/data";
 import { googleMapsLinks, legLink, shareUrl, wholeRouteMode } from "@/lib/route/export";
 import { fmtFare, fmtMin, MODE_META } from "@/lib/route/modeMeta";
 import { optimiseOrder } from "@/lib/route/optimise";
 import { routePlaces, summarise, useLegs, type Leg } from "@/lib/route/useLegs";
+import { placeDwellMin } from "@/lib/route/dwell";
+import { findNearbyFood } from "@/lib/route/geo";
 import type { Place } from "@/lib/schema";
 import { PlansCatalog } from "./PlansCatalog";
 import { useUI } from "@/store/ui";
@@ -37,21 +43,21 @@ export function PlanView() {
   const planDayId = useUI((s) => s.route.day);
   const { setStops, clearRoute, setPujaNight, select } = useUI.getState();
   const legs = useLegs();
-  const places = routePlaces(stops);
+  const routePlacesList = routePlaces(stops);
   const [copied, setCopied] = useState(false);
   const [browse, setBrowse] = useState(false);
 
-  if (places.length === 0 || browse) {
-    return <PlansCatalog hasRoute={places.length > 0} onDone={() => setBrowse(false)} />;
+  if (routePlacesList.length === 0 || browse) {
+    return <PlansCatalog hasRoute={routePlacesList.length > 0} onDone={() => setBrowse(false)} />;
   }
 
-  const sum = summarise(legs, places);
-  const links = googleMapsLinks(places, wholeRouteMode(legs.map((l) => l.chosen)));
+  const sum = summarise(legs, routePlacesList, { pujaNight });
+  const links = googleMapsLinks(routePlacesList, wholeRouteMode(legs.map((l) => l.chosen)));
   const legAfter = (i: number) => legs[i];
 
   const optimise = () => {
-    const order = optimiseOrder(places);
-    setStops(order.map((i) => places[i].slug));
+    const order = optimiseOrder(routePlacesList);
+    setStops(order.map((i) => routePlacesList[i].slug));
   };
 
   const copy = async () => {
@@ -158,7 +164,9 @@ function StopRow({
 }) {
   const controls = useDragControls();
   const removeStop = useUI((s) => s.removeStop);
+  const pujaNight = useUI((s) => s.route.pujaNight);
   const meta = CATEGORY_META[place.category];
+  const dwell = placeDwellMin(place, { pujaNight });
 
   return (
     <Reorder.Item
@@ -193,6 +201,11 @@ function StopRow({
             <span className="block truncate text-xs text-muted">
               {time ? `${fmtClock(time.arrive)} – ${fmtClock(time.depart)} · ` : ""}
               {zoneName.get(place.zones[0])}
+              {dwell.queue > 0 && (
+                <span className="ml-1.5 font-medium text-amber-600 dark:text-amber-400">
+                  ⌛ ~{dwell.queue}m queue
+                </span>
+              )}
             </span>
           </span>
         </button>
@@ -207,6 +220,70 @@ function StopRow({
       </div>
       {leg && <LegCard leg={leg} />}
     </Reorder.Item>
+  );
+}
+
+function MidRouteFoodFinder({ leg }: { leg: Leg }) {
+  const [open, setOpen] = useState(false);
+  const stops = useUI((s) => s.route.stops);
+  const insertStop = useUI((s) => s.insertStop);
+  const nearby = useMemo(() => findNearbyFood(leg.from, leg.to, places, stops, 0.75), [leg.from, leg.to, stops]);
+
+  if (nearby.length === 0) return null;
+
+  return (
+    <div className="mt-2 text-xs">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-2.5 py-1 text-[11px] font-medium text-fg hover:bg-surface2"
+      >
+        <ForkKnife size={13} weight="bold" className="text-primary" />
+        {open ? "Hide food nearby" : `Add food spot nearby (${nearby.length})`}
+        <CaretDown size={12} className={clsx("transition-transform", open && "rotate-180")} />
+      </button>
+
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="overflow-hidden"
+          >
+            <div className="mt-2 space-y-1.5 rounded-xl border border-line bg-surface2/60 p-2.5">
+              <span className="block font-semibold text-muted">Verified food near this leg:</span>
+              <ul className="space-y-1">
+                {nearby.slice(0, 4).map((p) => {
+                  const meta = CATEGORY_META[p.category];
+                  return (
+                    <li key={p.slug} className="flex items-center justify-between gap-2 rounded-lg bg-surface p-1.5">
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-1.5 font-medium">
+                          <span className="truncate">{p.name.en}</span>
+                          {p.pureVeg && <span className="rounded bg-emerald-500/10 px-1 py-0.2 text-[9px] font-semibold text-emerald-600">Veg</span>}
+                        </div>
+                        <span className="block truncate text-[10px] text-muted">
+                          {meta.label} · {p.mustTry?.nonveg[0] || p.mustTry?.veg[0] || p.cuisines?.[0] || "Good food"}
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => insertStop(p.slug, leg.from.slug)}
+                        className="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary hover:bg-primary hover:text-primary-fg"
+                      >
+                        <Plus size={12} weight="bold" /> Add
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
 
@@ -286,6 +363,7 @@ function LegCard({ leg }: { leg: Leg }) {
       {o.approx && !leg.loading && leg.chosen !== "metro" && (
         <p className="mt-1 text-xs text-muted">Straight-line estimate: the router didn&apos;t respond.</p>
       )}
+      <MidRouteFoodFinder leg={leg} />
     </div>
   );
 }
