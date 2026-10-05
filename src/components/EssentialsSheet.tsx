@@ -55,12 +55,17 @@ export function EssentialsSheet() {
             transition={{ type: "spring", stiffness: 380, damping: 34 }}
             className="max-h-[88dvh] w-full max-w-lg overflow-y-auto rounded-t-3xl border border-line bg-bg p-5 shadow-float sm:rounded-3xl"
           >
-            <header className="mb-4 flex items-center justify-between">
-              <h2 className="font-display text-xl font-semibold">Essentials</h2>
-              <button type="button" onClick={close} aria-label="Close" className="grid size-10 place-items-center rounded-full border border-line bg-surface">
-                <X size={18} weight="bold" />
-              </button>
-            </header>
+            <div className="relative mb-4 overflow-hidden rounded-2xl border border-line/60">
+              <img src="/assets/textures.jpg" alt="Festive Kolkata banner" className="h-28 w-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg/90 to-transparent flex items-end p-4">
+                <div className="flex w-full items-center justify-between">
+                  <h2 className="font-display text-xl font-semibold text-fg">Essentials & Safety</h2>
+                  <button type="button" onClick={close} aria-label="Close" className="grid size-9 place-items-center rounded-full border border-line bg-surface/80 backdrop-blur-sm text-fg">
+                    <X size={18} weight="bold" />
+                  </button>
+                </div>
+              </div>
+            </div>
 
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted">Emergency numbers</h3>
             <ul className="mb-5 grid grid-cols-2 gap-2">

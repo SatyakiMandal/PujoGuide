@@ -1,0 +1,136 @@
+{
+  "blue-mug-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "continental", "italian"],
+    "vibes": ["adda", "aesthetic", "quick_bite"],
+    "menuSources": ["zomato.com", "magicpin.in", "lbb.in"],
+    "mustTry": {
+      "veg": ["Garlic Bread"],
+      "nonveg": ["Cheese Fish Fry", "Chicken Club Sandwich"],
+      "drinks": ["Cold Coffee", "Hot Chocolate"]
+    },
+    "menu": [
+      { "name": "Chicken Club Sandwich", "diet": "nonveg", "kind": "food", "price": 160 },
+      { "name": "Cheese Fish Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Garlic Bread", "diet": "veg", "kind": "food" },
+      { "name": "French Fries", "diet": "veg", "kind": "food" },
+      { "name": "Cold Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Hot Chocolate", "diet": "veg", "kind": "drink" },
+      { "name": "Virgin Mojito", "diet": "veg", "kind": "drink" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" },
+      { "name": "Brownie", "diet": "veg", "kind": "dessert" },
+      { "name": "Cheesecake", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "boho-trunk-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["asian", "chinese", "continental", "coffee"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "zomato.com"],
+    "mustTry": {
+      "veg": ["Cheese Chilli Toast", "Garlic Bread with Cheese"],
+      "nonveg": ["Chili Pork Burger", "Classic Tangra Style Chili Chicken", "Chicken Steak"],
+      "drinks": ["Watermelon Juice"]
+    },
+    "menu": [
+      { "name": "Garlic Bread with Cheese", "diet": "veg", "kind": "food", "price": 150 },
+      { "name": "Cheesy Jalapeno Poppers", "diet": "veg", "kind": "food", "price": 155 },
+      { "name": "Chili Garlic Potato Shots", "diet": "veg", "kind": "food", "price": 155 },
+      { "name": "Chicken Popcorn", "diet": "nonveg", "kind": "food", "price": 155 },
+      { "name": "Peri Peri French Fry", "diet": "veg", "kind": "food", "price": 180 },
+      { "name": "Chili Pork Burger", "diet": "nonveg", "kind": "food", "price": 270 },
+      { "name": "Spicy Chicken Grill Patty Burger", "diet": "nonveg", "kind": "food", "price": 180 },
+      { "name": "Cheese Chilli Toast", "diet": "veg", "kind": "food", "price": 155 },
+      { "name": "Classic Tangra Style Chili Chicken", "diet": "nonveg", "kind": "food", "price": 360 },
+      { "name": "Chicken Steak", "diet": "nonveg", "kind": "food", "price": 385 },
+      { "name": "Mushroom Omelette", "diet": "nonveg", "kind": "food", "price": 180 },
+      { "name": "Watermelon Juice", "diet": "veg", "kind": "drink", "price": 100 }
+    ]
+  },
+  "brewbakes-jodhpur-park-kolkata": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "bakery", "continental", "italian"],
+    "vibes": ["quick_bite", "adda", "family"],
+    "menuSources": ["magicpin.in", "swiggy.com", "brewbakes.co"],
+    "mustTry": {
+      "veg": ["Cheese Pizza", "Vegetable & Cheese Sandwich"],
+      "nonveg": ["Peri Peri Fried Chicken Burger", "Fried Fish & Chips", "Grilled Chicken Steak"],
+      "drinks": ["Irish Coffee", "Kitkat Shake", "Cappuccino"]
+    },
+    "menu": [
+      { "name": "Potato Crunch Burger", "diet": "veg", "kind": "food", "price": 99 },
+      { "name": "Peri Peri Fried Chicken Burger", "diet": "nonveg", "kind": "food", "price": 129 },
+      { "name": "Vegetable & Cheese Sandwich", "diet": "veg", "kind": "food", "price": 129 },
+      { "name": "Paneer Tikka Sandwich", "diet": "veg", "kind": "food", "price": 139 },
+      { "name": "Cheese Pizza", "diet": "veg", "kind": "food", "price": 179 },
+      { "name": "Fried Fish & Chips", "diet": "nonveg", "kind": "food", "price": 249 },
+      { "name": "Grilled Chicken Steak", "diet": "nonveg", "kind": "food", "price": 299 },
+      { "name": "Irish Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Kitkat Shake", "diet": "veg", "kind": "drink" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" },
+      { "name": "Oreo Shake", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "cafe-elio": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["chinese", "asian", "italian", "coffee"],
+    "vibes": ["adda", "aesthetic", "quick_bite"],
+    "menuSources": ["swiggy.com", "eazydiner.com", "justdial.com"],
+    "mustTry": {
+      "veg": ["Alfredo White Sauce Pasta", "Veg Pan Fried Momo"],
+      "nonveg": ["Chicken Drums of Heaven", "Chicken Hakka Noodles", "Chicken Pan Fried Momo"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Veggie Sandwich", "diet": "veg", "kind": "food", "price": 90 },
+      { "name": "Chicken Sandwich", "diet": "nonveg", "kind": "food", "price": 150 },
+      { "name": "Egg Mayo Sandwich", "diet": "nonveg", "kind": "food", "price": 130 },
+      { "name": "Chicken Steam Momo", "diet": "nonveg", "kind": "food", "price": 120 },
+      { "name": "Chicken Pan Fried Momo", "diet": "nonveg", "kind": "food", "price": 140 },
+      { "name": "Veg Pan Fried Momo", "diet": "veg", "kind": "food", "price": 120 },
+      { "name": "Chicken Drums of Heaven", "diet": "nonveg", "kind": "food", "price": 220 },
+      { "name": "Chilli Chicken Gravy", "diet": "nonveg", "kind": "food", "price": 200 },
+      { "name": "Lemon Chicken", "diet": "nonveg", "kind": "food", "price": 230 },
+      { "name": "Alfredo White Sauce Pasta", "diet": "veg", "kind": "food", "price": 180 },
+      { "name": "Chicken Hakka Noodles", "diet": "nonveg", "kind": "food", "price": 170 }
+    ]
+  },
+  "cafe-mezzuna-jodhpur-park": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["italian", "continental", "dessert"],
+    "vibes": ["family", "aesthetic"],
+    "menuSources": ["swiggy.com", "eazydiner.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Truffled Ricotta Gnocchi", "Four Cheese Pizza"],
+      "nonveg": ["Smoked Chili Shrimps", "Hog Market Pizza", "Classic Carbonara"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Truffled Ricotta Gnocchi", "diet": "veg", "kind": "food", "price": 645 },
+      { "name": "Smoked Chili Shrimps", "diet": "nonveg", "kind": "food" },
+      { "name": "Hog Market Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Naples Breeze Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Four Cheese Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Classic Carbonara", "diet": "nonveg", "kind": "food" },
+      { "name": "Bell Pepper Aglio Olio", "diet": "veg", "kind": "food" },
+      { "name": "Jalapeno Cheese Balls", "diet": "veg", "kind": "food" },
+      { "name": "Greenhouse Sliders", "diet": "veg", "kind": "food" },
+      { "name": "Lemon Cheesecake", "diet": "veg", "kind": "dessert" }
+    ]
+  }
+}

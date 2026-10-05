@@ -26,7 +26,14 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
   return (
     <div className="space-y-4">
       {view !== "auto" && (
-        <div className="space-y-1">
+        <div className="space-y-2">
+          <div className="overflow-hidden rounded-2xl border border-line/60 bg-surface shadow-sm">
+            <img
+              src="/assets/banner-routes.png"
+              alt="Explore new routes & share stories"
+              className="w-full h-auto object-cover max-h-40"
+            />
+          </div>
           <h2 className="font-display text-lg font-semibold">Ready-made plans</h2>
           <p className="text-sm text-muted">
             {PLANS.length} plans that between them cover every pandal and Bonedi Bari. Load one, then edit it.

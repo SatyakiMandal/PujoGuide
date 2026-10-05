@@ -1,1 +1,108 @@
-{}
+{
+  "little-bit-sober": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "asian"],
+    "vibes": ["bar", "aesthetic", "late_night"],
+    "openLate": true,
+    "menuSources": ["magicpin.in", "eazydiner.com", "swiggy.com"],
+    "menu": [
+      {"name": "Gochujang Chicken Bao", "diet": "nonveg", "kind": "food"},
+      {"name": "Firecracker Mushroom", "diet": "veg", "kind": "food"},
+      {"name": "Dynamite Prawns", "diet": "nonveg", "kind": "food"},
+      {"name": "Crab Croquette", "diet": "nonveg", "kind": "food"},
+      {"name": "Cranny Granny Pizza", "diet": "veg", "kind": "food"},
+      {"name": "Smoked Sea Bass", "diet": "nonveg", "kind": "food"},
+      {"name": "Chicken Dim Sum", "diet": "nonveg", "kind": "food"},
+      {"name": "Lebu Strawberry", "diet": "veg", "kind": "drink"},
+      {"name": "Mr. Pink", "diet": "veg", "kind": "drink"},
+      {"name": "Ghee Rice Old Fashioned", "diet": "veg", "kind": "drink"}
+    ],
+    "mustTry": {
+      "veg": ["Firecracker Mushroom", "Cranny Granny Pizza"],
+      "nonveg": ["Gochujang Chicken Bao", "Dynamite Prawns", "Crab Croquette"],
+      "drinks": ["Lebu Strawberry", "Ghee Rice Old Fashioned", "Mr. Pink"]
+    }
+  },
+  "madi-s-bakery": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["bakery", "dessert"],
+    "vibes": ["quick_bite"],
+    "menuSources": ["swiggy.com", "justdial.com"],
+    "menu": [
+      {"name": "Korean Cheese Bun", "diet": "veg", "kind": "food"},
+      {"name": "Hot Garlic Chicken Puff", "diet": "nonveg", "kind": "food"},
+      {"name": "Veg Cheese Corn Puff", "diet": "veg", "kind": "food"},
+      {"name": "Pesto Mushroom Croissant", "diet": "veg", "kind": "food"},
+      {"name": "Biscoff Cheesecake", "diet": "veg", "kind": "dessert"},
+      {"name": "Blueberry Cheesecake", "diet": "veg", "kind": "dessert"},
+      {"name": "Ferrero Rocher Brownie", "diet": "veg", "kind": "dessert"},
+      {"name": "Hazelnut Brownie", "diet": "veg", "kind": "dessert"}
+    ],
+    "mustTry": {
+      "veg": ["Korean Cheese Bun", "Biscoff Cheesecake"],
+      "nonveg": ["Hot Garlic Chicken Puff"],
+      "drinks": []
+    }
+  },
+  "marbella-s-elgin": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "coffee", "dessert", "italian"],
+    "vibes": ["aesthetic", "adda", "family"],
+    "menuSources": ["swiggy.com", "justdial.com"],
+    "menu": [
+      {"name": "Classic Margherita Pizza", "diet": "veg", "kind": "food", "price": 395},
+      {"name": "BBQ Chicken Pizza", "diet": "nonveg", "kind": "food", "price": 450},
+      {"name": "Veg Creamy Pesto Risotto", "diet": "veg", "kind": "food"},
+      {"name": "Classic Cold Coffee", "diet": "veg", "kind": "drink", "price": 275},
+      {"name": "Brownie Blended Cold Coffee", "diet": "veg", "kind": "drink", "price": 350},
+      {"name": "Cranberry Espresso Cooler", "diet": "veg", "kind": "drink", "price": 275},
+      {"name": "Classic Darjeeling Tea", "diet": "veg", "kind": "drink", "price": 145},
+      {"name": "New York Cheesecake", "diet": "veg", "kind": "dessert", "price": 345},
+      {"name": "Fudgy Chocolate Brownie", "diet": "veg", "kind": "dessert", "price": 205},
+      {"name": "Chocolate Avalanche", "diet": "veg", "kind": "dessert", "price": 425}
+    ],
+    "mustTry": {
+      "veg": ["Classic Margherita Pizza", "Veg Creamy Pesto Risotto"],
+      "nonveg": ["BBQ Chicken Pizza"],
+      "drinks": ["Classic Cold Coffee", "Cranberry Espresso Cooler"]
+    }
+  },
+  "matcha-and-me": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "dessert"],
+    "vibes": ["aesthetic", "quick_bite"],
+    "menuSources": ["swiggy.com", "justdial.com"],
+    "menu": [
+      {"name": "Classic Matcha Latte", "diet": "veg", "kind": "drink"},
+      {"name": "Coconut Cloud Matcha", "diet": "veg", "kind": "drink"},
+      {"name": "Salted Caramel Matcha", "diet": "veg", "kind": "drink"},
+      {"name": "Mango Matcha", "diet": "veg", "kind": "drink"},
+      {"name": "Citrus Cold Brew", "diet": "veg", "kind": "drink"},
+      {"name": "Matcha Cookie", "diet": "veg", "kind": "dessert"},
+      {"name": "Matcha Misu", "diet": "veg", "kind": "dessert"},
+      {"name": "Chocolate Pancake", "diet": "veg", "kind": "dessert"},
+      {"name": "Scrambled Eggs", "diet": "nonveg", "kind": "food"}
+    ],
+    "mustTry": {
+      "veg": ["Matcha Misu", "Chocolate Pancake"],
+      "nonveg": [],
+      "drinks": ["Classic Matcha Latte", "Coconut Cloud Matcha"]
+    }
+  },
+  "my-big-fat-belly": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  }
+}

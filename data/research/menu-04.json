@@ -231,5 +231,390 @@
       { "name": "Kiwi Strawberry Booster", "diet": "veg", "kind": "drink" },
       { "name": "Country Lemonade", "diet": "veg", "kind": "drink" }
     ]
+  },
+  "nizam-s": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["rolls", "mughlai", "biryani"],
+    "vibes": ["heritage", "quick_bite"],
+    "menuSources": ["magicpin.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Paneer Kathi Roll", "Firni"],
+      "nonveg": ["Egg Mutton Kathi Roll", "Mutton Kathi Roll", "Mutton Biryani"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Egg Mutton Kathi Roll", "diet": "nonveg", "kind": "food", "price": 138 },
+      { "name": "Mutton Kathi Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Kathi Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Kathi Roll", "diet": "veg", "kind": "food" },
+      { "name": "Mutton Biryani", "diet": "nonveg", "kind": "food", "price": 312 },
+      { "name": "Chicken Chaap", "diet": "nonveg", "kind": "food" },
+      { "name": "Nizams Lachedar Paratha", "diet": "veg", "kind": "food", "price": 65 },
+      { "name": "Firni", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "paramount-sharbat": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 1,
+    "cuisines": ["street_food", "dessert"],
+    "vibes": ["heritage", "quick_bite", "adda"],
+    "menuSources": ["magicpin.in", "lbb.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": [],
+      "drinks": ["Daab Sherbet", "Cocoa Malai", "Tamarind Sherbet"]
+    },
+    "menu": [
+      { "name": "Daab Sherbet", "diet": "veg", "kind": "drink", "price": 60 },
+      { "name": "Cocoa Malai", "diet": "veg", "kind": "drink", "price": 110 },
+      { "name": "Tamarind Sherbet", "diet": "veg", "kind": "drink", "price": 50 },
+      { "name": "Grape Crush", "diet": "veg", "kind": "drink", "price": 80 },
+      { "name": "Banana Malai", "diet": "veg", "kind": "drink", "price": 100 },
+      { "name": "Vanilla Malai", "diet": "veg", "kind": "drink", "price": 100 },
+      { "name": "Cold Coffee", "diet": "veg", "kind": "drink", "price": 80 },
+      { "name": "Mango Mania", "diet": "veg", "kind": "drink" },
+      { "name": "Rose Sherbet", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "peter-cat": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "north_indian", "mughlai"],
+    "vibes": ["heritage", "aesthetic", "family"],
+    "menuSources": ["magicpin.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Vegetable Chelo Kebab"],
+      "nonveg": ["Chelo Kebab", "Chicken Marakesh", "Fish Meuniere"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chelo Kebab", "diet": "nonveg", "kind": "food", "price": 500 },
+      { "name": "Vegetable Chelo Kebab", "diet": "veg", "kind": "food", "price": 460 },
+      { "name": "Chicken Marakesh", "diet": "nonveg", "kind": "food", "price": 510 },
+      { "name": "Fish Meuniere", "diet": "nonveg", "kind": "food" },
+      { "name": "Prawn Butter Masala", "diet": "nonveg", "kind": "food" },
+      { "name": "Sizzler", "diet": "nonveg", "kind": "food" },
+      { "name": "Pistachio Ice Cream", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "putiram": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 1,
+    "cuisines": ["mishti", "street_food", "dessert"],
+    "vibes": ["heritage", "quick_bite"],
+    "menuSources": ["whatshot.in", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Radhaballavi", "Kachori", "Rajbhog"],
+      "nonveg": [],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Radhaballavi", "diet": "veg", "kind": "food" },
+      { "name": "Kachori", "diet": "veg", "kind": "food" },
+      { "name": "Dalpuri", "diet": "veg", "kind": "food" },
+      { "name": "Singara", "diet": "veg", "kind": "food" },
+      { "name": "Rajbhog", "diet": "veg", "kind": "dessert" },
+      { "name": "Mishti Doi", "diet": "veg", "kind": "dessert" },
+      { "name": "Chanar Jilipi", "diet": "veg", "kind": "dessert" },
+      { "name": "Shor Bhaja", "diet": "veg", "kind": "dessert" },
+      { "name": "Ice Cream Sandesh", "diet": "veg", "kind": "dessert" },
+      { "name": "Abar Khabo", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "raj-s-spanish-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "italian", "coffee", "dessert"],
+    "vibes": ["aesthetic", "adda", "quick_bite"],
+    "menuSources": ["swiggy.com", "district.in"],
+    "mustTry": {
+      "veg": ["Nutella Pancakes", "Chocolate Souffle", "Tiramisu"],
+      "nonveg": ["Tuna Sandwich", "Pollo Asado"],
+      "drinks": ["Cappuccino"]
+    },
+    "menu": [
+      { "name": "Tuna Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Pollo Asado", "diet": "nonveg", "kind": "food" },
+      { "name": "Wood Fired Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Spanish Omelette", "diet": "nonveg", "kind": "food" },
+      { "name": "Nutella Pancakes", "diet": "veg", "kind": "dessert" },
+      { "name": "Chocolate Souffle", "diet": "veg", "kind": "dessert" },
+      { "name": "Tiramisu", "diet": "veg", "kind": "dessert" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "royal-indian-hotel": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["mughlai", "biryani"],
+    "vibes": ["heritage", "family"],
+    "menuSources": ["swiggy.com", "yummraj.com"],
+    "mustTry": {
+      "veg": ["Sheermal", "Shahi Tukda"],
+      "nonveg": ["Mutton Chaap", "Mutton Biryani", "Burra Kabab"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Mutton Biryani", "diet": "nonveg", "kind": "food", "price": 330 },
+      { "name": "Royal Mutton Biryani Special", "diet": "nonveg", "kind": "food", "price": 470 },
+      { "name": "Royal Chicken Biryani", "diet": "nonveg", "kind": "food", "price": 310 },
+      { "name": "Mutton Chaap", "diet": "nonveg", "kind": "food" },
+      { "name": "Seekh Kabab", "diet": "nonveg", "kind": "food" },
+      { "name": "Burra Kabab", "diet": "nonveg", "kind": "food" },
+      { "name": "Sheermal", "diet": "veg", "kind": "food" },
+      { "name": "Baqarkhani", "diet": "veg", "kind": "food" },
+      { "name": "Shahi Tukda", "diet": "veg", "kind": "dessert" },
+      { "name": "Kesari Firni", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "sabka-club": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "chinese", "continental", "italian"],
+    "vibes": ["bar", "aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Tandoori Momos", "Peri Peri Paneer Tikka"],
+      "nonveg": ["BBQ Chicken Pizza", "Kebab Platter"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Tandoori Momos", "diet": "veg", "kind": "food" },
+      { "name": "Peri Peri Paneer Tikka", "diet": "veg", "kind": "food" },
+      { "name": "Tandoori Soya Chaap", "diet": "veg", "kind": "food" },
+      { "name": "BBQ Chicken Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Katsu Spicy Sushi", "diet": "nonveg", "kind": "food" },
+      { "name": "Kebab Platter", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "siuli-the-parcel-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 1,
+    "cuisines": ["coffee", "bakery", "street_food"],
+    "vibes": ["heritage", "aesthetic", "quick_bite"],
+    "menuSources": ["slurrp.com", "district.in"],
+    "mustTry": {
+      "veg": ["Veg Puff", "Corn Patty"],
+      "nonveg": ["Chicken Puff", "Chicken Sandwich"],
+      "drinks": ["Coffee", "Lassi"]
+    },
+    "menu": [
+      { "name": "Chicken Puff", "diet": "nonveg", "kind": "food" },
+      { "name": "Veg Puff", "diet": "veg", "kind": "food" },
+      { "name": "Corn Patty", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Burger", "diet": "nonveg", "kind": "food" },
+      { "name": "Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Tea", "diet": "veg", "kind": "drink" },
+      { "name": "Lassi", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "tfp-the-foodplex": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["north_indian", "chinese", "mughlai", "asian"],
+    "vibes": ["quick_bite", "family"],
+    "menuSources": ["district.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Crispy Chilli Babycorn", "Amritsari Kulcha"],
+      "nonveg": ["Aslam Bhai Tandoori Chicken", "Chicken Honey Chilli Wontons", "Butter Chicken"],
+      "drinks": ["Gondhoraj Mojito"]
+    },
+    "menu": [
+      { "name": "Chicken Honey Chilli Wontons", "diet": "nonveg", "kind": "food" },
+      { "name": "Aslam Bhai Tandoori Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Crispy Chilli Babycorn", "diet": "veg", "kind": "food" },
+      { "name": "Butter Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Thai Green Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Mango Mustard Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Mixed Fried Rice", "diet": "nonveg", "kind": "food" },
+      { "name": "Amritsari Kulcha", "diet": "veg", "kind": "food" },
+      { "name": "Phirni", "diet": "veg", "kind": "dessert" },
+      { "name": "Gondhoraj Mojito", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "the-car-spa-bistro": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "italian"],
+    "vibes": ["aesthetic", "quick_bite", "late_night"],
+    "openLate": true,
+    "menuSources": ["thekolkatamail.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Amritsari Choley Hummus"],
+      "nonveg": ["Chilli Garlic Prawns", "Chicken Nachos"],
+      "drinks": ["Cold Brew"]
+    },
+    "menu": [
+      { "name": "Amritsari Choley Hummus", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Nachos", "diet": "nonveg", "kind": "food" },
+      { "name": "Chilli Garlic Prawns", "diet": "nonveg", "kind": "food" },
+      { "name": "Cold Brew", "diet": "veg", "kind": "drink" },
+      { "name": "Frappe", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "the-elgin-fairlawn-kolkata-heritage-hotel-since-1783": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "north_indian", "asian", "coffee"],
+    "vibes": ["heritage", "aesthetic", "adda"],
+    "menuSources": ["airmenus.in", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Garden Pizza"],
+      "nonveg": ["Full English Breakfast", "Hawaiian Burger", "Grilled Chicken Sandwich"],
+      "drinks": ["Hot Chocolate"]
+    },
+    "menu": [
+      { "name": "Full English Breakfast", "diet": "nonveg", "kind": "food" },
+      { "name": "Hawaiian Burger", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Chicken Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Garden Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Hot Chocolate", "diet": "veg", "kind": "drink" },
+      { "name": "Milkshake", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "the-grid": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "asian", "north_indian", "bbq"],
+    "vibes": ["bar", "late_night", "aesthetic"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Melon Salad", "Mississippi Mudpie"],
+      "nonveg": ["Prawn Crackers", "Continental Power Meal (Non-Veg)"],
+      "drinks": ["Guava Mojito", "Apple Cider Beer"]
+    },
+    "menu": [
+      { "name": "Guava Mojito", "diet": "veg", "kind": "drink" },
+      { "name": "Apple Cider Beer", "diet": "veg", "kind": "drink" },
+      { "name": "Melon Salad", "diet": "veg", "kind": "food" },
+      { "name": "Prawn Crackers", "diet": "nonveg", "kind": "food" },
+      { "name": "Mississippi Mudpie", "diet": "veg", "kind": "dessert" },
+      { "name": "Oriental Power Meal (Veg)", "diet": "veg", "kind": "food", "price": 496 },
+      { "name": "Continental Power Meal (Non-Veg)", "diet": "nonveg", "kind": "food", "price": 614 }
+    ]
+  },
+  "vintage-asia": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["asian", "chinese"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["magicpin.in", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Truffle Edamame Dim Sum", "Vegetable Dim Sum"],
+      "nonveg": ["Chicken Shumai", "Hot Pot Chicken", "Shanghai Chicken Curry"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chicken Shumai", "diet": "nonveg", "kind": "food" },
+      { "name": "Hot Pot Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Shanghai Chicken Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Vegetable Dim Sum", "diet": "veg", "kind": "food" },
+      { "name": "Truffle Edamame Dim Sum", "diet": "veg", "kind": "food" },
+      { "name": "Jasmine Rice", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "coral-bageecha": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "continental", "italian", "chinese", "street_food"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Charcoal Pizza", "Paneer Tikka Tacos"],
+      "nonveg": ["Dimsums", "Butter Chicken"],
+      "drinks": ["Mocktail"]
+    },
+    "menu": [
+      { "name": "Charcoal Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Paneer Tikka Tacos", "diet": "veg", "kind": "food" },
+      { "name": "Dimsums", "diet": "nonveg", "kind": "food" },
+      { "name": "Dal Makhani", "diet": "veg", "kind": "food" },
+      { "name": "Butter Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Mocktail", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "abar-baithak-the-coffee-shop": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["coffee", "bengali", "continental", "italian"],
+    "vibes": ["adda", "aesthetic"],
+    "menuSources": ["justdial.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Mushroom and Corn Sandwich", "Penne Alfredo Sauce"],
+      "nonveg": ["Fish and Chips", "Chicken and Bacon Burger", "Chicken Shashlik with Mexican Rice"],
+      "drinks": ["Spicy Mexican Hot Chocolate"]
+    },
+    "menu": [
+      { "name": "Chicken and Bacon Burger", "diet": "nonveg", "kind": "food", "price": 430 },
+      { "name": "Mushroom and Corn Sandwich", "diet": "veg", "kind": "food", "price": 275 },
+      { "name": "Fish and Chips", "diet": "nonveg", "kind": "food", "price": 570 },
+      { "name": "Chicken Shashlik with Mexican Rice", "diet": "nonveg", "kind": "food", "price": 540 },
+      { "name": "Penne Alfredo Sauce", "diet": "veg", "kind": "food", "price": 575 },
+      { "name": "Spicy Mexican Hot Chocolate", "diet": "veg", "kind": "drink", "price": 265 },
+      { "name": "Vegan Shake", "diet": "veg", "kind": "drink", "price": 175 }
+    ]
+  },
+  "barishh": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "bento": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["asian", "street_food"],
+    "vibes": ["quick_bite", "adda"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Cheesy Corn Dog", "Tom & Jerry Cheese Cake"],
+      "nonveg": ["Korean Chicken Ramen", "Chicken Dumplings (Steam)", "Barbecue Chicken Sando"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Cheesy Corn Dog", "diet": "veg", "kind": "food" },
+      { "name": "Korean Chicken Ramen", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Dumplings (Steam)", "diet": "nonveg", "kind": "food" },
+      { "name": "Barbecue Chicken Sando", "diet": "nonveg", "kind": "food" },
+      { "name": "Teriyaki Chicken Wrap", "diet": "nonveg", "kind": "food" },
+      { "name": "Tom & Jerry Cheese Cake", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "bite-that-spoon-the-caf": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
   }
 }

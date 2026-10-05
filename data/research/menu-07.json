@@ -1,0 +1,122 @@
+{
+  "adi-haridas-modak": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 1,
+    "cuisines": ["mishti", "bengali", "street_food"],
+    "vibes": ["heritage", "quick_bite"],
+    "menuSources": ["swiggy.com", "yummraj.com"],
+    "mustTry": {
+      "veg": ["Hing-er Kochuri", "Luchi with Alur Torkari", "Chholar Daal"],
+      "nonveg": [],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Hing-er Kochuri", "diet": "veg", "kind": "food", "price": 42 },
+      { "name": "Luchi with Alur Torkari", "diet": "veg", "kind": "food", "price": 36 },
+      { "name": "Chholar Daal", "diet": "veg", "kind": "food" },
+      { "name": "Pantua", "diet": "veg", "kind": "dessert", "price": 7 },
+      { "name": "Barfi", "diet": "veg", "kind": "dessert", "price": 6 },
+      { "name": "Pera", "diet": "veg", "kind": "dessert", "price": 10 },
+      { "name": "Sankh Sandesh", "diet": "veg", "kind": "dessert", "price": 10 }
+    ]
+  },
+  "afterhours-the-pub": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "chinese", "continental", "italian"],
+    "vibes": ["bar"],
+    "menuSources": ["eazydiner.com", "themaureen.com"],
+    "mustTry": {
+      "veg": ["Crispy Chilli Babycorn"],
+      "nonveg": ["Chicken Malai Kebab", "Chilli Chicken"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Crispy Chilli Babycorn", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Malai Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Chilli Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Fried Rice", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "beer-station": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "chinese", "continental", "asian"],
+    "vibes": ["bar"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Charcoal Paneer Tikka", "Crispy Corn Nuts Chat"],
+      "nonveg": ["Kasundi Fish Tikka", "Sticky Chinese Pork Belly", "Chicken Lollipop"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Kasundi Fish Tikka", "diet": "nonveg", "kind": "food" },
+      { "name": "Crispy Corn Nuts Chat", "diet": "veg", "kind": "food" },
+      { "name": "Pahadi Chicken Tikka", "diet": "nonveg", "kind": "food" },
+      { "name": "Sticky Chinese Pork Belly", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Lollipop", "diet": "nonveg", "kind": "food" },
+      { "name": "Beer Station Kebab Platter", "diet": "nonveg", "kind": "food" },
+      { "name": "Smokey Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Charcoal Paneer Tikka", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "boho-the-ground-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "italian", "coffee"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["justdial.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Mexican Corn And Avocado Toast", "Ortolana Pizza"],
+      "nonveg": ["Crispy Cajun Spice Chicken Burger", "Grilled Basa Fish With Pineapple Salsa"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Mexican Corn And Avocado Toast", "diet": "veg", "kind": "food", "price": 270 },
+      { "name": "Italian Tomato Basil & Buffalo Mozzarella Bruschetta", "diet": "veg", "kind": "food", "price": 300 },
+      { "name": "Crispy Cajun Spice Chicken Burger", "diet": "nonveg", "kind": "food", "price": 295 },
+      { "name": "Mexican Cottage Cheese Steak Burger", "diet": "veg", "kind": "food", "price": 290 },
+      { "name": "Spaghetti Aglio Olio Pasta", "diet": "veg", "kind": "food", "price": 415 },
+      { "name": "Spaghetti Bolognese Pasta", "diet": "nonveg", "kind": "food", "price": 475 },
+      { "name": "Ortolana Pizza", "diet": "veg", "kind": "food", "price": 460 },
+      { "name": "Barbecue Pizza", "diet": "nonveg", "kind": "food", "price": 510 },
+      { "name": "Grilled Basa Fish With Pineapple Salsa", "diet": "nonveg", "kind": "food", "price": 540 },
+      { "name": "Sizzling Brownie", "diet": "veg", "kind": "dessert", "price": 345 },
+      { "name": "Cheese Cake", "diet": "veg", "kind": "dessert", "price": 355 }
+    ]
+  },
+  "boho-the-sky-cafe-madhyamgram": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "north_indian", "italian"],
+    "vibes": ["rooftop", "aesthetic"],
+    "menuSources": ["swiggy.com"],
+    "mustTry": {
+      "veg": ["Cheese Garlic Bread", "Potato Bravas Al Peri-peri"],
+      "nonveg": ["Gondhoraj Fish Fry", "Chicken Tikka Pizza"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Gondhoraj Fish Fry", "diet": "nonveg", "kind": "food", "price": 445 },
+      { "name": "Potato Bravas Al Peri-peri", "diet": "veg", "kind": "food", "price": 280 },
+      { "name": "Chicken Tikka Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Smoked BBQ Chicken Supreme", "diet": "nonveg", "kind": "food" },
+      { "name": "Honey Glazed Wings", "diet": "nonveg", "kind": "food" },
+      { "name": "Margherita Nova", "diet": "veg", "kind": "food" },
+      { "name": "Cheese Garlic Bread", "diet": "veg", "kind": "food" },
+      { "name": "Fettuccine Alfredo Alla Crema", "diet": "nonveg", "kind": "food" }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "naanzza": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "olio-and-sale": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["italian"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["indiatimes.com", "facebook.com"],
+    "mustTry": {
+      "veg": ["Margherita Pizza", "Pesto Burrata Pizza"],
+      "nonveg": ["Aglio Olio Seafood Pasta", "Burrata Beef & Fungi Ricotta Pizza"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Margherita Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Pesto Burrata Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Burrata Beef & Fungi Ricotta Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Aglio Olio Seafood Pasta", "diet": "nonveg", "kind": "food" },
+      { "name": "Calamari Fritti", "diet": "nonveg", "kind": "food" },
+      { "name": "Beetroot Hummus", "diet": "veg", "kind": "food" },
+      { "name": "Tiramisu", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "pancham-er-adday": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "coffee"],
+    "vibes": ["adda", "aesthetic"],
+    "menuSources": ["swiggy.com", "justdial.com"],
+    "mustTry": {
+      "veg": ["Spaghetti Aglio E Olio", "Penne Alfredo"],
+      "nonveg": ["Chicken Cordon Bleu", "Grilled Lamb Chop", "Chicken Poppers"],
+      "drinks": ["Mocha Frappe", "Cappuccino"]
+    },
+    "menu": [
+      { "name": "Spaghetti Aglio E Olio", "diet": "veg", "kind": "food", "price": 220 },
+      { "name": "Penne Alfredo", "diet": "veg", "kind": "food", "price": 220 },
+      { "name": "Chicken Penne", "diet": "nonveg", "kind": "food", "price": 270 },
+      { "name": "Chicken Poppers", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Cordon Bleu", "diet": "nonveg", "kind": "food" },
+      { "name": "Dragon Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Lamb Chop", "diet": "nonveg", "kind": "food", "price": 400 },
+      { "name": "Classic Chicken Escalop", "diet": "nonveg", "kind": "food", "price": 340 },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" },
+      { "name": "Mocha Frappe", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "pico-pizzeria-and-coffee-bar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["italian", "coffee"],
+    "vibes": ["aesthetic", "quick_bite"],
+    "menuSources": ["zomato.com", "swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Fungi Truffle Pizza", "Alfredo Veg Pizza", "Pulled Cheese Garlic Bread"],
+      "nonveg": ["Pork Pepperoni Pizza", "Fire E Chicken Pizza", "Chicken Wings"],
+      "drinks": ["Vietnamese Iced Coffee", "Cold Brew", "Salted Caramel Latte"]
+    },
+    "menu": [
+      { "name": "Pork Pepperoni Pizza", "diet": "nonveg", "kind": "food", "price": 625 },
+      { "name": "Fire E Chicken Pizza", "diet": "nonveg", "kind": "food", "price": 745 },
+      { "name": "Fungi Truffle Pizza", "diet": "veg", "kind": "food", "price": 780 },
+      { "name": "Alfredo Veg Pizza", "diet": "veg", "kind": "food", "price": 695 },
+      { "name": "Pulled Cheese Garlic Bread", "diet": "veg", "kind": "food", "price": 265 },
+      { "name": "Chicken Clear Soup", "diet": "nonveg", "kind": "food", "price": 265 },
+      { "name": "Chicken Wings", "diet": "nonveg", "kind": "food", "price": 280 },
+      { "name": "French Fries", "diet": "veg", "kind": "food", "price": 280 },
+      { "name": "Vietnamese Iced Coffee", "diet": "veg", "kind": "drink", "price": 230 },
+      { "name": "Cold Brew", "diet": "veg", "kind": "drink", "price": 160 },
+      { "name": "Salted Caramel Latte", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "poach-kitchen": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "coffee", "dessert"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["district.in", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Baklava Cheesecake", "Avocado Truffle Toast", "Loaded Greek Pizza"],
+      "nonveg": [],
+      "drinks": ["Baklava Latte", "Apple Ginger Mojito"]
+    },
+    "menu": [
+      { "name": "Baklava Cheesecake", "diet": "veg", "kind": "dessert" },
+      { "name": "Avocado Truffle Toast", "diet": "veg", "kind": "food" },
+      { "name": "Loaded Greek Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Poach Fries", "diet": "veg", "kind": "food" },
+      { "name": "Pesto Au Gratin", "diet": "veg", "kind": "food" },
+      { "name": "Pecan Pie", "diet": "veg", "kind": "dessert" },
+      { "name": "Baklava Latte", "diet": "veg", "kind": "drink" },
+      { "name": "Apple Ginger Mojito", "diet": "veg", "kind": "drink" }
+    ]
+  }
+}

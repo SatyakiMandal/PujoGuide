@@ -1,0 +1,138 @@
+{
+  "kouzina-mining-co": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "chinese", "continental", "italian"],
+    "vibes": ["family", "aesthetic"],
+    "menuSources": ["eazydiner.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Yellow Dal Tadka", "Assorted Bruschetta"],
+      "nonveg": ["Tangdi Kebab", "Chelo Kebab", "Chicken Lat Me Kai"],
+      "drinks": ["Cold Coffee"]
+    },
+    "menu": [
+      { "name": "Tangdi Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Chelo Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Lat Me Kai", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Olivetti", "diet": "nonveg", "kind": "food" },
+      { "name": "Jhinga Malwani", "diet": "nonveg", "kind": "food" },
+      { "name": "Yellow Dal Tadka", "diet": "veg", "kind": "food" },
+      { "name": "Assorted Bruschetta", "diet": "veg", "kind": "food" },
+      { "name": "Darsan", "diet": "veg", "kind": "dessert" },
+      { "name": "Warm Nutty Brownie", "diet": "veg", "kind": "dessert", "price": 277 },
+      { "name": "Gulab Jamun", "diet": "veg", "kind": "dessert", "price": 157 },
+      { "name": "Cold Coffee", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "loafer-s-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["coffee", "continental", "bakery", "italian"],
+    "vibes": ["aesthetic", "adda", "family"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Almond Croissant", "Lemon Tart", "Broccoli Leek Quiche"],
+      "nonveg": ["Chicken Cheesy Mushroom Pasta", "Smoked Salmon Cream Cheese Sandwich", "Chicken Keema Sandwich"],
+      "drinks": ["Gondhoraj Lemon Mojito", "Cappuccino"]
+    },
+    "menu": [
+      { "name": "Gondhoraj Lemon Mojito", "diet": "veg", "kind": "drink" },
+      { "name": "Chicken Cheesy Mushroom Pasta", "diet": "nonveg", "kind": "food" },
+      { "name": "Puttanesca Pasta", "diet": "veg", "kind": "food" },
+      { "name": "Lemon Tart", "diet": "veg", "kind": "dessert" },
+      { "name": "Choco Chip Cookies", "diet": "veg", "kind": "dessert" },
+      { "name": "Almond Croissant", "diet": "veg", "kind": "food" },
+      { "name": "Butter Croissant", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Keema Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Smoked Salmon Cream Cheese Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Matured English Cheddar Melt", "diet": "veg", "kind": "food" },
+      { "name": "Broccoli Leek Quiche", "diet": "veg", "kind": "food" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "mandala-the-oriental-kitchen": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["asian", "chinese"],
+    "vibes": ["aesthetic", "family", "adda"],
+    "menuSources": ["eazydiner.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Veg Steamed Momos"],
+      "nonveg": ["Pork Shaphaley", "Mandala Special Roasted Chilli Pork", "Chicken Tom Kha Soup"],
+      "drinks": ["Virgin Sunset", "Purple Heart"]
+    },
+    "menu": [
+      { "name": "Veg Steamed Momos", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Fried Momos", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Tom Kha Soup", "diet": "nonveg", "kind": "food" },
+      { "name": "Pork Shaphaley", "diet": "nonveg", "kind": "food" },
+      { "name": "Mandala Special Roasted Chilli Pork", "diet": "nonveg", "kind": "food" },
+      { "name": "Golden Fried Prawn", "diet": "nonveg", "kind": "food" },
+      { "name": "Prawns Thai Red Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken with Mushroom and Fresh Red Chilli", "diet": "nonveg", "kind": "food" },
+      { "name": "Sliced Pork in Black Bean Sauce", "diet": "nonveg", "kind": "food" },
+      { "name": "Virgin Sunset", "diet": "veg", "kind": "drink" },
+      { "name": "Purple Heart", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "milloh-caf-sector-v": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["street_food", "north_indian", "continental", "italian", "coffee"],
+    "vibes": ["aesthetic", "quick_bite", "adda"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Pav Bhaji Fondue", "Dabeli Mille-Feuille", "Farmhouse Pizza"],
+      "nonveg": ["Fishy Patiala Chips"],
+      "drinks": ["Charitraheen Chai", "Americano"]
+    },
+    "menu": [
+      { "name": "Pav Bhaji Fondue", "diet": "veg", "kind": "food" },
+      { "name": "Fishy Patiala Chips", "diet": "nonveg", "kind": "food" },
+      { "name": "Farmhouse Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Pasta Aglio E Olio", "diet": "veg", "kind": "food" },
+      { "name": "Pasta Arrabbiata", "diet": "veg", "kind": "food" },
+      { "name": "Dabeli Mille-Feuille", "diet": "veg", "kind": "food" },
+      { "name": "Missi Taco", "diet": "veg", "kind": "food" },
+      { "name": "Desi Kuchettes Bombs", "diet": "veg", "kind": "food" },
+      { "name": "Adrak Ki Chai", "diet": "veg", "kind": "drink" },
+      { "name": "Charitraheen Chai", "diet": "veg", "kind": "drink" },
+      { "name": "Americano", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "mintelaa": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "north_indian", "chinese", "italian"],
+    "vibes": ["rooftop", "late_night", "aesthetic", "adda"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Classic Margherita Pizza", "Basque Cheese Cake"],
+      "nonveg": ["Tandoori Chicken"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Classic Margherita Pizza", "diet": "veg", "kind": "food", "price": 480 },
+      { "name": "Veg Hakka Noodles", "diet": "veg", "kind": "food", "price": 390 },
+      { "name": "Steamed Rice", "diet": "veg", "kind": "food", "price": 160 },
+      { "name": "Green Salad", "diet": "veg", "kind": "food", "price": 155 },
+      { "name": "Tandoori Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Basque Cheese Cake", "diet": "veg", "kind": "dessert", "price": 419 },
+      { "name": "Brownie with Ice Cream", "diet": "veg", "kind": "dessert", "price": 299 },
+      { "name": "Chinese Darsan", "diet": "veg", "kind": "dessert", "price": 289 },
+      { "name": "Gulab Jamun", "diet": "veg", "kind": "dessert", "price": 229 }
+    ]
+  }
+}

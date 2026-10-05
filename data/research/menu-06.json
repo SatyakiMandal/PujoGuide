@@ -1,1 +1,250 @@
-{}
+{
+  "evabrew-lake-market": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "bakery"],
+    "vibes": ["aesthetic", "adda", "quick_bite"],
+    "menuSources": ["justdial.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Garlic Bun"],
+      "nonveg": [],
+      "drinks": ["Spanish Latte", "Orange Cold Brew", "Fresh Lime Espresso"]
+    },
+    "menu": [
+      { "name": "Macchiato", "diet": "veg", "kind": "drink", "price": 135 },
+      { "name": "Breve", "diet": "veg", "kind": "drink", "price": 150 },
+      { "name": "Aerocano", "diet": "veg", "kind": "drink", "price": 175 },
+      { "name": "Pour Over", "diet": "veg", "kind": "drink", "price": 175 },
+      { "name": "Cold Brew", "diet": "veg", "kind": "drink", "price": 175 },
+      { "name": "Fresh Lime Espresso", "diet": "veg", "kind": "drink", "price": 175 },
+      { "name": "Iced Cappuccino", "diet": "veg", "kind": "drink", "price": 175 },
+      { "name": "Orange Cold Brew", "diet": "veg", "kind": "drink", "price": 200 },
+      { "name": "Affogato", "diet": "veg", "kind": "drink", "price": 200 },
+      { "name": "Spanish Latte", "diet": "veg", "kind": "drink", "price": 200 },
+      { "name": "Strawberry Lemonade", "diet": "veg", "kind": "drink", "price": 150 },
+      { "name": "Lavender Lemonade", "diet": "veg", "kind": "drink", "price": 150 }
+    ]
+  },
+  "jorasanko-bengali-restaurant": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali", "chinese", "north_indian"],
+    "vibes": ["family", "heritage"],
+    "menuSources": ["swiggy.com", "district.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Chingri Malai Curry", "Chicken Kosha", "Bhetki Fish Fry"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chingri Malai Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Kosha", "diet": "nonveg", "kind": "food" },
+      { "name": "Bhetki Fish Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Manchurian", "diet": "nonveg", "kind": "food" },
+      { "name": "Egg Chicken Fried Rice", "diet": "nonveg", "kind": "food" },
+      { "name": "Egg Chicken Gravy Chowmein", "diet": "nonveg", "kind": "food" },
+      { "name": "Bengali Buffet", "diet": "nonveg", "kind": "food", "price": 699 }
+    ]
+  },
+  "kolkata-rajbari": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali"],
+    "vibes": ["family", "heritage"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Basanti Pulao"],
+      "nonveg": ["Daab Chingri", "Ilish Paturi", "Kosha Mangsho"],
+      "drinks": ["Gondhoraj Ghol"]
+    },
+    "menu": [
+      { "name": "Daab Chingri", "diet": "nonveg", "kind": "food" },
+      { "name": "Ilish Paturi", "diet": "nonveg", "kind": "food" },
+      { "name": "Kosha Mangsho", "diet": "nonveg", "kind": "food" },
+      { "name": "Bhapa Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Kosha", "diet": "nonveg", "kind": "food" },
+      { "name": "Basanti Pulao", "diet": "veg", "kind": "food" },
+      { "name": "Rajbarir Pulao", "diet": "veg", "kind": "food" },
+      { "name": "Aloo Bhaja", "diet": "veg", "kind": "food" },
+      { "name": "Gondhoraj Ghol", "diet": "veg", "kind": "drink" },
+      { "name": "Rajeshwari Bhoj Thali", "diet": "nonveg", "kind": "food", "price": 599 }
+    ]
+  },
+  "marco-polo": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "chinese", "bengali", "north_indian"],
+    "vibes": ["family", "heritage"],
+    "menuSources": ["swiggy.com", "wanderlog.com"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Grilled Bhetki", "Chicken Stroganoff", "Prawn Cocktail"],
+      "drinks": ["Fresh Lime Soda"]
+    },
+    "menu": [
+      { "name": "Grilled Bhetki", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Stroganoff", "diet": "nonveg", "kind": "food" },
+      { "name": "Prawn Cocktail", "diet": "nonveg", "kind": "food" },
+      { "name": "Pork Chops", "diet": "nonveg", "kind": "food" },
+      { "name": "Lamb Chops", "diet": "nonveg", "kind": "food" },
+      { "name": "Chelo Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Kung Pao Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Bekti a la Meuniere", "diet": "nonveg", "kind": "food" },
+      { "name": "Fresh Lime Soda", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "milee-droog-coffee-and-bistro": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "mqxt": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "paranthe-wali-galli": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "rever-glasshouse-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "asian", "italian", "coffee"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["district.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Live Tiramisu", "Creamy Spinach Ravioli"],
+      "nonveg": ["Lemongrass Grilled Chicken"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Build Your Own Pizza", "diet": "veg", "kind": "food", "price": 699 },
+      { "name": "Live Tiramisu", "diet": "veg", "kind": "dessert", "price": 349 },
+      { "name": "Lemongrass Grilled Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Schezwan Pepper & Leek Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Kasa Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Green Thai Paneer Tikka", "diet": "veg", "kind": "food" },
+      { "name": "Mushroom Puff", "diet": "veg", "kind": "food" },
+      { "name": "Creamy Spinach Ravioli", "diet": "veg", "kind": "food" },
+      { "name": "Penne Arrabbiata", "diet": "veg", "kind": "food" },
+      { "name": "Chilli Cheese Garlic Bread", "diet": "veg", "kind": "food" },
+      { "name": "Nachos Supreme", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "social-hideout": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "the-bhawanipur-house": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "italian", "coffee", "bakery"],
+    "vibes": ["aesthetic", "heritage", "family"],
+    "menuSources": ["swiggy.com", "slurrp.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Mediterranean Buddha Bowl", "Devil Chocolate Cake", "Apple Crumble Tart"],
+      "nonveg": ["Pollo Lazio Pizza"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Vegetariana Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Pollo Lazio Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Mediterranean Buddha Bowl", "diet": "veg", "kind": "food" },
+      { "name": "Devil Chocolate Cake", "diet": "veg", "kind": "dessert" },
+      { "name": "Apple Crumble Tart", "diet": "veg", "kind": "dessert" },
+      { "name": "Lahme", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "the-corner-courtyard": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "the-daily-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "italian", "coffee", "bakery"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "justdial.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Truffle Pasta", "Salted Caramel Chocolate Tart"],
+      "nonveg": ["Grilled Chicken Steak", "Eggs Benedict"],
+      "drinks": ["Honey Lavender Latte", "Vietnamese Coffee"]
+    },
+    "menu": [
+      { "name": "Eggs Benedict", "diet": "nonveg", "kind": "food" },
+      { "name": "Truffle Pasta", "diet": "veg", "kind": "food" },
+      { "name": "Pesto Pasta", "diet": "veg", "kind": "food" },
+      { "name": "Forest Mushroom Tortellini", "diet": "veg", "kind": "food" },
+      { "name": "Grilled Chicken Steak", "diet": "nonveg", "kind": "food" },
+      { "name": "Moroccan Bowl", "diet": "veg", "kind": "food" },
+      { "name": "Honey Lavender Latte", "diet": "veg", "kind": "drink" },
+      { "name": "Vietnamese Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Salted Caramel Chocolate Tart", "diet": "veg", "kind": "dessert" },
+      { "name": "Almond and Berry Cake", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "the-red-bari": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["coffee", "continental", "dessert"],
+    "vibes": ["heritage", "aesthetic", "adda"],
+    "menuSources": ["wanderlog.com", "curlytales.com"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Grilled Chicken Sandwich", "Fish Fingers", "Mutton Bolognese"],
+      "drinks": ["Araku Black Coffee", "Kombucha"]
+    },
+    "menu": [
+      { "name": "Araku Black Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Kombucha", "diet": "veg", "kind": "drink" },
+      { "name": "Grilled Chicken Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Fingers", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Bolognese", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "the-saffron-tree": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["mughlai", "north_indian", "biryani", "bbq"],
+    "vibes": ["family", "aesthetic"],
+    "menuSources": ["magicpin.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Paneer Kothimbir Kebab"],
+      "nonveg": ["TST Special Pork Biryani", "Murg Ke Tukde", "Murg Boti Lehsuni"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "TST Special Pork Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Kothimbir Kebab", "diet": "veg", "kind": "food" },
+      { "name": "Murg Ke Tukde", "diet": "nonveg", "kind": "food" },
+      { "name": "Bhatti Murg Adraki", "diet": "nonveg", "kind": "food" },
+      { "name": "Murg Boti Lehsuni", "diet": "nonveg", "kind": "food" },
+      { "name": "Bakarkhani", "diet": "veg", "kind": "food" },
+      { "name": "Khameri Roti", "diet": "veg", "kind": "food" },
+      { "name": "Mutton Malai", "diet": "nonveg", "kind": "food" },
+      { "name": "Malabar Fish Curry", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "the-steak-factory-sarat-bose": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  }
+}
