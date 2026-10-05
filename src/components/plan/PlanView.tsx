@@ -209,14 +209,15 @@ function StopRow({
             </span>
           </span>
         </button>
-        <button
+        <motion.button
           type="button"
+          whileTap={{ scale: 0.88 }}
           aria-label={`Remove ${place.name.en}`}
           onClick={() => removeStop(place.slug)}
           className="grid size-9 shrink-0 place-items-center rounded-full text-muted hover:bg-surface2"
         >
           <X size={16} weight="bold" />
-        </button>
+        </motion.button>
       </div>
       {leg && <LegCard leg={leg} />}
     </Reorder.Item>
@@ -388,14 +389,15 @@ function Action({
   disabled?: boolean;
 }) {
   return (
-    <button
+    <motion.button
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="inline-flex min-h-10 items-center gap-2 rounded-full border border-line bg-surface px-4 text-sm font-medium transition-transform active:scale-95 disabled:opacity-40"
+      whileTap={{ scale: 0.94 }}
+      className="inline-flex min-h-10 items-center gap-2 rounded-full border border-line bg-surface px-4 text-sm font-medium transition-colors disabled:opacity-40"
     >
       {icon}
       {children}
-    </button>
+    </motion.button>
   );
 }

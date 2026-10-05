@@ -5,6 +5,7 @@ import { MarkerClusterer, SuperClusterAlgorithm } from "@googlemaps/markercluste
 import { CrosshairSimple } from "@phosphor-icons/react";
 import { useTheme } from "next-themes";
 import { useEffect, useRef } from "react";
+import { motion } from "motion/react";
 import { PlacePin } from "./PlacePin";
 import { placeBySlug } from "@/lib/data";
 import { KOLKATA_BOUNDS, type Place } from "@/lib/schema";
@@ -114,14 +115,16 @@ function LocateButton() {
       { enableHighAccuracy: true, timeout: 8000 },
     );
   return (
-    <button
+    <motion.button
       type="button"
       onClick={locate}
+      whileTap={{ scale: 0.88 }}
+      whileHover={{ scale: 1.06 }}
       aria-label="Show my location"
-      className="absolute right-3 top-[4.5rem] z-10 grid size-11 place-items-center rounded-full border border-line bg-surface text-fg shadow-float transition-transform active:scale-90"
+      className="absolute right-3 top-[4.5rem] z-10 grid size-11 place-items-center rounded-full border border-line bg-surface text-fg shadow-float transition-colors"
     >
       <CrosshairSimple size={22} weight="bold" />
-    </button>
+    </motion.button>
   );
 }
 
