@@ -170,6 +170,7 @@ type Research = Partial<{
   tags: string[]; cuisines: Place["cuisines"]; vibes: Place["vibes"]; priceLevel: number; diet: Place["diet"];
   openLate: boolean; closed: boolean; dishes: string[]; tips: Place["tips"]; crowd: Place["crowd"]; blurb: string;
   info: Place["info"]; aliases: string[]; category: Place["category"];
+  menu: Place["menu"]; menuSources: string[]; mustTry: Place["mustTry"]; pureVeg: boolean; checkedAt: string;
 }>;
 const researchFiles = existsSync("data/research") ? readdirSync("data/research").filter((f) => f.endsWith(".json")).sort() : [];
 const bySlug = new Map(places.map((p) => [p.slug, p]));
@@ -243,6 +244,19 @@ for (const p of places) {
     .map((s) => s.name);
   p.metro = [...new Set([...p.metro, ...near])].slice(0, 3);
 }
+
+// ── Only operating places ship. Closed ones, and food places nobody could confirm, never reach the app. ──
+// "Confirmed" = Google Maps snapshot matched this place (and didn't say closed) or a researcher confirmed it (checkedAt).
+const dropped: { slug: string; name: string; reason: string }[] = [];
+for (let i = places.length - 1; i >= 0; i--) {
+  const p = places[i];
+  const food = p.category !== "bonedi_bari" && p.category !== "pandal";
+  const reason = p.closed ? "closed" : food && !p.snapshotAt && !p.checkedAt ? "unverified" : null;
+  if (!reason) continue;
+  dropped.push({ slug: p.slug, name: p.name.en, reason });
+  places.splice(i, 1);
+}
+writeFileSync("data/removed-report.json", JSON.stringify(dropped.reverse(), null, 1));
 
 // ── Several places can share one exact pin (same building): fan them out ~12 m so each is clickable ──
 const stacks = new Map<string, Place[]>();

@@ -1,0 +1,235 @@
+{
+  "eden-courtyard": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 3,
+    "cuisines": ["asian", "italian", "north_indian", "continental"],
+    "vibes": ["aesthetic", "family", "rooftop"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Avocado Papdi Chaat", "Charcoal Dahi Kabab", "Four Cheese Chili Pizza"],
+      "nonveg": [],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Avocado Papdi Chaat", "diet": "veg", "kind": "food" },
+      { "name": "Charcoal Dahi Kabab", "diet": "veg", "kind": "food" },
+      { "name": "Four Cheese Chili Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Kadai Paneer", "diet": "veg", "kind": "food" },
+      { "name": "Modern Kulcha", "diet": "veg", "kind": "food" },
+      { "name": "Eden's Cassata", "diet": "veg", "kind": "dessert" },
+      { "name": "Beetroot Galauti", "diet": "veg", "kind": "food" },
+      { "name": "Palak Patta Chaat", "diet": "veg", "kind": "food" },
+      { "name": "Multani Paneer Tikka", "diet": "veg", "kind": "food" },
+      { "name": "Paneer Khurchan Tacos", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "flurys": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bakery", "continental", "coffee"],
+    "vibes": ["heritage", "aesthetic", "family"],
+    "menuSources": ["flurys.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Rum Ball", "Cheese Straws"],
+      "nonveg": ["English Breakfast", "Chicken Patty"],
+      "drinks": ["Darjeeling Tea"]
+    },
+    "menu": [
+      { "name": "English Breakfast", "diet": "nonveg", "kind": "food" },
+      { "name": "Rum Ball", "diet": "veg", "kind": "dessert", "price": 170 },
+      { "name": "Chicken Patty", "diet": "nonveg", "kind": "food" },
+      { "name": "Vegetable Patty", "diet": "veg", "kind": "food", "price": 140 },
+      { "name": "Cheese Straws", "diet": "veg", "kind": "food", "price": 135 },
+      { "name": "Choco Cube", "diet": "veg", "kind": "dessert", "price": 210 },
+      { "name": "Almond Cube", "diet": "veg", "kind": "dessert" },
+      { "name": "Eggs Benedict", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Puff", "diet": "nonveg", "kind": "food" },
+      { "name": "Darjeeling Tea", "diet": "veg", "kind": "drink", "price": 230 },
+      { "name": "Viennese Coffee", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "flyers-multicuisine-restaurant": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "honey-da-dhaba": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["north_indian", "mughlai"],
+    "vibes": ["family", "quick_bite", "adda"],
+    "menuSources": ["swiggy.com", "justdial.com"],
+    "mustTry": {
+      "veg": ["Dal Makhani", "Paneer Lababdar"],
+      "nonveg": ["Butter Chicken", "Dehati Chicken"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Butter Chicken", "diet": "nonveg", "kind": "food", "price": 280 },
+      { "name": "Dal Makhani", "diet": "veg", "kind": "food" },
+      { "name": "Paneer Lababdar", "diet": "veg", "kind": "food" },
+      { "name": "Dehati Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Patiala Thali (Veg)", "diet": "veg", "kind": "food", "price": 190 },
+      { "name": "Amritsari Thali", "diet": "nonveg", "kind": "food", "price": 260 },
+      { "name": "Fish Tikka", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Tikka Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Tandoori Roti", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "indian-coffee-house": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 1,
+    "cuisines": ["coffee", "continental", "bengali"],
+    "vibes": ["heritage", "adda", "quick_bite"],
+    "menuSources": ["magicpin.in", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Onion Pakoda"],
+      "nonveg": ["Chicken Cutlet", "Mutton Afghani", "Fish Kabiraji"],
+      "drinks": ["Infusion Coffee", "Cold Coffee"]
+    },
+    "menu": [
+      { "name": "Infusion Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Hot Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Cold Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Chicken Cutlet", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Kabiraji", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Afghani", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Egg Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Onion Pakoda", "diet": "veg", "kind": "food" },
+      { "name": "Tomato Omelette", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "jungle-safari": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "continental", "chinese", "biryani"],
+    "vibes": ["family", "aesthetic"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Tandoori Pesto Paneer Tikka", "Paneer Butter Masala"],
+      "nonveg": ["Chicken Dum Biryani", "Bhetki Fish Finger", "Chicken Tikka Kebab"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Tandoori Pesto Paneer Tikka", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Dum Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Dum Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Tikka Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Butter Masala", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Butter Masala", "diet": "veg", "kind": "food" },
+      { "name": "Bhetki Fish Finger", "diet": "nonveg", "kind": "food" },
+      { "name": "Nimbu Dhania Bhetki", "diet": "nonveg", "kind": "food" },
+      { "name": "Dal Makhani", "diet": "veg", "kind": "food" },
+      { "name": "Gulab Jamun", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "k-c-das": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 1,
+    "cuisines": ["mishti", "dessert", "street_food"],
+    "vibes": ["heritage", "quick_bite"],
+    "menuSources": ["kcdasonline.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Rossogolla", "Rossomalai", "Abar Khabo"],
+      "nonveg": [],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Rossogolla", "diet": "veg", "kind": "dessert", "price": 25 },
+      { "name": "Rossomalai", "diet": "veg", "kind": "dessert", "price": 46 },
+      { "name": "Abar Khabo", "diet": "veg", "kind": "dessert", "price": 37 },
+      { "name": "Nolen Gurer Jalbhora", "diet": "veg", "kind": "dessert", "price": 47 },
+      { "name": "Aam Bhora Sondesh", "diet": "veg", "kind": "dessert", "price": 40 },
+      { "name": "Kalakand", "diet": "veg", "kind": "dessert", "price": 29 },
+      { "name": "Singara", "diet": "veg", "kind": "food" },
+      { "name": "Kachori", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "level-seven-gastropub-and-rooftop-lounge": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "north_indian", "italian", "chinese"],
+    "vibes": ["rooftop", "bar", "aesthetic"],
+    "menuSources": ["magicpin.in", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Classic Pizza Margherita", "Paneer Tikka"],
+      "nonveg": ["Classic Chicken Tikka"],
+      "drinks": ["Cosmopolitan"]
+    },
+    "menu": [
+      { "name": "Classic Chicken Tikka", "diet": "nonveg", "kind": "food" },
+      { "name": "Classic Pizza Margherita", "diet": "veg", "kind": "food" },
+      { "name": "Paneer Tikka", "diet": "veg", "kind": "food" },
+      { "name": "Dal Makhani", "diet": "veg", "kind": "food" },
+      { "name": "Nachos", "diet": "veg", "kind": "food" },
+      { "name": "Cosmopolitan", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "loafer-s-cafe-raajkutir-swabhumi": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "bakery", "continental", "italian"],
+    "vibes": ["aesthetic", "heritage", "adda"],
+    "menuSources": ["seleqtionshotels.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Broccoli Leek Quiche", "Red Velvet Cheese Pastry"],
+      "nonveg": ["Portuguese Non-Veg Pan Rolls", "Buttermilk Chicken Bites"],
+      "drinks": ["Vietnamese Cinnamon-Honey Cold Brew", "Affogato"]
+    },
+    "menu": [
+      { "name": "Vietnamese Cinnamon-Honey Cold Brew", "diet": "veg", "kind": "drink" },
+      { "name": "Affogato", "diet": "veg", "kind": "drink" },
+      { "name": "Cortado", "diet": "veg", "kind": "drink" },
+      { "name": "Broccoli Leek Quiche", "diet": "veg", "kind": "food" },
+      { "name": "Tuna Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Portuguese Non-Veg Pan Rolls", "diet": "nonveg", "kind": "food" },
+      { "name": "Buttermilk Chicken Bites", "diet": "nonveg", "kind": "food" },
+      { "name": "Mediterranean Pitta Balloon", "diet": "veg", "kind": "food" },
+      { "name": "Red Velvet Cheese Pastry", "diet": "veg", "kind": "dessert" },
+      { "name": "Melting Moment Cookie", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "mugs-and-shots": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "italian", "chinese"],
+    "vibes": ["bar", "aesthetic", "adda"],
+    "menuSources": ["lbb.in", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Pasta Pesto Sauce", "Volcano Pizza", "Baileys Cheesecake Shooters"],
+      "nonveg": ["Prawn Cocktail", "American Roasted Pomfret"],
+      "drinks": ["The French Kiss", "Mango Rapture"]
+    },
+    "menu": [
+      { "name": "Prawn Cocktail", "diet": "nonveg", "kind": "food" },
+      { "name": "American Roasted Pomfret", "diet": "nonveg", "kind": "food" },
+      { "name": "Pasta Pesto Sauce", "diet": "veg", "kind": "food" },
+      { "name": "Volcano Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Italian Sizzler", "diet": "veg", "kind": "food" },
+      { "name": "Baileys Cheesecake Shooters", "diet": "veg", "kind": "dessert" },
+      { "name": "The French Kiss", "diet": "veg", "kind": "drink" },
+      { "name": "Mango Rapture", "diet": "veg", "kind": "drink" },
+      { "name": "Kiwi Strawberry Booster", "diet": "veg", "kind": "drink" },
+      { "name": "Country Lemonade", "diet": "veg", "kind": "drink" }
+    ]
+  }
+}

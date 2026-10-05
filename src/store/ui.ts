@@ -70,6 +70,7 @@ type UIState = {
   setMaxPrice: (n: number | null) => void;
   toggleOpenLate: () => void;
   toggleOpenNow: () => void;
+  togglePureVeg: () => void;
   setMinRating: (n: number | null) => void;
   reset: () => void;
 };
@@ -153,6 +154,7 @@ export const useUI = create<UIState>()(
       setMaxPrice: (maxPrice) => set((s) => ({ filters: { ...s.filters, maxPrice } })),
       toggleOpenLate: () => set((s) => ({ filters: { ...s.filters, openLate: !s.filters.openLate } })),
       toggleOpenNow: () => set((s) => ({ filters: { ...s.filters, openNow: !s.filters.openNow } })),
+      togglePureVeg: () => set((s) => ({ filters: { ...s.filters, pureVeg: !s.filters.pureVeg } })),
       setMinRating: (minRating) => set((s) => ({ filters: { ...s.filters, minRating } })),
       reset: () => set((s) => ({ filters: { ...defaultFilters, layers: s.filters.layers }, query: "" })),
     }),

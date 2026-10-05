@@ -83,6 +83,26 @@ export type Tips = z.infer<typeof tipsSchema>;
 export const hoursSchema = z.array(z.array(z.tuple([z.number(), z.number()])).nullable()).length(7);
 export type Hours = z.infer<typeof hoursSchema>;
 
+export const MENU_KINDS = ["food", "drink", "dessert"] as const;
+export type MenuKind = (typeof MENU_KINDS)[number];
+
+/** One dish or drink. `price` is rupees as last seen on a public listing, so treat it as a guide. */
+export const menuItemSchema = z.object({
+  name: z.string().min(2),
+  diet: z.enum(["veg", "nonveg"]),
+  kind: z.enum(MENU_KINDS),
+  price: z.number().int().positive().max(20000).optional(),
+});
+export type MenuItem = z.infer<typeof menuItemSchema>;
+
+/** Must-try picks, split so a vegetarian or a drinks-only visit each get a clear answer. */
+export const mustTrySchema = z.object({
+  veg: z.array(z.string()),
+  nonveg: z.array(z.string()),
+  drinks: z.array(z.string()),
+});
+export type MustTry = z.infer<typeof mustTrySchema>;
+
 export const placeSchema = z.object({
   id: z.string(),
   slug: z.string(),
@@ -126,6 +146,15 @@ export const placeSchema = z.object({
   photo: z.string().url().optional(),
   /** ISO date the snapshot (hours, rating, photo, closed flag) was taken. */
   snapshotAt: z.string().optional(),
+  /** Food only: a menu sample (not the full menu) with diet and, where seen, price. */
+  menu: z.array(menuItemSchema).optional(),
+  /** Hostnames the menu / status came from, e.g. "zomato.com". */
+  menuSources: z.array(z.string()).optional(),
+  mustTry: mustTrySchema.optional(),
+  /** Every item the place serves is vegetarian. */
+  pureVeg: z.boolean().optional(),
+  /** ISO date someone last confirmed this place is operating. */
+  checkedAt: z.string().optional(),
 });
 export type Place = z.infer<typeof placeSchema>;
 

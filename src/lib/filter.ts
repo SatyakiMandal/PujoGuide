@@ -25,6 +25,8 @@ export type FilterState = {
   minRating: number | null;
   /** Only places you saved / visited / have not visited yet. */
   personal: Personal | null;
+  /** Only 100% vegetarian places. */
+  pureVeg: boolean;
   /** Include places the web says have closed. */
   showClosed: boolean;
 };
@@ -42,6 +44,7 @@ export const defaultFilters: FilterState = {
   openNow: false,
   minRating: null,
   personal: null,
+  pureVeg: false,
   showClosed: false,
 };
 
@@ -60,6 +63,7 @@ function passesFacets(p: Place, f: FilterState, mine?: Mine, now?: Clock): boole
   if (f.openNow && now && p.hours && !openAt(p, now.weekday, now.minute).open) return false;
   if (f.minRating !== null && p.rating !== undefined && p.rating < f.minRating) return false;
   if (!isFood(p.category)) return true;
+  if (f.pureVeg && !p.pureVeg) return false;
   if (!anyOf(f.cuisines, p.cuisines)) return false;
   if (!anyOf(f.vibes, p.vibes)) return false;
   // Diet and price are often unknown for places from the user's lists; unknown never hides a place.
@@ -96,4 +100,5 @@ export const activeFacetCount = (f: FilterState) =>
   (f.openNow ? 1 : 0) +
   (f.minRating !== null ? 1 : 0) +
   (f.personal ? 1 : 0) +
+  (f.pureVeg ? 1 : 0) +
   (f.showClosed ? 1 : 0);

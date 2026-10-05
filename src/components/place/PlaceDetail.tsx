@@ -28,6 +28,7 @@ import { isFood, type Crowd, type Place } from "@/lib/schema";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
 import { HoursCard } from "./HoursCard";
+import { MenuCard } from "./MenuCard";
 
 /** Pins at "area" confidence aren't the real spot, so route by name rather than by coordinates. */
 const directionsUrl = (p: Place) => {
@@ -154,6 +155,8 @@ export function PlaceDetail({ place: p }: { place: Place }) {
       {p.blurb && <p className="leading-relaxed">{p.blurb}</p>}
 
       <HoursCard place={p} />
+
+      <MenuCard place={p} />
 
       {tipRows.length > 0 && (
         <section className="space-y-3 rounded-2xl border border-line bg-surface p-4">

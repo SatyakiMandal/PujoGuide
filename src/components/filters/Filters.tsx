@@ -58,7 +58,7 @@ export function FilterToggle({ open, onToggle }: { open: boolean; onToggle: () =
 
 export function FilterGroups({ open }: { open: boolean }) {
   const filters = useUI((s) => s.filters);
-  const { toggle, setMaxPrice, toggleOpenLate, toggleOpenNow, setMinRating, setPersonal, toggleClosed } = useUI.getState();
+  const { toggle, setMaxPrice, toggleOpenLate, toggleOpenNow, togglePureVeg, setMinRating, setPersonal, toggleClosed } = useUI.getState();
   const hasFood = filters.layers.some((l) => FOOD_CATEGORIES.includes(l));
 
   return (
@@ -142,6 +142,9 @@ export function FilterGroups({ open }: { open: boolean }) {
                         {DIET_LABEL[d]}
                       </Chip>
                     ))}
+                    <Chip active={filters.pureVeg} onClick={togglePureVeg}>
+                      100% Pure Veg
+                    </Chip>
                     {[1, 2, 3].map((p) => (
                       <Chip key={p} active={filters.maxPrice === p} onClick={() => setMaxPrice(filters.maxPrice === p ? null : p)}>
                         up to {PRICE(p)}
