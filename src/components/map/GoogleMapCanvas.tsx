@@ -69,18 +69,20 @@ function Markers() {
     <>
       {rendered.map((p) => {
         const state = p.slug === selected ? "selected" : !filtersActive ? "default" : matched.has(p.id) ? "match" : "dim";
+        const stops = useUI.getState().route.stops;
+        const n = stops.indexOf(p.slug);
         return (
           <AdvancedMarker
             key={p.id}
             position={p}
-            zIndex={state === "selected" ? 500 : state === "match" ? 100 : 1}
+            zIndex={state === "selected" ? 500 : n >= 0 ? 300 : state === "match" ? 100 : 1}
             onClick={() => useUI.getState().select(p.slug)}
             ref={(m) => {
               if (m) refs.current[p.id] = m;
               else delete refs.current[p.id];
             }}
           >
-            <PlacePin place={p} state={state} />
+            <PlacePin place={p} state={state} stop={n >= 0 ? n + 1 : undefined} />
           </AdvancedMarker>
         );
       })}
