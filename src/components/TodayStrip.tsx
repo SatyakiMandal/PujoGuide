@@ -75,13 +75,16 @@ export function TodayStrip() {
 
   const wet = forecast !== null && forecast.rain >= 50;
   return (
-    <div className="flex items-center justify-between gap-3 rounded-xl bg-surface2 px-3 py-2 text-xs">
-      <button type="button" onClick={() => setTab("plan")} className="flex min-w-0 items-center gap-1.5 text-left font-medium">
-        <Confetti size={16} weight="duotone" className="shrink-0 text-accent" />
+    <div className="relative overflow-hidden flex items-center justify-between gap-3 rounded-2xl border border-line bg-surface p-3 text-xs shadow-sm">
+      <div className="absolute -right-2 -top-4 -bottom-4 w-36 opacity-30 pointer-events-none overflow-hidden">
+        <img src="/assets/dhunuchi-shiuli-hero.png" alt="" className="h-full w-full object-cover object-center" />
+      </div>
+      <button type="button" onClick={() => setTab("plan")} className="relative z-10 flex min-w-0 items-center gap-2 text-left font-medium">
+        <Confetti size={18} weight="duotone" className="shrink-0 text-accent" />
         <span className="truncate">{festivalLine(today, kolkataNow().minute)}</span>
       </button>
       {forecast && (
-        <span className="flex shrink-0 items-center gap-1 text-muted" title="Next six hours, Kolkata">
+        <span className="relative z-10 flex shrink-0 items-center gap-1.5 rounded-full bg-surface2/90 backdrop-blur-sm px-2.5 py-1 text-muted" title="Next six hours, Kolkata">
           {wet ? <CloudRain size={16} weight="duotone" className="text-primary" /> : <CloudSun size={16} weight="duotone" />}
           {forecast.temp}°{wet ? ` · rain ${forecast.rain}%` : ""}
         </span>

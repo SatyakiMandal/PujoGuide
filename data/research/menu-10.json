@@ -134,5 +134,116 @@
       { "name": "Chinese Darsan", "diet": "veg", "kind": "dessert", "price": 289 },
       { "name": "Gulab Jamun", "diet": "veg", "kind": "dessert", "price": 229 }
     ]
+  },
+  "momo-i-am-salt-lake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["asian", "chinese"],
+    "vibes": ["family", "quick_bite", "aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "zomato.com"],
+    "mustTry": {
+      "veg": ["Bhutanese Pan Fried Datshi Momo", "Steamed Veg Momo"],
+      "nonveg": ["Pork Kothey Momo", "Hangover Spicy Momo", "Crispy Pork Belly"],
+      "drinks": ["Fresh Lime Soda"]
+    },
+    "menu": [
+      { "name": "Pork Kothey Momo", "diet": "nonveg", "kind": "food" },
+      { "name": "Bhutanese Pan Fried Datshi Momo", "diet": "veg", "kind": "food" },
+      { "name": "Jhol Momos", "diet": "nonveg", "kind": "food" },
+      { "name": "Tibetan Thukpa", "diet": "nonveg", "kind": "food" },
+      { "name": "Spicy Chicken Miso Ramen", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Bao", "diet": "nonveg", "kind": "food" },
+      { "name": "Crispy Pork Belly", "diet": "nonveg", "kind": "food" },
+      { "name": "Hangover Spicy Momo", "diet": "nonveg", "kind": "food" },
+      { "name": "Steamed Veg Momo", "diet": "veg", "kind": "food" },
+      { "name": "Lhasa Noodles", "diet": "veg", "kind": "food" },
+      { "name": "Fresh Lime Soda", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "momo-i-am-sector-v": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["asian", "chinese"],
+    "vibes": ["family", "quick_bite", "aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Ninja Fries", "Crispy Fried Babycorn"],
+      "nonveg": ["Hoisin Momos", "Korean Fried Chicken Wings", "Fish Bao"],
+      "drinks": ["Virgin Mojito"]
+    },
+    "menu": [
+      { "name": "Hoisin Momos", "diet": "nonveg", "kind": "food" },
+      { "name": "Korean Fried Chicken Wings", "diet": "nonveg", "kind": "food" },
+      { "name": "Ninja Fries", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Bao", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Bao", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Thukpa", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Shyapta", "diet": "nonveg", "kind": "food" },
+      { "name": "Crispy Fried Babycorn", "diet": "veg", "kind": "food" },
+      { "name": "Salt & Pepper Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Szechwan Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Teriyaki Maki", "diet": "nonveg", "kind": "food" },
+      { "name": "Virgin Mojito", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "motorworks-and-brewing-company": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["bbq", "continental", "north_indian", "asian"],
+    "vibes": ["bar", "aesthetic"],
+    "menuSources": ["magicpin.in"],
+    "mustTry": {
+      "veg": ["Peshawari Paneer Tikka Nanza Pizza", "Vegetable and Cheese Momos"],
+      "nonveg": ["Chicken and Cheese Momos", "Bunny Chow"],
+      "drinks": ["Watermelon Craft Beer", "Green Chilli Craft Beer"]
+    },
+    "menu": [
+      { "name": "Vegetable and Cheese Momos", "diet": "veg", "kind": "food", "price": 295 },
+      { "name": "Chicken and Cheese Momos", "diet": "nonveg", "kind": "food", "price": 345 },
+      { "name": "Dal Beyzaa Nanza Pizza", "diet": "veg", "kind": "food", "price": 345 },
+      { "name": "Peshawari Paneer Tikka Nanza Pizza", "diet": "veg", "kind": "food", "price": 395 },
+      { "name": "The Alpine Classic Margherita Pizza", "diet": "veg", "kind": "food", "price": 395 },
+      { "name": "Bunny Chow", "diet": "nonveg", "kind": "food" },
+      { "name": "Toolkit Platter", "diet": "nonveg", "kind": "food" },
+      { "name": "Watermelon Craft Beer", "diet": "veg", "kind": "drink" },
+      { "name": "Mango Craft Beer", "diet": "veg", "kind": "drink" },
+      { "name": "Green Chilli Craft Beer", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "mutton-golbari": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "new-labong-cafe-and-steakhouse": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "chinese", "coffee"],
+    "vibes": ["aesthetic", "family", "quick_bite"],
+    "menuSources": ["swiggy.com"],
+    "mustTry": {
+      "veg": ["Cream Of Spinach And Mushroom", "Choco Inferno"],
+      "nonveg": ["Chicken Steak And Quinoa Tabbouleh", "Chicken Russian Cutlets", "Chicken, Spinach And Cheese Lavash"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chicken, Spinach And Cheese Lavash", "diet": "nonveg", "kind": "food", "price": 209 },
+      { "name": "Chicken Russian Cutlets", "diet": "nonveg", "kind": "food", "price": 329 },
+      { "name": "Chicken Steak And Quinoa Tabbouleh", "diet": "nonveg", "kind": "food", "price": 439 },
+      { "name": "Tangra Style Chilli Chicken", "diet": "nonveg", "kind": "food", "price": 359 },
+      { "name": "Cream Of Spinach And Mushroom", "diet": "veg", "kind": "food", "price": 259 },
+      { "name": "Veg Hot And Sour Soup", "diet": "veg", "kind": "food", "price": 229 },
+      { "name": "Veg Sweet Corn Soup", "diet": "veg", "kind": "food", "price": 229 },
+      { "name": "Chicken Chelo Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Choco Inferno", "diet": "veg", "kind": "dessert" },
+      { "name": "Cheesecake", "diet": "veg", "kind": "dessert" }
+    ]
   }
 }

@@ -1,0 +1,235 @@
+{
+  "6-ballygunge-place": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali"],
+    "vibes": ["heritage", "family"],
+    "menuSources": ["swiggy.com", "6ballygungeplace.in"],
+    "mustTry": {
+      "veg": ["Mochar Chop", "Chhanar Dalna"],
+      "nonveg": ["Dab Chingri", "Kosha Mangsho", "Bhetki Paturi"],
+      "drinks": ["Gondhoraj Ghol"]
+    },
+    "menu": [
+      { "name": "Dab Chingri", "diet": "nonveg", "kind": "food", "price": 550 },
+      { "name": "Bhetki Paturi", "diet": "nonveg", "kind": "food", "price": 720 },
+      { "name": "Chingri Malai Curry", "diet": "nonveg", "kind": "food", "price": 775 },
+      { "name": "Kosha Mangsho", "diet": "nonveg", "kind": "food" },
+      { "name": "Mochar Chop", "diet": "veg", "kind": "food" },
+      { "name": "Dimer Devil", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Chhanar Dalna", "diet": "veg", "kind": "food" },
+      { "name": "Basanti Pulao", "diet": "veg", "kind": "food" },
+      { "name": "Loochi", "diet": "veg", "kind": "food" },
+      { "name": "Gondhoraj Ghol", "diet": "veg", "kind": "drink" },
+      { "name": "Baked Mihidana", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "8th-day-caf-and-bakery": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "bakery", "continental"],
+    "vibes": ["adda", "aesthetic"],
+    "menuSources": ["swiggy.com", "zomato.com"],
+    "mustTry": {
+      "veg": ["Signature Cinnamon Roll", "American Grilled Cheese Sandwich"],
+      "nonveg": ["Shredded Pesto Chicken Sandwich", "Build Your Own Breakfast Egg Sandwich"],
+      "drinks": ["First Love Cold Brew", "Iced Latte"]
+    },
+    "menu": [
+      { "name": "Signature Cinnamon Roll", "diet": "veg", "kind": "dessert", "price": 150 },
+      { "name": "American Grilled Cheese Sandwich", "diet": "veg", "kind": "food", "price": 299 },
+      { "name": "First Love Cold Brew", "diet": "veg", "kind": "drink", "price": 269 },
+      { "name": "Iced Latte", "diet": "veg", "kind": "drink", "price": 259 },
+      { "name": "Falafel Bagel Sandwich", "diet": "veg", "kind": "food" },
+      { "name": "Banana Bread", "diet": "veg", "kind": "dessert" },
+      { "name": "Shredded Pesto Chicken Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Build Your Own Breakfast Egg Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Vanilla Lavender Latte", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "aajisai-japanese-restaurant": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["asian"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["eazydiner.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Wasabi Ice Cream", "Japanese Cheesecake"],
+      "nonveg": ["Spicy Salmon Roll", "Chicken Teppanyaki", "Katsu Curry"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Spicy Salmon Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Tuna Nigiri", "diet": "nonveg", "kind": "food" },
+      { "name": "California Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Teppanyaki", "diet": "nonveg", "kind": "food" },
+      { "name": "Katsu Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Seafood Ramen", "diet": "nonveg", "kind": "food" },
+      { "name": "Pork Donburi", "diet": "nonveg", "kind": "food" },
+      { "name": "Japanese Cheesecake", "diet": "veg", "kind": "dessert" },
+      { "name": "Wasabi Ice Cream", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "babu-culture": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali", "north_indian"],
+    "vibes": ["family", "heritage"],
+    "menuSources": ["babuculture.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Chhanar Dalna", "Basanti Pulao"],
+      "nonveg": ["Bhetki Paturi", "Mutton Kosha", "Daab Chingri"],
+      "drinks": ["Aam Pora Shorbot"]
+    },
+    "menu": [
+      { "name": "Bhetki Paturi", "diet": "nonveg", "kind": "food" },
+      { "name": "Bhetki Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Kosha", "diet": "nonveg", "kind": "food" },
+      { "name": "Daab Chingri", "diet": "nonveg", "kind": "food" },
+      { "name": "Murgir Potli Bhapa Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Basanti Pulao", "diet": "veg", "kind": "food" },
+      { "name": "Luchi", "diet": "veg", "kind": "food" },
+      { "name": "Chhanar Dalna", "diet": "veg", "kind": "food" },
+      { "name": "Aam Pora Shorbot", "diet": "veg", "kind": "drink" },
+      { "name": "Baked Rosogolla", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "bedouin-roll-centre": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 1,
+    "cuisines": ["street_food", "rolls"],
+    "vibes": ["quick_bite", "adda"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Paneer Roll"],
+      "nonveg": ["Chicken Roll", "Egg Chicken Roll", "Mutton Roll"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chicken Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Egg Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Egg Chicken Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Tikia Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Begum Bahar Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Seekh Kebab Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Roll", "diet": "veg", "kind": "food" },
+      { "name": "Veg Roll", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "bhojohori-manna-ballygunge": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali"],
+    "vibes": ["family", "heritage"],
+    "menuSources": ["swiggy.com", "bhojohorimanna.com"],
+    "mustTry": {
+      "veg": ["Mochar Ghonto", "Chhanar Dalna"],
+      "nonveg": ["Mutton Dakbunglow", "Bhetki Paturi", "Daab Chingri"],
+      "drinks": ["Gondhoraj Ghol"]
+    },
+    "menu": [
+      { "name": "Mutton Dakbunglow", "diet": "nonveg", "kind": "food", "price": 699 },
+      { "name": "Bhetki Paturi", "diet": "nonveg", "kind": "food" },
+      { "name": "Chingri Malaikari", "diet": "nonveg", "kind": "food" },
+      { "name": "Daab Chingri", "diet": "nonveg", "kind": "food" },
+      { "name": "Kosha Mangsho", "diet": "nonveg", "kind": "food" },
+      { "name": "Chhanar Dalna", "diet": "veg", "kind": "food" },
+      { "name": "Mochar Ghonto", "diet": "veg", "kind": "food" },
+      { "name": "Shukto", "diet": "veg", "kind": "food" },
+      { "name": "Basanti Pulao", "diet": "veg", "kind": "food" },
+      { "name": "Gondhoraj Ghol", "diet": "veg", "kind": "drink" },
+      { "name": "Nolen Gurer Ice Cream", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "bianco": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "bijoli-grill": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["bengali"],
+    "vibes": ["heritage", "family"],
+    "menuSources": ["swiggy.com", "bijoligrill.com"],
+    "mustTry": {
+      "veg": ["Dhokar Dalna", "Mochar Chop"],
+      "nonveg": ["Fish Fry", "Fish Roll", "Bhetki Paturi"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Fish Fry", "diet": "nonveg", "kind": "food", "price": 300 },
+      { "name": "Fish Roll", "diet": "nonveg", "kind": "food", "price": 250 },
+      { "name": "Bhetki Paturi", "diet": "nonveg", "kind": "food" },
+      { "name": "Daab Chingri", "diet": "nonveg", "kind": "food" },
+      { "name": "Kosha Mangsho", "diet": "nonveg", "kind": "food" },
+      { "name": "Dhokar Dalna", "diet": "veg", "kind": "food" },
+      { "name": "Chhanar Kofta", "diet": "veg", "kind": "food" },
+      { "name": "Mochar Chop", "diet": "veg", "kind": "food" },
+      { "name": "Basanti Pulao", "diet": "veg", "kind": "food" },
+      { "name": "Baked Rosogolla", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "bonne-femme": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "bakery", "asian"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Spaghetti Aglio E Olio with Truffle Oil", "Hazelnut Dubai Kunafa with Nolen Gur"],
+      "nonveg": ["Chicken Baked Rosogolla", "Crab Kulcha", "Raw Mango Fish Tikka"],
+      "drinks": ["Daab Cold Brew"]
+    },
+    "menu": [
+      { "name": "Chicken Baked Rosogolla", "diet": "nonveg", "kind": "food", "price": 510 },
+      { "name": "Crab Kulcha", "diet": "nonveg", "kind": "food", "price": 280 },
+      { "name": "Spaghetti Aglio E Olio with Truffle Oil", "diet": "veg", "kind": "food" },
+      { "name": "Raw Mango Fish Tikka", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Thai Green Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Daab Cold Brew", "diet": "veg", "kind": "drink" },
+      { "name": "Hazelnut Dubai Kunafa with Nolen Gur", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "bunaphile-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "bakery", "continental"],
+    "vibes": ["heritage", "aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "district.in"],
+    "mustTry": {
+      "veg": ["Veg Aglio Olio", "Blueberry Cheesecake"],
+      "nonveg": ["Mutton Sandwich", "Eggs Benedict"],
+      "drinks": ["Cappuccino", "Cold Coffee"]
+    },
+    "menu": [
+      { "name": "Mutton Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Eggs Benedict", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Penne Alfredo", "diet": "nonveg", "kind": "food" },
+      { "name": "Veg Aglio Olio", "diet": "veg", "kind": "food" },
+      { "name": "Blueberry Cheesecake", "diet": "veg", "kind": "dessert" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" },
+      { "name": "Cafe Latte", "diet": "veg", "kind": "drink" },
+      { "name": "Cold Coffee", "diet": "veg", "kind": "drink" }
+    ]
+  }
+}

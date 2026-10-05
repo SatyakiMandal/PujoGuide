@@ -102,5 +102,126 @@
       { "name": "Baklava Latte", "diet": "veg", "kind": "drink" },
       { "name": "Apple Ginger Mojito", "diet": "veg", "kind": "drink" }
     ]
+  },
+  "pronto-gourmet-food": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "italian", "dessert"],
+    "vibes": ["quick_bite", "adda"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Cheesy Fries", "Red Pesto Pizza"],
+      "nonveg": ["Mutton Cheese Burger", "The Hustler"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Mutton Cheese Burger", "diet": "nonveg", "kind": "food", "price": 240 },
+      { "name": "Cheesy Fries", "diet": "veg", "kind": "food", "price": 315 },
+      { "name": "The Hustler", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Hendurance", "diet": "nonveg", "kind": "food" },
+      { "name": "Red Pesto Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Salted Caramel Tres Leches", "diet": "veg", "kind": "dessert" },
+      { "name": "Tiramisu", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "raa-bistro": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "coffee", "asian"],
+    "vibes": ["aesthetic", "quick_bite"],
+    "menuSources": ["swiggy.com"],
+    "mustTry": {
+      "veg": ["Korean Garlic Buns", "Gunchy Gnocchi", "Cottage Cheese & Avo Rice Bowl"],
+      "nonveg": ["Polo Dita", "Katsu Chicken Curry", "Herb-Grilled Chicken"],
+      "drinks": ["Aeropress Coffee"]
+    },
+    "menu": [
+      { "name": "Polo Dita", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Chicken Rice Bowl", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Fish Rice Bowl", "diet": "nonveg", "kind": "food" },
+      { "name": "Cottage Cheese & Avo Rice Bowl", "diet": "veg", "kind": "food" },
+      { "name": "Katsu Chicken Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Herb-Grilled Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Gunchy Gnocchi", "diet": "veg", "kind": "food" },
+      { "name": "Korean Garlic Buns", "diet": "veg", "kind": "food" },
+      { "name": "Carrot & Orange Cake", "diet": "veg", "kind": "dessert" },
+      { "name": "Sinful Chocolate Cake", "diet": "veg", "kind": "dessert" },
+      { "name": "Aeropress Coffee", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "restaurant-at-amar-khamar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali"],
+    "vibes": ["heritage", "family", "aesthetic"],
+    "menuSources": ["amar-khamar.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Chhuti-r Bhat", "Dumur Phol Chorchori"],
+      "nonveg": ["Mutton Chui Jhal"],
+      "drinks": ["Aampora Shorbot", "Mouri Lebu-r Soda"]
+    },
+    "menu": [
+      { "name": "Chhuti-r Bhat", "diet": "veg", "kind": "food" },
+      { "name": "Mutton Chui Jhal", "diet": "nonveg", "kind": "food" },
+      { "name": "Aampora Shorbot", "diet": "veg", "kind": "drink" },
+      { "name": "Mouri Lebu-r Soda", "diet": "veg", "kind": "drink" },
+      { "name": "Chhana Muri Bhaja Kheer", "diet": "veg", "kind": "dessert" },
+      { "name": "Badshahbhog Chal-er Payes", "diet": "veg", "kind": "dessert" },
+      { "name": "Dumur Phol Chorchori", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "riyasat-e-hind": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["mughlai", "biryani", "north_indian"],
+    "vibes": ["family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Dal Makhani", "Butter Naan"],
+      "nonveg": ["Mutton Biryani", "Tunde Galawati Kebab", "Murg Malai Kebab"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Mutton Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Dal Makhani", "diet": "veg", "kind": "food" },
+      { "name": "Tunde Galawati Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Murg Malai Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Butter Naan", "diet": "veg", "kind": "food" },
+      { "name": "Jeera Rice", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "sienna": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali", "continental", "coffee", "dessert"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["siennastore.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Pomodoro, Basil & Parmesan", "Sienna Fries & Tartar", "Flourless Chocolate Cake with Whipped Ricotta"],
+      "nonveg": ["Bhetki à la Kiev", "Sienna Reuben Sandwich", "Battered Bhetki"],
+      "drinks": ["Gondhoraj & Sweet Lime Lemonade", "Gur Latte"]
+    },
+    "menu": [
+      { "name": "Bhetki à la Kiev", "diet": "nonveg", "kind": "food" },
+      { "name": "Sienna Reuben Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Battered Bhetki", "diet": "nonveg", "kind": "food" },
+      { "name": "Sienna Fries & Tartar", "diet": "veg", "kind": "food" },
+      { "name": "Pomodoro, Basil & Parmesan", "diet": "veg", "kind": "food" },
+      { "name": "Gondhoraj & Sweet Lime Lemonade", "diet": "veg", "kind": "drink" },
+      { "name": "Gur Latte", "diet": "veg", "kind": "drink" },
+      { "name": "Sticky Date & Walnut Crumble Cake", "diet": "veg", "kind": "dessert" },
+      { "name": "Flourless Chocolate Cake with Whipped Ricotta", "diet": "veg", "kind": "dessert" },
+      { "name": "Carrot & Cream-Cheese Cake", "diet": "veg", "kind": "dessert" }
+    ]
   }
 }

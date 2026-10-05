@@ -104,5 +104,126 @@
   "my-big-fat-belly": {
     "closed": true,
     "checkedAt": "2026-10-06"
+  },
+  "oh-calcutta": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali"],
+    "vibes": ["family", "heritage"],
+    "menuSources": ["swiggy.com", "justdial.com", "magicpin.in"],
+    "menu": [
+      {"name": "Kosha Mangsho", "diet": "nonveg", "kind": "food", "price": 785},
+      {"name": "Chingri Malai Curry", "diet": "nonveg", "kind": "food", "price": 745},
+      {"name": "Daab Chingri", "diet": "nonveg", "kind": "food", "price": 665},
+      {"name": "Bhetki Paturi", "diet": "nonveg", "kind": "food", "price": 545},
+      {"name": "Jhinge Aloo Posto", "diet": "veg", "kind": "food", "price": 395},
+      {"name": "Mochar Ghonto", "diet": "veg", "kind": "food", "price": 395},
+      {"name": "Chhanar Kalia", "diet": "veg", "kind": "food", "price": 375},
+      {"name": "Luchi (4 Pcs)", "diet": "veg", "kind": "food", "price": 165},
+      {"name": "Gondhoraj Ghol", "diet": "veg", "kind": "drink"},
+      {"name": "Aam Pora Shorbot", "diet": "veg", "kind": "drink"},
+      {"name": "Chhanar Malpua", "diet": "veg", "kind": "dessert", "price": 285}
+    ],
+    "mustTry": {
+      "veg": ["Mochar Ghonto", "Chhanar Kalia", "Jhinge Aloo Posto"],
+      "nonveg": ["Kosha Mangsho", "Chingri Malai Curry", "Bhetki Paturi"],
+      "drinks": ["Gondhoraj Ghol", "Aam Pora Shorbot"]
+    }
+  },
+  "perimas": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["south_indian"],
+    "vibes": ["family", "aesthetic"],
+    "menuSources": ["swiggy.com", "indulgexpress.com"],
+    "menu": [
+      {"name": "Millet Mini Ghee Idlis", "diet": "veg", "kind": "food"},
+      {"name": "Uttapam Tacos", "diet": "veg", "kind": "food"},
+      {"name": "Crisp Urulai Fry", "diet": "veg", "kind": "food"},
+      {"name": "Podi Masala Prawns", "diet": "nonveg", "kind": "food"},
+      {"name": "Mutton Pepper Fry", "diet": "nonveg", "kind": "food"},
+      {"name": "Chicken Gassi", "diet": "nonveg", "kind": "food"},
+      {"name": "Malabar Parotta", "diet": "veg", "kind": "food"},
+      {"name": "Banana Doffle", "diet": "veg", "kind": "dessert"},
+      {"name": "Filter Coffee Panna Cotta", "diet": "veg", "kind": "dessert"},
+      {"name": "Filter Coffee", "diet": "veg", "kind": "drink"}
+    ],
+    "mustTry": {
+      "veg": ["Millet Mini Ghee Idlis", "Uttapam Tacos", "Crisp Urulai Fry"],
+      "nonveg": ["Podi Masala Prawns", "Mutton Pepper Fry", "Chicken Gassi"],
+      "drinks": ["Filter Coffee"]
+    }
+  },
+  "piccadilly-square": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 3,
+    "cuisines": ["italian", "dessert", "coffee"],
+    "vibes": ["aesthetic", "family", "adda"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "menu": [
+      {"name": "Celestial Chocolate", "diet": "veg", "kind": "dessert"},
+      {"name": "Mushroom Crepe", "diet": "veg", "kind": "food"},
+      {"name": "Belgian Waffle", "diet": "veg", "kind": "dessert"},
+      {"name": "Classic Margherita Pizza", "diet": "veg", "kind": "food"},
+      {"name": "Pesto Panini", "diet": "veg", "kind": "food"},
+      {"name": "Artisanal Gelato", "diet": "veg", "kind": "dessert"},
+      {"name": "Espresso Frappuccino", "diet": "veg", "kind": "drink"}
+    ],
+    "mustTry": {
+      "veg": ["Celestial Chocolate", "Mushroom Crepe", "Belgian Waffle"],
+      "nonveg": [],
+      "drinks": ["Espresso Frappuccino"]
+    }
+  },
+  "romaania": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["italian", "continental"],
+    "vibes": ["rooftop", "aesthetic"],
+    "menuSources": ["swiggy.com", "district.in"],
+    "menu": [
+      {"name": "Romania Margherita Pizza", "diet": "veg", "kind": "food"},
+      {"name": "Verdure Pizza", "diet": "veg", "kind": "food"},
+      {"name": "Spaghetti Aglio Olio", "diet": "veg", "kind": "food"},
+      {"name": "Spinach and Ricotta Ravioli", "diet": "veg", "kind": "food"},
+      {"name": "Cannelloni Di Polo", "diet": "nonveg", "kind": "food"},
+      {"name": "Fish & Chips", "diet": "nonveg", "kind": "food"},
+      {"name": "Mango & Burrata Salad", "diet": "veg", "kind": "food"},
+      {"name": "Tiramisu", "diet": "veg", "kind": "dessert"}
+    ],
+    "mustTry": {
+      "veg": ["Romania Margherita Pizza", "Spinach and Ricotta Ravioli", "Tiramisu"],
+      "nonveg": ["Cannelloni Di Polo", "Fish & Chips"],
+      "drinks": []
+    }
+  },
+  "roots-chowringhee": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "asian", "north_indian"],
+    "vibes": ["rooftop", "bar", "late_night"],
+    "menuSources": ["eazydiner.com", "swiggy.com"],
+    "menu": [
+      {"name": "Mushroom and Cream Cheese Dim Sum", "diet": "veg", "kind": "food"},
+      {"name": "Kebab Tarts", "diet": "nonveg", "kind": "food"},
+      {"name": "Classic Margherita Pizza", "diet": "veg", "kind": "food"},
+      {"name": "Grilled Chicken Platter", "diet": "nonveg", "kind": "food"},
+      {"name": "Signature Cocktails", "diet": "veg", "kind": "drink"}
+    ],
+    "mustTry": {
+      "veg": ["Mushroom and Cream Cheese Dim Sum", "Classic Margherita Pizza"],
+      "nonveg": ["Kebab Tarts", "Grilled Chicken Platter"],
+      "drinks": ["Signature Cocktails"]
+    }
   }
 }

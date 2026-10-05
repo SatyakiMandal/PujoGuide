@@ -1,0 +1,213 @@
+{
+  "deck-88": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["north_indian", "asian", "continental"],
+    "vibes": ["rooftop", "bar", "late_night"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Sambal Spiced Cottage Cheese Skewers", "Turkish Borek", "Malai Broccoli"],
+      "nonveg": ["Buffalo Prawns", "Grilled Kolkata Bhetki", "Roast Chili Pork"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Sambal Spiced Cottage Cheese Skewers", "diet": "veg", "kind": "food", "price": 425 },
+      { "name": "Mushroom Salt and Pepper", "diet": "veg", "kind": "food", "price": 425 },
+      { "name": "Turkish Borek", "diet": "veg", "kind": "food", "price": 425 },
+      { "name": "Malai Broccoli", "diet": "veg", "kind": "food", "price": 425 },
+      { "name": "Cheesy Pesto Green Peas Cake", "diet": "veg", "kind": "food", "price": 375 },
+      { "name": "Beetroot Falafel", "diet": "veg", "kind": "food", "price": 395 },
+      { "name": "Crispy Chili Baby Corn", "diet": "veg", "kind": "food", "price": 345 },
+      { "name": "Paneer Butter Masala Potli", "diet": "veg", "kind": "food", "price": 325 },
+      { "name": "Truffle Fries", "diet": "veg", "kind": "food", "price": 375 },
+      { "name": "Buffalo Prawns", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Kolkata Bhetki", "diet": "nonveg", "kind": "food" },
+      { "name": "Roast Chili Pork", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "fabbrica-park-street": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["italian"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Margherita Con Bufala", "Quattro Formaggi Pizza"],
+      "nonveg": ["Pollo Picante Pizza"],
+      "drinks": ["Tiramisu Shake"]
+    },
+    "menu": [
+      { "name": "Margherita Con Bufala", "diet": "veg", "kind": "food", "price": 585 },
+      { "name": "Quattro Formaggi Pizza", "diet": "veg", "kind": "food", "price": 750 },
+      { "name": "Pollo Picante Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Spaghetti Con Pollo", "diet": "nonveg", "kind": "food" },
+      { "name": "Rigatoni Al Arrabbiata", "diet": "veg", "kind": "food" },
+      { "name": "Burrata Bruschetta", "diet": "veg", "kind": "food" },
+      { "name": "Crespelle Con Nutella", "diet": "veg", "kind": "dessert", "price": 370 },
+      { "name": "Tiramisu Shake", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "farzi-cafe-kolkata": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["north_indian", "asian"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Dal Chawal Arancini", "Farzified Pao Bhaji", "Cheese Truffle Kulcha"],
+      "nonveg": ["Tempura Fried Prawns", "Nagarjun Chilli Chicken"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Dal Chawal Arancini", "diet": "veg", "kind": "food" },
+      { "name": "Farzified Pao Bhaji", "diet": "veg", "kind": "food" },
+      { "name": "Tempura Fried Prawns", "diet": "nonveg", "kind": "food" },
+      { "name": "Pulled Kathal Gyoza", "diet": "veg", "kind": "food" },
+      { "name": "Nagarjun Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Tangra Chilli Momo", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Polichathu", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Tikka Masala", "diet": "nonveg", "kind": "food" },
+      { "name": "Cheese Truffle Kulcha", "diet": "veg", "kind": "food" },
+      { "name": "Lotus Root Kofta", "diet": "veg", "kind": "food" },
+      { "name": "Parle G Cheesecake", "diet": "veg", "kind": "dessert", "price": 495 }
+    ]
+  },
+  "glenburn-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["coffee", "continental"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "justdial.com"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Fish and Chips", "Crispy Bang Bang Chicken"],
+      "drinks": ["Glenburn Darjeeling Tea", "Tiramisu Iced Coffee"]
+    },
+    "menu": [
+      { "name": "Crispy Bang Bang Chicken", "diet": "nonveg", "kind": "food", "price": 390 },
+      { "name": "Fish and Chips", "diet": "nonveg", "kind": "food", "price": 600 },
+      { "name": "Glenburn Darjeeling Tea", "diet": "veg", "kind": "drink", "price": 470 },
+      { "name": "Tiramisu Iced Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Chocolate Truffle Cake", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "hard-rock-cafe": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "kwality-park-street": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "mughlai"],
+    "vibes": ["heritage", "family"],
+    "menuSources": ["swiggy.com", "justdial.com"],
+    "mustTry": {
+      "veg": ["Pindi Chana Masala"],
+      "nonveg": ["Chicken Bharta", "Fish Orly", "Prawn Cocktail"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Pindi Chana Masala", "diet": "veg", "kind": "food" },
+      { "name": "Tandoori Prawns", "diet": "nonveg", "kind": "food", "price": 540 },
+      { "name": "Chicken Reshmi Kabab", "diet": "nonveg", "kind": "food", "price": 370 },
+      { "name": "Prawn Cocktail", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Bharta", "diet": "nonveg", "kind": "food" },
+      { "name": "Gold Coin", "diet": "veg", "kind": "food" },
+      { "name": "Fish Malai Kabab", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Cutlet", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Butter Masala", "diet": "veg", "kind": "food" },
+      { "name": "Fish Orly", "diet": "nonveg", "kind": "food" },
+      { "name": "Caramel Custard", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "lille-dessert-bar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["dessert", "bakery", "coffee"],
+    "vibes": ["aesthetic", "quick_bite"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Tiramisu Tart", "Vanilla & Berry Entremet", "Hazelnut Financier"],
+      "nonveg": [],
+      "drinks": ["Classic Cold Coffee"]
+    },
+    "menu": [
+      { "name": "Tiramisu Tart", "diet": "veg", "kind": "dessert", "price": 280 },
+      { "name": "Vanilla & Berry Entremet", "diet": "veg", "kind": "dessert", "price": 390 },
+      { "name": "Hazelnut Financier", "diet": "veg", "kind": "dessert", "price": 155 },
+      { "name": "Vanilla Choux", "diet": "veg", "kind": "dessert", "price": 110 },
+      { "name": "Ispahan Rose Entremet", "diet": "veg", "kind": "dessert" },
+      { "name": "Tiramisu Maritozzi", "diet": "veg", "kind": "dessert" },
+      { "name": "Choco Caramel Crunch", "diet": "veg", "kind": "dessert" },
+      { "name": "Classic Cold Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Iced Americano", "diet": "veg", "kind": "drink" },
+      { "name": "Latte", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "lmnoq-skybar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "asian"],
+    "vibes": ["rooftop", "bar", "late_night"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Whistling Paneer", "Americano Jhalmuri"],
+      "nonveg": ["Drunken Fish", "Kerala Mutton Pepper Fry"],
+      "drinks": ["Amshotto Delight", "Rainbow Lady"]
+    },
+    "menu": [
+      { "name": "Drunken Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Whistling Paneer", "diet": "veg", "kind": "food" },
+      { "name": "Americano Jhalmuri", "diet": "veg", "kind": "food" },
+      { "name": "Bewadi Murghi", "diet": "nonveg", "kind": "food" },
+      { "name": "Kerala Mutton Pepper Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Indo Mex Seekh", "diet": "nonveg", "kind": "food" },
+      { "name": "Amshotto Delight", "diet": "veg", "kind": "drink" },
+      { "name": "Rainbow Lady", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "mabrooks-cafe": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "makati-kolkata": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["asian", "continental"],
+    "vibes": ["bar", "late_night"],
+    "openLate": true,
+    "menuSources": ["magicpin.in", "justdial.com"],
+    "mustTry": {
+      "veg": ["Avocado Maki Sushi", "Truffle Edamame Dim Sum"],
+      "nonveg": ["California Roll Sushi"],
+      "drinks": ["Signature Cocktail"]
+    },
+    "menu": [
+      { "name": "California Roll Sushi", "diet": "nonveg", "kind": "food" },
+      { "name": "Avocado Maki Sushi", "diet": "veg", "kind": "food" },
+      { "name": "Truffle Edamame Dim Sum", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Dim Sum", "diet": "nonveg", "kind": "food" },
+      { "name": "Margherita Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Pepperoni Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Signature Cocktail", "diet": "veg", "kind": "drink" }
+    ]
+  }
+}
