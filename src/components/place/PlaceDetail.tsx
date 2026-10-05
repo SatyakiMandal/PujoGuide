@@ -256,34 +256,37 @@ export function PlaceDetail({ place: p }: { place: Place }) {
       </p>
 
       <div className="space-y-2 pt-1">
-        <button
+        <motion.button
           type="button"
+          whileTap={{ scale: 0.96 }}
           onClick={() => (inRoute ? useUI.getState().removeStop(p.slug) : useUI.getState().addStop(p.slug))}
           className={
             inRoute
-              ? "inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border-2 border-primary px-5 font-semibold text-primary transition-transform active:scale-95"
-              : "inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 font-semibold text-primary-fg transition-transform active:scale-95"
+              ? "inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border-2 border-primary px-5 font-semibold text-primary transition-colors"
+              : "inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 font-semibold text-primary-fg transition-colors"
           }
         >
           {inRoute ? <Check size={20} weight="bold" /> : <Plus size={20} weight="bold" />}
           {inRoute ? `In your route (stop ${stopNo}). Tap to remove` : "Add to route"}
-        </button>
+        </motion.button>
         <div className="flex gap-2">
-          <a
+          <motion.a
             href={directionsUrl(p)}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-transform active:scale-95"
+            whileTap={{ scale: 0.96 }}
+            className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-colors"
           >
             <NavigationArrow size={18} weight="fill" /> Directions
-          </a>
-          <button
+          </motion.a>
+          <motion.button
             type="button"
             onClick={share}
-            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-transform active:scale-95"
+            whileTap={{ scale: 0.96 }}
+            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-colors"
           >
             <ShareNetwork size={18} weight="bold" /> {shared ? "Link copied" : "Share"}
-          </button>
+          </motion.button>
         </div>
       </div>
 
@@ -309,18 +312,19 @@ const Tag = ({ children }: { children: React.ReactNode }) => (
 
 function Toggle({ on, label, onClick, icon }: { on: boolean; label: string; onClick: () => void; icon: React.ReactNode }) {
   return (
-    <button
+    <motion.button
       type="button"
+      whileTap={{ scale: 0.88 }}
       aria-label={label}
       aria-pressed={on}
       title={label}
       onClick={onClick}
       className={clsx(
-        "grid size-10 place-items-center rounded-full border transition-all active:scale-90",
+        "grid size-10 place-items-center rounded-full border transition-colors",
         on ? "border-transparent bg-primary text-primary-fg" : "border-line bg-surface text-fg hover:bg-surface2",
       )}
     >
       {icon}
-    </button>
+    </motion.button>
   );
 }

@@ -22,16 +22,16 @@ export function PlaceList({ list }: { list: Place[] }) {
   return (
     <ul className="space-y-1.5">
       <AnimatePresence initial={false}>
-        {list.map((p) => {
+        {list.map((p, index) => {
           const meta = CATEGORY_META[p.category];
           return (
             <motion.li
               key={p.id}
               layout="position"
-              initial={{ opacity: 0, y: 6 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.22, delay: Math.min(index * 0.02, 0.2) }}
             >
               <div className="group flex items-center rounded-2xl border border-line/60 bg-surface p-1 transition-all hover:border-line hover:bg-surface2">
                 <button
@@ -80,16 +80,17 @@ export function PlaceList({ list }: { list: Place[] }) {
 function AddButton({ slug, name }: { slug: string; name: string }) {
   const inRoute = useUI((s) => s.route.stops.includes(slug));
   return (
-    <button
+    <motion.button
       type="button"
+      whileTap={{ scale: 0.88 }}
       aria-label={inRoute ? `Remove ${name} from route` : `Add ${name} to route`}
       aria-pressed={inRoute}
       onClick={() => (inRoute ? useUI.getState().removeStop(slug) : useUI.getState().addStop(slug))}
-      className={`mr-1.5 grid size-10 shrink-0 place-items-center rounded-full border transition-all active:scale-90 ${
+      className={`mr-1.5 grid size-10 shrink-0 place-items-center rounded-full border transition-colors ${
         inRoute ? "border-transparent bg-primary text-primary-fg" : "border-line bg-surface text-fg hover:bg-surface2"
       }`}
     >
       {inRoute ? <Check size={18} weight="bold" /> : <Plus size={18} weight="bold" />}
-    </button>
+    </motion.button>
   );
 }

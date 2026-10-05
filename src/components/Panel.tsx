@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
 import { FilterGroups, FilterToggle } from "@/components/filters/Filters";
@@ -66,36 +66,46 @@ export function Panel() {
 
         <TodayStrip />
 
-        <div role="tablist" className="grid grid-cols-2 rounded-full border border-line bg-surface p-0.5">
+        <div role="tablist" className="grid grid-cols-2 rounded-full border border-line bg-surface p-0.5 relative">
           {(
             [
               { id: "explore", label: "Explore", icon: MapTrifold },
               { id: "plan", label: "Plan", icon: Path },
             ] as const
-          ).map(({ id, label, icon: TabIcon }) => (
-            <button
-              key={id}
-              type="button"
-              role="tab"
-              aria-selected={tab === id}
-              onClick={() => {
-                setTab(id);
-                useUI.getState().select(null);
-              }}
-              className={clsx(
-                "flex min-h-10 items-center justify-center gap-2 rounded-full text-sm font-semibold transition-colors",
-                tab === id ? "bg-fg text-bg" : "text-muted hover:text-fg",
-              )}
-            >
-              <TabIcon size={18} weight={tab === id ? "fill" : "duotone"} />
-              {label}
-              {id === "plan" && stopCount > 0 && (
-                <span className="grid min-w-5 place-items-center rounded-full bg-primary px-1 text-xs text-primary-fg">
-                  {stopCount}
-                </span>
-              )}
-            </button>
-          ))}
+          ).map(({ id, label, icon: TabIcon }) => {
+            const active = tab === id;
+            return (
+              <button
+                key={id}
+                type="button"
+                role="tab"
+                aria-selected={active}
+                onClick={() => {
+                  setTab(id);
+                  useUI.getState().select(null);
+                }}
+                className={clsx(
+                  "relative flex min-h-10 items-center justify-center gap-2 rounded-full text-sm font-semibold transition-colors z-10",
+                  active ? "text-bg" : "text-muted hover:text-fg",
+                )}
+              >
+                {active && (
+                  <motion.span
+                    layoutId="activeTabPill"
+                    className="absolute inset-0 rounded-full bg-fg -z-10 shadow-xs"
+                    transition={{ type: "spring", stiffness: 450, damping: 35 }}
+                  />
+                )}
+                <TabIcon size={18} weight={active ? "fill" : "duotone"} />
+                {label}
+                {id === "plan" && stopCount > 0 && (
+                  <span className={clsx("grid min-w-5 place-items-center rounded-full px-1 text-xs transition-colors", active ? "bg-bg text-fg font-bold" : "bg-primary text-primary-fg")}>
+                    {stopCount}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
 
         {tab === "explore" && (

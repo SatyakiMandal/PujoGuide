@@ -42,7 +42,7 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
         </p>
       </div>
 
-      <div role="tablist" className="grid grid-cols-4 rounded-full border border-line bg-surface p-0.5">
+      <div role="tablist" className="relative grid grid-cols-4 rounded-full border border-line bg-surface p-0.5">
         {(
           [
             ["auto", "Auto", MagicWand],
@@ -50,24 +50,34 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
             ["interest", "Interest", Sparkle],
             ["day", "Day", CalendarBlank],
           ] as const
-        ).map(([id, label, TabIcon]) => (
-          <button
-            key={id}
-            type="button"
-            role="tab"
-            aria-selected={view === id}
-            onClick={() => {
-              setView(id);
-              setTag(null);
-            }}
-            className={clsx(
-              "flex min-h-9 items-center justify-center gap-1.5 rounded-full text-sm font-semibold transition-colors",
-              view === id ? "bg-fg text-bg" : "text-muted hover:text-fg",
-            )}
-          >
-            <TabIcon size={16} weight={view === id ? "fill" : "duotone"} /> {label}
-          </button>
-        ))}
+        ).map(([id, label, TabIcon]) => {
+          const active = view === id;
+          return (
+            <button
+              key={id}
+              type="button"
+              role="tab"
+              aria-selected={active}
+              onClick={() => {
+                setView(id);
+                setTag(null);
+              }}
+              className={clsx(
+                "relative flex min-h-9 items-center justify-center gap-1.5 rounded-full text-sm font-semibold transition-colors z-10",
+                active ? "text-bg" : "text-muted hover:text-fg",
+              )}
+            >
+              {active && (
+                <motion.span
+                  layoutId="catalogTabPill"
+                  className="absolute inset-0 rounded-full bg-fg -z-10 shadow-xs"
+                  transition={{ type: "spring", stiffness: 450, damping: 35 }}
+                />
+              )}
+              <TabIcon size={16} weight={active ? "fill" : "duotone"} /> {label}
+            </button>
+          );
+        })}
       </div>
 
       {view !== "day" && view !== "auto" && (
