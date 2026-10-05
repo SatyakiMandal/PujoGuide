@@ -1,0 +1,109 @@
+{
+  "farzi-cafe-kolkata": {
+    "info": "researched", "cuisines": ["north_indian", "asian"], "vibes": ["bar", "late_night", "aesthetic"],
+    "tags": ["date", "foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "A modern Indian bistro at 13 Ho Chi Minh Sarani that applies molecular gastronomy to comfort food.",
+    "dishes": ["Kung Pao fish", "Mirchi wali paneer"],
+    "tips": {
+      "expect": "A lively, chic room with upbeat music. About ₹1,500 for two without alcohol and ₹2,000 with.",
+      "good": "The playful, modern take on North Indian dishes.",
+      "watch": "It is popular and loud on weekends.",
+      "tip": "Part of the Ho Chi Minh Sarani strip with Wafira, Cove and Mehico."
+    }
+  },
+  "the-blue-poppy-thakali": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["heritage", "family", "quick_bite"],
+    "tags": ["foodie", "quiet"], "priceLevel": 2,
+    "blurb": "A Sikkimese and Nepali restaurant at Sikkim Commercial House, 4/1 Middleton Street, helmed by Doma Wang, known as the 'Momo Queen' of India.",
+    "dishes": ["Open-top momos with sesame achaar", "Thakali thali on a bell-metal plate", "Choila (smoked meat salad)", "Kinema (fermented soya beans)"],
+    "tips": {
+      "expect": "Floor seating on cushions behind a wooden jaali, or regular tables. Open 12 to 5 pm and 6:30 to 10:30 pm daily.",
+      "good": "The thali and the open momos, which are unusual in Kolkata.",
+      "watch": "Closed on the last Saturday of the month.",
+      "tip": "A good lunch before an evening on Park Street."
+    }
+  },
+  "8th-day-caf-and-bakery": {
+    "info": "researched", "cuisines": ["coffee", "bakery"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["quiet", "date"], "priceLevel": 2,
+    "blurb": "A cafe and bakery at Arcadia on AJC Bose Road, open about 9 am to 9 pm daily, with hand-crafted espresso drinks and an all-day breakfast.",
+    "dishes": ["Falafel bagel wrap", "Chicken broccoli quiche", "Huevos rancheros bagel", "Cinnamon rolls", "Salted caramel cupcakes"],
+    "tips": {
+      "expect": "A relaxed cafe and bakery with a strong breakfast menu.",
+      "good": "Fresh bakes and coffee.",
+      "watch": "It closes at 9 pm, so it is a daytime or early-evening stop.",
+      "tip": "A calm coffee stop on the way to Park Street."
+    }
+  },
+  "mugs-and-shots": {
+    "info": "researched", "cuisines": ["north_indian", "chinese", "continental"], "vibes": ["bar", "adda", "late_night"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 2,
+    "blurb": "A small bar-cafe at 5A Sudder Street, seating about 35 to 40, serving beer, shots and bar bites.",
+    "dishes": ["Prawn cocktail", "American roasted pomfret", "Baileys cheesecake shooters"],
+    "tips": {
+      "expect": "A casual hangout with hookah and drinks. About ₹1,200 for two.",
+      "tip": "Next door to Raj's Spanish Cafe and Burger You."
+    }
+  },
+  "wasabee": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["family", "quick_bite"],
+    "tags": ["foodie"], "priceLevel": 2,
+    "blurb": "A casual Japanese, Thai and Asian restaurant at 175/A Motilal Nehru Road, about 550 m from Kalighat metro. Rated about 4.2.",
+    "dishes": ["Sushi", "Japanese, Chinese and Korean dishes"],
+    "tips": {
+      "expect": "A cheerful, informal place, open about 11 am to 11 pm daily.",
+      "good": "A big sushi menu at a relaxed price.",
+      "tip": "Convenient for the Kalighat pandal circuit."
+    }
+  },
+  "aajisai-japanese-restaurant": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["aesthetic", "family"],
+    "tags": ["foodie", "date"], "priceLevel": 3,
+    "blurb": "A Japanese restaurant at Quest Mall, Ballygunge, with an automated sushi conveyor belt and a live teppanyaki counter.",
+    "dishes": ["Maki, temaki and nigiri sushi", "Teppanyaki (veg and non-veg)"],
+    "tips": {
+      "expect": "An upscale, interactive Japanese meal. About ₹2,000 for two, reported open 12 to 9:30 pm.",
+      "good": "The conveyor belt and the live teppanyaki.",
+      "watch": "Mall hours and an early close, so it is not a late-night option.",
+      "tip": "Combine with The Irish House in the same mall for a drink afterwards."
+    }
+  },
+  "the-burger-factory": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["quick_bite"],
+    "tags": ["foodie"], "priceLevel": 2,
+    "blurb": "A burger cafe on Park Street, opposite Mocambo, about ₹800 for two.",
+    "dishes": ["Chicken panko burger", "Veg tandoori aloo burger", "Hot dogs"],
+    "tips": {
+      "expect": "A wide burger and hot-dog menu in a casual space.",
+      "tip": "A quick bite on a Park Street crawl."
+    }
+  },
+  "burgrill-park-street": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["quick_bite"],
+    "tags": ["foodie"], "priceLevel": 2,
+    "blurb": "A burger place opposite the Oxford Bookstore on Park Street, in the former Giggles location.",
+    "dishes": ["Butter chicken burger", "Smash lamb burger", "Magic Shroom burger", "Curly fries"],
+    "tips": {
+      "expect": "Burgers, wraps and loaded fries.",
+      "tip": "A fast, filling stop on Park Street."
+    }
+  },
+  "steamin-mugs": {
+    "info": "researched", "cuisines": ["chinese", "north_indian", "continental", "coffee"], "vibes": ["quick_bite", "family"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "A budget cafe at Gariahat Road South, Jodhpur Park, about ₹600 for two, known for mocktails.",
+    "tips": {
+      "expect": "A casual group spot with outdoor seating, open about 11 am to 10:30 pm.",
+      "tip": "A cheap meal after the Jadavpur pandals."
+    }
+  },
+  "the-tavern-cafe": {
+    "info": "researched", "cuisines": ["continental", "coffee"], "vibes": ["aesthetic", "adda"],
+    "tags": ["date", "quiet"], "priceLevel": 2,
+    "blurb": "A popular Jodhpur Park cafe on Prince Anwar Shah Road with a rating of about 4.4 from over 700 reviews.",
+    "tips": {
+      "expect": "A cosy, well-reviewed cafe.",
+      "tip": "A good coffee stop near South City Mall."
+    }
+  }
+}

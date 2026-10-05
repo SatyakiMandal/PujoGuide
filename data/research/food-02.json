@@ -1,0 +1,127 @@
+{
+  "sienna": {
+    "info": "researched", "cuisines": ["bengali", "continental"], "vibes": ["aesthetic", "family"],
+    "tags": ["date", "photogenic", "foodie"], "priceLevel": 2,
+    "blurb": "Sienna Store & Cafe on Hindustan Park, which grew from a home kitchen into a two-storey Bengali-leaning cafe and store.",
+    "tips": {
+      "expect": "An artsy, photogenic space with different sections at different price points: a casual cafe, a main dining room and a pricier upscale section. Reported hours are about 11:30 am to 10 pm.",
+      "good": "Bengali food presented for a modern palate, and the store is nice to browse.",
+      "watch": "Costs range from roughly ₹500 (cafe) to ₹3,000 (upscale section) for two, so ask which section you're sitting in.",
+      "tip": "It is steps from the Hindustan Park pandal, so book or go early on busy evenings."
+    }
+  },
+  "marbella-s-elgin": {
+    "info": "researched", "cuisines": ["continental", "coffee", "dessert"], "vibes": ["aesthetic"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "Marbella's at 1-3 Woodburn Park Road, Sreepally, a pink-hued, Instagram-friendly cafe.",
+    "tips": {
+      "expect": "A stylish cafe with a photogenic menu and decor. About ₹800 to ₹900 for two.",
+      "good": "Cakes, coffee and aesthetic plates, in a pleasant setting off Elgin Road.",
+      "watch": "Marbella's has outlets at Elgin and at Hindustan Park, so make sure you choose the right one.",
+      "tip": "Close to the Bhowanipore Mallick Bari and Elgin Road cafes."
+    }
+  },
+  "marbella-s-gariahat": {
+    "info": "researched", "cuisines": ["continental", "coffee", "dessert"], "vibes": ["aesthetic"],
+    "tags": ["date", "photogenic"], "priceLevel": 2,
+    "blurb": "Marbella's Hindustan Park / Golpark outlet, the cafe's busier Gariahat branch.",
+    "tips": {
+      "expect": "A pink-hued, photogenic cafe. About ₹800 to ₹900 for two.",
+      "good": "Sweet treats and coffee, a few steps from Hindustan Park and Sienna.",
+      "watch": "It is very busy on weekend evenings, especially during Puja.",
+      "tip": "A good break between Hindustan Park, Maddox Square and Singhi Park."
+    }
+  },
+  "the-elgin-fairlawn-kolkata-heritage-hotel-since-1783": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["heritage", "family"],
+    "tags": ["heritage", "quiet", "date"],
+    "blurb": "A colonial bungalow built in 1783 on Sudder Street, a hotel since 1936 and long a favourite of writers, musicians and actors.",
+    "tips": {
+      "expect": "A heritage hotel with antique furnishings. Your note on this one says to try the hot chocolate.",
+      "good": "The old-world setting, in the middle of New Market and Sudder Street.",
+      "watch": "I couldn't confirm cafe timings or whether non-guests can drop in, so call ahead.",
+      "tip": "Pair it with the Sudder Street cafes next door and a walk to New Market."
+    }
+  },
+  "craft-coffee-experience-centre-salt-lake": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "The Salt Lake FD Block branch of Craft Coffee Experience Centre, a coffee-focused cafe in Sector 3.",
+    "tips": {
+      "expect": "A coffee-led cafe with food. Listings put it at roughly ₹1,000 to ₹1,500 for two.",
+      "good": "Right by the FD Block pandal, so an easy way to rest and refuel during a Salt Lake hop.",
+      "watch": "Salt Lake gets traffic-heavy at night, so plan the cab back.",
+      "tip": "Pair with FD Block and Salt Lake's neighbouring blocks."
+    }
+  },
+  "craft-coffee-experience-centre-ballygunge": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "Craft Coffee Experience Centre at 26 Ballygunge Park Road, with a high rating among regulars.",
+    "tips": {
+      "expect": "A coffee-led cafe with a full menu. About ₹800 to ₹1,500 for two depending on the listing.",
+      "good": "A good stop on the Ballygunge Cultural and Singhi Park walk.",
+      "watch": "Seating is limited on busy evenings.",
+      "tip": "Combine with Ballygunge Cultural Association and Maddox Square."
+    }
+  },
+  "cobo-calcutta": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["bar", "rooftop", "late_night"],
+    "tags": ["date", "photogenic"], "openLate": true, "priceLevel": 3,
+    "blurb": "An Asian skybar and brewery on Robinson Street, in the Aauris hotel, spread over 6,000 sq ft.",
+    "dishes": ["In-house craft beers", "Cocktails with an Asian twist", "Experimental fusion Asian food"],
+    "tips": {
+      "expect": "A big, lively bar with three zones: a glasshouse, a semi-outdoor area and open air.",
+      "good": "The craft beers brewed in-house and the open-air section for a view over Park Street.",
+      "watch": "Roughly ₹2,000 for two. Puja nights will be packed.",
+      "tip": "Go for a late drink after the Park Street area pandals."
+    }
+  },
+  "burger-you": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["quick_bite", "adda"],
+    "tags": ["foodie"], "priceLevel": 1,
+    "blurb": "A low-key burger spot at 7 Sudder Street. Mark Biswas started it in a garage in 2014 and it grew by word of mouth.",
+    "dishes": ["Texan burger (beef patty, onion rings)"],
+    "tips": {
+      "expect": "Indulgent burgers in a laid-back, backyard-barbecue mood, tucked away next to Raj's Spanish Cafe.",
+      "good": "The burgers themselves. This is a cult favourite rather than a big restaurant.",
+      "watch": "It is small and easy to walk past, so look for it next to Raj's.",
+      "tip": "A cheap, fast bite when you are near New Market or Park Street."
+    }
+  },
+  "raj-s-spanish-cafe": {
+    "info": "researched", "cuisines": ["continental", "italian", "coffee"], "vibes": ["quick_bite", "heritage", "adda"],
+    "tags": ["foodie", "date"], "priceLevel": 1,
+    "blurb": "A small cafe on Sudder Street with indoor and outdoor seating, serving Spanish dishes and wood-fired pizzas.",
+    "dishes": ["Gazpacho", "Croquetas", "Huevos rotos", "Wood-fired pizza"],
+    "tips": {
+      "expect": "A tiny, characterful cafe. Reported hours are 8 am to 10 pm.",
+      "good": "Authentic-style Spanish plates, a rare find in Kolkata, at friendly prices.",
+      "watch": "It is small and tables are limited at peak times.",
+      "tip": "Sit outside on Sudder Street and watch the backpacker world go by."
+    }
+  },
+  "miss-ginko": {
+    "info": "researched", "cuisines": ["asian", "chinese"], "vibes": ["late_night", "bar"],
+    "tags": ["date"], "priceLevel": 3,
+    "blurb": "A pan-Asian restaurant on the third floor of City Mart, 169 Rash Behari Avenue.",
+    "dishes": ["Dim sum and dumplings", "Sushi", "Gai Hor Bai Toey (pandan-wrapped Thai chicken)"],
+    "tips": {
+      "expect": "A big pan-Asian menu with vegetarian and non-vegetarian options, plus a dance floor and DJ.",
+      "good": "The dim sum, sushi and Thai steamed chicken. About ₹1,500 for two.",
+      "watch": "It is on an upper floor of a mall building and can be loud on weekends.",
+      "tip": "Handy right on the Kalighat and Ballygunge pandal route."
+    }
+  },
+  "yours-truly-coffee-roaster": {
+    "info": "researched", "cuisines": ["coffee", "italian"], "vibes": ["aesthetic", "family"],
+    "tags": ["date", "quiet"], "priceLevel": 2,
+    "blurb": "A specialty coffee roaster at 1 Ray Street, Sreepally, Bhowanipore, with a very high rating.",
+    "tips": {
+      "expect": "A relaxed roastery cafe with Italian-leaning food. About ₹1,200 for two.",
+      "good": "Roasted-in-house coffee, reservations, valet parking and a pet-friendly policy.",
+      "watch": "It is on the Bhowanipore side, away from the Gariahat cluster.",
+      "tip": "A good pairing with the Mallick Bari and Elgin Road cafes."
+    }
+  }
+}

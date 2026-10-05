@@ -1,0 +1,173 @@
+{
+  "mitra-cafe": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["heritage", "adda", "quick_bite"],
+    "tags": ["heritage", "foodie"], "priceLevel": 1,
+    "blurb": "A Shobhabazar cabin that has been serving since 1920, started by Sushil Roy with one cook and a helper and named for his friend Ganesh Mitra.",
+    "dishes": ["Fish kabiraji", "Brain chops", "Gondhoraj lime chicken pakora", "Chocolate pudding"],
+    "tips": {
+      "expect": "A cabin-style eatery with a short menu of fries, cutlets and pudding, in the middle of North Kolkata.",
+      "good": "The fish kabiraji and the old-fashioned chocolate pudding.",
+      "watch": "It is small and gets very busy on Puja evenings.",
+      "tip": "A natural stop after the Shobhabazar Rajbaris and before Nobin Chandra Das."
+    }
+  },
+  "kolkata-rajbari": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["heritage", "family"],
+    "tags": ["foodie"], "priceLevel": 2,
+    "blurb": "A Bengali restaurant at 56 Jatin Das Road, Lake Terrace, open from about noon to 11 pm.",
+    "dishes": ["Mutton kosha"],
+    "tips": {
+      "expect": "A traditional Bengali menu in a Rajbari-style setting. About ₹1,200 for two.",
+      "good": "Mutton kosha is the most-mentioned dish.",
+      "watch": "Reviews are mixed (around 3.2 stars), so go for the classic dishes rather than experimenting.",
+      "tip": "Handy near the Lake Market cafes and Deshapriya Park."
+    }
+  },
+  "aaheli-esplanade": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["heritage", "family"],
+    "tags": ["heritage", "foodie", "family", "date"], "priceLevel": 3,
+    "blurb": "Aaheli at the Peerless Inn on Chowringhee, opened in 1993 as the city's first authentic Bengali restaurant in a hotel.",
+    "dishes": ["Aaheli thali", "Goalandapurer mangsho", "Rui macher patisapta", "Daab chingri", "Dhumrogondhi ilish"],
+    "tips": {
+      "expect": "A calm, elegant Bengali meal. Lunch is 12:30 to 3 pm and dinner 7:30 to 11 pm.",
+      "good": "The thali, and special-occasion dishes like the smoked hilsa.",
+      "watch": "Two fixed sittings, so you can't walk in at 4 pm.",
+      "tip": "Book for dinner on Ashtami or Navami. It is a minute from Esplanade metro."
+    }
+  },
+  "aaheli-lake-market": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["family"],
+    "tags": ["foodie", "family"], "priceLevel": 3,
+    "blurb": "Aaheli's Lake Market outlet on Sarat Bose Road, from the same Peerless Bengali restaurant brand.",
+    "tips": {
+      "expect": "The same Bengali menu style as the Esplanade original, including the Aaheli thali.",
+      "good": "A good sit-down Bengali meal near the Kalighat pandal circuit.",
+      "watch": "This is a different outlet from the Peerless Inn original, so check its timings separately.",
+      "tip": "Book ahead during Puja week."
+    }
+  },
+  "sonargaon": {
+    "info": "researched", "cuisines": ["north_indian", "bengali"], "vibes": ["heritage", "family"],
+    "tags": ["foodie", "family"], "priceLevel": 4,
+    "blurb": "The Indian restaurant of the Taj Bengal hotel. The menu leans Punjabi, with Bengali items and special Bengali thalis.",
+    "tips": {
+      "expect": "Hotel fine dining in an elegant room.",
+      "good": "The Bengali thalis it runs seasonally.",
+      "watch": "Expensive compared with the rest of this list.",
+      "tip": "Book ahead and check for Puja-special menus."
+    }
+  },
+  "kareem-s": {
+    "info": "researched", "cuisines": ["mughlai", "north_indian"], "vibes": ["family"],
+    "tags": ["foodie", "family"], "priceLevel": 2,
+    "blurb": "The Sector V outlet of the Mughlai name, in Srijan Corporate Park, open noon to 11 pm daily.",
+    "dishes": ["Bheja fry", "Tawa pulao"],
+    "tips": {
+      "expect": "A smart Mughlai and North Indian room in an office park.",
+      "good": "Bheja fry and tawa pulao come up most in reviews.",
+      "watch": "It is a modern mall-style outlet, not the old Zakaria Street original.",
+      "tip": "Convenient after the Salt Lake pandals."
+    }
+  },
+  "oudh-1590-saltlake": {
+    "info": "researched", "cuisines": ["mughlai", "biryani"], "vibes": ["family", "heritage"],
+    "tags": ["foodie", "family"], "priceLevel": 3,
+    "blurb": "A Nawabi-style dining room in Sector 1, Salt Lake, serving dum-cooked Awadhi and Mughlai dishes. The chain's first outlet opened in 2013 at Deshapriya Park.",
+    "tips": {
+      "expect": "Awadhi decor and slow-cooked dum food.",
+      "good": "Biryani and the dum dishes.",
+      "watch": "Book ahead for Puja weekends.",
+      "tip": "There are other Oudh outlets in the city if Salt Lake is full."
+    }
+  },
+  "trincas-restaurant-and-bar": {
+    "info": "researched", "cuisines": ["continental", "mughlai"], "vibes": ["heritage", "bar", "late_night", "family"],
+    "tags": ["heritage", "foodie", "date"], "openLate": true, "priceLevel": 3,
+    "blurb": "Opened in 1927 as a Swiss tearoom by Cinzio Trinca and his wife, and from 1959 a nightclub and live-music venue where Usha Uthup spent a decade.",
+    "dishes": ["Live music sessions through the day"],
+    "tips": {
+      "expect": "A Park Street legend where dining and live music go together, with several sessions a day.",
+      "good": "The music and the nostalgia. Jazz has a long history here.",
+      "watch": "Seats near the stage fill quickly in the evening.",
+      "tip": "It is directly opposite Flurys at 17 Park Street. A good pairing for breakfast, then dinner."
+    }
+  },
+  "pancham-er-adday": {
+    "info": "researched", "cuisines": ["coffee", "bengali"], "vibes": ["adda", "aesthetic", "quick_bite"],
+    "tags": ["quiet", "date"], "priceLevel": 1,
+    "blurb": "A nostalgic RD Burman-themed cafe at 62/3 Hindustan Park, with an affordable menu.",
+    "tips": {
+      "expect": "A tiny, themed adda cafe with R.D. Burman memorabilia.",
+      "good": "The theme and the low prices.",
+      "watch": "It is small, so it fills quickly.",
+      "tip": "Right by the Hindustan Park pandal, so an easy coffee stop."
+    }
+  },
+  "abar-baithak-the-coffee-shop": {
+    "info": "researched", "cuisines": ["coffee", "bengali"], "vibes": ["adda", "aesthetic"],
+    "tags": ["quiet", "date"], "priceLevel": 1,
+    "blurb": "Said to be the first cafe to open in Jodhpur Park. It has two floors, a Feluda theme, and sells books and quirky mugs, bags and cushions.",
+    "tips": {
+      "expect": "A bookish, themed cafe with Satyajit Ray's detective Feluda as the muse.",
+      "good": "The Feluda theme and the books on sale.",
+      "watch": "It is out in Jodhpur Park, on the Jadavpur side.",
+      "tip": "A calm break during the Jadavpur and Naktala pandals."
+    }
+  },
+  "bijoli-grill": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["heritage", "family"],
+    "tags": ["foodie", "heritage"],
+    "dishes": ["Bijoli Grill fish roll (bhetki and shrimp, crumbed and fried)"],
+    "tips": {
+      "expect": "A Bengali grill known for its fish dishes.",
+      "good": "The fish roll.",
+      "watch": "I found only limited information, and this pin shares a building with other restaurants on Southern Avenue.",
+      "tip": "Confirm hours before you go."
+    }
+  },
+  "arun-tea-stall": {
+    "info": "researched", "cuisines": ["street_food"], "vibes": ["adda", "quick_bite", "heritage"],
+    "tags": ["heritage", "foodie", "late-night"], "openLate": true, "priceLevel": 1,
+    "blurb": "A famous tea stall at 4/1 Sambhunath Pandit Street, near Goal Mandir, Elgin. It is known for saffron tea.",
+    "dishes": ["Kesar chai", "Club kachori with sabzi", "Samosas"],
+    "tips": {
+      "expect": "A busy corner stall, open about 7 am to 11:30 pm.",
+      "good": "The saffron chai with a crisp kachori or samosa.",
+      "watch": "Standing room only at peak times.",
+      "tip": "A cheap pause between Elgin Road and Bhowanipore stops."
+    }
+  },
+  "hard-rock-cafe": {
+    "info": "researched", "category": "restaurant", "cuisines": ["continental"], "vibes": ["bar", "late_night", "heritage"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "Hard Rock Cafe Kolkata, inside the 103-year-old Park Mansion at 57-A Park Street, with rock memorabilia on the walls.",
+    "dishes": ["Burgers and nachos", "Paneer shaslik", "Flatbreads"],
+    "tips": {
+      "expect": "A lively themed restaurant and bar in a heritage building.",
+      "good": "The memorabilia and the setting on Park Street.",
+      "watch": "Weekends and Puja nights are busy and loud.",
+      "tip": "Good for a big group that can't agree on food."
+    }
+  },
+  "the-gazeboo": {
+    "info": "researched", "cuisines": ["north_indian", "mughlai"], "vibes": ["family", "aesthetic"],
+    "tags": ["family"], "priceLevel": 2,
+    "blurb": "A Park Street area all-day diner with North Indian, Middle Eastern and Mughlai dishes.",
+    "tips": {
+      "expect": "A casual all-day restaurant. About ₹1,200 for two.",
+      "good": "Variety, which suits mixed groups.",
+      "watch": "Seating can be tight at peak hours.",
+      "tip": "A practical stop in the Park Street area."
+    }
+  },
+  "fabbrica-park-street": {
+    "info": "researched", "cuisines": ["italian"], "vibes": ["family", "aesthetic"],
+    "tags": ["foodie", "date"],
+    "tips": {
+      "expect": "An Italian restaurant and pizzeria at 18-A Park Street, ground floor.",
+      "good": "Pizza and pasta.",
+      "watch": "Park Street can be hard to get a table on Puja weekends.",
+      "tip": "Combine with Flurys and Trincas on the same stretch."
+    }
+  }
+}

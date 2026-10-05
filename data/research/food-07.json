@@ -1,0 +1,202 @@
+{
+  "boho-the-sky-caf": {
+    "info": "researched", "cuisines": ["continental", "north_indian", "italian"], "vibes": ["rooftop", "aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "The Garia outlet of Boho The Sky Cafe, a rooftop cafe with a bohemian look: wooden furniture, indoor greenery and an open sky.",
+    "dishes": ["Chicken sausage pizza", "Mediterranean platter", "Kolkata biryani"],
+    "tips": {
+      "expect": "A relaxed rooftop with fusion Indian and international food and live music. About ₹1,100 for two, noon to 10:30 pm.",
+      "good": "The open-sky seating, nicest around sunset.",
+      "watch": "It is out in Garia, near Kavi Nazrul metro, not near the main pandal circuits.",
+      "tip": "Only worth the trip if you are already on the Jadavpur and Garia side."
+    }
+  },
+  "boho-the-sky-cafe-madhyamgram": {
+    "info": "researched", "cuisines": ["continental", "north_indian", "italian"], "vibes": ["rooftop", "aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "The Madhyamgram outlet of the Boho The Sky Cafe rooftop chain.",
+    "tips": {
+      "expect": "Bohemian rooftop seating with a fusion menu. About ₹1,100 for two.",
+      "watch": "Far north on Jessore Road, away from the pandal circuits.",
+      "tip": "Not a Puja-route stop. Treat it as a separate outing."
+    }
+  },
+  "boho-the-ground-cafe": {
+    "info": "researched", "cuisines": ["continental", "coffee"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"],
+    "blurb": "The Dum Dum / Jessore Road outlet of the Boho cafe chain.",
+    "tips": {
+      "expect": "The chain's bohemian look with a fusion menu.",
+      "watch": "I found limited outlet-specific details.",
+      "tip": "Handy near Dum Dum Park and the far-north pandals."
+    }
+  },
+  "cafe-by-the-lane-shobhabazar": {
+    "info": "researched", "cuisines": ["continental", "coffee", "asian"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["quiet"],
+    "blurb": "The Shobhabazar outlet of Cafe By The Lane, a cafe chain with a mixed menu of momos, pastas and Thai curries.",
+    "tips": {
+      "expect": "A small cafe with a wide menu: momos in broth, mac and cheese, stroganoff and more.",
+      "watch": "I could not confirm details for this specific outlet.",
+      "tip": "A useful food stop beside the Shobhabazar Rajbaris."
+    }
+  },
+  "caf-by-the-lane-lake-market": {
+    "info": "researched", "cuisines": ["continental", "coffee", "asian"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["quiet"],
+    "blurb": "Cafe By The Lane at 7 Lake Terrace Road, off Southern Avenue.",
+    "tips": {
+      "expect": "A relaxed cafe with a mixed menu: momos, mac and cheese, pork platters, stroganoff and Thai curries.",
+      "good": "Variety, with both vegetarian and non-vegetarian options.",
+      "watch": "The Lake Market area is packed on weekend evenings.",
+      "tip": "A calm option when the bigger Lake Road cafes are full."
+    }
+  },
+  "cafe-by-the-lane-garia": {
+    "info": "researched", "cuisines": ["continental", "coffee", "asian"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["quiet"],
+    "blurb": "A Patuli-side outlet of Cafe By The Lane.",
+    "tips": {
+      "expect": "The same easy mixed menu as the other outlets.",
+      "watch": "I could not confirm details for this outlet.",
+      "tip": "On the Garia and Patuli side, away from the main circuits."
+    }
+  },
+  "absolute-barbecues-ruby-crossing": {
+    "info": "researched", "cuisines": ["bbq", "continental", "asian"], "vibes": ["family"],
+    "tags": ["family", "foodie"], "priceLevel": 2,
+    "blurb": "A live-grill buffet chain where you barbecue your own starters at the table.",
+    "tips": {
+      "expect": "A big buffet with an Indian, Oriental and European spread. Other Kolkata outlets are about ₹1,850 for two.",
+      "good": "Great for groups and families, and for hungry pandal-hoppers.",
+      "watch": "Buffets are heavy, so plan to eat here and then rest, not rush.",
+      "tip": "Book ahead on Saptami to Navami."
+    }
+  },
+  "absolute-barbecues-salt-lake": {
+    "info": "researched", "cuisines": ["bbq", "continental", "asian"], "vibes": ["family"],
+    "tags": ["family", "foodie"], "priceLevel": 2,
+    "blurb": "The Sector V outlet of the Absolute Barbecues live-grill buffet chain.",
+    "tips": {
+      "expect": "A live grill at your table and a wide buffet. About ₹1,850 for two.",
+      "good": "A good pre- or post-pandal group meal near Sector V.",
+      "watch": "It is popular on Puja weekends.",
+      "tip": "Reserve."
+    }
+  },
+  "absolute-barbecues-baguiati": {
+    "info": "researched", "cuisines": ["bbq", "continental", "asian"], "vibes": ["family"],
+    "tags": ["family", "foodie"], "priceLevel": 2,
+    "blurb": "The Baguiati outlet of the Absolute Barbecues buffet chain.",
+    "tips": {
+      "expect": "A live grill at your table. About ₹1,850 for two.",
+      "good": "Near the far-north pandals of Dum Dum and Lake Town.",
+      "tip": "Reserve on Puja days."
+    }
+  },
+  "loafer-s-cafe": {
+    "info": "researched", "cuisines": ["coffee", "continental"], "vibes": ["aesthetic", "family"],
+    "tags": ["quiet"], "priceLevel": 2,
+    "blurb": "A Salt Lake Sector 1 cafe with an easygoing menu, about ₹800 for two.",
+    "tips": {
+      "expect": "A relaxed all-day cafe.",
+      "good": "A pocket-friendly stop between Salt Lake blocks.",
+      "watch": "Other outlets in the chain have different prices.",
+      "tip": "Combine with the Sector 1 pandal plan."
+    }
+  },
+  "calcutta-bakery-cafe-saltlake": {
+    "info": "researched", "cuisines": ["bakery", "coffee", "italian", "continental"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A bakery cafe at BD 97, Sector 1, Salt Lake, open noon to 11 pm daily.",
+    "dishes": ["Chicken a la Kiev", "Hazelnut frappe", "Chicken steak sizzler", "Margherita pizza"],
+    "tips": {
+      "expect": "A cosy bakery cafe. About ₹1,200 for two, with a 15% loyalty discount on return visits.",
+      "good": "The bakery items and sizzlers.",
+      "watch": "Seats are limited at peak times.",
+      "tip": "A solid dinner stop after the Salt Lake pandals."
+    }
+  },
+  "calcutta-bakery-cafe-jadavpur": {
+    "info": "researched", "cuisines": ["bakery", "coffee", "italian", "continental"], "vibes": ["aesthetic", "family"],
+    "tags": ["quiet"], "priceLevel": 2,
+    "blurb": "The Ganguly Bagan outlet of Calcutta Bakery Cafe, praised for its bakery items and friendly service.",
+    "tips": {
+      "expect": "A quaint cafe with good bakery items and desserts.",
+      "good": "Food quality and staff are the usual praise.",
+      "watch": "It is on the south side of Jadavpur, so not close to the main pandals.",
+      "tip": "A calm place for dessert after the Jadavpur and Naktala pandals."
+    }
+  },
+  "cafe-mezzuna-jodhpur-park": {
+    "info": "researched", "cuisines": ["italian", "continental", "dessert"], "vibes": ["family", "aesthetic"],
+    "tags": ["family"], "priceLevel": 3,
+    "blurb": "Cafe Mezzuna at South City Mall: Italian, European and dessert menus.",
+    "tips": {
+      "expect": "A sit-down mall cafe, about ₹1,600 for two.",
+      "good": "Pasta, pizza and desserts for a mixed group.",
+      "watch": "Mall hours apply.",
+      "tip": "Convenient for the Jadavpur 8B and Suruchi Sangha pandals."
+    }
+  },
+  "cafe-mezzuna-elgin": {
+    "info": "researched", "cuisines": ["italian", "continental", "dessert"], "vibes": ["family", "aesthetic"],
+    "tags": ["family"], "priceLevel": 2,
+    "blurb": "The Forum Mall outlet on Elgin Road (listed as Siciliana by Mezzuna), about ₹1,200 for two.",
+    "tips": {
+      "expect": "An Italian and European menu in a mall setting.",
+      "watch": "Mall hours apply, and the name differs from the South City outlet.",
+      "tip": "Handy near the Bhowanipore Mallick Bari and Elgin Road."
+    }
+  },
+  "momo-i-am-sector-v": {
+    "info": "researched", "cuisines": ["chinese", "asian"], "vibes": ["quick_bite", "family"],
+    "tags": ["foodie"], "priceLevel": 1,
+    "blurb": "A popular momo restaurant at Sector 5, about ₹600 for two, with Chinese, Tibetan and pan-Asian dishes.",
+    "tips": {
+      "expect": "A casual restaurant with buffet, live music and sports screening. Rated about 4.6.",
+      "good": "Momos and Tibetan and pan-Asian dishes at low prices.",
+      "watch": "Busy on weekends.",
+      "tip": "A cheap, filling stop after the Salt Lake pandals."
+    }
+  },
+  "momo-i-am-salt-lake": {
+    "info": "researched", "cuisines": ["chinese", "asian"], "vibes": ["quick_bite", "family"],
+    "tags": ["foodie"], "priceLevel": 1,
+    "blurb": "The Sector 1 outlet of the Momo I Am momo restaurant.",
+    "tips": {
+      "expect": "Momos and pan-Asian dishes at low prices.",
+      "tip": "A quick bite in the Sector 1 block pandal area."
+    }
+  },
+  "the-10e-cafe-park-street": {
+    "info": "researched", "cuisines": ["coffee", "north_indian", "italian"], "vibes": ["quick_bite", "adda"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "A pocket-friendly cafe at 10E Hungerford Street, Elgin, with mocktails, shakes and snacks.",
+    "dishes": ["Mocktails and shakes", "Tandoori chicken", "White sauce pasta", "Brownie with ice cream"],
+    "tips": {
+      "expect": "A simple, cheap cafe with a long menu.",
+      "good": "Low prices near Park Street.",
+      "tip": "A budget break near Park Street and Elgin Road."
+    }
+  },
+  "caafe-360-degree-kankurgachi": {
+    "info": "researched", "cuisines": ["coffee", "chinese", "italian", "north_indian"], "vibes": ["family", "quick_bite"],
+    "tags": ["family"], "priceLevel": 1,
+    "blurb": "Caafe 360 Degree in Kankurgachi, a casual cafe with a wide menu, about ₹700 for two.",
+    "tips": {
+      "expect": "A relaxed cafe with fast food, Chinese, Italian and North Indian dishes, open 11 am to 11 pm.",
+      "good": "Cheap and easy for a group.",
+      "tip": "Handy for the Maniktala and Phoolbagan side."
+    }
+  },
+  "caafe-360-degree-salt-lake": {
+    "info": "researched", "cuisines": ["coffee", "chinese", "italian", "north_indian"], "vibes": ["family", "quick_bite"],
+    "tags": ["family"], "priceLevel": 1,
+    "blurb": "The Sector 3 outlet of Caafe 360 Degree, about ₹700 for two.",
+    "tips": {
+      "expect": "A casual cafe with a wide menu, open 11 am to 11 pm.",
+      "tip": "Close to FD Block and the Sector 3 pandals."
+    }
+  }
+}

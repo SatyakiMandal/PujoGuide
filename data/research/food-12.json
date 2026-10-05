@@ -1,0 +1,101 @@
+{
+  "evabrew-salt-lake": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "A small coffee bistro, ordering downstairs and seating upstairs, with mocha, Spanish coffee, house brew, espresso and cold brew. About ₹700 for two.",
+    "tips": {
+      "expect": "A tiny, cosy coffee spot open about 10 am to 10 pm.",
+      "watch": "Details are from the chain's listings, and there are separate outlets at Salt Lake and Lake Market.",
+      "tip": "A quick coffee stop between Sector 1 pandals."
+    }
+  },
+  "evabrew-lake-market": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "The Lake Market outlet of the Evabrew coffee bistro.",
+    "tips": {
+      "expect": "A small coffee spot with espresso, cold brew and house brew.",
+      "tip": "A good short coffee break on the Kalighat route."
+    }
+  },
+  "roasted-cart": {
+    "info": "researched", "category": "street_food", "cuisines": ["mughlai", "rolls"], "vibes": ["quick_bite", "late_night", "adda"],
+    "tags": ["foodie", "late-night"], "openLate": true, "priceLevel": 1,
+    "blurb": "A roadside kebab cart at Bosepukur, Kasba, with about 4.3 stars from over 1,800 reviews.",
+    "tips": {
+      "expect": "A busy street cart rather than a restaurant.",
+      "good": "The kebabs, which are the reason locals queue.",
+      "watch": "Reported closed on Tuesdays, and Navami is a Tuesday this year.",
+      "tip": "A natural stop with the Kasba and Bosepukur pandals."
+    }
+  },
+  "stumptown-cafe": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["quick_bite", "aesthetic"],
+    "tags": ["quiet"],
+    "blurb": "A sports-themed cafe in Sector V, with Criollo Cafe by Craft Coffee as a partner, serving strong coffee and healthy snacks.",
+    "tips": {
+      "expect": "A sporty, healthy-leaning coffee stop.",
+      "tip": "A coffee stop after the Salt Lake pandals."
+    }
+  },
+  "naanzza": {
+    "info": "researched", "cuisines": ["italian", "north_indian"], "vibes": ["quick_bite", "family"],
+    "tags": ["foodie"], "priceLevel": 1,
+    "blurb": "A Ballygunge Gardens restaurant known for 'naanzza': a thin-crust pizza on a naan-shaped base. Rated about 4.7, open 11 am to 11 pm.",
+    "tips": {
+      "expect": "A casual fusion spot.",
+      "good": "The naan-base pizzas, a fusion you won't find everywhere.",
+      "tip": "Close to the Gariahat and Ballygunge pandals."
+    }
+  },
+  "spice-kraft": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["bar", "late_night", "family"],
+    "tags": ["foodie", "date"], "openLate": true, "priceLevel": 3,
+    "blurb": "A fine-dining modern European restaurant and bar at Dover Terrace, about 1.2 km from Jatin Das Park metro, with an exceptionally high rating (about 4.5).",
+    "tips": {
+      "expect": "A polished sit-down restaurant and bar.",
+      "good": "Consistently high reviews from thousands of diners.",
+      "watch": "Book ahead on Puja weekends.",
+      "tip": "Near Ballygunge and Dover Lane pandals."
+    }
+  },
+  "tram-world-caf": {
+    "info": "researched", "cuisines": ["coffee", "bakery"], "vibes": ["heritage", "aesthetic", "quick_bite"],
+    "tags": ["heritage", "photogenic", "date", "quiet"], "priceLevel": 1,
+    "blurb": "A cafe inside the Gariahat Tram Depot, where you sit among vintage trams and a 200-year-old banyan tree.",
+    "dishes": ["Chicken quiche", "Apple pie", "Coffee"],
+    "tips": {
+      "expect": "A one-of-a-kind setting: coffee and snacks next to old tramcars.",
+      "good": "The setting is unique, and it's very photogenic.",
+      "watch": "It is small, and the depot has fixed timings.",
+      "tip": "A great daytime stop on the Ballygunge and Gariahat route."
+    }
+  },
+  "romaania": {
+    "info": "researched", "cuisines": ["italian"], "vibes": ["family", "late_night"],
+    "tags": ["family"], "openLate": true, "priceLevel": 2,
+    "blurb": "An Italian restaurant in Platinum Mall on Elgin Road, about 270 m from Rabindra Sadan metro. Reported open 8 am to midnight.",
+    "tips": {
+      "expect": "A casual all-day Italian restaurant, rated about 3.9.",
+      "tip": "Handy near the Park Street area and Elgin Road."
+    }
+  },
+  "the-country-house": {
+    "info": "researched", "cuisines": ["continental", "coffee"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["date"],
+    "blurb": "A cafe at 4-C Allenby Road, near Forum Mall, with European vibes.",
+    "tips": {
+      "expect": "A relaxed European-style cafe.",
+      "tip": "Close to Elgin Road and Bhowanipore stops."
+    }
+  },
+  "my-big-fat-belly": {
+    "info": "researched", "cuisines": ["continental", "rolls"], "vibes": ["quick_bite", "adda"],
+    "tags": ["foodie"], "priceLevel": 1,
+    "blurb": "A heavy-food spot at 22 Sarat Bose Road, known for calorie-loaded dishes such as cheesy bacon meaty fries.",
+    "tips": {
+      "expect": "Big, indulgent plates.",
+      "tip": "Come hungry for an end-of-night cheat meal."
+    }
+  }
+}

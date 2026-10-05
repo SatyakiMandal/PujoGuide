@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* "Shiuli" (light): ivory paper, sindoor red actions, antique-gold heritage, one teal for food */
+:root {
+  --bg: #fbf6ee;
+  --surface: #ffffff;
+  --surface-2: #f4ebdd;
+  --fg: #2a2019;
+  --muted: #75675a;
+  --line: rgb(42 32 25 / 0.12);
+  --primary: #c8402a;
+  --primary-fg: #ffffff;
+  --accent: #b7791f;
+  --pin-fg: #ffffff;
+  --shadow: 0 8px 28px rgb(74 40 20 / 0.14);
+
+  --c-bari: #b5832a;
+  --c-pandal: #c8402a;
+  --c-food: #1f7a74;
+  --route: #2f5fd0;
+}
+
+/* "Raat" (dark): warm charcoal, lamp-lit gold and vermilion */
+.dark {
+  --bg: #141110;
+  --surface: #1e1917;
+  --surface-2: #2b2421;
+  --fg: #f4ece2;
+  --muted: #a99b8d;
+  --line: rgb(255 244 230 / 0.1);
+  --primary: #f2664a;
+  --primary-fg: #1b0d09;
+  --accent: #e8b04a;
+  --pin-fg: #17110e;
+  --shadow: 0 8px 28px rgb(0 0 0 / 0.55);
+
+  --c-bari: #e3b04b;
+  --c-pandal: #f2664a;
+  --c-food: #4fc3b5;
+  --route: #7ea2ff;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-fg: var(--primary-fg);
+  --color-accent: var(--accent);
+  --color-c-bari: var(--c-bari);
+  --color-c-pandal: var(--c-pandal);
+  --color-c-food: var(--c-food);
+  --color-route: var(--route);
+
+  --font-sans: var(--font-jakarta), var(--font-bengali), system-ui, sans-serif;
+  --font-display: var(--font-fraunces), var(--font-bengali), Georgia, serif;
+
+  --shadow-float: var(--shadow);
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+:lang(bn) {
+  line-height: 1.6;
+}
+
+/* Theme switch: circular reveal (View Transitions API); animation driven from JS */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 0;
+}
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+/* Place pins (rendered as map HTML markers, so plain CSS rather than Tailwind) */
+.pin {
+  --pin: var(--c-pandal);
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50% 50% 50% 8%;
+  transform: rotate(-45deg);
+  background: var(--pin);
+  color: var(--pin-fg);
+  border: 2.5px solid var(--surface);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.35);
+  display: grid;
+  place-items: center;
+  transition:
+    transform 260ms var(--ease-out-soft, ease),
+    opacity 260ms ease,
+    filter 260ms ease;
+  cursor: pointer;
+}
+.pin > svg {
+  transform: rotate(45deg);
+}
+.pin:hover {
+  transform: rotate(-45deg) scale(1.12);
+}
+.pin[data-state="selected"] {
+  transform: rotate(-45deg) scale(1.3);
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--pin) 35%, transparent),
+    0 6px 16px rgb(0 0 0 / 0.4);
+  z-index: 10;
+}
+.pin[data-state="dim"] {
+  opacity: 0.22;
+  filter: grayscale(1);
+  transform: rotate(-45deg) scale(0.8);
+}
+.pin[data-state="match"] {
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--pin) 30%, transparent),
+    0 3px 10px rgb(0 0 0 / 0.35);
+}
+
+.cluster {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font: 700 14px var(--font-sans);
+  color: var(--primary-fg);
+  background: var(--primary);
+  border: 3px solid var(--surface);
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--primary) 28%, transparent),
+    0 4px 12px rgb(0 0 0 / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Map pin wrapper: the rotated teardrop's tip pokes below its layout box, so pad for it */
+.pin-wrap {
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.pin-stop {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  transform: rotate(45deg);
+  background: var(--fg);
+  color: var(--bg);
+  border: 2px solid var(--surface);
+  font: 700 11px/16px var(--font-sans);
+  text-align: center;
+}
+.cluster {
+  cursor: pointer;
+}
+
+/* Food count bubbles: smaller and teal, so they read as a different layer from heritage/pandal clusters */
+.cluster-food {
+  width: 36px;
+  height: 36px;
+  font-size: 13px;
+  background: var(--c-food);
+  color: var(--pin-fg);
+  box-shadow:
+    0 0 0 5px color-mix(in srgb, var(--c-food) 28%, transparent),
+    0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+/* Visited places get a small check on their pin */
+.pin-visited {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  transform: rotate(45deg);
+  background: var(--fg);
+  color: var(--bg);
+  border: 2px solid var(--surface);
+  font: 700 10px/14px var(--font-sans);
+  text-align: center;
+}

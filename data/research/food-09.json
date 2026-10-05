@@ -1,0 +1,84 @@
+{
+  "bunaphile-cafe": {
+    "info": "researched", "cuisines": ["coffee", "bakery"], "vibes": ["heritage", "aesthetic", "adda"],
+    "tags": ["heritage", "date", "quiet"], "priceLevel": 2,
+    "blurb": "A Hindustan Park cafe on the ground floor of the writer Nabaneeta Dev Sen's house, which she called 'Bhalobasa'. Rated about 4.0 from over 1,000 reviews.",
+    "tips": {
+      "expect": "A literary, heritage-house cafe known for its wide variety of coffee.",
+      "good": "The setting inside a writer's home and the coffee list.",
+      "watch": "Seating is limited and it fills up on weekend evenings.",
+      "tip": "A short walk from the Hindustan Park pandal."
+    }
+  },
+  "mud-the-retro-cafe": {
+    "info": "researched", "cuisines": ["coffee", "continental"], "vibes": ["aesthetic", "adda"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A retro-styled cafe and restaurant on Keyatala Lane, Golpark, rated about 4.4.",
+    "tips": {
+      "expect": "A themed cafe in the Hindustan Park cluster.",
+      "tip": "Near Hindustan Park, Bunaphile and Wise Owl."
+    }
+  },
+  "wise-owl-the-coffee-shop": {
+    "info": "researched", "cuisines": ["coffee", "continental"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["date", "quiet"], "priceLevel": 2,
+    "blurb": "A Hindustan Park coffee shop on Purna Das Road with artsy decor and outdoor seating.",
+    "tips": {
+      "expect": "A relaxed coffee shop with an excellent breakfast menu and snacks through the day.",
+      "good": "Breakfast and the outdoor seating.",
+      "watch": "It is small and gets full in the evening.",
+      "tip": "Go early for breakfast before the Gariahat crowds."
+    }
+  },
+  "tribe": {
+    "info": "researched", "cuisines": ["continental", "coffee"], "vibes": ["aesthetic", "adda", "family"],
+    "tags": ["date", "foodie"], "priceLevel": 2,
+    "blurb": "Tribe Cafe at Gol Park, with a Goan-leaning menu and five seating sections, including a cosy room with plush turquoise sofas.",
+    "dishes": ["Goan pan roll", "Chicken xacuti", "Pork vindaloo"],
+    "tips": {
+      "expect": "A relaxed multi-room cafe, suited to book clubs and small groups, with Goan dishes on the menu.",
+      "good": "Goan dishes, which are rare in Kolkata.",
+      "tip": "A calm break near the Gariahat pandals."
+    }
+  },
+  "blue-mug-cafe": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["quick_bite", "adda"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "A well-liked Jodhpur Park hangout with cosy indoor and outdoor seating, popular with young people for its pocket-friendly prices and shakes.",
+    "tips": {
+      "expect": "A casual cafe. A meal for two is about ₹700 or less.",
+      "good": "The shakes and the low prices.",
+      "watch": "It is on the Jadavpur side of the city.",
+      "tip": "A cheap break after the Jadavpur pandals."
+    }
+  },
+  "pinkk-sugars-patisserie-and-artisanal-bakery": {
+    "info": "researched", "cuisines": ["bakery", "dessert"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A patisserie and artisanal bakery at AD-37, Sector 1, Salt Lake, open about noon to 9:30 pm.",
+    "tips": {
+      "expect": "A dessert stop. About ₹1,200 for two.",
+      "good": "Cakes and pastries.",
+      "tip": "A sweet break between Sector 1 pandals."
+    }
+  },
+  "cafe-proof": {
+    "info": "researched", "cuisines": ["italian", "north_indian", "street_food", "dessert"], "vibes": ["family", "quick_bite"],
+    "tags": ["family"], "priceLevel": 2,
+    "blurb": "A Salt Lake cafe with an Italian, North Indian and street food menu, about ₹800 for two.",
+    "tips": {
+      "expect": "A casual cafe with something for everyone.",
+      "tip": "Easy to slot into the Sector 1 blocks plan."
+    }
+  },
+  "calcutta-64": {
+    "info": "researched", "cuisines": ["bengali", "continental"], "vibes": ["family", "heritage"],
+    "tags": ["foodie"], "priceLevel": 2,
+    "blurb": "A restaurant at BC 25, Sector 1, Salt Lake, about ₹950 for two.",
+    "tips": {
+      "expect": "A sit-down meal in Sector 1.",
+      "watch": "Reported hours are about 11:30 am to 10:30 pm.",
+      "tip": "Handy beside the Salt Lake block pandals."
+    }
+  }
+}

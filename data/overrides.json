@@ -1,0 +1,347 @@
+{
+  "darjipara-mitra-bari": {
+    "lat": 22.5910927,
+    "lng": 88.3649029,
+    "src": "user Google Maps link"
+  },
+  "nilmani-mitra-bari": {
+    "lat": 22.5666104,
+    "lng": 88.3629267,
+    "src": "user Google Maps link"
+  },
+  "shib-krishna-daw-bari": {
+    "lat": 22.5858473,
+    "lng": 88.3595674,
+    "src": "user Google Maps link"
+  },
+  "pathuriaghata-rajbari": {
+    "lat": 22.5887689,
+    "lng": 88.3565391,
+    "src": "user Google Maps link"
+  },
+  "alipore-sarbojanin": {
+    "lat": 22.5191675,
+    "lng": 88.333401,
+    "src": "user Google Maps link"
+  },
+  "mudiali-club": {
+    "lat": 22.510194,
+    "lng": 88.3463122,
+    "src": "user Google Maps link"
+  },
+  "hathkhola-dutta-bari": {
+    "lat": 22.5928457,
+    "lng": 88.3549315,
+    "src": "Google Maps: Hathkhola Dutta Bari"
+  },
+  "baghbazar-haldar-bari": {
+    "lat": 22.6034575,
+    "lng": 88.3670376,
+    "src": "Google Maps: Baghbazar Haldar Bari Puja"
+  },
+  "chorbagan-sil-bari": {
+    "lat": 22.582938,
+    "lng": 88.3592626,
+    "src": "Google Maps: Chorbagan Sil's Thakurbari"
+  },
+  "chorbagan-mitra-bari": {
+    "lat": 22.5824066,
+    "lng": 88.3624287,
+    "src": "Google Maps: Chorbagan Mitra Bari"
+  },
+  "thantania-dutta-bari": {
+    "lat": 22.5805749,
+    "lng": 88.3658847,
+    "src": "Google Maps: Thanthania Dutta Bari"
+  },
+  "badan-chand-roy-bari": {
+    "lat": 22.5749652,
+    "lng": 88.3581126,
+    "src": "Google Maps: Badan Chand Roy Bari (Kolutolla Raj Bari)"
+  },
+  "ramgopal-saha-bari": {
+    "lat": 22.5645533,
+    "lng": 88.3620738,
+    "src": "Google Maps: Ramgopal Saha's House Durga Pujo"
+  },
+  "rani-roshmoni-bari": {
+    "lat": 22.5625179,
+    "lng": 88.3552648,
+    "src": "Google Maps: Rani Rashmoni Bhawan"
+  },
+  "mallick-bari": {
+    "lat": 22.5335981,
+    "lng": 88.3490916,
+    "src": "Google Maps: Mallick Bari"
+  },
+  "sabarna-roy-chowdhury-atchala-bari": {
+    "lat": 22.480083,
+    "lng": 88.3065991,
+    "src": "Google Maps: SABARNA ROY CHOWDHURY Sanjer ATTCHALA BARI"
+  },
+  "amarendra-bhavan-roy-bari": {
+    "lat": 22.5015817,
+    "lng": 88.318873,
+    "src": "Google Maps: Amarendra Bhavan Durga Puja (Roy House Puja)"
+  },
+  "shobhabazar-rajbari-thakur-dalan": {
+    "lat": 22.59645,
+    "lng": 88.3667686,
+    "src": "Google Maps: Shobhabazar Rajbari Thakur Dalan"
+  },
+  "shobhabazar-rajbari-maharaja-naba-krishna-dev-bari": {
+    "lat": 22.5970954,
+    "lng": 88.3669612,
+    "src": "Google Maps: Raja Naba Krishna Deb Palace"
+  },
+  "chatu-babu-latu-babu-bari": {
+    "lat": 22.5901836,
+    "lng": 88.3644154,
+    "src": "Google Maps: Chhatu Babu Latu Babu Thakur Bari (Ramdulal Nibas)"
+  },
+  "bholanath-dham-dutta-bari": {
+    "lat": 22.5883161,
+    "lng": 88.3716774,
+    "src": "Google Maps: Bholanath Dham"
+  },
+  "maniktala-saha-bari": {
+    "lat": 22.5856359,
+    "lng": 88.3710417,
+    "src": "Google Maps: SAHA Bari, DURGA PUJA, Maniktala"
+  },
+  "harakutir-ray-banerjee-bari": {
+    "lat": 22.5885619,
+    "lng": 88.3575862,
+    "src": "Google Maps: Harakutir Ray-Banerjee Barir Durga Pujo"
+  },
+  "shamul-dhone-dutta-bari": {
+    "lat": 22.5877273,
+    "lng": 88.362069,
+    "src": "Google Maps: Shamul dhone Dutta Bari"
+  },
+  "shobhabazar-rajbari-radha-kanta-dev-estate": {
+    "lat": 22.5962644,
+    "lng": 88.3673797,
+    "src": "Google Maps: Sovabazar Rajbari"
+  },
+  "kalighat-milan-sangha": {
+    "lat": 22.5243173,
+    "lng": 88.3410395,
+    "src": "Google Maps: Kalighat Milan Sangha"
+  },
+  "64-pally": {
+    "lat": 22.5205584,
+    "lng": 88.3475801,
+    "src": "Google Maps: 64 Pally Durga Pujo"
+  },
+  "66-pally": {
+    "lat": 22.5180613,
+    "lng": 88.3427526,
+    "src": "Google Maps: 66 Pally Durgapuja Pandal"
+  },
+  "68-pally": {
+    "lat": 22.5287674,
+    "lng": 88.3463414,
+    "src": "Google Maps: 68 Pally Durga Puja"
+  },
+  "tridhara-sammilani": {
+    "lat": 22.5195286,
+    "lng": 88.3554398,
+    "src": "Google Maps: Tridhara Sammilani"
+  },
+  "deshapriya-park": {
+    "lat": 22.5185819,
+    "lng": 88.3534607,
+    "src": "Google Maps: Deshapriya Park"
+  },
+  "ballygunge-cultural-association": {
+    "lat": 22.5162122,
+    "lng": 88.3558059,
+    "src": "Google Maps: Ballygunge Cultural Association Durga Puja"
+  },
+  "singhi-park": {
+    "lat": 22.5209489,
+    "lng": 88.3627281,
+    "src": "Google Maps: Singhi Park Sarbojanin Durga Puja Committee"
+  },
+  "hindustan-park": {
+    "lat": 22.5176792,
+    "lng": 88.3620716,
+    "src": "Google Maps: Hindusthan Park Sarbojanin Durgotsab Committee"
+  },
+  "maddox-square": {
+    "lat": 22.5265634,
+    "lng": 88.3546477,
+    "src": "Google Maps: Maddox Square Durga Pujo"
+  },
+  "suruchi-sangha": {
+    "lat": 22.5089855,
+    "lng": 88.3339522,
+    "src": "Google Maps: Suruchi Sangha"
+  },
+  "ekdalia-evergreen": {
+    "lat": 22.5212187,
+    "lng": 88.3665629,
+    "src": "Google Maps: Ekdalia Evergreen Club"
+  },
+  "aikatan": {
+    "lat": 22.50944,
+    "lng": 88.3785709,
+    "src": "Google Maps: Aikatan"
+  },
+  "alipore-78-pally": {
+    "lat": 22.5230459,
+    "lng": 88.3369324,
+    "src": "Google Maps: Alipore 78 Pally Club"
+  },
+  "naktala-udayan-sangha": {
+    "lat": 22.4742929,
+    "lng": 88.3665898,
+    "src": "Google Maps: Naktala Udayan Sangha"
+  },
+  "baghbazar-sarbojanin": {
+    "lat": 22.6044897,
+    "lng": 88.365615,
+    "src": "Google Maps: Baghbazar Sarbojanin Durgotsav & Exhibition"
+  },
+  "hatibagan-sarbojanin": {
+    "lat": 22.5943863,
+    "lng": 88.3720004,
+    "src": "Google Maps: Hatibagan Sarbojonin"
+  },
+  "kumartuli-park": {
+    "lat": 22.5989827,
+    "lng": 88.3614663,
+    "src": "Google Maps: Kumartuli Park"
+  },
+  "kashi-bose-lane": {
+    "lat": 22.5908979,
+    "lng": 88.3689174,
+    "src": "Google Maps: Kashi Bose Lane Durga Puja Committee"
+  },
+  "chaltabagan-lohapatty": {
+    "lat": 22.5848905,
+    "lng": 88.3721509,
+    "src": "Google Maps: Maniktala Chaltabagan Lohapatty Durga Puja Committee"
+  },
+  "maniktala-chaltabagan": {
+    "lat": 22.5848905,
+    "lng": 88.3721509,
+    "src": "Google Maps: Maniktala Chaltabagan Lohapatty Durga Puja Committee"
+  },
+  "ahritola-sarbojanin": {
+    "lat": 22.5948383,
+    "lng": 88.3571698,
+    "src": "Google Maps: Ahiritola Sarbojonin Durgotsab Samity"
+  },
+  "tala-prattay": {
+    "lat": 22.6087911,
+    "lng": 88.382502,
+    "src": "Google Maps: Tala Prattoy Durga Puja Art"
+  },
+  "dum-dum-park": {
+    "lat": 22.6094363,
+    "lng": 88.4164052,
+    "src": "Google Maps: Dum Dum Park Sarbojanin Durga Puja Samity"
+  },
+  "shreebhumi-sporting-club": {
+    "lat": 22.5988987,
+    "lng": 88.4029328,
+    "src": "Google Maps: Sree Bhumi Sporting Club"
+  },
+  "lalabagan-nabankur": {
+    "lat": 22.5883732,
+    "lng": 88.3767567,
+    "src": "Google Maps: Lalabagan Nabankur Durga Puja Pandal entrance gate"
+  },
+  "santosh-mitra-square": {
+    "lat": 22.5660201,
+    "lng": 88.3656532,
+    "src": "Google Maps: Santosh Mitra Square"
+  },
+  "college-square": {
+    "lat": 22.5745279,
+    "lng": 88.3644724,
+    "src": "Google Maps: College Square Durga Puja"
+  },
+  "mohammed-ali-park": {
+    "lat": 22.5771888,
+    "lng": 88.3607369,
+    "src": "Google Maps: Muhammad Ali Park"
+  },
+  "taltala-sarbojanin": {
+    "lat": 22.5607178,
+    "lng": 88.3649137,
+    "src": "Google Maps: Taltala Sarbojanin Kalipuja O Onnokut Mohotshob Committee"
+  },
+  "chorbagan-sarbojanin": {
+    "lat": 22.5834284,
+    "lng": 88.3635965,
+    "src": "Google Maps: CHOREBAGAN SARBOJANIN DURGOTSAB SAMITY"
+  },
+  "chetla-agrani": {
+    "lat": 22.5163878,
+    "lng": 88.337111,
+    "src": "Google Maps: Chetla Agrani Durga Puja Pandal"
+  },
+  "badamtala-ashar-sangha": {
+    "lat": 22.5179668,
+    "lng": 88.3437245,
+    "src": "Google Maps: Badamtala Ashar Sangha Durgotsab"
+  },
+  "bosepukur-sitala-mandir": {
+    "lat": 22.5192181,
+    "lng": 88.3848576,
+    "src": "Google Maps: Bosepukur Sitala Mandir"
+  },
+  "fd-block": {
+    "lat": 22.5834541,
+    "lng": 88.4122701,
+    "src": "Google Maps: Salt Lake FD Block Durga Puja Pandal"
+  },
+  "ak-block": {
+    "lat": 22.5888537,
+    "lng": 88.4307676,
+    "src": "Google Maps: AK Block Durga Puja"
+  },
+  "ae-block": {
+    "lat": 22.6010701,
+    "lng": 88.4134563,
+    "src": "Google Maps: AE (Part-2) Durga Puja"
+  },
+  "bj-block": {
+    "lat": 22.5906892,
+    "lng": 88.4265676,
+    "src": "Google Maps: BJ Block Durga Puja"
+  },
+  "gd-block": {
+    "lat": 22.5770251,
+    "lng": 88.4142505,
+    "src": "Google Maps: GD Block Durga Puja"
+  },
+  "fe-block": {
+    "lat": 22.5799308,
+    "lng": 88.4148587,
+    "src": "Google Maps: DURGA PUJO, FE BLOCK"
+  },
+  "ce-block": {
+    "lat": 22.5943312,
+    "lng": 88.4129356,
+    "src": "Google Maps: CE block Durga Puja"
+  },
+  "laboni-estate": {
+    "lat": 22.5832131,
+    "lng": 88.4067466,
+    "src": "Google Maps: Labony Estate Durga Puja"
+  },
+  "netaji-sangha": {
+    "lat": 22.5131217,
+    "lng": 88.3399652,
+    "src": "Google Maps: Netaji Sangha"
+  },
+  "jadavpur-8b": {
+    "lat": 22.495671,
+    "lng": 88.370545,
+    "src": "Google Maps: Jadavpur 8B Bus Terminus"
+  }
+}

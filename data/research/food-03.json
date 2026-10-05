@@ -1,0 +1,70 @@
+{
+  "eden-courtyard": {
+    "info": "researched", "cuisines": ["asian", "italian", "north_indian", "continental"], "vibes": ["family", "aesthetic"],
+    "tags": ["family", "foodie"], "diet": ["veg"], "priceLevel": 3,
+    "blurb": "A pure-vegetarian restaurant on the 3rd floor of Mani Square Mall, Kankurgachi, with a broad Asian, Italian and modern-Indian menu.",
+    "dishes": ["Saag burrata", "Four-cheese chilli pizza", "Kadai paneer", "Tempura enoki mushrooms"],
+    "tips": {
+      "expect": "A well-liked vegetarian dining room that suits families and groups. About ₹1,500 for two.",
+      "good": "The creative veg menu and the ambience, which many reviewers rate highly.",
+      "watch": "It is inside a mall, so it is better for a sit-down meal than a quick bite between pandals.",
+      "tip": "Handy before or after the Maniktala and Phoolbagan pandals."
+    }
+  },
+  "25-main-street-cafe": {
+    "info": "researched", "cuisines": ["coffee", "continental", "italian", "asian"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A popular Salt Lake Sector 1 cafe at AA28, known for coffee, desserts and a good breakfast menu with sourdough.",
+    "tips": {
+      "expect": "A relaxed all-day cafe with a long menu: pizza, pasta, sandwiches and a bit of Korean. About ₹1,000 for two.",
+      "good": "Coffee and desserts, and a strong breakfast. It is very well rated.",
+      "watch": "It's busy at weekends and often has a wait.",
+      "tip": "A good coffee stop in the Salt Lake blocks cluster (AE, AB, BJ, CE)."
+    }
+  },
+  "dulcie-dubai": {
+    "info": "researched", "cuisines": ["dessert", "bakery", "coffee"], "vibes": ["quick_bite", "aesthetic"],
+    "tags": ["date"], "priceLevel": 1,
+    "blurb": "A small dessert cafe on Hindustan Road, Ballygunge, known for Middle Eastern-style sweets.",
+    "dishes": ["Dulcie boba", "Habba cake", "Chicken cheese fries"],
+    "tips": {
+      "expect": "An inexpensive dessert-and-coffee stop. About ₹400 for two, and rated 4.7.",
+      "good": "The unusual Middle Eastern-style desserts at a low price.",
+      "watch": "It's tiny, so seats can be hard to find in the evening.",
+      "tip": "Next door to Amar Khamar on Hindustan Road. A natural sweet finish after dinner."
+    }
+  },
+  "casa-miami-by-pepper-town": {
+    "info": "researched", "cuisines": ["asian", "chinese", "italian"], "vibes": ["aesthetic", "family"],
+    "tags": ["photogenic"], "priceLevel": 2,
+    "blurb": "A beach-themed restaurant in New Town from the Pepper Town group.",
+    "tips": {
+      "expect": "A Miami beach look with Asian, Chinese and Italian dishes. About ₹1,000 for two, with veg and non-veg options.",
+      "good": "The decor, which suits photographs.",
+      "watch": "It is far out in New Town, away from every pandal circuit on your list.",
+      "tip": "Only worth it if you are already in New Town or Rajarhat."
+    }
+  },
+  "cove-community-bar": {
+    "info": "researched", "cuisines": ["italian", "north_indian", "asian"], "vibes": ["bar", "late_night"],
+    "tags": ["date"], "openLate": true, "priceLevel": 3,
+    "blurb": "A high-energy bar and restaurant in the historic Harrington Mansion on Ho Chi Minh Sarani, with cave-inspired interiors by Akash Roy.",
+    "tips": {
+      "expect": "A modern hideout that shifts from a relaxed evening to a nightlife mood. About ₹2,000 for two.",
+      "good": "The dark, sculptural interior and the mixed Italian, North Indian and Asian menu.",
+      "watch": "It gets loud later in the evening.",
+      "tip": "A solid late-night stop close to Park Street."
+    }
+  },
+  "altair-capella": {
+    "info": "researched", "cuisines": ["continental", "italian", "north_indian", "asian"], "vibes": ["rooftop", "bar", "late_night"],
+    "tags": ["date", "photogenic"], "openLate": true, "priceLevel": 3,
+    "blurb": "A rooftop restaurant and microbrewery on the 20th and 21st floors of AltAir Boutique Hotel, Sector V, with 360-degree views of the city.",
+    "tips": {
+      "expect": "A sky bar with city-skyline views, cocktails and a multicuisine menu. About ₹1,600 for two.",
+      "good": "The view, which is excellent at night over Salt Lake.",
+      "watch": "It is high up in an office building: allow time for the lifts and book ahead on weekends.",
+      "tip": "A strong date-night finish after the Salt Lake pandals."
+    }
+  }
+}

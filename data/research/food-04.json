@@ -1,0 +1,85 @@
+{
+  "eloise-the-bistro": {
+    "info": "researched", "cuisines": ["continental", "bakery"], "vibes": ["aesthetic", "family"],
+    "tags": ["date", "photogenic"], "priceLevel": 2,
+    "blurb": "Eloise Bistro & Boulangerie, a European-style bistro on Lake Terrace with elegant decor and French-leaning food.",
+    "dishes": ["Burrata caprese salad", "Café-style hot chocolate"],
+    "tips": {
+      "expect": "A pretty, European-feeling bistro and bakery. Reported hours are noon to 11 pm, and it costs about ₹1,200 or more for two.",
+      "good": "The signature burrata caprese and the hot chocolate.",
+      "watch": "It is in the busy Lake Market cafe cluster, so weekends fill up.",
+      "tip": "Near Deshapriya Park and the Kalighat pandals, so easy to add to a south circuit."
+    }
+  },
+  "desi-lane-esplanade": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["bar", "late_night", "adda"],
+    "tags": ["late-night"], "openLate": true, "priceLevel": 3,
+    "blurb": "An outlet of the Desi Lane pub chain, which is known for very low-priced drinks.",
+    "tips": {
+      "expect": "A busy, no-frills pub and bar-food place. At the Topsia outlet, listings put it at about ₹1,700 for two.",
+      "good": "Cheap drinks and a lively crowd.",
+      "watch": "I couldn't confirm details for this exact Esplanade outlet, so prices and hours may differ.",
+      "tip": "A late-night option near Esplanade after pandal-hopping."
+    }
+  },
+  "kaafila": {
+    "info": "researched", "cuisines": ["mughlai", "north_indian", "biryani"], "vibes": ["family"],
+    "tags": ["foodie", "family"], "priceLevel": 3,
+    "blurb": "A Mughlai, Afghan and North Indian restaurant in City Centre 1, Salt Lake.",
+    "dishes": ["Tehari Murgh", "Kandahari Laham", "Dezaje Masluque", "Kesaria firni", "Shirley Temple mocktail"],
+    "tips": {
+      "expect": "A family-friendly restaurant with a long kebab, biryani and curry menu. About ₹1,800 for two.",
+      "good": "The kebabs, especially the Kandahari laham, and the dessert firni.",
+      "watch": "It is inside a mall, so closing time follows the mall.",
+      "tip": "Good for dinner after the Salt Lake pandals, as City Centre is on the way back."
+    }
+  },
+  "mehico": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["aesthetic", "bar", "late_night"],
+    "tags": ["date", "foodie"],
+    "blurb": "A vibrant Mexican cantina on Ho Chi Minh Sarani, with murals and a menu of small plates.",
+    "dishes": ["Dorilocos", "Chiles rellenos de queso", "Tacos and burritos", "Churros"],
+    "tips": {
+      "expect": "A colourful cantina with small plates, tacos, nachos and rice bowls. Tacos are about ₹500 each.",
+      "good": "A seasonal mango menu, and a rare real Mexican option in Kolkata.",
+      "watch": "Prices add up quickly if you order several plates and drinks.",
+      "tip": "Combine with Cove and Sorano in the same building area for a Park Street night."
+    }
+  },
+  "bonne-femme": {
+    "info": "researched", "category": "restaurant", "cuisines": ["continental", "bakery"], "vibes": ["aesthetic", "heritage", "family"],
+    "tags": ["date", "foodie", "photogenic"], "priceLevel": 3,
+    "blurb": "A bakery and continental restaurant at 139A Rash Behari Avenue, in a 46-seat teal room that feels like an old Calcutta bungalow.",
+    "dishes": ["Mediterranean platter", "Raw mango fish tikka", "Paella with tulaipanji rice", "Gondhoraj chicken stroganoff", "Daab sandesh"],
+    "tips": {
+      "expect": "Fusion plates with a Bengali twist, in a cosy, small room. About ₹1,500 for two.",
+      "good": "The Bengali-flavoured continental dishes, such as gondhoraj stroganoff and daab sandesh.",
+      "watch": "Only 46 seats, so book ahead on Puja weekends.",
+      "tip": "Close to Hindustan Park and the Ballygunge pandals."
+    }
+  },
+  "sorano": {
+    "info": "researched", "cuisines": ["italian", "continental"], "vibes": ["aesthetic", "heritage"],
+    "tags": ["date", "foodie"], "priceLevel": 3,
+    "blurb": "An Italian restaurant in the old Harrington Mansion, off Park Street, making almost everything in-house.",
+    "dishes": ["Brick-oven pizza and bread from a 150-year-old Tuscan sourdough starter", "Wild mushroom tagliatelle", "Ravioli quattro formaggio", "Seabass a la cartoccio", "House-made burrata"],
+    "tips": {
+      "expect": "A serious Italian kitchen in a heritage building. About ₹2,400 for two.",
+      "good": "The sourdough-based pizza and the house-made cheeses and pasta.",
+      "watch": "It sits towards the high end for the area.",
+      "tip": "A good date-night dinner. Pair it with Mehico and Cove nearby."
+    }
+  },
+  "balwant-singh-dhaba": {
+    "info": "researched", "cuisines": ["north_indian"], "vibes": ["adda", "late_night", "quick_bite", "heritage"],
+    "tags": ["foodie", "late-night"], "diet": ["veg"], "openLate": true, "priceLevel": 1,
+    "blurb": "Balwant Singh's Eating House at 10B Harish Mukherjee Road, a Bhowanipore dhaba with more than a century behind it, reportedly open 24 hours.",
+    "dishes": ["Kesar chai in kettles", "Doodh cola", "Amritsari kulcha", "Chole bhature", "Aloo paratha"],
+    "tips": {
+      "expect": "An unpretentious, fully vegetarian Punjabi dhaba that serves from early morning to the middle of the night. About ₹500 for two.",
+      "good": "The kettle chai, the doodh cola and the Amritsari kulcha.",
+      "watch": "It is basic and can be crowded at peak times.",
+      "tip": "The best late-night or very-early-morning stop after pandal-hopping in the south."
+    }
+  }
+}

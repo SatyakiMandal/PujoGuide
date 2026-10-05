@@ -1,0 +1,145 @@
+{
+  "restaurant-at-amar-khamar": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["family", "aesthetic"],
+    "tags": ["foodie", "date"],
+    "blurb": "Amar Khamar Lunch Room at 21B Hindustan Road: an intimate dining room built around seasonal, home-style Bengali cooking.",
+    "dishes": ["Chhuti-r Bhat tasting menu (11 courses)", "Four heirloom rice varieties", "Kalimpong ghee and pickles"],
+    "tips": {
+      "expect": "Seasonal Bengali food sourced from farming communities across Bengal, served in a calm, home-like room. Both fish and meat dishes and vegetarian options are on offer.",
+      "good": "The Chhuti-r Bhat, a long tasting meal that respects the traditional order of eating.",
+      "watch": "Reported open Tuesday to Sunday, 12:30 to 10 pm, and closed on Mondays. A full tasting meal takes a while, so don't squeeze it in between pandals.",
+      "tip": "Go for a slow Puja lunch rather than a rush dinner. It is a short walk from Hindustan Park."
+    }
+  },
+  "yokocho": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["bar", "late_night"],
+    "tags": ["foodie", "date"], "openLate": true,
+    "blurb": "Calcutta's first East-inspired bar and BBQ, on the first floor of Park Centre on Park Street. The menu draws on Japan, Thailand, Vietnam and Singapore.",
+    "dishes": ["Calcutta Temaki Tacos (hand-rolled sushi tacos)", "Japan-inspired cocktails"],
+    "tips": {
+      "expect": "Alley-dining style Eastern plates and a cocktail programme inspired by informal Japanese drinking culture, from chef Auroni Mookerjee's kitchen.",
+      "good": "The playful take on local flavours, such as the temaki tacos inspired by prawn cocktail.",
+      "watch": "It is on the first floor of a commercial building, so the entrance is easy to miss from the street.",
+      "tip": "A good late-evening stop after Park Street pandal-hopping."
+    }
+  },
+  "rever-glasshouse-cafe": {
+    "info": "researched", "cuisines": ["continental", "asian", "coffee"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A two-floor glasshouse cafe on Lake Road that opened in 2024, mixing old-Calcutta charm with a modern look.",
+    "dishes": ["Cold brews", "Sushi and dim sums", "Shisha and live music in select hours"],
+    "tips": {
+      "expect": "A large, elegant glass-fronted space with around 120 covers and a global fusion menu.",
+      "good": "The cold brews and the setting. It is a pleasant place to sit between pandals.",
+      "watch": "Prices at other outlets are about ₹1,200 for two. Live-music hours are limited.",
+      "tip": "It sits in the Lake Road cafe cluster, so there are several options within a few minutes if it's full."
+    }
+  },
+  "eau-chew": {
+    "info": "researched", "cuisines": ["chinese"], "vibes": ["heritage", "family"],
+    "tags": ["foodie", "heritage"],
+    "blurb": "A family-run eating house on Ganesh Chandra Avenue, founded by a Chinese immigrant. It is described as one of the oldest Chinese restaurants in Kolkata, running for 90+ years.",
+    "dishes": ["Chimney soup", "Roast pork chilli", "Josephine noodles", "Roast duck"],
+    "tips": {
+      "expect": "Old-Calcutta Chinese food from family recipes, in a no-frills room.",
+      "good": "The slow-cooked chimney soup (made in a coal-burning vessel) and the generous portions.",
+      "watch": "A traditional place that is not about aesthetics. Pork is on the menu, so check if that matters to you.",
+      "tip": "Combine it with Chinatown and New Market, then walk on to Park Street."
+    }
+  },
+  "conversation-room": {
+    "info": "researched", "cuisines": ["continental", "asian"], "vibes": ["bar", "late_night", "aesthetic"],
+    "tags": ["date"], "openLate": true,
+    "blurb": "A cocktail bar at 1 Edward Court on Chowringhee Road, with old-world decor, weathered walls and a cosy mood.",
+    "dishes": ["The Eavesdropper (tequila, Cointreau, cranberry, Schezwan sauce)", "Smooth Talker (Scotch, vanilla, caramel)", "Shrimp okonomiyaki", "Bhutanese ema datshi"],
+    "tips": {
+      "expect": "Inventive cocktails and small and big plates with an international twist.",
+      "good": "The cocktail craft and the unusual food pairings. A strong choice for a date night.",
+      "watch": "It is a bar first. Puja Saturdays and Sundays will be busy.",
+      "tip": "Reserve if you can, and note that it is on Chowringhee, far from the North Kolkata circuit."
+    }
+  },
+  "siuli-the-parcel-cafe": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["heritage", "aesthetic", "quick_bite"],
+    "tags": ["heritage", "date", "quiet"], "priceLevel": 1,
+    "blurb": "India's first post-office cafe, inside the historic General Post Office at BBD Bagh.",
+    "dishes": ["Coffee", "Lassi", "Patties"],
+    "tips": {
+      "expect": "A small cafe with colourful wooden furniture and sofas for about 34 people, inside a colonial building. You can also get parcels packed and buy post-office souvenirs.",
+      "good": "The setting is the point: coffee under the GPO's arches, away from the crowds.",
+      "watch": "When it launched it was open 10 am to 7 pm and closed Sundays. Saptami falls on a Sunday this year, so check before you go.",
+      "tip": "A great weekday morning stop before BBD Bagh and Esplanade sightseeing."
+    }
+  },
+  "glenburn-cafe": {
+    "info": "researched", "cuisines": ["coffee", "continental"], "vibes": ["aesthetic", "heritage", "quick_bite"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A Park Street tea room at 7A Russel Street serving the Glenburn estate's own Darjeeling, Assam and flavoured teas.",
+    "dishes": ["23 varieties of Glenburn teas", "Sandwiches and mini burgers", "French toast and granola"],
+    "tips": {
+      "expect": "A calm tearoom with small plates and tapas, a break from the Park Street bustle. About ₹800 to ₹1,000 for two.",
+      "good": "The tea list. It is a rare place to try estate teas properly.",
+      "watch": "Reported hours are 9 am to 9 pm, so it is not a late-night option.",
+      "tip": "Good for a mid-afternoon reset between Park Street and Esplanade."
+    }
+  },
+  "pico-pizzeria-and-coffee-bar": {
+    "info": "researched", "cuisines": ["italian", "coffee"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A pizzeria and coffee bar on Lake Road near Southern Avenue, known for wood-fired pizzas and good coffee.",
+    "dishes": ["Wood-fired Margherita", "Whole-wheat pizzas", "Tiramisu"],
+    "tips": {
+      "expect": "A cosy, welcoming room with friendly service. About ₹1,000 for two.",
+      "good": "The wood-fired char on the pizzas, and the coffee.",
+      "watch": "Seats go quickly on weekend evenings in the Lake Road and Southern Avenue area.",
+      "tip": "Combine it with Hindustan Park pandals nearby."
+    }
+  },
+  "cafe-de-rois": {
+    "info": "researched", "cuisines": ["continental", "italian", "coffee", "dessert"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 3,
+    "blurb": "A Parisian-style cafe on Paddapukur Road, Bhowanipore, with chic European decor.",
+    "tips": {
+      "expect": "A stylish cafe with an all-day menu of pizza, pasta, Continental, Chinese, desserts and coffee. About ₹1,500 for two.",
+      "good": "The decor, and a menu broad enough for a mixed group.",
+      "watch": "It also screens live sports, which can make evenings noisy.",
+      "tip": "Handy near the Bhowanipore Mallick Bari."
+    }
+  },
+  "bageecha-cafe": {
+    "info": "researched", "cuisines": ["bengali", "north_indian", "coffee"], "vibes": ["aesthetic", "family"],
+    "tags": ["date", "photogenic"], "diet": ["veg"], "priceLevel": 2,
+    "blurb": "A garden-inspired vegetarian cafe by the Ganga, on the Polo Floatel at BBD Bagh. It has three zones: Ghar, Verandah and Terrace.",
+    "dishes": ["Indian mezze platter", "Dhakai paratha with aloo ghugni", "Churros jalebi"],
+    "tips": {
+      "expect": "A calm riverside garden vibe with vintage indoor seating, a breezy verandah overlooking the river and a terrace under a gulmohar tree. About ₹800 and up for two.",
+      "good": "The Ganga view and the all-vegetarian menu, which is unusual for the area.",
+      "watch": "Open about 11 am to 11 pm. Weekends and evenings fill up for the sunset.",
+      "tip": "Time it for golden hour, then walk to Esplanade or catch the Strand Road lights."
+    }
+  },
+  "colab-coffee-calcutta": {
+    "info": "researched", "cuisines": ["coffee", "italian"], "vibes": ["aesthetic"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A specialty coffee cafe at Jodhpur Gardens, Lake Gardens, known for Naples-style pizza and good coffee.",
+    "dishes": ["Naples-style pizza", "Specialty coffee", "Mushroom crepes"],
+    "tips": {
+      "expect": "An aesthetic cafe with higher prices than a typical coffee shop. About ₹1,200 for two.",
+      "good": "Quality of coffee and food in a stylish room.",
+      "watch": "Reported open daily 10 am to 10 pm. Pricey for a casual coffee.",
+      "tip": "There is another CōLAB at Deshapriya Park, right on the Kalighat pandal route."
+    }
+  },
+  "milloh-caf-sector-v": {
+    "info": "researched", "cuisines": ["street_food", "north_indian", "continental"], "vibes": ["aesthetic", "family"],
+    "tags": ["date"], "priceLevel": 2,
+    "blurb": "A Sector V cafe known for playful Indian-fusion plates, open from about noon to 11 pm.",
+    "dishes": ["Fishy Patiala Chips", "Missi Taco", "Dabeli Mille-Feuille", "Bento meals"],
+    "tips": {
+      "expect": "Creative street-food-inspired plates in an easy cafe setting, with outdoor seating. About ₹1,000 for two.",
+      "good": "The Indian-fusion small plates. It is kid-friendly and wheelchair accessible.",
+      "watch": "There is also a newer vegetarian Milloh on Sarat Bose Road, so check which outlet you mean.",
+      "tip": "A good stop after Salt Lake pandals, close to Sector V metro."
+    }
+  }
+}

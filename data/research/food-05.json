@@ -1,0 +1,170 @@
+{
+  "indian-coffee-house": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["heritage", "adda", "quick_bite"],
+    "tags": ["heritage", "foodie", "date", "quiet"], "priceLevel": 1,
+    "blurb": "The College Street Coffee House: a vast, high-ceilinged hall that has hosted Kolkata's students, poets and arguers for generations.",
+    "dishes": ["Infusion coffee (hot or cold)", "Chicken cutlet", "Fish finger", "Chicken pakora", "Sandwiches"],
+    "tips": {
+      "expect": "A noisy, nostalgic hall of tables where people argue over cheap coffee. Reported hours are 9 am to 9 pm, and it costs around ₹200 for two.",
+      "good": "The cutlet is a legend, and the coffee is old-fashioned and cheap. The history is the real draw.",
+      "watch": "Cash only. It's popular with students, so tables fill up in the late afternoon.",
+      "tip": "Combine it with College Square and the College Street book lanes. Go before 6 pm and get a table with a view of the hall."
+    }
+  },
+  "flurys": {
+    "info": "researched", "cuisines": ["bakery", "continental", "coffee"], "vibes": ["heritage", "family", "adda"],
+    "tags": ["heritage", "foodie", "date"], "priceLevel": 2,
+    "blurb": "The Park Street tearoom founded in 1927 by the Swiss couple Joseph and Frieda Flury, which taught Calcutta European cafe culture.",
+    "dishes": ["Full English-style breakfast", "Chocolate rum balls", "Almond cube pastries", "Eggs, toast and sandwiches"],
+    "tips": {
+      "expect": "A bright old tearoom at 18 Park Street with a famous breakfast and a counter of cakes and pastries.",
+      "good": "Breakfast, and carrying home the rum balls and pastries.",
+      "watch": "Weekend mornings and Puja afternoons can mean a queue for a table.",
+      "tip": "Trincas, which was started by Flury's former partner, is diagonally opposite at 17 Park Street."
+    }
+  },
+  "peter-cat": {
+    "info": "researched", "cuisines": ["mughlai", "continental"], "vibes": ["heritage", "family", "late_night"],
+    "tags": ["heritage", "foodie"], "priceLevel": 3,
+    "blurb": "A Park Street restaurant open since 1975, with red sofas, red pendant lamps and waiters in Rajasthani dress.",
+    "dishes": ["Chelo kebab with buttered rice and a fried egg", "Mixed tandoori grill sizzler"],
+    "tips": {
+      "expect": "A classic, slightly theatrical Park Street dinner. It is under the same management as Mocambo across the road.",
+      "good": "Chelo kebab, an Irani dish that Peter Cat introduced to Calcuttans, and the sizzlers.",
+      "watch": "There is a small Continental menu but it is better known for tandoori. Waits are long on Saturday nights.",
+      "tip": "Reserve on Puja weekends, or go for an early dinner before the crowd."
+    }
+  },
+  "nizam-s": {
+    "info": "researched", "cuisines": ["rolls", "mughlai"], "vibes": ["heritage", "quick_bite"],
+    "tags": ["heritage", "foodie"], "priceLevel": 1,
+    "blurb": "The restaurant in New Market (then Sir Stuart Hogg Market) where the kathi roll was invented, around 1932.",
+    "dishes": ["Mutton kathi roll", "Egg-layered paratha roll"],
+    "tips": {
+      "expect": "A busy old kebab house. The first roll was a kebab wrapped in paratha for a sahib who didn't want to eat with his hands.",
+      "good": "The original: skewered kebab, egg-layered paratha and chutney.",
+      "watch": "Rolls here are meaty and filling, so one is enough. It gets crowded around New Market shopping hours.",
+      "tip": "Other famous roll places for comparison: Kusum Rolls, Campari, Zeesha and Chacha Jaan."
+    }
+  },
+  "aminia": {
+    "info": "researched", "cuisines": ["mughlai", "biryani"], "vibes": ["heritage", "family"],
+    "tags": ["heritage", "foodie", "family"], "priceLevel": 2,
+    "blurb": "A Mughlai and Awadhi institution that began on Zakaria Street in 1929. The New Market branch at 6A SN Banerjee Road has served biryani since 1947.",
+    "dishes": ["Kolkata-style biryani with potato and egg", "Mughlai curries"],
+    "tips": {
+      "expect": "A family restaurant with generations of regulars. Kolkata biryani comes with a soft potato and often a boiled egg.",
+      "good": "The biryani, and the mix of Mughlai and Awadhi dishes.",
+      "watch": "Peak lunch and dinner hours are busy, and Puja evenings more so.",
+      "tip": "Close to New Market and Esplanade, so it fits easily into the Central pandal plan."
+    }
+  },
+  "royal-indian-hotel": {
+    "info": "researched", "cuisines": ["mughlai", "biryani"], "vibes": ["heritage", "family"],
+    "tags": ["heritage", "foodie"], "priceLevel": 1,
+    "blurb": "An old Chitpur Mughlai restaurant that started in 1905 with mutton chaanp. It also has a Park Street branch.",
+    "dishes": ["Mutton chaanp", "Biryani", "Shahi tukda"],
+    "tips": {
+      "expect": "A no-frills heritage eatery with big flavours.",
+      "good": "The chaanp, biryani and the sweet shahi tukda to finish.",
+      "watch": "The Chitpur original is in a crowded market area, so allow time to reach it.",
+      "tip": "The Park Street branch is easier if you are on that side of town."
+    }
+  },
+  "arsalan": {
+    "info": "researched", "cuisines": ["biryani", "mughlai"], "vibes": ["family", "late_night"],
+    "tags": ["foodie", "family"], "priceLevel": 2,
+    "blurb": "A Park Circus landmark, always busy, famous for its Kolkata chicken biryani with a saffron-hued potato.",
+    "dishes": ["Chicken biryani", "Kebabs"],
+    "tips": {
+      "expect": "A loud, always-full biryani house.",
+      "good": "The chicken biryani with its soft potato.",
+      "watch": "Expect a wait at dinner, especially during Puja.",
+      "tip": "Go for an early or late dinner to avoid the queue."
+    }
+  },
+  "k-c-das": {
+    "info": "researched", "cuisines": ["mishti"], "vibes": ["heritage", "quick_bite"],
+    "tags": ["heritage", "foodie"], "priceLevel": 1,
+    "blurb": "The sweet shop founded in 1930 by Krishna Chandra Das, son of Nobin Chandra Das, the man credited with inventing the rosogolla in 1868.",
+    "dishes": ["Rosogolla", "Rasmalai", "Mishti doi"],
+    "tips": {
+      "expect": "A classic Kolkata sweet shop. The Esplanade East outlet was the first with uniformed staff and Western-style service.",
+      "good": "The rosogolla and the rasmalai, which K.C. Das is credited with creating.",
+      "watch": "Sweets sell out in the late evening.",
+      "tip": "Esplanade is the outlet to visit. Pick up a box on the way to the metro."
+    }
+  },
+  "6-ballygunge-place": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["heritage", "family", "aesthetic"],
+    "tags": ["heritage", "foodie", "family"], "priceLevel": 3,
+    "blurb": "A Bengali restaurant opened in 2003 in a restored colonial bungalow, with a menu researched from food served in the Tagore household.",
+    "dishes": ["Kasha mangsho", "Daab chingri (prawns in a coconut)"],
+    "tips": {
+      "expect": "Sit-down Bengali dining in an old house, a cut above a Puja-night snack.",
+      "good": "The daab chingri and the kasha mangsho.",
+      "watch": "Book ahead in Puja week.",
+      "tip": "A good celebratory meal after the Ballygunge pandals."
+    }
+  },
+  "kewpie-s-kitchen": {
+    "info": "researched", "cuisines": ["bengali"], "vibes": ["heritage", "family"],
+    "tags": ["heritage", "foodie", "family", "quiet"], "priceLevel": 3,
+    "blurb": "A family-run Bengali restaurant on Elgin Road, in a small lane near Netaji's house, with the feel of a traditional Bengali home.",
+    "dishes": ["Thali in terracotta pots", "Niramish thala (vegetarian)", "Maacher thala (fish)", "Mangshor thala (mutton)"],
+    "tips": {
+      "expect": "Home-cooked Bengali food led by chef Rakhi Purnima Dasgupta, served as thalis.",
+      "good": "The small terracotta dishes and the home-style cooking.",
+      "watch": "It is tucked in a lane, so look for it carefully. Reservations are a good idea.",
+      "tip": "Close to the Mallick Bari and Netaji Bhavan."
+    }
+  },
+  "vivekananda-park-phuchka-stalls": {
+    "info": "researched", "cuisines": ["street_food"], "vibes": ["quick_bite", "adda"],
+    "tags": ["foodie"], "diet": ["veg"], "priceLevel": 1,
+    "blurb": "The cluster of phuchka sellers around Vivekananda Park, Bhowanipore, often called the birthplace of Kolkata's phuchka culture.",
+    "dishes": ["Phuchka", "Dahi phuchka", "Dum aloo phuchka", "Papri chaat"],
+    "tips": {
+      "expect": "Evening crowds around the stalls, with several well-known sellers such as Dilip Da's Puchka Centre and Maharaja Chat Centre.",
+      "good": "The variety: dahi phuchka, dum aloo phuchka and papri chaat in one place.",
+      "watch": "Street food hygiene varies. Go for stalls with a steady crowd and fresh water.",
+      "tip": "Best in the early evening, before the dinner rush."
+    }
+  },
+  "adi-haridas-modak": {
+    "info": "researched", "cuisines": ["mishti", "bengali"], "vibes": ["heritage", "quick_bite"],
+    "tags": ["heritage", "foodie"], "diet": ["veg"], "priceLevel": 1,
+    "blurb": "A sweet shop at 220 Acharya Prafulla Chandra Road, Shyambazar, said to be about 250 years old and run today by the sixth generation of the Modak family.",
+    "dishes": ["Kochuri and aloo-r torkari", "Luchi and aloo dum", "Bengali sweets"],
+    "tips": {
+      "expect": "A traditional Bengali breakfast spot and sweet shop at the Shyambazar five-point crossing.",
+      "good": "Hot kochuri and light potato curry for breakfast.",
+      "watch": "It is a breakfast and morning place, and much of the best is gone by midday.",
+      "tip": "Go early on Shashthi or Saptami before the day's pandal-hopping."
+    }
+  },
+  "nobin-chandra-das": {
+    "info": "researched", "cuisines": ["mishti"], "vibes": ["heritage", "quick_bite"],
+    "tags": ["heritage", "foodie"], "diet": ["veg"], "priceLevel": 1,
+    "blurb": "The Sovabazar sweet shop of the family of Nobin Chandra Das, who invented the rosogolla in 1868.",
+    "dishes": ["Rosogolla", "Sandesh"],
+    "tips": {
+      "expect": "A heritage sweet shop with roots in Kolkata's food history.",
+      "good": "The sandesh and the rosogolla, and being at the source of the legend.",
+      "watch": "Closing times vary, so go before the evening rush.",
+      "tip": "It is two minutes from the Shobhabazar Rajbari. Buy a box before you start the bari walk."
+    }
+  },
+  "golbari": {
+    "info": "researched", "cuisines": ["bengali", "north_indian"], "vibes": ["heritage", "adda", "family"],
+    "tags": ["heritage", "foodie"], "priceLevel": 1,
+    "blurb": "A Shyambazar eatery of nearly a century, started as the New Punjabi Restaurant and named Golbari for its semicircular facade. It is known for kosha mangsho.",
+    "dishes": ["Kosha mangsho", "Luchi or paratha"],
+    "tips": {
+      "expect": "A busy old-Kolkata eatery at the five-point crossing.",
+      "good": "The kosha mangsho, a slow-cooked, dry mutton curry.",
+      "watch": "It is crowded at lunch and dinner.",
+      "tip": "Combine with Adi Haridas Modak in a Shyambazar food stop."
+    }
+  }
+}

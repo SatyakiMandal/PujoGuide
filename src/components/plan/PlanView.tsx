@@ -1,0 +1,284 @@
+"use client";
+
+import { PlaceIcon } from "@/lib/placeIcon";
+import {
+  ArrowSquareOut,
+  Clock,
+  CurrencyInr,
+  DotsSixVertical,
+  Lightning,
+  LinkSimple,
+  Moon,
+  Path,
+  Ruler,
+  Shuffle,
+  Trash,
+  X,
+} from "@phosphor-icons/react";
+import { Reorder, useDragControls } from "motion/react";
+import { useState } from "react";
+import { CATEGORY_META } from "@/lib/categories";
+import { zoneName } from "@/lib/data";
+import { googleMapsLinks, shareUrl } from "@/lib/route/export";
+import { fmtFare, fmtMin, MODE_META } from "@/lib/route/modeMeta";
+import { optimiseOrder } from "@/lib/route/optimise";
+import { routePlaces, summarise, useLegs, type Leg } from "@/lib/route/useLegs";
+import type { Place } from "@/lib/schema";
+import { PlansCatalog } from "./PlansCatalog";
+import { useUI } from "@/store/ui";
+import { clsx } from "clsx";
+
+export function PlanView() {
+  const stops = useUI((s) => s.route.stops);
+  const pujaNight = useUI((s) => s.route.pujaNight);
+  const { setStops, clearRoute, setPujaNight, select } = useUI.getState();
+  const legs = useLegs();
+  const places = routePlaces(stops);
+  const [copied, setCopied] = useState(false);
+  const [browse, setBrowse] = useState(false);
+
+  if (places.length === 0 || browse) {
+    return <PlansCatalog hasRoute={places.length > 0} onDone={() => setBrowse(false)} />;
+  }
+
+  const sum = summarise(legs, places);
+  const links = googleMapsLinks(places);
+  const legAfter = (i: number) => legs[i];
+
+  const optimise = () => {
+    const order = optimiseOrder(places);
+    setStops(order.map((i) => places[i].slug));
+  };
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl(location.origin, stops));
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {
+      /* clipboard blocked; nothing useful to do */
+    }
+  };
+
+  return (
+    <div className="space-y-4">
+      <section className="space-y-3 rounded-2xl border border-line bg-surface p-4">
+        <div className="grid grid-cols-3 gap-2 text-center">
+          <Stat icon={<Clock size={18} weight="duotone" />} value={fmtMin(sum.total)} label="incl. time at stops" />
+          <Stat icon={<Ruler size={18} weight="duotone" />} value={`${sum.km.toFixed(1)} km`} label="travel" />
+          <Stat
+            icon={<CurrencyInr size={18} weight="duotone" />}
+            value={sum.fareMax === 0 ? "Free" : `₹${sum.fareMin}–${sum.fareMax}`}
+            label="rough fares"
+          />
+        </div>
+        <label className="flex cursor-pointer items-center justify-between gap-3 rounded-xl bg-surface2 px-3 py-2.5 text-sm">
+          <span className="flex items-center gap-2 font-medium">
+            <Moon size={18} weight="duotone" className="text-accent" /> Puja-night conditions
+          </span>
+          <span className="text-xs text-muted">slower roads, dearer cabs, crowded lanes</span>
+          <input
+            type="checkbox"
+            checked={pujaNight}
+            onChange={(e) => setPujaNight(e.target.checked)}
+            className="size-5 accent-[var(--primary)]"
+          />
+        </label>
+      </section>
+
+      <Reorder.Group axis="y" values={stops} onReorder={setStops} className="space-y-1">
+        {places.map((p, i) => (
+          <StopRow key={p.slug} place={p} index={i} leg={legAfter(i)} onOpen={() => select(p.slug)} />
+        ))}
+      </Reorder.Group>
+
+      <div className="flex flex-wrap gap-2">
+        <Action onClick={() => setBrowse(true)} icon={<Path size={17} weight="bold" />}>
+          Browse plans
+        </Action>
+        <Action onClick={optimise} disabled={places.length < 4} icon={<Shuffle size={17} weight="bold" />}>
+          Optimise order
+        </Action>
+        {links.map((href, i) => (
+          <a
+            key={href}
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-10 items-center gap-2 rounded-full bg-primary px-4 text-sm font-semibold text-primary-fg transition-transform active:scale-95"
+          >
+            <ArrowSquareOut size={17} weight="bold" />
+            {links.length > 1 ? `Google Maps · part ${i + 1}` : "Open in Google Maps"}
+          </a>
+        ))}
+        <Action onClick={copy} icon={<LinkSimple size={17} weight="bold" />}>
+          {copied ? "Link copied" : "Copy link"}
+        </Action>
+        <Action onClick={clearRoute} icon={<Trash size={17} weight="bold" />}>
+          Clear
+        </Action>
+      </div>
+
+      <p className="text-xs leading-relaxed text-muted">
+        Times and fares are estimates. Pins are approximate until verified, and auto, cab and bike prices are rough
+        models, not quotes. Open the ride apps for real prices. Metro stations and tracks come from OpenStreetMap.
+      </p>
+    </div>
+  );
+}
+
+function StopRow({ place, index, leg, onOpen }: { place: Place; index: number; leg?: Leg; onOpen: () => void }) {
+  const controls = useDragControls();
+  const removeStop = useUI((s) => s.removeStop);
+  const meta = CATEGORY_META[place.category];
+
+  return (
+    <Reorder.Item
+      value={place.slug}
+      dragListener={false}
+      dragControls={controls}
+      className="list-none"
+      whileDrag={{ scale: 1.02, zIndex: 20 }}
+      transition={{ type: "spring", stiffness: 500, damping: 36 }}
+    >
+      <div className="flex items-center gap-2 rounded-2xl border border-line bg-surface p-2">
+        <button
+          type="button"
+          aria-label={`Drag to reorder ${place.name.en}`}
+          onPointerDown={(e) => controls.start(e)}
+          className="grid size-9 shrink-0 cursor-grab touch-none place-items-center rounded-lg text-muted active:cursor-grabbing"
+        >
+          <DotsSixVertical size={20} weight="bold" />
+        </button>
+        <span className="grid size-7 shrink-0 place-items-center rounded-full bg-fg text-xs font-bold text-bg">
+          {index + 1}
+        </span>
+        <button type="button" onClick={onOpen} className="flex min-w-0 flex-1 items-center gap-2 text-left">
+          <span
+            className="grid size-8 shrink-0 place-items-center rounded-full"
+            style={{ background: `var(${meta.cssVar})`, color: "var(--pin-fg)" }}
+          >
+            <PlaceIcon place={place} size={17} />
+          </span>
+          <span className="min-w-0">
+            <span className="block truncate text-sm font-medium">{place.name.en}</span>
+            <span className="block truncate text-xs text-muted">{zoneName.get(place.zones[0])}</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          aria-label={`Remove ${place.name.en}`}
+          onClick={() => removeStop(place.slug)}
+          className="grid size-9 shrink-0 place-items-center rounded-full text-muted hover:bg-surface2"
+        >
+          <X size={16} weight="bold" />
+        </button>
+      </div>
+      {leg && <LegCard leg={leg} />}
+    </Reorder.Item>
+  );
+}
+
+function LegCard({ leg }: { leg: Leg }) {
+  const pujaNight = useUI((s) => s.route.pujaNight);
+  const setLegMode = useUI((s) => s.setLegMode);
+  const o = leg.option;
+  const road = leg.chosen === "auto" || leg.chosen === "cab" || leg.chosen === "bike";
+
+  return (
+    <div className="ml-6 mt-1 border-l-2 border-dashed border-line pb-2 pl-4">
+      <div className="grid grid-cols-5 gap-1 py-1.5">
+        {leg.options.map((opt) => {
+          const m = MODE_META[opt.mode];
+          const Icon = m.icon;
+          const active = leg.chosen === opt.mode;
+          return (
+            <button
+              key={opt.mode}
+              type="button"
+              disabled={!opt.available}
+              aria-pressed={active}
+              onClick={() => setLegMode(leg.key, opt.mode === leg.auto && !active ? null : opt.mode)}
+              className={clsx(
+                "relative flex min-w-0 flex-col items-center gap-0.5 rounded-xl border px-0.5 py-1.5 text-[11px] leading-tight transition-colors",
+                active ? "border-transparent text-white" : "border-line bg-surface hover:bg-surface2",
+                !opt.available && "opacity-40",
+                leg.loading && "animate-pulse",
+              )}
+              style={active ? { background: m.color } : undefined}
+            >
+              <Icon size={19} weight={active ? "fill" : "duotone"} />
+              <span className="font-semibold tabular-nums">{opt.available ? fmtMin(opt.minutes).replace(" min", "m").replace(" h ", "h ") : "n/a"}</span>
+              <span className={clsx("w-full truncate text-center text-[10px] tabular-nums", active ? "text-white/85" : "text-muted")}>
+                {opt.available ? fmtFare(opt.fare) : "–"}
+              </span>
+              {opt.mode === leg.auto && opt.available && (
+                <span className="absolute -right-1 -top-1.5 grid size-4 place-items-center rounded-full bg-accent text-[#17110e]" title="Suggested">
+                  <Lightning size={10} weight="fill" />
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+
+      {o.steps && (
+        <ol className="mt-1 space-y-1 text-xs text-muted">
+          {o.steps.map((s, i) => (
+            <li key={i} className="flex items-start gap-1.5">
+              {s.kind === "walk" && <span>Walk {s.minutes} min to {s.to}</span>}
+              {s.kind === "ride" && (
+                <span>
+                  <i className="mr-1 inline-block size-2 rounded-full align-middle" style={{ background: s.color }} />
+                  {s.line}: {s.from} → {s.to} ({s.stops} stops, {s.minutes} min)
+                </span>
+              )}
+              {s.kind === "transfer" && <span>Change at {s.at} (~{s.minutes} min)</span>}
+            </li>
+          ))}
+        </ol>
+      )}
+      {o.note && <p className="mt-1 text-xs text-muted">{o.note}</p>}
+      {road && pujaNight && (
+        <p className="mt-1 text-xs text-muted">
+          After dark, vehicles are often kept out of the big pandal areas. Expect to get down and walk the last stretch.
+        </p>
+      )}
+      {o.approx && !leg.loading && leg.chosen !== "metro" && (
+        <p className="mt-1 text-xs text-muted">Straight-line estimate: the router didn&apos;t respond.</p>
+      )}
+    </div>
+  );
+}
+
+const Stat = ({ icon, value, label }: { icon: React.ReactNode; value: string; label: string }) => (
+  <div className="space-y-0.5">
+    <div className="flex justify-center text-accent">{icon}</div>
+    <div className="text-sm font-semibold tabular-nums">{value}</div>
+    <div className="text-[11px] leading-tight text-muted">{label}</div>
+  </div>
+);
+
+function Action({
+  children,
+  icon,
+  onClick,
+  disabled,
+}: {
+  children: React.ReactNode;
+  icon: React.ReactNode;
+  onClick: () => void;
+  disabled?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className="inline-flex min-h-10 items-center gap-2 rounded-full border border-line bg-surface px-4 text-sm font-medium transition-transform active:scale-95 disabled:opacity-40"
+    >
+      {icon}
+      {children}
+    </button>
+  );
+}

@@ -1,0 +1,227 @@
+{
+  "the-irish-house-kolkata": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["bar", "late_night", "family"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "A pub on the 5th floor of Quest Mall, Park Circus, and one of the first all-day pubs in Kolkata.",
+    "dishes": ["Shepherd's pie", "Draught beer", "Experimental cocktails (e.g. the Inverted Bird)"],
+    "tips": {
+      "expect": "An upbeat, cheerfully Irish-themed pub with global pub food.",
+      "good": "Shepherd's pie and the creative cocktails.",
+      "watch": "Mall hours apply, and Puja weekends are busy.",
+      "tip": "Good for a group of friends on the Park Circus side."
+    }
+  },
+  "the-lords-and-barons": {
+    "info": "researched", "cuisines": ["continental", "chinese"], "vibes": ["bar", "late_night", "heritage"],
+    "tags": ["date", "foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "A two-floor Park Street bar, open since 2018, styled like a British-era club with chandeliers and amber wood.",
+    "dishes": ["Tangra-style chilli fish", "Cheese chicken bomb", "Whiskey sour"],
+    "tips": {
+      "expect": "Old-world elegance with live singers, retro music and open-mic nights.",
+      "good": "The ambience and the Tangra-style bar food.",
+      "watch": "Entry and tables get tight on weekends.",
+      "tip": "Reserve if you are going in a group on Saptami or Ashtami."
+    }
+  },
+  "trapeze": {
+    "info": "researched", "cuisines": ["asian", "italian"], "vibes": ["bar", "late_night", "aesthetic"],
+    "tags": ["date", "foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "A stylish Park Street gastropub with eclectic furnishings and a skylight, serving noodles, pizzas and pan-Asian plates.",
+    "dishes": ["Crispy chilli babycorn", "Bufala pizza"],
+    "tips": {
+      "expect": "A cosy, trendy room with good music and live music on Sundays.",
+      "good": "The pizzas and the drinks menu.",
+      "watch": "Pricing is on the higher side.",
+      "tip": "A strong pick for Sunday night."
+    }
+  },
+  "refinery-091": {
+    "info": "researched", "cuisines": ["north_indian", "continental"], "vibes": ["bar", "late_night"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "A two-level industrial-style gastropub in Sector V, known for brews infused with fruit and spices and for big brunch spreads.",
+    "tips": {
+      "expect": "An industrial brewpub with Indian and global food.",
+      "good": "The experimental brews and the brunch.",
+      "watch": "Sector V gets crowded on weekends.",
+      "tip": "A group-friendly stop after the Salt Lake pandals."
+    }
+  },
+  "motorworks-and-brewing-company": {
+    "info": "researched", "cuisines": ["asian", "continental"], "vibes": ["bar", "late_night"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "A restaurant and brewery in Sector V serving six craft beers called 'Motor Fuels' and signature beertails.",
+    "dishes": ["Craft beer samplers", "Beertails", "Beer Up Table (groups of 10+, unlimited beer for two hours)"],
+    "tips": {
+      "expect": "Beer-led evenings with samplers so you can try before you choose.",
+      "good": "The range of beers, from stout and lager to German and Belgian wheat.",
+      "watch": "Group deals need at least ten people.",
+      "tip": "Go with friends for the samplers."
+    }
+  },
+  "deck-88": {
+    "info": "researched", "cuisines": ["north_indian", "asian", "continental"], "vibes": ["bar", "rooftop", "late_night"],
+    "tags": ["date"], "openLate": true, "priceLevel": 3,
+    "blurb": "A rooftop at The Astor Hotel, popular for years, with live music gigs on Thursdays and sometimes Sundays.",
+    "dishes": ["Thai curries", "Chicken wings", "Mac and cheese", "Kebabs and tikkas"],
+    "tips": {
+      "expect": "An open-air rooftop with a mixed menu and live bands.",
+      "good": "The setting on a warm October night.",
+      "watch": "If rain is forecast, ask about covered seating.",
+      "tip": "Near the Maidan and Park Street, so easy to add."
+    }
+  },
+  "the-grid": {
+    "info": "researched", "cuisines": ["continental", "asian"], "vibes": ["bar", "late_night"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 3,
+    "blurb": "A microbrewery at Haute Street Corporate Park, Topsia, described as one of the best in town, with a strong kitchen team.",
+    "tips": {
+      "expect": "Craft beer and a serious menu.",
+      "watch": "Topsia is off the main pandal circuits.",
+      "tip": "Go as a standalone evening."
+    }
+  },
+  "level-seven-gastropub-and-rooftop-lounge": {
+    "info": "researched", "cuisines": ["continental", "asian", "north_indian"], "vibes": ["bar", "rooftop", "late_night"],
+    "tags": ["date"], "openLate": true,
+    "blurb": "A semi-open-air rooftop bar and lounge in Topsia with city views and a multi-cuisine menu.",
+    "tips": {
+      "expect": "A lively rooftop with an extensive menu.",
+      "watch": "It is in Topsia, which takes time to reach from the pandal circuits.",
+      "tip": "A late-night destination."
+    }
+  },
+  "soul-the-sky-lounge": {
+    "info": "researched", "closed": true, "cuisines": ["continental", "chinese", "italian", "north_indian"], "vibes": ["bar", "rooftop"],
+    "tags": ["date"],
+    "blurb": "A bohemian rooftop on Little Russel Street, once with views of Victoria Memorial. It has since become Soul Atrium at a new address.",
+    "tips": {
+      "watch": "Soul – The Sky Lounge is now Soul Atrium, a 2,300 sq ft restaurant on Purna Das Road, so this pin may be the old address.",
+      "tip": "Search for Soul Atrium on Purna Das Road, Gariahat, instead."
+    }
+  },
+  "lmnoq-skybar": {
+    "info": "researched", "cuisines": ["continental", "asian"], "vibes": ["bar", "rooftop", "late_night"],
+    "tags": ["date", "photogenic"], "openLate": true, "priceLevel": 3,
+    "blurb": "An 8,000 sq ft, 150-seat skybar on the 12th floor of Magma House, Park Street, with panoramic city views.",
+    "tips": {
+      "expect": "A large rooftop with global food and cocktails from a noted mixologist.",
+      "good": "The skyline view at night.",
+      "watch": "It reopened after a closure, so check that it is open before you go.",
+      "tip": "A strong date-night option on Park Street."
+    }
+  },
+  "botanik": {
+    "info": "researched", "cuisines": ["continental", "asian"], "vibes": ["bar", "rooftop", "aesthetic"],
+    "tags": ["date", "photogenic"], "priceLevel": 4,
+    "blurb": "An open-air lounge at the Golden Parkk hotel on Ho Chi Minh Sarani, with a green theme and Victoria Memorial in the sunset view.",
+    "tips": {
+      "expect": "A large 9,500 sq ft space in three zones: a lounge, an open-air deck and a covered glasshouse.",
+      "good": "The sunset, and the glasshouse for rainy nights.",
+      "watch": "A luxury hotel venue, so it is pricey.",
+      "tip": "Reach by sunset."
+    }
+  },
+  "country-roads-micro-brewery-and-restaurant": {
+    "info": "researched", "cuisines": ["continental", "asian"], "vibes": ["bar", "aesthetic"],
+    "tags": ["foodie"],
+    "blurb": "A microbrewery in The Galleria, New Town, with German Weizen, Belgian Blonde and Scottish Ale on tap.",
+    "tips": {
+      "expect": "A cosy, lively brewpub with Instagram-friendly interiors.",
+      "watch": "It is in New Town, away from the Puja circuits.",
+      "tip": "Only worth it if you are already in New Town."
+    }
+  },
+  "club-de-golf": {
+    "info": "researched", "category": "restaurant", "cuisines": [], "vibes": [],
+    "tags": ["family"],
+    "blurb": "A golf arena at Eco Park, New Town (near Gate 6), on about 20 acres with a 12-stand driving range.",
+    "tips": {
+      "expect": "A golf driving range where you can rent clubs and balls and hire trainers.",
+      "watch": "This is an activity venue rather than a restaurant, and it is a long way from the pandals.",
+      "tip": "Skip it for Puja planning unless you are visiting Eco Park."
+    }
+  },
+  "mnky-house-cafe-and-lounge": {
+    "info": "researched", "cuisines": ["continental"], "vibes": ["bar", "aesthetic", "late_night"],
+    "tags": ["photogenic"],
+    "blurb": "A chic cafe and lounge in DLF Galleria, New Town, with kaleidoscopic interiors, monkey artwork and neon.",
+    "tips": {
+      "expect": "A colourful, photogenic cafe-lounge.",
+      "watch": "It is in New Town and mall hours apply.",
+      "tip": "Only if you are already in New Town."
+    }
+  },
+  "the-drunken-monkey-o2-hotel": {
+    "info": "researched", "cuisines": [], "vibes": ["bar", "late_night"],
+    "tags": ["late-night"], "openLate": true,
+    "blurb": "A nightclub run by O2 VIP hotel on VIP Road, with a colourful decor and a dance floor for up to about 150 people.",
+    "tips": {
+      "expect": "A dance club rather than a restaurant.",
+      "watch": "Private bookings are taken on some weeknights.",
+      "tip": "Call ahead for entry rules."
+    }
+  },
+  "canteen-pub-and-grub": {
+    "info": "researched", "cuisines": ["street_food", "italian", "chinese"], "vibes": ["bar", "late_night", "family"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 2,
+    "blurb": "A pub on the 3rd floor of City Centre 1, Salt Lake, with live music and a dance floor.",
+    "tips": {
+      "expect": "A casual pub with pasta, pizza, seafood and street food. About ₹1,200 for two.",
+      "good": "The live music and the easy menu.",
+      "watch": "Mall hours apply.",
+      "tip": "A good Salt Lake wind-down."
+    }
+  },
+  "chai-break-cafe-and-bar": {
+    "info": "researched", "cuisines": ["coffee", "north_indian", "italian", "continental"], "vibes": ["bar", "adda", "quick_bite"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "A cafe and bar in City Centre, Salt Lake, with a long list of teas and coffees and a mix of Indian, Italian and Continental food.",
+    "tips": {
+      "expect": "A casual, social place.",
+      "good": "The tea and coffee variety, and the desserts.",
+      "tip": "A calm break during a City Centre dinner."
+    }
+  },
+  "the-conclave-city-centre-salt-lake": {
+    "info": "researched", "cuisines": ["continental", "mughlai"], "vibes": ["family", "heritage"],
+    "tags": ["foodie"], "priceLevel": 3,
+    "blurb": "A restaurant on the 7th floor of City Centre, Salt Lake, serving club food and 1950s Park Street dishes. It sits above the Afraa deli.",
+    "tips": {
+      "expect": "A sit-down meal. About ₹2,000 for two, before taxes, without alcohol.",
+      "good": "The old-Park-Street-style dishes.",
+      "watch": "Mall hours apply.",
+      "tip": "Good for an unhurried dinner."
+    }
+  },
+  "the-orient": {
+    "info": "researched", "cuisines": ["chinese", "asian"], "vibes": ["family", "bar"],
+    "tags": ["foodie", "family"], "priceLevel": 3,
+    "blurb": "A pan-Asian restaurant on the 4th floor of City Centre 1, Salt Lake, serving Chinese, Japanese and Thai food, with a rating of about 4.3.",
+    "tips": {
+      "expect": "A modern, spacious room with sushi, seafood and a bar.",
+      "good": "Variety, which suits groups.",
+      "watch": "Mall hours apply.",
+      "tip": "A Salt Lake dinner after the Sector 1 blocks."
+    }
+  },
+  "barf-soda-paani-park-street": {
+    "info": "researched", "cuisines": ["north_indian", "italian"], "vibes": ["bar", "quick_bite", "late_night"],
+    "tags": ["foodie"], "openLate": true, "priceLevel": 2,
+    "blurb": "A modern pub on the first floor of Magma House, Park Street, built around free, unlimited soda and water on the house.",
+    "dishes": ["Butter chicken pasta", "Paneer makhani"],
+    "tips": {
+      "expect": "A lively, affordable Park Street pub.",
+      "good": "Reasonable prices and the free soda-and-water concept.",
+      "tip": "Good for a big, budget-conscious group."
+    }
+  },
+  "carpe-diem": {
+    "info": "researched", "cuisines": ["chinese", "continental"], "vibes": ["family", "quick_bite"],
+    "tags": ["family"], "priceLevel": 2,
+    "blurb": "A Park Street area restaurant at 18M Mother Teresa Sarani, known for refreshing mocktails and drinks.",
+    "tips": {
+      "expect": "A relaxed restaurant suitable for family meals and groups.",
+      "tip": "A practical stop on Park Street."
+    }
+  }
+}

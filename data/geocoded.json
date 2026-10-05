@@ -1,0 +1,325 @@
+{
+ "hathkhola-dutta-bari": null,
+ "baghbazar-haldar-bari": null,
+ "khelat-ghosh-babu-bari": null,
+ "chorbagan-sil-bari": null,
+ "chorbagan-mitra-bari": null,
+ "thantania-dutta-bari": null,
+ "badan-chand-roy-bari": null,
+ "ramgopal-saha-bari": null,
+ "nilmani-mitra-bari": null,
+ "rani-roshmoni-bari": null,
+ "mallick-bari": {
+  "lat": 22.5252082,
+  "lng": 88.347524,
+  "name": "Priyanath Mallick Road",
+  "osm": "way/144127824",
+  "kind": "highway:residential"
+ },
+ "sabarna-roy-chowdhury-atchala-bari": null,
+ "amarendra-bhavan-roy-bari": null,
+ "shobhabazar-rajbari-radha-kanta-dev-estate": null,
+ "shobhabazar-rajbari-maharaja-naba-krishna-dev-bari": null,
+ "shobhabazar-rajbari-thakur-dalan": null,
+ "darjipara-mitra-bari": {
+  "lat": 22.5913799,
+  "lng": 88.3647124,
+  "name": "North Maternity Home - Darjipara Matri Sadan — নর্থ মেটার্নিটি হোম (দর্জিপাড়া মাতৃসদন)",
+  "osm": "way/1355797693",
+  "kind": "amenity:hospital"
+ },
+ "chatu-babu-latu-babu-bari": null,
+ "bholanath-dham-dutta-bari": null,
+ "maniktala-saha-bari": null,
+ "lala-bari": null,
+ "shamul-dhone-dutta-bari": null,
+ "daw-bari-bandook-wala": null,
+ "jorasanko-daw-bari": null,
+ "shib-krishna-daw-bari": null,
+ "harakutir-ray-banerjee-bari": null,
+ "pathuriaghata-rajbari": null,
+ "kalighat-milan-sangha": {
+  "lat": 22.5245094,
+  "lng": 88.3410755,
+  "name": "Kalighat Milan Sangha",
+  "osm": "node/10082374501",
+  "kind": "amenity:place_of_worship"
+ },
+ "64-pally": null,
+ "66-pally": null,
+ "mudiali-club": {
+  "lat": 22.5100748,
+  "lng": 88.3466256,
+  "name": "Mudiali Club",
+  "osm": "node/10083307830",
+  "kind": "amenity:place_of_worship"
+ },
+ "tridhara-sammilani": {
+  "lat": 22.5195762,
+  "lng": 88.3553485,
+  "name": "Tridhara Sammilani",
+  "osm": "node/10082383706",
+  "kind": "amenity:place_of_worship"
+ },
+ "deshapriya-park": {
+  "lat": 22.5184354,
+  "lng": 88.3535152,
+  "name": "Deshapriya Park",
+  "osm": "way/35875337",
+  "kind": "leisure:park"
+ },
+ "ballygunge-cultural-association": {
+  "lat": 22.5158837,
+  "lng": 88.3558166,
+  "name": "Ballygunge Cultural Association",
+  "osm": "node/10083307833",
+  "kind": "amenity:place_of_worship"
+ },
+ "singhi-park": {
+  "lat": 22.5212239,
+  "lng": 88.3630115,
+  "name": "Singhi Park Durgotsav",
+  "osm": "node/10082383703",
+  "kind": "amenity:place_of_worship"
+ },
+ "hindustan-park": {
+  "lat": 22.5176859,
+  "lng": 88.3633438,
+  "name": "Hindustan Park",
+  "osm": "way/35875256",
+  "kind": "highway:residential"
+ },
+ "maddox-square": {
+  "lat": 22.5262957,
+  "lng": 88.3546561,
+  "name": "Maddox Square",
+  "osm": "way/122151349",
+  "kind": "leisure:park"
+ },
+ "dover-lane": {
+  "lat": 22.5211372,
+  "lng": 88.3618884,
+  "name": "Dover Lane",
+  "osm": "way/121768039",
+  "kind": "highway:residential"
+ },
+ "jadavpur-8b": {
+  "lat": 22.4956536,
+  "lng": 88.3706122,
+  "name": "Jadavpur 8B",
+  "osm": "node/651804657",
+  "kind": "highway:bus_stop"
+ },
+ "suruchi-sangha": null,
+ "ekdalia-evergreen": {
+  "lat": 22.5212527,
+  "lng": 88.3659598,
+  "name": "Ekdalia Evergreen",
+  "osm": "node/10082383702",
+  "kind": "amenity:place_of_worship"
+ },
+ "aikatan": {
+  "lat": 22.5041897,
+  "lng": 88.3685991,
+  "name": "Aikatan",
+  "osm": "node/10083413846",
+  "kind": "amenity:place_of_worship"
+ },
+ "alipore-78-pally": null,
+ "deshbandhu-park": null,
+ "netaji-sangha": {
+  "lat": 22.537476,
+  "lng": 88.3509847,
+  "name": "Netaji Bhavan",
+  "osm": "way/358782035",
+  "kind": "tourism:museum"
+ },
+ "kasba-14-pally": null,
+ "natun-dal": null,
+ "udichi": null,
+ "baghbazar-sarbojanin": null,
+ "hatibagan-sarbojanin": {
+  "lat": 22.5949572,
+  "lng": 88.3709282,
+  "name": "Hatibagan",
+  "osm": "node/8510219354",
+  "kind": "shop:gift"
+ },
+ "kumartuli-park": null,
+ "kumartuli-sarbojanin": null,
+ "kashi-bose-lane": {
+  "lat": 22.5910057,
+  "lng": 88.3689645,
+  "name": "Kashi Bose Lane",
+  "osm": "node/11271655876",
+  "kind": "amenity:place_of_worship"
+ },
+ "chaltabagan-lohapatty": null,
+ "maniktala-chaltabagan": null,
+ "ahritola-sarbojanin": {
+  "lat": 22.5948384,
+  "lng": 88.357193,
+  "name": "Ahiritola Sarbojanin Durgotsav",
+  "osm": "node/11271502618",
+  "kind": "amenity:place_of_worship"
+ },
+ "tala-prattay": null,
+ "dum-dum-park": {
+  "lat": 22.6114242,
+  "lng": 88.4101901,
+  "name": "Dum Dum Park",
+  "osm": "node/12040528665",
+  "kind": "highway:bus_stop"
+ },
+ "shreebhumi-sporting-club": null,
+ "lalabagan-nabankur": null,
+ "santosh-mitra-square": {
+  "lat": 22.5658629,
+  "lng": 88.3655387,
+  "name": "Santosh Mitra Square",
+  "osm": "way/104043498",
+  "kind": "leisure:park"
+ },
+ "college-square": {
+  "lat": 22.5745254,
+  "lng": 88.3644645,
+  "name": "College Square",
+  "osm": "node/10082130645",
+  "kind": "amenity:place_of_worship"
+ },
+ "mohammed-ali-park": null,
+ "taltala-sarbojanin": {
+  "lat": 22.5545447,
+  "lng": 88.3621749,
+  "name": "Taltala Sarbojanin",
+  "osm": "node/10082130652",
+  "kind": "amenity:place_of_worship"
+ },
+ "chorbagan-sarbojanin": {
+  "lat": 22.5835113,
+  "lng": 88.3631633,
+  "name": "Chorbagan Sarbojanin",
+  "osm": "node/10082038827",
+  "kind": "amenity:place_of_worship"
+ },
+ "chetla-agrani": {
+  "lat": 22.5164347,
+  "lng": 88.3371893,
+  "name": "Chetla Agrani",
+  "osm": "node/10083307821",
+  "kind": "amenity:place_of_worship"
+ },
+ "badamtala-ashar-sangha": {
+  "lat": 22.5179272,
+  "lng": 88.3441647,
+  "name": "Badamtala Ashar Sangha Durgotsav",
+  "osm": "node/10082383714",
+  "kind": "amenity:place_of_worship"
+ },
+ "naktala-udayan-sangha": {
+  "lat": 22.4744913,
+  "lng": 88.3665749,
+  "name": "Naktala Udayan Sangha",
+  "osm": "node/10083540468",
+  "kind": "amenity:place_of_worship"
+ },
+ "bosepukur-sitala-mandir": {
+  "lat": 22.5191703,
+  "lng": 88.3847542,
+  "name": "Bosepukur Sitala Mandir",
+  "osm": "node/10083371974",
+  "kind": "amenity:place_of_worship"
+ },
+ "68-pally": null,
+ "alipore-sarbojanin": {
+  "lat": 22.519627,
+  "lng": 88.3336573,
+  "name": "Alipore Sarbojanin",
+  "osm": "node/10083344096",
+  "kind": "amenity:place_of_worship"
+ },
+ "fd-block": {
+  "lat": 22.5792473,
+  "lng": 88.4141251,
+  "name": "FD Block",
+  "osm": "node/11971705711",
+  "kind": "highway:bus_stop"
+ },
+ "ak-block": null,
+ "ae-block": null,
+ "bj-block": null,
+ "ab-block": null,
+ "ib-block": {
+  "lat": 22.5718792,
+  "lng": 88.4152289,
+  "name": "IB Block",
+  "osm": "way/191560154",
+  "kind": "landuse:residential"
+ },
+ "gd-block": {
+  "lat": 22.5760669,
+  "lng": 88.4200676,
+  "name": "National Institute of Homeopathy",
+  "osm": "way/191911481",
+  "kind": "amenity:hospital"
+ },
+ "fe-block": {
+  "lat": 22.5834959,
+  "lng": 88.4184648,
+  "name": "FE Block",
+  "osm": "node/11971705709",
+  "kind": "highway:bus_stop"
+ },
+ "ce-block": {
+  "lat": 22.5905449,
+  "lng": 88.4116001,
+  "name": "De Sovrani",
+  "osm": "way/238233668",
+  "kind": "tourism:motel"
+ },
+ "laboni-estate": null,
+ "indian-coffee-house-college-street": null,
+ "paramount-sharbat": null,
+ "flurys": null,
+ "peter-cat": {
+  "lat": 22.5524479,
+  "lng": 88.3526151,
+  "name": "Peter Cat",
+  "osm": "node/3565448998",
+  "kind": "amenity:restaurant"
+ },
+ "nizam-s": {
+  "lat": 22.5621436,
+  "lng": 88.3535384,
+  "name": "Nizam's",
+  "osm": "node/5150935621",
+  "kind": "amenity:cafe"
+ },
+ "aminia": {
+  "lat": 22.5622659,
+  "lng": 88.3537378,
+  "name": "Aminia",
+  "osm": "node/9911180717",
+  "kind": "amenity:restaurant"
+ },
+ "royal-indian-hotel": null,
+ "arsalan": {
+  "lat": 22.5539364,
+  "lng": 88.354238,
+  "name": "Arsalan",
+  "osm": "node/2599246808",
+  "kind": "amenity:restaurant"
+ },
+ "k-c-das": null,
+ "nobin-chandra-das": null,
+ "mitra-cafe": null,
+ "6-ballygunge-place": {
+  "lat": 22.5277993,
+  "lng": 88.3686373,
+  "name": "6 Ballygunge Place",
+  "osm": "node/5151718328",
+  "kind": "amenity:restaurant"
+ },
+ "kewpie-s-kitchen": null,
+ "vivekananda-park-phuchka-stalls": null
+}

@@ -1,0 +1,77 @@
+{
+  "barishh": {
+    "info": "researched", "cuisines": ["north_indian"], "vibes": ["aesthetic", "family"],
+    "tags": ["foodie", "date"], "priceLevel": 3,
+    "blurb": "A modern Indian restaurant on the 4th floor of South City Mall, with a nature-themed interior, open about 12:30 to 11 pm.",
+    "tips": {
+      "expect": "Creatively named dishes in a colourful, nature-themed room. About ₹1,500 for two, rated about 4.4.",
+      "watch": "Mall hours apply.",
+      "tip": "A good sit-down meal after the Jadavpur pandals."
+    }
+  },
+  "mqxt": {
+    "info": "researched", "cuisines": ["continental", "chinese"], "vibes": ["quick_bite", "family"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "A budget-friendly cafe on Sarat Bose Road, Lake Terrace, listed for burgers, Chinese and fast food at about ₹600 for two.",
+    "tips": {
+      "expect": "A casual, affordable place for groups.",
+      "watch": "Listings describe it more as a burger and fast-food spot than the European deli its name suggests.",
+      "tip": "Handy near the Lake Market cafes."
+    }
+  },
+  "wafira": {
+    "info": "researched", "cuisines": ["north_indian", "asian", "continental", "dessert"], "vibes": ["bar", "late_night", "aesthetic"],
+    "tags": ["date"], "openLate": true, "priceLevel": 2,
+    "blurb": "A lounge with Moroccan interiors and a handcrafted bar menu, at 13 Ho Chi Minh Sarani.",
+    "tips": {
+      "expect": "A stylish lounge with finger food and mixed cuisines. About ₹1,200 for two.",
+      "tip": "Part of the Ho Chi Minh Sarani cluster with Cove, Mehico and Sorano."
+    }
+  },
+  "makati-kolkata": {
+    "info": "researched", "cuisines": ["continental", "asian"], "vibes": ["bar", "family"],
+    "tags": ["date"], "priceLevel": 3,
+    "blurb": "The on-site fine-dining restaurant at the Golden Parkk hotel on Ho Chi Minh Sarani, with a bar and a happy hour.",
+    "tips": {
+      "expect": "Hotel dining in a calm room.",
+      "watch": "I couldn't confirm the specific cuisine.",
+      "tip": "Botanik, the rooftop lounge at the same hotel, is good for sunset."
+    }
+  },
+  "baan-thai": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["heritage", "family", "aesthetic"],
+    "tags": ["foodie", "date", "heritage"], "priceLevel": 4,
+    "blurb": "Fine-dining Thai at The Oberoi Grand, Kolkata, listed among India's top restaurants by Condé Nast Traveller India (2023) and by La Liste (2025).",
+    "dishes": ["Thai cuisine led by Chef Klae Somsuay"],
+    "tips": {
+      "expect": "Hand-carved statues, wooden masks, a life-sized Buddha and sunken tables behind carved screens.",
+      "good": "A real Thai kitchen sourcing ingredients from Thailand.",
+      "watch": "Lunch is 12:30 to 3 pm and dinner 7 to 11:45 pm. It is expensive.",
+      "tip": "Book ahead for a special dinner, a short walk from Esplanade."
+    }
+  },
+  "ozora": {
+    "info": "researched", "cuisines": ["continental", "italian"], "vibes": ["rooftop", "bar", "late_night", "aesthetic"],
+    "tags": ["date", "photogenic"], "openLate": true, "priceLevel": 2,
+    "blurb": "A sky-bar and restaurant on the 20th floor of Acropolis Mall, Kasba, with white furnishings that glow in the evening.",
+    "dishes": ["Ozora ravioli", "Gnocchi al forno", "Date with kalakhand"],
+    "tips": {
+      "expect": "A stylish rooftop with artisanal cocktails and a multi-cuisine menu. About ₹1,000 for two.",
+      "good": "The view and the rooftop at night.",
+      "watch": "It is inside a mall, so check closing times.",
+      "tip": "A good finish after the Kasba pandals."
+    }
+  },
+  "vintage-asia": {
+    "info": "researched", "cuisines": ["asian", "chinese"], "vibes": ["heritage", "family", "aesthetic"],
+    "tags": ["foodie", "date"], "priceLevel": 4,
+    "blurb": "The pan-Asian restaurant at the JW Marriott Kolkata, praised for presentation and service.",
+    "dishes": ["Caramelised pork belly", "Ying yang yam bean", "Pumpkin prawn"],
+    "tips": {
+      "expect": "Chinese, Japanese and Thai dishes in a fine-dining room. About ₹3,000 for two, rated 4.4.",
+      "good": "Presentation and service.",
+      "watch": "Expensive, and in the Science City area, away from the pandals.",
+      "tip": "Better as a special dinner than as a pandal-hopping stop."
+    }
+  }
+}

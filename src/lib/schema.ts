@@ -1,0 +1,121 @@
+import { z } from "zod";
+
+export const REGIONS = ["north", "central", "south", "saltlake"] as const;
+export type Region = (typeof REGIONS)[number];
+
+export const CATEGORIES = [
+  "bonedi_bari",
+  "pandal",
+  "cafe",
+  "restaurant",
+  "sweets",
+  "street_food",
+] as const;
+export type Category = (typeof CATEGORIES)[number];
+
+export const FOOD_CATEGORIES: Category[] = ["cafe", "restaurant", "sweets", "street_food"];
+export const isFood = (c: Category) => FOOD_CATEGORIES.includes(c);
+
+export const CUISINES = [
+  "bengali",
+  "mughlai",
+  "chinese",
+  "asian",
+  "continental",
+  "italian",
+  "north_indian",
+  "biryani",
+  "bbq",
+  "rolls",
+  "mishti",
+  "dessert",
+  "street_food",
+  "coffee",
+  "bakery",
+] as const;
+export type Cuisine = (typeof CUISINES)[number];
+
+export const VIBES = [
+  "heritage",
+  "adda",
+  "family",
+  "quick_bite",
+  "aesthetic",
+  "rooftop",
+  "bar",
+  "late_night",
+] as const;
+
+/** Where a food place came from. "old" = the user's older list, where places may have closed. */
+export const SOURCES = ["seed", "new", "old"] as const;
+export type Source = (typeof SOURCES)[number];
+export type Vibe = (typeof VIBES)[number];
+
+export const DIETS = ["veg", "nonveg"] as const;
+export type Diet = (typeof DIETS)[number];
+
+/**
+ * area   = the neighbourhood anchor the pin is placed against.
+ * zone   = the user-facing filter group (a place can belong to several).
+ * `coordConfidence`:
+ *   area     – placed near its neighbourhood centre, NOT the real spot
+ *   osm      – matched by name on OpenStreetMap, near the expected neighbourhood
+ *   verified – an exact pin: saved by the user in Google Maps, or confirmed in data/overrides.json
+ */
+export const CROWDS = ["low", "medium", "high", "extreme"] as const;
+export type Crowd = (typeof CROWDS)[number];
+
+/** Short, practical notes shown in "Know before you go". Any field may be missing. */
+export const tipsSchema = z.object({
+  expect: z.string().optional(),
+  good: z.string().optional(),
+  watch: z.string().optional(),
+  tip: z.string().optional(),
+});
+export type Tips = z.infer<typeof tipsSchema>;
+
+export const placeSchema = z.object({
+  id: z.string(),
+  slug: z.string(),
+  category: z.enum(CATEGORIES),
+  name: z.object({ en: z.string(), bn: z.string().optional() }),
+  aliases: z.array(z.string()),
+  zones: z.array(z.string()).min(1),
+  region: z.enum(REGIONS),
+  area: z.string(),
+  lat: z.number(),
+  lng: z.number(),
+  coordConfidence: z.enum(["area", "osm", "verified"]),
+  metro: z.array(z.string()),
+  tags: z.array(z.string()),
+  notes: z.string().optional(),
+  address: z.string().optional(),
+  needsReview: z.boolean().optional(),
+  // food only
+  cuisines: z.array(z.enum(CUISINES)).optional(),
+  vibes: z.array(z.enum(VIBES)).optional(),
+  priceLevel: z.number().int().min(1).max(4).optional(),
+  diet: z.array(z.enum(DIETS)).optional(),
+  openLate: z.boolean().optional(),
+  /** Signature things to order / see. */
+  dishes: z.array(z.string()).optional(),
+  tips: tipsSchema.optional(),
+  /** Typical crowd at peak Puja hours (baris and pandals). */
+  crowd: z.enum(CROWDS).optional(),
+  /** The web says it has closed. Hidden unless "show closed" is on. */
+  closed: z.boolean().optional(),
+  /** "researched" = backed by sources we found; "inferred" = guessed from the name. */
+  info: z.enum(["researched", "inferred"]).optional(),
+  source: z.enum(SOURCES).optional(),
+  blurb: z.string().optional(),
+});
+export type Place = z.infer<typeof placeSchema>;
+
+export const zoneSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  region: z.enum(REGIONS),
+});
+export type Zone = z.infer<typeof zoneSchema>;
+
+export const KOLKATA_BOUNDS = { south: 22.4, north: 22.75, west: 88.2, east: 88.52 };

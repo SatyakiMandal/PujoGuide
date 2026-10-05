@@ -1,0 +1,51 @@
+{
+  "name": "pujoguide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "data": "tsx scripts/build-data.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "metro": "tsx scripts/fetch-metro.ts",
+    "postinstall": "node scripts/copy-maplibre-worker.mjs",
+    "geocode": "tsx scripts/geocode-osm.ts",
+    "food": "tsx scripts/ingest-lists.ts",
+    "plans": "tsx scripts/order-plans.ts"
+  },
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^2.6.2",
+    "@phosphor-icons/react": "^2.1.10",
+    "@vis.gl/react-google-maps": "^1.10.1",
+    "clsx": "^2.1.1",
+    "maplibre-gl": "^6.12.0",
+    "minisearch": "^7.2.0",
+    "motion": "^14.0.0",
+    "next": "16.3.8",
+    "next-themes": "^0.4.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-map-gl": "^8.1.3",
+    "supercluster": "^9.1.0",
+    "vaul": "^1.1.2",
+    "zod": "^4.6.5",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/supercluster": "^7.1.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  }
+}

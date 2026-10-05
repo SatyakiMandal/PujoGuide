@@ -1,0 +1,113 @@
+{
+  "the-corner-courtyard": {
+    "info": "researched", "cuisines": ["continental", "italian", "asian"], "vibes": ["aesthetic", "family"],
+    "tags": ["foodie", "date"], "priceLevel": 1,
+    "blurb": "A cafe at 92 Sarat Bose Road with a world-tour menu, open about 8 am to midnight. Small plates, mains and desserts are each reported under ₹400.",
+    "dishes": ["Currywurst", "Arancini", "Rabokki (Korean street food)", "Peruvian bhetki", "Hand-rolled pizzas"],
+    "tips": {
+      "expect": "An eclectic, easygoing menu pulling from Korea, Italy, Spain, Germany and more.",
+      "good": "Variety at a fair price, and long hours that work for late dinners.",
+      "tip": "A good, affordable break on the Bhowanipore and Hazra side."
+    }
+  },
+  "the-red-bari": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["heritage", "aesthetic", "quick_bite"],
+    "tags": ["heritage", "quiet", "date"], "priceLevel": 2,
+    "blurb": "A 90-year-old home at 18 Sadananda Road, Kalighat, turned into a coffee shop, bed and breakfast, and multi-level co-working and events space.",
+    "tips": {
+      "expect": "A calm heritage-house cafe. About ₹800 for two.",
+      "watch": "Reported hours are Tuesday to Saturday 1 to 9 pm and Sunday 11 am to 9 pm, so it is closed on Monday (Ashtami).",
+      "tip": "A quiet pause near Kalighat metro and the temple."
+    }
+  },
+  "cotts-and-coco": {
+    "info": "researched", "cuisines": ["coffee"], "vibes": ["aesthetic", "quick_bite"],
+    "tags": ["quiet", "date"],
+    "blurb": "A small, beautifully decorated cafe on Jessore Road, Lake Town, specialising in tea. Rated about 4.6.",
+    "tips": {
+      "expect": "A cosy tea-led cafe.",
+      "tip": "Near Shreebhumi and the far-north pandals."
+    }
+  },
+  "bento": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["quick_bite"],
+    "tags": ["quiet"], "priceLevel": 1,
+    "blurb": "A takeout spot at 56 Jadavpur Central Road, described as the best Korean food near Jadavpur. Rated about 4.0.",
+    "tips": {
+      "expect": "A small takeaway counter.",
+      "tip": "A quick Korean meal near the Jadavpur pandals."
+    }
+  },
+  "coral-bageecha": {
+    "info": "researched", "cuisines": ["north_indian", "continental", "street_food"], "vibes": ["aesthetic", "family"],
+    "tags": ["photogenic"], "diet": ["veg"], "priceLevel": 2,
+    "blurb": "A fully vegetarian, tropical-inspired restaurant in Shibpur, Howrah, by chef Prasanta Saha, with lagoon-style outdoor seating and a shisha lounge.",
+    "tips": {
+      "expect": "Cafe and fine-dining blended, with reimagined Indian street food. About ₹1,000 for two.",
+      "watch": "It is across the river in Howrah, so it is not on any pandal circuit.",
+      "tip": "Only worth the trip if you are on that side of the Ganga."
+    }
+  },
+  "bengal-dhaba": {
+    "info": "researched", "cuisines": ["bengali", "chinese"], "vibes": ["family"],
+    "tags": ["family"], "priceLevel": 2,
+    "blurb": "A family restaurant in Dakshindari serving Bengali, Chinese and beverages, about ₹1,200 for two.",
+    "tips": {
+      "expect": "A relaxed group and family meal.",
+      "watch": "It is on the east side, near Ultadanga and VIP Road.",
+      "tip": "Convenient for the Maniktala and Shreebhumi side."
+    }
+  },
+  "kouzina-mining-co": {
+    "info": "researched", "cuisines": ["bengali", "chinese", "continental", "italian"], "vibes": ["family", "aesthetic"],
+    "tags": ["foodie", "family"], "priceLevel": 3,
+    "blurb": "A fine-dining restaurant at AD 79, Sector 1, Salt Lake, with a broad menu from Bengali to kebabs. Rated 4.2 from over 3,300 reviews.",
+    "tips": {
+      "expect": "A large, themed restaurant open about noon to 10:30 pm daily.",
+      "good": "The variety, which suits mixed groups.",
+      "watch": "Popular, so book on Puja weekends.",
+      "tip": "A good Sector 1 dinner after the block pandals."
+    }
+  },
+  "harry-s-bistro": {
+    "info": "researched", "cuisines": ["continental", "north_indian"], "vibes": ["family"],
+    "tags": ["foodie"], "priceLevel": 3,
+    "blurb": "A fine-dining restaurant at AE-329, Sector 1, Salt Lake, serving Continental and Indian food. Rated about 4.4.",
+    "tips": {
+      "expect": "A sit-down meal in the AE Block area.",
+      "tip": "Next to the AE Block pandal."
+    }
+  },
+  "friends-of-pho": {
+    "info": "researched", "cuisines": ["asian"], "vibes": ["family", "adda"],
+    "tags": ["foodie", "family"], "priceLevel": 2,
+    "blurb": "A 3,500 sq ft pan-Asian restaurant near City Centre II, Rajarhat, with a mini-tempo drinks counter inspired by Vietnamese pho vendors, and billiards and carrom.",
+    "tips": {
+      "expect": "Dishes from across Southeast and East Asia in a playful setting.",
+      "watch": "It is in Rajarhat, away from the Puja circuits.",
+      "tip": "Only if you are already in New Town."
+    }
+  },
+  "jungle-safari": {
+    "info": "researched", "cuisines": ["north_indian", "continental"], "vibes": ["family", "aesthetic"],
+    "tags": ["family", "photogenic"], "diet": ["veg"], "priceLevel": 2,
+    "blurb": "A jungle-themed vegetarian restaurant on the top floor of Mani Square Mall, with life-sized animal figures, a jeep, a treehouse and a waterfall.",
+    "tips": {
+      "expect": "An immersive family restaurant with a North Indian and Continental menu.",
+      "good": "Great for kids and families.",
+      "watch": "Mall hours apply.",
+      "tip": "Near the Maniktala and Phoolbagan pandals."
+    }
+  },
+  "galawat-salt-lake": {
+    "info": "researched", "cuisines": ["mughlai", "north_indian"], "vibes": ["family", "quick_bite"],
+    "tags": ["foodie"], "priceLevel": 2,
+    "blurb": "The BE Block, Sector 1 outlet of Galawat, known for galawati kebabs and ulta tawa paratha. Rated about 4.2.",
+    "dishes": ["Galawati kebab", "Ulta tawa paratha"],
+    "tips": {
+      "expect": "A kebab-focused Mughlai restaurant.",
+      "good": "The galawati kebab and the unusual paratha.",
+      "tip": "A good meat-lover's stop in the Salt Lake block pandal area."
+    }
+  }
+}

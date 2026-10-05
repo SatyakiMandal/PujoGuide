@@ -1,0 +1,87 @@
+[
+ {
+  "id": "north",
+  "name": "North Kolkata",
+  "region": "north"
+ },
+ {
+  "id": "shobhabazar",
+  "name": "Shobhabazar",
+  "region": "north"
+ },
+ {
+  "id": "girish_park",
+  "name": "Girish Park",
+  "region": "north"
+ },
+ {
+  "id": "mg_road",
+  "name": "MG Road",
+  "region": "north"
+ },
+ {
+  "id": "central",
+  "name": "Central Kolkata",
+  "region": "central"
+ },
+ {
+  "id": "park_street",
+  "name": "Park Street",
+  "region": "central"
+ },
+ {
+  "id": "howrah",
+  "name": "Howrah",
+  "region": "central"
+ },
+ {
+  "id": "bhowanipore",
+  "name": "Bhowanipore",
+  "region": "south"
+ },
+ {
+  "id": "kalighat",
+  "name": "Kalighat",
+  "region": "south"
+ },
+ {
+  "id": "ballygunge",
+  "name": "Ballygunge / Gariahat",
+  "region": "south"
+ },
+ {
+  "id": "jadavpur",
+  "name": "Jadavpur",
+  "region": "south"
+ },
+ {
+  "id": "alipore",
+  "name": "Alipore",
+  "region": "south"
+ },
+ {
+  "id": "kasba",
+  "name": "Kasba",
+  "region": "south"
+ },
+ {
+  "id": "behala",
+  "name": "Behala",
+  "region": "south"
+ },
+ {
+  "id": "south",
+  "name": "South Kolkata",
+  "region": "south"
+ },
+ {
+  "id": "salt_lake",
+  "name": "Salt Lake",
+  "region": "saltlake"
+ },
+ {
+  "id": "newtown",
+  "name": "New Town",
+  "region": "saltlake"
+ }
+]
