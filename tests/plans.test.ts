@@ -54,3 +54,10 @@ describe("plans", () => {
     }
   });
 });
+
+describe("plans and closures", () => {
+  it("never send you to a place Google lists as closed", () => {
+    const by = new Map(placesJson.map((p) => [p.slug, p]));
+    for (const plan of PLANS) for (const s of plan.stops) expect(by.get(s)?.closed, `${plan.id}:${s}`).toBeFalsy();
+  });
+});

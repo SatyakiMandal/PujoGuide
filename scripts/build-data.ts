@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { areas, regionOf, rows, zones } from "../data/seed";
+import { parseGoogleHours } from "../src/lib/hours";
 import { haversineKm } from "../src/lib/route/geo";
 import { placeSchema, zoneSchema, type Place } from "../src/lib/schema";
 
@@ -114,6 +115,56 @@ for (const g of readJson<Generated[]>("data/lists/food.generated.json", [])) {
   );
 }
 
+// ── "Best of Kolkata" picks (data/lists/curated.json): found by research, pinned from Google Maps ──────
+type Curated = {
+  slug: string; name: string; category: Place["category"]; lat: number; lng: number; address?: string;
+  cuisines: Place["cuisines"]; vibes: Place["vibes"]; tags?: string[]; priceLevel?: number; diet?: Place["diet"];
+  openLate?: boolean; blurb: string; dishes?: string[]; tips?: Place["tips"]; aliases?: string[];
+};
+let curatedCount = 0;
+for (const c of readJson<Curated[]>("data/lists/curated.json", [])) {
+  if (used.has(c.slug)) throw new Error(`Curated slug clashes with an existing place: ${c.slug}`);
+  used.add(c.slug);
+  // Zone and area follow the nearest places we already know, so filters and plans treat the pick like its neighbours.
+  const near = places
+    .filter((p) => p.coordConfidence !== "area")
+    .map((p) => ({ p, d: haversineKm(p, c) }))
+    .sort((a, b) => a.d - b.d)
+    .slice(0, 3);
+  const tally = new Map<string, number>();
+  for (const { p } of near) tally.set(p.zones[0], (tally.get(p.zones[0]) ?? 0) + 1);
+  const zone = [...tally.entries()].sort((a, b) => b[1] - a[1])[0][0];
+  places.push(
+    placeSchema.parse({
+      id: c.slug,
+      slug: c.slug,
+      category: c.category,
+      name: { en: c.name },
+      aliases: c.aliases ?? [],
+      zones: [zone],
+      region: regionOf([zone]),
+      area: near[0].p.area,
+      lat: +c.lat.toFixed(5),
+      lng: +c.lng.toFixed(5),
+      coordConfidence: "verified",
+      metro: [],
+      tags: c.tags ?? [],
+      address: c.address,
+      cuisines: c.cuisines,
+      vibes: c.vibes,
+      priceLevel: c.priceLevel,
+      diet: c.diet,
+      openLate: c.openLate,
+      blurb: c.blurb,
+      dishes: c.dishes,
+      tips: c.tips,
+      info: "researched",
+      source: "curated",
+    }),
+  );
+  curatedCount++;
+}
+
 // ── Research notes (data/research/*.json): tags, tips, prices, closures. Typos in a slug fail the build. ──
 type Research = Partial<{
   tags: string[]; cuisines: Place["cuisines"]; vibes: Place["vibes"]; priceLevel: number; diet: Place["diet"];
@@ -132,6 +183,51 @@ for (const file of researchFiles) {
     Object.assign(p, Object.fromEntries(Object.entries(rest).filter(([, v]) => v !== undefined)));
     if (tags) p.tags = [...new Set([...p.tags, ...tags])];
     if (r.info === "researched") researched++;
+  }
+}
+
+// ── Google Maps snapshot (data/snapshot.json): rating, hours, photo and closed flag ─────────────────
+type Snap = { r?: number; c?: number; cl?: string; h?: string[]; img?: string; nm?: string; cd?: number; miss?: number };
+const snapRaw = readJson<Record<string, Snap | string>>("data/snapshot.json", {});
+const snapAt = typeof snapRaw._at === "string" ? snapRaw._at : undefined;
+const STOP_WORDS = new Set(["cafe", "the", "and", "kolkata", "restaurant", "bar", "durga", "puja", "pujo", "of", "in"]);
+const tokens = (t: string) => (t.toLowerCase().normalize("NFKD").match(/[a-z0-9]{2,}/g) ?? []).filter((w) => !STOP_WORDS.has(w));
+const squash = (t: string) => tokens(t).join("");
+let snapApplied = 0;
+const snapRejected: string[] = [];
+for (const [slug, v] of Object.entries(snapRaw)) {
+  if (slug === "_at") continue;
+  const s = v as Snap;
+  const p = bySlug.get(slug);
+  if (!p) throw new Error(`data/snapshot.json: unknown place ${slug}`);
+  const names = [p.name.en, ...p.aliases].flatMap(tokens);
+  // Same place if a word is shared, or one squashed name contains the other ("What's Up! Cafe" vs "WhatsUp Cafe").
+  const mine = [p.name.en, ...p.aliases].map(squash).filter((x) => x.length >= 3);
+  const theirs = s.nm ? squash(s.nm) : "";
+  const same = !!s.nm && (tokens(s.nm).some((w) => names.includes(w)) || (theirs.length >= 3 && mine.some((m) => m.includes(theirs) || theirs.includes(m))));
+  // Trusted only if Google's pin is within 150 m of ours and the names share a word (or it is within 40 m).
+  const trusted = !s.miss && (s.cd === undefined || s.cd <= 150) && (same || (s.cd !== undefined && s.cd <= 40));
+  if (!trusted) {
+    snapRejected.push(`${slug} -> ${s.nm ?? "no match"}${s.cd !== undefined ? ` (${s.cd} m)` : ""}`);
+    continue;
+  }
+  snapApplied++;
+  p.snapshotAt = snapAt;
+  if (s.r && s.r >= 1 && s.r <= 5) p.rating = s.r;
+  if (s.c) p.ratingCount = s.c;
+  if (s.img) p.photo = s.img.replace(/=w\d+-h\d+-k-no$/, "=w480-h320-k-no");
+  if (s.h && s.h.length === 7) {
+    const hours = parseGoogleHours(s.h);
+    if (hours) {
+      p.hours = hours;
+      const food = p.category !== "bonedi_bari" && p.category !== "pandal";
+      if (food && hours.some((d) => d?.some(([, e]) => e >= 1440 + 30))) p.openLate = true;
+    }
+  }
+  if (s.cl === "P" || s.cl === "T") {
+    p.closed = true;
+    p.info ??= "inferred";
+    p.tips = { ...p.tips, watch: s.cl === "P" ? "Google Maps lists this as permanently closed." : "Google Maps lists this as temporarily closed." };
   }
 }
 
@@ -175,6 +271,9 @@ mkdirSync("src/data", { recursive: true });
 writeFileSync("src/data/places.json", JSON.stringify(places, null, 1));
 writeFileSync("src/data/zones.json", JSON.stringify(zones, null, 1));
 
+console.log(`${curatedCount} best-of picks added.`);
+console.log(`Snapshot applied to ${snapApplied} places; ${snapRejected.length} rejected as a different place.`);
+for (const r of snapRejected) console.log(`  - ${r}`);
 console.log(`Research applied to ${researched} places from ${researchFiles.length} files.`);
 const count = (c: string) => places.filter((p) => p.category === c).length;
 console.log(

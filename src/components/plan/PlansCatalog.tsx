@@ -1,9 +1,10 @@
 "use client";
 
-import { CaretDown, CalendarBlank, Clock, MapTrifold, Plus, Sparkle, Users } from "@phosphor-icons/react";
+import { CaretDown, CalendarBlank, Clock, MagicWand, MapTrifold, Plus, Sparkle, Users } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { Chip } from "@/components/ui/Chip";
+import { AutoPlanner } from "./AutoPlanner";
 import { placeBySlug } from "@/lib/data";
 import { PlaceIcon } from "@/lib/placeIcon";
 import { AREA_TAGS, INTEREST_TAGS, PLANS, PUJA_DAYS, planById, type Plan, type PlanGroup } from "@/lib/plans";
@@ -11,12 +12,12 @@ import { isFood, type Crowd } from "@/lib/schema";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
 
-type View = PlanGroup | "day";
+type View = PlanGroup | "day" | "auto";
 
 const CROWD_LABEL: Record<Crowd, string> = { low: "Quiet", medium: "Moderate", high: "Busy", extreme: "Very crowded" };
 
 export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRoute: boolean }) {
-  const [view, setView] = useState<View>("area");
+  const [view, setView] = useState<View>("auto");
   const [tag, setTag] = useState<string | null>(null);
 
   const tags = view === "area" ? AREA_TAGS : view === "interest" ? INTEREST_TAGS : [];
@@ -24,19 +25,22 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
 
   return (
     <div className="space-y-4">
-      <div className="space-y-1">
-        <h2 className="font-display text-lg font-semibold">Ready-made plans</h2>
-        <p className="text-sm text-muted">
-          {PLANS.length} plans that between them cover every pandal and Bonedi Bari. Load one, then edit it.
-        </p>
-      </div>
+      {view !== "auto" && (
+        <div className="space-y-1">
+          <h2 className="font-display text-lg font-semibold">Ready-made plans</h2>
+          <p className="text-sm text-muted">
+            {PLANS.length} plans that between them cover every pandal and Bonedi Bari. Load one, then edit it.
+          </p>
+        </div>
+      )}
 
-      <div role="tablist" className="grid grid-cols-3 rounded-full border border-line bg-surface p-0.5">
+      <div role="tablist" className="grid grid-cols-4 rounded-full border border-line bg-surface p-0.5">
         {(
           [
-            ["area", "By area", MapTrifold],
-            ["interest", "By interest", Sparkle],
-            ["day", "By day", CalendarBlank],
+            ["auto", "Auto", MagicWand],
+            ["area", "Area", MapTrifold],
+            ["interest", "Interest", Sparkle],
+            ["day", "Day", CalendarBlank],
           ] as const
         ).map(([id, label, TabIcon]) => (
           <button
@@ -58,7 +62,7 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
         ))}
       </div>
 
-      {view !== "day" && (
+      {view !== "day" && view !== "auto" && (
         <div className="flex flex-wrap gap-2">
           <Chip active={tag === null} onClick={() => setTag(null)}>
             All
@@ -71,7 +75,9 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
         </div>
       )}
 
-      {view === "day" ? (
+      {view === "auto" ? (
+        <AutoPlanner hasRoute={hasRoute} onDone={onDone} />
+      ) : view === "day" ? (
         <DayGuide hasRoute={hasRoute} onDone={onDone} />
       ) : (
         <ul className="space-y-2.5">

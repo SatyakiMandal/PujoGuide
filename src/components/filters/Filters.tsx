@@ -58,7 +58,7 @@ export function FilterToggle({ open, onToggle }: { open: boolean; onToggle: () =
 
 export function FilterGroups({ open }: { open: boolean }) {
   const filters = useUI((s) => s.filters);
-  const { toggle, setMaxPrice, toggleOpenLate, setPersonal, toggleClosed } = useUI.getState();
+  const { toggle, setMaxPrice, toggleOpenLate, toggleOpenNow, setMinRating, setPersonal, toggleClosed } = useUI.getState();
   const hasFood = filters.layers.some((l) => FOOD_CATEGORIES.includes(l));
 
   return (
@@ -125,12 +125,15 @@ export function FilterGroups({ open }: { open: boolean }) {
                       </Chip>
                     ))}
                   </Group>
-                  <Group title="From your lists">
+                  <Group title="Where it came from">
                     <Chip active={filters.sources.includes("new")} onClick={() => toggle("sources", "new")}>
                       Newer picks
                     </Chip>
                     <Chip active={filters.sources.includes("old")} onClick={() => toggle("sources", "old")}>
                       Older list
+                    </Chip>
+                    <Chip active={filters.sources.includes("curated")} onClick={() => toggle("sources", "curated")}>
+                      Best-of picks
                     </Chip>
                   </Group>
                   <Group title="Diet · Price · Hours">
@@ -147,6 +150,14 @@ export function FilterGroups({ open }: { open: boolean }) {
                     <Chip active={filters.openLate} onClick={toggleOpenLate}>
                       Open late
                     </Chip>
+                    <Chip active={filters.openNow} onClick={toggleOpenNow}>
+                      Open now
+                    </Chip>
+                    {[4, 4.3, 4.5].map((r) => (
+                      <Chip key={r} active={filters.minRating === r} onClick={() => setMinRating(filters.minRating === r ? null : r)}>
+                        {r}★ and up
+                      </Chip>
+                    ))}
                     <Chip active={filters.showClosed} onClick={toggleClosed}>
                       Show closed
                     </Chip>

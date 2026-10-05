@@ -88,3 +88,44 @@ describe("closed places", () => {
     expect(hidden.some((p) => p.closed)).toBe(false);
   });
 });
+
+describe("open now and rating filters", () => {
+  const withHours = all.find((p) => p.category === "cafe" && p.hours && p.hours.every((d) => d && d.length === 1))!;
+  const noHours = all.find((p) => p.category === "cafe" && !p.hours)!;
+  const open = (p: typeof withHours) => {
+    const [s, e] = p.hours![0]![0];
+    return { weekday: 0, minute: Math.floor((s + Math.min(e, 1440)) / 2) % 1440 };
+  };
+
+  it("keeps a place that is open and hides one that is closed right now", () => {
+    const f = { ...defaultFilters, layers: ["cafe" as const], openNow: true };
+    const when = open(withHours);
+    expect(applyFilters(all, f, null, undefined, when).matched.has(withHours.id)).toBe(true);
+    const closedAt = { weekday: 0, minute: (withHours.hours![0]![0][0] + 1440 - 90) % 1440 };
+    if (closedAt.minute < withHours.hours![0]![0][0] || closedAt.minute >= Math.min(withHours.hours![0]![0][1], 1440)) {
+      expect(applyFilters(all, f, null, undefined, closedAt).matched.has(withHours.id)).toBe(false);
+    }
+  });
+
+  it("never hides a place whose hours are unknown", () => {
+    const f = { ...defaultFilters, layers: ["cafe" as const], openNow: true };
+    expect(applyFilters(all, f, null, undefined, { weekday: 0, minute: 3 * 60 }).matched.has(noHours.id)).toBe(true);
+  });
+
+  it("does nothing without a clock", () => {
+    const f = { ...defaultFilters, layers: ["cafe" as const], openNow: true };
+    const base = applyFilters(all, { ...defaultFilters, layers: ["cafe" as const] }, null).matched.size;
+    expect(applyFilters(all, f, null).matched.size).toBe(base);
+  });
+
+  it("filters by minimum rating but keeps unrated places", () => {
+    const f = { ...defaultFilters, layers: ["cafe" as const, "restaurant" as const], minRating: 4.5 };
+    const { matched } = applyFilters(all, f, null);
+    for (const id of matched) {
+      const p = all.find((x) => x.id === id)!;
+      if (p.rating !== undefined) expect(p.rating).toBeGreaterThanOrEqual(4.5);
+    }
+    const unrated = all.find((p) => (p.category === "cafe" || p.category === "restaurant") && p.rating === undefined && !p.closed);
+    if (unrated) expect(matched.has(unrated.id)).toBe(true);
+  });
+});

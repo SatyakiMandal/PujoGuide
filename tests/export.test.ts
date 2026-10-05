@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import placesJson from "../src/data/places.json";
-import { googleMapsLinks, shareUrl } from "../src/lib/route/export";
+import { googleMapsLinks, legLink, shareUrl, wholeRouteMode } from "../src/lib/route/export";
 import { placeSchema } from "../src/lib/schema";
 
 const all = placesJson.map((p) => placeSchema.parse(p));
@@ -46,5 +46,26 @@ describe("googleMapsLinks", () => {
 describe("shareUrl", () => {
   it("encodes the stops as a comma list", () => {
     expect(shareUrl("https://x.test", ["a", "b"])).toBe("https://x.test/?route=a,b");
+  });
+});
+
+describe("leg links and travel mode", () => {
+  it("opens a single leg in the chosen mode", () => {
+    const [a, b] = all.filter((p) => p.coordConfidence === "verified");
+    expect(new URL(legLink(a, b, "metro")).searchParams.get("travelmode")).toBe("transit");
+    expect(new URL(legLink(a, b, "walk")).searchParams.get("travelmode")).toBe("walking");
+    expect(new URL(legLink(a, b, "cab")).searchParams.get("travelmode")).toBe("driving");
+  });
+
+  it("marks the whole route as walking only when nearly every leg is a walk", () => {
+    expect(wholeRouteMode(["walk", "walk", "walk", "walk", "auto"])).toBe("walking");
+    expect(wholeRouteMode(["walk", "auto", "metro"])).toBeUndefined();
+    expect(wholeRouteMode([])).toBeUndefined();
+  });
+
+  it("adds travelmode to the multi-stop link when asked", () => {
+    const stops = all.filter((p) => p.coordConfidence === "verified").slice(0, 4);
+    expect(new URL(googleMapsLinks(stops, "walking")[0]).searchParams.get("travelmode")).toBe("walking");
+    expect(new URL(googleMapsLinks(stops)[0]).searchParams.has("travelmode")).toBe(false);
   });
 });

@@ -7,6 +7,7 @@ import { CATEGORY_META } from "@/lib/categories";
 import { zoneName } from "@/lib/data";
 import type { Place } from "@/lib/schema";
 import { useUI } from "@/store/ui";
+import { Rating } from "./HoursCard";
 
 export function PlaceList({ list }: { list: Place[] }) {
   const select = useUI((s) => s.select);
@@ -46,9 +47,13 @@ export function PlaceList({ list }: { list: Place[] }) {
                   </span>
                   <span className="min-w-0">
                     <span className="block truncate font-medium">{p.name.en}</span>
-                    <span className="block truncate text-sm text-muted">
-                      {meta.label} · {zoneName.get(p.zones[0])}
-                      {p.source === "old" && " · older list"}
+                    <span className="flex items-center gap-2 truncate text-sm text-muted">
+                      <span className="truncate">
+                        {meta.label} · {zoneName.get(p.zones[0])}
+                        {p.source === "old" && " · older list"}
+                        {p.source === "curated" && " · best-of pick"}
+                      </span>
+                      <Rating rating={p.rating} count={p.ratingCount} className="shrink-0 text-xs text-fg" />
                     </span>
                   </span>
                 </button>

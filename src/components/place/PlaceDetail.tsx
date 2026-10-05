@@ -27,6 +27,7 @@ import { PlaceIcon } from "@/lib/placeIcon";
 import { isFood, type Crowd, type Place } from "@/lib/schema";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
+import { HoursCard } from "./HoursCard";
 
 /** Pins at "area" confidence aren't the real spot, so route by name rather than by coordinates. */
 const directionsUrl = (p: Place) => {
@@ -67,11 +68,13 @@ export function PlaceDetail({ place: p }: { place: Place }) {
   };
 
   const tips = p.tips;
+  // The closed banner already says what the snapshot found, so don't repeat it as a tip.
+  const watch = p.closed && tips?.watch?.startsWith("Google Maps lists") ? undefined : tips?.watch;
   const tipRows = tips
     ? ([
         { key: "expect", label: "What to expect", icon: Eye, text: tips.expect },
         { key: "good", label: "What's good", icon: ThumbsUp, text: tips.good },
-        { key: "watch", label: "Look out for", icon: Warning, text: tips.watch },
+        { key: "watch", label: "Look out for", icon: Warning, text: watch },
         { key: "tip", label: "Tip", icon: Lightbulb, text: tips.tip },
       ] as const).filter((r) => r.text)
     : [];
@@ -124,7 +127,11 @@ export function PlaceDetail({ place: p }: { place: Place }) {
       {p.closed && (
         <p className="flex gap-2 rounded-xl border border-primary/40 bg-surface2 p-3 text-sm">
           <XCircle size={20} weight="duotone" className="mt-0.5 shrink-0 text-primary" />
-          <span>Looks permanently closed according to what I found online. Check before you go.</span>
+          <span>
+            {p.tips?.watch?.startsWith("Google Maps lists")
+              ? `${p.tips.watch} Check before you go.`
+              : "Looks permanently closed according to what I found online. Check before you go."}
+          </span>
         </p>
       )}
       {p.source === "old" && !p.closed && p.info !== "researched" && (
@@ -145,6 +152,8 @@ export function PlaceDetail({ place: p }: { place: Place }) {
       )}
 
       {p.blurb && <p className="leading-relaxed">{p.blurb}</p>}
+
+      <HoursCard place={p} />
 
       {tipRows.length > 0 && (
         <section className="space-y-3 rounded-2xl border border-line bg-surface p-4">

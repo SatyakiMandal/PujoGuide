@@ -4,6 +4,7 @@ import { useEffect, useMemo } from "react";
 import { placeBySlug } from "@/lib/data";
 import { isFood, type Place } from "@/lib/schema";
 import { useUI } from "@/store/ui";
+import { DWELL_MIN } from "./dwell";
 import { legOptions, pickMode } from "./estimate";
 import { fetchRouted } from "./osrm";
 import type { LegOption, Mode } from "./types";
@@ -21,15 +22,7 @@ export type Leg = {
   loading: boolean;
 };
 
-/** Typical time spent at each kind of stop (minutes). Rough; the point is a realistic total. */
-export const DWELL_MIN: Record<Place["category"], number> = {
-  pandal: 25,
-  bonedi_bari: 30,
-  cafe: 45,
-  restaurant: 60,
-  sweets: 15,
-  street_food: 15,
-};
+export { DWELL_MIN } from "./dwell";
 
 export const routePlaces = (slugs: string[]) =>
   slugs.map((s) => placeBySlug.get(s)).filter((p): p is Place => !!p);

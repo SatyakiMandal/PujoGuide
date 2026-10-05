@@ -93,3 +93,85 @@ describe("research and tips", () => {
     }
   });
 });
+
+describe("Google Maps snapshot, hours and picks", () => {
+  const withHours = all.filter((p) => p.hours);
+
+  it("has a usable amount of hours, ratings and photos", () => {
+    expect(withHours.length).toBeGreaterThan(150);
+    expect(all.filter((p) => p.rating).length).toBeGreaterThan(250);
+    expect(all.filter((p) => p.photo).length).toBeGreaterThan(150);
+  });
+
+  it("stores hours as seven days of sane, ordered windows", () => {
+    for (const p of withHours) {
+      expect(p.hours, p.slug).toHaveLength(7);
+      for (const day of p.hours!) {
+        if (!day) continue;
+        for (const [s, e] of day) {
+          expect(s, p.slug).toBeGreaterThanOrEqual(0);
+          expect(e, p.slug).toBeGreaterThan(s);
+          expect(e, p.slug).toBeLessThanOrEqual(2880);
+        }
+      }
+    }
+  });
+
+  it("keeps ratings in range with a review count", () => {
+    for (const p of all.filter((x) => x.rating)) {
+      expect(p.rating!, p.slug).toBeGreaterThanOrEqual(1);
+      expect(p.rating!, p.slug).toBeLessThanOrEqual(5);
+      if (p.ratingCount !== undefined) expect(p.ratingCount, p.slug).toBeGreaterThan(0);
+    }
+  });
+
+  it("serves photos over https and stamps the snapshot date", () => {
+    for (const p of all.filter((x) => x.photo)) {
+      expect(p.photo, p.slug).toMatch(/^https:\/\//);
+      expect(p.snapshotAt, p.slug).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    }
+  });
+
+  it("flags closed places from Google and keeps a reason on them", () => {
+    const closed = all.filter((p) => p.closed && p.tips?.watch?.startsWith("Google Maps lists"));
+    expect(closed.length).toBeGreaterThan(20);
+  });
+
+  it("includes the best-of picks, pinned and researched", () => {
+    const picks = all.filter((p) => p.source === "curated");
+    expect(picks.length).toBeGreaterThanOrEqual(30);
+    for (const p of picks) {
+      expect(p.coordConfidence, p.slug).toBe("verified");
+      expect(p.info, p.slug).toBe("researched");
+      expect(p.tips && Object.values(p.tips).some(Boolean), p.slug).toBe(true);
+      expect(p.closed, p.slug).toBeFalsy();
+    }
+  });
+
+  it("has no two open places with the same name and category", () => {
+    const seen = new Set<string>();
+    for (const p of all.filter((x) => !x.closed)) {
+      const key = `${p.category}|${p.name.en.toLowerCase().replace(/[^a-z0-9]/g, "")}`;
+      expect(seen.has(key), p.slug).toBe(false);
+      seen.add(key);
+    }
+  });
+
+  it("verifies the user's own Google Maps pins for resolved duplicates", () => {
+    const by = new Map(all.map((p) => [p.slug, p]));
+    expect(by.get("pathuriaghata-rajbari")!.coordConfidence).toBe("verified");
+    expect(by.get("khelat-ghosh-babu-bari")).toBeUndefined(); // merged into Pathuriaghata Rajbari
+    expect(by.get("jorasanko-daw-bari")).toBeUndefined(); // merged into Shib Krishna Daw Bari
+    expect(by.get("darjipara-mitra-bari")).toBeDefined();
+    expect(by.get("nilmani-mitra-bari")).toBeDefined(); // a separate stop, not a duplicate
+    const d = by.get("darjipara-mitra-bari")!;
+    const n = by.get("nilmani-mitra-bari")!;
+    expect(Math.hypot(d.lat - n.lat, d.lng - n.lng)).toBeGreaterThan(0.01);
+  });
+
+  it("pins most baris and pandals to a verified or matched spot", () => {
+    const sights = all.filter((p) => p.category === "bonedi_bari" || p.category === "pandal");
+    const approx = sights.filter((p) => p.coordConfidence === "area");
+    expect(approx.length).toBeLessThan(15);
+  });
+});

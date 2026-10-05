@@ -19,6 +19,7 @@ export const CUISINE_LABEL: Record<Cuisine, string> = {
   continental: "Continental",
   italian: "Italian",
   north_indian: "North Indian",
+  south_indian: "South Indian",
   biryani: "Biryani",
   bbq: "BBQ & grills",
   rolls: "Rolls",

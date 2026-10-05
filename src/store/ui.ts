@@ -1,6 +1,8 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { placeBySlug } from "@/lib/data";
+import { defaultRequest, type PlanRequest } from "@/lib/autoplan";
+import type { PujaDayId } from "@/lib/calendar";
 import { defaultFilters, type FilterState, type Personal } from "@/lib/filter";
 import type { LegGeometry } from "@/lib/route/estimate";
 import type { Mode } from "@/lib/route/types";
@@ -15,6 +17,9 @@ export type RouteState = {
   /** User-chosen mode per leg, keyed `fromSlug>toSlug`. Absent = auto-pick. */
   override: Record<string, Mode>;
   pujaNight: boolean;
+  /** Set by the auto-planner: when you plan to reach and leave each stop (minutes from midnight), and for which festival day. */
+  schedule?: Record<string, { arrive: number; depart: number }>;
+  day?: PujaDayId;
 };
 
 type UIState = {
@@ -45,6 +50,11 @@ type UIState = {
   addStop: (slug: string) => void;
   removeStop: (slug: string) => void;
   setStops: (slugs: string[]) => void;
+  /** Loads an auto-planned day: the stops plus their times. */
+  setPlanned: (slugs: string[], schedule: NonNullable<RouteState["schedule"]>, day: PujaDayId) => void;
+  /** What you last asked the auto-planner for. */
+  planReq: PlanRequest;
+  setPlanReq: (r: PlanRequest) => void;
   toggleSaved: (slug: string) => void;
   toggleVisited: (slug: string) => void;
   setNote: (slug: string, text: string) => void;
@@ -59,6 +69,8 @@ type UIState = {
   toggle: <K extends ListKey>(key: K, value: FilterState[K][number]) => void;
   setMaxPrice: (n: number | null) => void;
   toggleOpenLate: () => void;
+  toggleOpenNow: () => void;
+  setMinRating: (n: number | null) => void;
   reset: () => void;
 };
 
@@ -90,11 +102,19 @@ export const useUI = create<UIState>()(
       setMode: (mode) => set({ mode }),
       setTab: (tab) => set({ tab }),
       toggleMetro: () => set((s) => ({ showMetro: !s.showMetro })),
+      // Any manual change to the stops invalidates the auto-planner's times, so drop them.
       addStop: (slug) =>
-        set((s) => (s.route.stops.includes(slug) ? s : { route: { ...s.route, stops: [...s.route.stops, slug] } })),
+        set((s) =>
+          s.route.stops.includes(slug)
+            ? s
+            : { route: { ...s.route, stops: [...s.route.stops, slug], schedule: undefined, day: undefined } },
+        ),
       removeStop: (slug) =>
-        set((s) => ({ route: { ...s.route, stops: s.route.stops.filter((x) => x !== slug) } })),
-      setStops: (stops) => set((s) => ({ route: { ...s.route, stops } })),
+        set((s) => ({ route: { ...s.route, stops: s.route.stops.filter((x) => x !== slug), schedule: undefined, day: undefined } })),
+      setStops: (stops) => set((s) => ({ route: { ...s.route, stops, schedule: undefined, day: undefined } })),
+      setPlanned: (stops, schedule, day) => set((s) => ({ route: { ...s.route, stops, schedule, day } })),
+      planReq: defaultRequest(),
+      setPlanReq: (planReq) => set({ planReq }),
       toggleSaved: (slug) => set((s) => ({ saved: flip(s.saved, slug) })),
       toggleVisited: (slug) => set((s) => ({ visited: flip(s.visited, slug) })),
       setNote: (slug, text) =>
@@ -132,12 +152,14 @@ export const useUI = create<UIState>()(
         })),
       setMaxPrice: (maxPrice) => set((s) => ({ filters: { ...s.filters, maxPrice } })),
       toggleOpenLate: () => set((s) => ({ filters: { ...s.filters, openLate: !s.filters.openLate } })),
+      toggleOpenNow: () => set((s) => ({ filters: { ...s.filters, openNow: !s.filters.openNow } })),
+      setMinRating: (minRating) => set((s) => ({ filters: { ...s.filters, minRating } })),
       reset: () => set((s) => ({ filters: { ...defaultFilters, layers: s.filters.layers }, query: "" })),
     }),
     {
       name: "pujoguide:v1",
       // Persist only what the user built; skipHydration + manual rehydrate avoids SSR mismatches.
-      partialize: (s) => ({ route: s.route, showMetro: s.showMetro, mode: s.mode, saved: s.saved, visited: s.visited, notes: s.notes }),
+      partialize: (s) => ({ route: s.route, planReq: s.planReq, showMetro: s.showMetro, mode: s.mode, saved: s.saved, visited: s.visited, notes: s.notes }),
       skipHydration: true,
     },
   ),

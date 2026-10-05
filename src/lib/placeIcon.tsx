@@ -30,6 +30,7 @@ export const CUISINE_ICON: Record<Cuisine, Icon> = {
   continental: ForkKnife,
   italian: Pizza,
   north_indian: Bread,
+  south_indian: BowlFood,
   biryani: CookingPot,
   bbq: Fire,
   rolls: Hamburger,
@@ -55,7 +56,7 @@ const ICONS: Record<Key, Icon> = {
 
 const CUISINE_KEY: Record<Cuisine, Key> = {
   bengali: "fish", mughlai: "pot", chinese: "bowlSteam", asian: "bowlSteam", continental: "fork", italian: "pizza",
-  north_indian: "bread", biryani: "pot", bbq: "fire", rolls: "burger", mishti: "cookie", dessert: "iceCream",
+  north_indian: "bread", south_indian: "bowl", biryani: "pot", bbq: "fire", rolls: "burger", mishti: "cookie", dessert: "iceCream",
   street_food: "bowl", coffee: "coffee", bakery: "cake",
 };
 

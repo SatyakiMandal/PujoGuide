@@ -1,4 +1,5 @@
 import type { Place } from "@/lib/schema";
+import type { Mode } from "./types";
 
 /** Maps URLs allow an origin, a destination and up to 9 waypoints. */
 const MAX_POINTS = 11;
@@ -11,7 +12,7 @@ const target = (p: Place) =>
  * Free Google Maps deep links (no API key). Longer plans are split into overlapping parts so
  * each part ends where the next begins.
  */
-export function googleMapsLinks(places: Place[]): string[] {
+export function googleMapsLinks(places: Place[], travelmode?: "walking" | "driving"): string[] {
   if (places.length < 2) return [];
   const links: string[] = [];
   for (let start = 0; start < places.length - 1; start += MAX_POINTS - 1) {
@@ -22,6 +23,7 @@ export function googleMapsLinks(places: Place[]): string[] {
       origin: target(part[0]),
       destination: target(part[part.length - 1]),
     });
+    if (travelmode) q.set("travelmode", travelmode);
     const mid = part.slice(1, -1).map(target);
     if (mid.length) q.set("waypoints", mid.join("|"));
     links.push(`https://www.google.com/maps/dir/?${q}`);
@@ -30,3 +32,17 @@ export function googleMapsLinks(places: Place[]): string[] {
 }
 
 export const shareUrl = (origin: string, slugs: string[]) => `${origin}/?route=${slugs.join(",")}`;
+
+/** Google's travelmode names. Transit can't carry waypoints, so it's only used for single legs. */
+const TRAVEL_MODE: Record<Mode, string> = { walk: "walking", metro: "transit", auto: "driving", cab: "driving", bike: "two-wheeler" };
+
+/** One leg in Google Maps, opened in the mode you chose (metro opens the transit view). */
+export function legLink(from: Place, to: Place, mode: Mode): string {
+  const q = new URLSearchParams({ api: "1", origin: target(from), destination: target(to), travelmode: TRAVEL_MODE[mode] });
+  return `https://www.google.com/maps/dir/?${q}`;
+}
+
+/** If nearly every leg is a walk, the whole-route link can say so; otherwise leave the mode to Google. */
+export function wholeRouteMode(modes: Mode[]): "walking" | undefined {
+  return modes.length > 0 && modes.filter((m) => m === "walk").length / modes.length >= 0.8 ? "walking" : undefined;
+}

@@ -1,6 +1,8 @@
 "use client";
 
 import { PlaceIcon } from "@/lib/placeIcon";
+import { pujaDay } from "@/lib/calendar";
+import { fmtClock } from "@/lib/hours";
 import {
   ArrowSquareOut,
   Clock,
@@ -19,7 +21,7 @@ import { Reorder, useDragControls } from "motion/react";
 import { useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
 import { zoneName } from "@/lib/data";
-import { googleMapsLinks, shareUrl } from "@/lib/route/export";
+import { googleMapsLinks, legLink, shareUrl, wholeRouteMode } from "@/lib/route/export";
 import { fmtFare, fmtMin, MODE_META } from "@/lib/route/modeMeta";
 import { optimiseOrder } from "@/lib/route/optimise";
 import { routePlaces, summarise, useLegs, type Leg } from "@/lib/route/useLegs";
@@ -31,6 +33,8 @@ import { clsx } from "clsx";
 export function PlanView() {
   const stops = useUI((s) => s.route.stops);
   const pujaNight = useUI((s) => s.route.pujaNight);
+  const schedule = useUI((s) => s.route.schedule);
+  const planDayId = useUI((s) => s.route.day);
   const { setStops, clearRoute, setPujaNight, select } = useUI.getState();
   const legs = useLegs();
   const places = routePlaces(stops);
@@ -42,7 +46,7 @@ export function PlanView() {
   }
 
   const sum = summarise(legs, places);
-  const links = googleMapsLinks(places);
+  const links = googleMapsLinks(places, wholeRouteMode(legs.map((l) => l.chosen)));
   const legAfter = (i: number) => legs[i];
 
   const optimise = () => {
@@ -86,15 +90,27 @@ export function PlanView() {
         </label>
       </section>
 
+      {schedule && planDayId && (
+        <p className="flex items-center justify-between gap-2 rounded-xl bg-surface2 px-3 py-2 text-sm">
+          <span>
+            <b>{pujaDay(planDayId).name}</b> plan, {fmtClock(Math.min(...Object.values(schedule).map((t) => t.arrive)))} to{" "}
+            {fmtClock(Math.max(...Object.values(schedule).map((t) => t.depart)))}
+          </span>
+          <button type="button" onClick={() => setBrowse(true)} className="font-semibold text-primary">
+            Re-plan
+          </button>
+        </p>
+      )}
+
       <Reorder.Group axis="y" values={stops} onReorder={setStops} className="space-y-1">
         {places.map((p, i) => (
-          <StopRow key={p.slug} place={p} index={i} leg={legAfter(i)} onOpen={() => select(p.slug)} />
+          <StopRow key={p.slug} place={p} index={i} leg={legAfter(i)} time={schedule?.[p.slug]} onOpen={() => select(p.slug)} />
         ))}
       </Reorder.Group>
 
       <div className="flex flex-wrap gap-2">
         <Action onClick={() => setBrowse(true)} icon={<Path size={17} weight="bold" />}>
-          Browse plans
+          Plans &amp; auto-plan
         </Action>
         <Action onClick={optimise} disabled={places.length < 4} icon={<Shuffle size={17} weight="bold" />}>
           Optimise order
@@ -127,7 +143,19 @@ export function PlanView() {
   );
 }
 
-function StopRow({ place, index, leg, onOpen }: { place: Place; index: number; leg?: Leg; onOpen: () => void }) {
+function StopRow({
+  place,
+  index,
+  leg,
+  time,
+  onOpen,
+}: {
+  place: Place;
+  index: number;
+  leg?: Leg;
+  time?: { arrive: number; depart: number };
+  onOpen: () => void;
+}) {
   const controls = useDragControls();
   const removeStop = useUI((s) => s.removeStop);
   const meta = CATEGORY_META[place.category];
@@ -162,7 +190,10 @@ function StopRow({ place, index, leg, onOpen }: { place: Place; index: number; l
           </span>
           <span className="min-w-0">
             <span className="block truncate text-sm font-medium">{place.name.en}</span>
-            <span className="block truncate text-xs text-muted">{zoneName.get(place.zones[0])}</span>
+            <span className="block truncate text-xs text-muted">
+              {time ? `${fmtClock(time.arrive)} – ${fmtClock(time.depart)} · ` : ""}
+              {zoneName.get(place.zones[0])}
+            </span>
           </span>
         </button>
         <button
@@ -209,7 +240,7 @@ function LegCard({ leg }: { leg: Leg }) {
             >
               <Icon size={19} weight={active ? "fill" : "duotone"} />
               <span className="font-semibold tabular-nums">{opt.available ? fmtMin(opt.minutes).replace(" min", "m").replace(" h ", "h ") : "n/a"}</span>
-              <span className={clsx("w-full truncate text-center text-[10px] tabular-nums", active ? "text-white/85" : "text-muted")}>
+              <span className={clsx("w-full truncate text-center text-[10px] tabular-nums", active ? "text-white" : "text-muted")}>
                 {opt.available ? fmtFare(opt.fare) : "–"}
               </span>
               {opt.mode === leg.auto && opt.available && (
@@ -239,6 +270,14 @@ function LegCard({ leg }: { leg: Leg }) {
         </ol>
       )}
       {o.note && <p className="mt-1 text-xs text-muted">{o.note}</p>}
+      <a
+        href={legLink(leg.from, leg.to, leg.chosen)}
+        target="_blank"
+        rel="noreferrer"
+        className="mt-1.5 inline-flex min-h-8 items-center gap-1.5 text-xs font-medium text-primary hover:underline"
+      >
+        <ArrowSquareOut size={14} weight="bold" /> This leg in Google Maps ({MODE_META[leg.chosen].label.toLowerCase()})
+      </a>
       {road && pujaNight && (
         <p className="mt-1 text-xs text-muted">
           After dark, vehicles are often kept out of the big pandal areas. Expect to get down and walk the last stretch.

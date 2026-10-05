@@ -24,6 +24,7 @@ export const CUISINES = [
   "continental",
   "italian",
   "north_indian",
+  "south_indian",
   "biryani",
   "bbq",
   "rolls",
@@ -46,8 +47,8 @@ export const VIBES = [
   "late_night",
 ] as const;
 
-/** Where a food place came from. "old" = the user's older list, where places may have closed. */
-export const SOURCES = ["seed", "new", "old"] as const;
+/** Where a food place came from. "old" = the user's older list, where places may have closed; "curated" = picked as a best-of for Kolkata. */
+export const SOURCES = ["seed", "new", "old", "curated"] as const;
 export type Source = (typeof SOURCES)[number];
 export type Vibe = (typeof VIBES)[number];
 
@@ -73,6 +74,14 @@ export const tipsSchema = z.object({
   tip: z.string().optional(),
 });
 export type Tips = z.infer<typeof tipsSchema>;
+
+/**
+ * Weekly opening hours, Monday first (index 0) to Sunday (6). Each day is a list of
+ * [open, close] windows in minutes from midnight (close may exceed 1440 when it runs past midnight),
+ * or null when closed all day.
+ */
+export const hoursSchema = z.array(z.array(z.tuple([z.number(), z.number()])).nullable()).length(7);
+export type Hours = z.infer<typeof hoursSchema>;
 
 export const placeSchema = z.object({
   id: z.string(),
@@ -108,6 +117,15 @@ export const placeSchema = z.object({
   info: z.enum(["researched", "inferred"]).optional(),
   source: z.enum(SOURCES).optional(),
   blurb: z.string().optional(),
+  /** Weekly hours from a Google Maps snapshot (see data/snapshot.json). Absent = unknown, so typical hours are assumed. */
+  hours: hoursSchema.optional(),
+  /** Google rating at snapshot time, and how many reviews it rests on. */
+  rating: z.number().min(1).max(5).optional(),
+  ratingCount: z.number().int().nonnegative().optional(),
+  /** A photo URL taken from the snapshot. May go stale; the UI hides it if it fails to load. */
+  photo: z.string().url().optional(),
+  /** ISO date the snapshot (hours, rating, photo, closed flag) was taken. */
+  snapshotAt: z.string().optional(),
 });
 export type Place = z.infer<typeof placeSchema>;
 

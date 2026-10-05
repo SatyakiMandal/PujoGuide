@@ -15,12 +15,12 @@
 | 0 Foundations | Done, except Vercel project/env and CI |
 | 1 Data | 27 baris, 54 pandals (32 matched to real OSM places, rest neighbourhood-level), plus **254 food places**: 242 from the user's two Google Maps lists (exact pins) and 12 unverified seed. Nearest metro computed for all. Bengali names, histories and crowd data not started |
 | 2 Design system | Done: ivory/charcoal neutrals, sindoor action colour, gold = heritage, teal = food; Phosphor duotone icons; logo; light/dark with circular reveal; fonts |
-| 3 Map core | Done on MapLibre (clustering, selection focus, metro overlay, locate). Google variant exists but its route layer is not built |
+| 3 Map core | Done on MapLibre (clustering, selection focus, metro overlay, locate, route layer with per-mode colours). The Google variant exists without a route layer; the free map draws every route, and each plan also has a Google Maps link (whole route and per leg) |
 | 4 Filters | Done (layers, zone, metro, food facets, Highlight/Filter, search) |
-| 5 Place details | Detail sheet done (address, your notes, tags, older-list warning). Live ratings/photos/hours need a places source (Google Places would be the paid one). Price and diet are unknown for the user's lists |
+| 5 Place details | Done: tips, hours table with open/closed now, rating, photo, Puja-day ritual timings. Ratings, hours, photos and closed flags come from a Google Maps snapshot (5 Oct 2026); with `NEXT_PUBLIC_GMAPS_KEY` set they refresh live from Google Places |
 | 6 Routing engine | Done with free sources: OSRM geometry, real metro graph from OSM, rough fare models, Puja-night factors. Restricted-zone layer not started |
 | 7 Route builder | Done: add/remove, drag reorder, per-leg modes, totals, share link, Google Maps export, saved plan, starter trails |
-| 8 Auto-planner | "Optimise order" plus 28 curated plans (area and interest) and a Shashthi-to-Dashami day guide. A true generator with time windows and meal slots: not built |
+| 8 Auto-planner | Done: `src/lib/autoplan.ts` plans one day or several from start/finish time, area, group, interests, budget, diet and pace, with meal slots, travel time, queue allowance, ritual holds (Pushpanjali, Kumari Puja, Sandhi Puja), swap-a-stop and re-plan. Plus 28 curated plans and the Shashthi-to-Dashami day guide |
 | 9 PWA, weather, safety | Done: installable offline app, rain forecast, Puja countdown, essentials sheet. Bengali UI deferred by choice |
 | 10+ | Restricted-zone map layer (no 2026 notices published yet), crowd reports, accounts: not started |
 

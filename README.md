@@ -9,8 +9,10 @@ The full phase plan is in [PLAN.md](PLAN.md). This file is the practical "how do
 ```bash
 npm install        # also copies MapLibre's web worker into public/maplibre (postinstall)
 npm run dev        # http://localhost:3000
-npm test           # data, filters, routing, export
+npm test           # unit + data-integrity tests (vitest)
 npm run build
+npm run test:e2e   # browser tests on a production build (needs: npm run build first)
+npm run perf       # Lighthouse, needs: npx next start -p 3100
 ```
 
 No API keys are needed. The app runs on free, key-less services:
@@ -21,7 +23,10 @@ No API keys are needed. The app runs on free, key-less services:
 | Walk / road geometry | Public OSRM at routing.openstreetmap.de | Fair-use only, fine for personal use. Falls back to straight-line estimates if it's down |
 | Metro lines & stations | OpenStreetMap (Overpass), cached in `src/data/metro.json` | Refresh with `npm run metro` |
 | Pin locations (baris, pandals) | OpenStreetMap Nominatim, cached in `data/geocoded.json` | Refresh with `npm run geocode` (1 request/second). Rejected false matches live in `data/geocode-rejects.json` |
-| Food (cafes, restaurants) | Your two Google Maps lists, saved in `data/lists/*.raw.json` | Exact pins from your own saved places. Rebuild with `npm run food && npm run data` |
+| Food (cafes, restaurants) | Your two Google Maps lists, saved in `data/lists/*.raw.json`, plus a picked "best of Kolkata" list | Exact pins from your own saved places. Rebuild with `npm run food && npm run data` |
+| Ratings, hours, photos, closed flags | A Google Maps snapshot in `data/snapshot.json` (taken 5 Oct 2026) | Free, but a snapshot, not live. Set `NEXT_PUBLIC_GMAPS_KEY` and the app fetches live data from Google Places instead (see below) |
+
+**Live ratings, photos and hours.** Out of the box the app shows the snapshot. When you have a Google key, put it in `.env.local` as `NEXT_PUBLIC_GMAPS_KEY`: the place card then asks Google Places (New) for the current rating, weekly hours, photo and business status (`src/lib/live/google.ts`), falling back to the snapshot if the request fails. Restrict the key to your Vercel domain and to the Maps JavaScript and Places (New) APIs.
 
 **Google Maps is optional.** Set `NEXT_PUBLIC_GMAPS_KEY` (see `.env.example`) and the Google map is used instead. Google billing is the reason it's off by default.
 
@@ -58,7 +63,15 @@ Tips, tags, prices and closures live in `data/research/*.json` (slug -> fields) 
 
 ## Plans
 
-`src/lib/plans.ts` holds 28 ready-made plans (by area and by interest) plus a day-by-day guide. A test guarantees every pandal and Bonedi Bari is in at least one area plan. After editing a plan, run `npm run plans` to re-sequence its stops with the optimiser.
+`src/lib/plans.ts` holds 30 ready-made plans (by area and by interest) plus a day-by-day guide. A test guarantees every pandal and Bonedi Bari is in at least one area plan. After editing a plan, run `npm run plans` to re-sequence its stops with the optimiser.
+
+## Auto-planner
+
+`src/lib/autoplan.ts` is a pure, tested engine behind the Plan tab's Auto view. You give it a festival day (or several), start and finish time, area, group, interests, food budget, diet and pace. It picks stops by fit and travel time, places meals in lunch / tea / dinner / supper windows from places that are open at that time, holds a stop for a ritual (Pushpanjali, Kumari Puja, Sandhi Puja) if you ask, and warns about queues and approximate pins. Multi-day mode gives each day a different part of the city with no repeats. Festival dates and ritual windows are in `src/lib/calendar.ts` (Sandhi Puja is Belur Math's published 10:28 to 11:16 am on Mon 19 Oct; other ritual windows are guides, since each club sets its own).
+
+## Hours
+
+`data/snapshot.json` holds what Google Maps showed for each place (rating, review count, weekly hours, photo, open/closed). `npm run data` merges it, rejecting any match whose pin is more than 150 m away or whose name does not agree. Places with no listed hours use typical hours (pandals late, baris daytime), and the UI says "usually" when it is assuming.
 
 ## Things to know
 
