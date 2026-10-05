@@ -34,7 +34,7 @@ import { optimiseOrder } from "@/lib/route/optimise";
 import { routePlaces, summarise, useLegs, type Leg } from "@/lib/route/useLegs";
 import { placeDwellMin } from "@/lib/route/dwell";
 import { findNearbyFood } from "@/lib/route/geo";
-import type { Place } from "@/lib/schema";
+import { isFood, type Place } from "@/lib/schema";
 import { PlansCatalog } from "./PlansCatalog";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
@@ -59,6 +59,10 @@ export function PlanView() {
   const links = googleMapsLinks(routePlacesList, wholeRouteMode(legs.map((l) => l.chosen)));
   const legAfter = (i: number) => legs[i];
 
+  const foodStops = routePlacesList.filter((p) => isFood(p.category));
+  const minFood = foodStops.reduce((acc, p) => acc + (p.priceLevel === 3 ? 450 : p.priceLevel === 2 ? 200 : 70), 0);
+  const maxFood = foodStops.reduce((acc, p) => acc + (p.priceLevel === 3 ? 900 : p.priceLevel === 2 ? 400 : 160), 0);
+
   const optimise = () => {
     const order = optimiseOrder(routePlacesList);
     setStops(order.map((i) => routePlacesList[i].slug));
@@ -77,13 +81,18 @@ export function PlanView() {
   return (
     <div className="space-y-4">
       <section className="space-y-3 rounded-2xl border border-line bg-surface p-4">
-        <div className="grid grid-cols-3 gap-2 text-center">
-          <Stat icon={<Clock size={18} weight="duotone" />} value={fmtMin(sum.total)} label="incl. time at stops" />
+        <div className="grid grid-cols-4 gap-1 text-center">
+          <Stat icon={<Clock size={18} weight="duotone" />} value={fmtMin(sum.total)} label="total time" />
           <Stat icon={<Ruler size={18} weight="duotone" />} value={`${sum.km.toFixed(1)} km`} label="travel" />
           <Stat
             icon={<CurrencyInr size={18} weight="duotone" />}
             value={sum.fareMax === 0 ? "Free" : `₹${sum.fareMin}–${sum.fareMax}`}
-            label="rough fares"
+            label="transit fares"
+          />
+          <Stat
+            icon={<ForkKnife size={18} weight="duotone" />}
+            value={foodStops.length === 0 ? "No food" : `₹${minFood}–${maxFood}`}
+            label={foodStops.length > 0 ? `${foodStops.length} food stop${foodStops.length > 1 ? "s" : ""}` : "est. food"}
           />
         </div>
         <label className="flex cursor-pointer items-center justify-between gap-3 rounded-xl bg-surface2 px-3 py-2.5 text-sm">

@@ -137,6 +137,27 @@ export function Panel() {
           )}
         </label>
 
+        {!query && (
+          <div className="flex flex-wrap items-center gap-1.5 text-xs">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-muted">Try:</span>
+            {[
+              ["Bonedi Bari", "bonedi bari"],
+              ["North Kolkata", "North Kolkata"],
+              ["Pure Veg", "veg"],
+              ["College Street", "College Street"],
+            ].map(([label, q]) => (
+              <button
+                key={q}
+                type="button"
+                onClick={() => setQuery(q)}
+                className="rounded-full border border-line/70 bg-surface2/60 px-2.5 py-0.5 text-xs text-muted transition-colors hover:bg-surface2 hover:text-fg"
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        )}
+
         <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0">
           {CATEGORIES.map((c) => {
             const meta = CATEGORY_META[c];
