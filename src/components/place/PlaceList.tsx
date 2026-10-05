@@ -33,25 +33,35 @@ export function PlaceList({ list }: { list: Place[] }) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="flex items-center rounded-xl transition-colors hover:bg-surface2">
+              <div className="group flex items-center rounded-2xl border border-line/60 bg-surface p-1 transition-all hover:border-line hover:bg-surface2">
                 <button
                   type="button"
                   onClick={() => select(p.slug)}
-                  className="flex min-w-0 flex-1 items-center gap-3 rounded-xl p-2.5 text-left"
+                  className="flex min-w-0 flex-1 items-center gap-3 rounded-xl p-2 text-left"
                 >
                   <span
-                    className="grid size-10 shrink-0 place-items-center rounded-full"
+                    className="grid size-10 shrink-0 place-items-center rounded-2xl shadow-sm transition-transform group-hover:scale-105"
                     style={{ background: `var(${meta.cssVar})`, color: "var(--pin-fg)" }}
                   >
                     <PlaceIcon place={p} size={20} />
                   </span>
-                  <span className="min-w-0">
-                    <span className="block truncate font-medium">{p.name.en}</span>
-                    <span className="flex items-center gap-2 truncate text-sm text-muted">
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-center gap-1.5 font-medium leading-snug">
+                      <span className="truncate">{p.name.en}</span>
+                      {p.pureVeg && (
+                        <span className="shrink-0 rounded-md bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-600 dark:text-emerald-400">
+                          Veg
+                        </span>
+                      )}
+                      {p.source === "curated" && (
+                        <span className="shrink-0 rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-amber-600 dark:text-amber-400">
+                          ★ Best-of
+                        </span>
+                      )}
+                    </span>
+                    <span className="flex items-center gap-2 truncate text-xs text-muted">
                       <span className="truncate">
                         {meta.label} · {zoneName.get(p.zones[0])}
-                        {p.source === "old" && " · older list"}
-                        {p.source === "curated" && " · best-of pick"}
                       </span>
                       <Rating rating={p.rating} count={p.ratingCount} className="shrink-0 text-xs text-fg" />
                     </span>

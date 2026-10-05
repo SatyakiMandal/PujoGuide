@@ -96,15 +96,27 @@ export function PlaceDetail({ place: p }: { place: Place }) {
         <CaretLeft size={16} weight="bold" /> All places
       </button>
 
-      <header className="space-y-2">
+      <header className="space-y-2.5">
         <div className="flex items-start justify-between gap-3">
-          <span
-            className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold"
-            style={{ background: `var(${meta.cssVar})`, color: "var(--pin-fg)" }}
-          >
-            <PlaceIcon place={p} size={16} /> {meta.label}
-            {p.tags.includes("rajbari") && " · Rajbari"}
-          </span>
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span
+              className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold shadow-xs"
+              style={{ background: `var(${meta.cssVar})`, color: "var(--pin-fg)" }}
+            >
+              <PlaceIcon place={p} size={16} /> {meta.label}
+              {p.tags.includes("rajbari") && " · Rajbari"}
+            </span>
+            {p.pureVeg && (
+              <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+                100% Pure Veg
+              </span>
+            )}
+            {p.source === "curated" && (
+              <span className="rounded-full bg-amber-500/10 px-2.5 py-0.5 text-xs font-semibold text-amber-600 dark:text-amber-400">
+                ★ Best-of Pick
+              </span>
+            )}
+          </div>
           <div className="flex gap-1.5">
             <Toggle
               on={saved}
@@ -121,7 +133,7 @@ export function PlaceDetail({ place: p }: { place: Place }) {
           </div>
         </div>
         <h2 className="font-display text-2xl font-semibold leading-tight">{p.name.en}</h2>
-        {p.aliases.length > 0 && <p className="text-sm text-muted">Also: {p.aliases.join(", ")}</p>}
+        {p.aliases.length > 0 && <p className="text-sm text-muted">Also known as: {p.aliases.join(", ")}</p>}
         <p className="text-sm text-muted">{p.zones.map((z) => zoneName.get(z)).join(" · ")}</p>
       </header>
 
