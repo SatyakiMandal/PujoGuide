@@ -141,7 +141,12 @@ function PlanCard({ plan, hasRoute, onDone }: { plan: Plan; hasRoute: boolean; o
     <article className="rounded-2xl border border-line bg-surface p-3.5">
       <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} className="flex w-full items-start gap-3 text-left">
         <span className="min-w-0 flex-1">
-          <span className="block font-semibold leading-snug">{plan.title}</span>
+          <span className="flex flex-wrap items-center gap-2">
+            <span className="font-semibold leading-snug">{plan.title}</span>
+            <span className="rounded-md bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary">
+              {plan.tag}
+            </span>
+          </span>
           <span className="mt-1 block text-sm leading-relaxed text-muted">{plan.blurb}</span>
         </span>
         <CaretDown size={18} weight="bold" className={clsx("mt-1 shrink-0 text-muted transition-transform", open && "rotate-180")} />
