@@ -25,7 +25,7 @@ import { AnimatePresence, Reorder, useDragControls, motion } from "motion/react"
 import { useMemo, useState } from "react";
 import { CATEGORY_META } from "@/lib/categories";
 import { places, zoneName } from "@/lib/data";
-import { googleMapsLinks, legLink, shareUrl, wholeRouteMode } from "@/lib/route/export";
+import { formattedShareText, googleMapsLinks, legLink, shareUrl, wholeRouteMode } from "@/lib/route/export";
 import { fmtFare, fmtMin, MODE_META } from "@/lib/route/modeMeta";
 import { optimiseOrder } from "@/lib/route/optimise";
 import { routePlaces, summarise, useLegs, type Leg } from "@/lib/route/useLegs";
@@ -62,7 +62,7 @@ export function PlanView() {
 
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(shareUrl(location.origin, stops));
+      await navigator.clipboard.writeText(formattedShareText(location.origin, routePlacesList));
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {

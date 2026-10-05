@@ -33,6 +33,16 @@ export function googleMapsLinks(places: Place[], travelmode?: "walking" | "drivi
 
 export const shareUrl = (origin: string, slugs: string[]) => `${origin}/?route=${slugs.join(",")}`;
 
+import { isFood } from "../schema";
+
+/** Formats a clean WhatsApp/text shareable summary of the itinerary with link. */
+export function formattedShareText(origin: string, places: Place[]): string {
+  if (places.length === 0) return "";
+  const lines = places.map((p, i) => `${i + 1}. ${p.name.en}${isFood(p.category) ? " 🍽️" : ""}`);
+  const url = shareUrl(origin, places.map((p) => p.slug));
+  return `🪔 My Pujo 2026 Plan (${places.length} stops):\n${lines.join("\n")}\n\nOpen route on PujoGuide:\n${url}`;
+}
+
 /** Google's travelmode names. Transit can't carry waypoints, so it's only used for single legs. */
 const TRAVEL_MODE: Record<Mode, string> = { walk: "walking", metro: "transit", auto: "driving", cab: "driving", bike: "two-wheeler" };
 
