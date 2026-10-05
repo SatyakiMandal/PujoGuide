@@ -168,9 +168,6 @@ export function Panel() {
               </Chip>
             );
           })}
-          <Chip active={filters.pureVeg} onClick={() => useUI.getState().togglePureVeg()}>
-            🌱 Pure Veg
-          </Chip>
         </div>
 
         <div className="flex items-center justify-between gap-3">
