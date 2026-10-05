@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence } from "motion/react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
 import { FilterGroups, FilterToggle } from "@/components/filters/Filters";
 import { PlaceDetail } from "@/components/place/PlaceDetail";
@@ -26,9 +26,26 @@ export function Panel() {
   const { list, matched, visibleCount } = useFiltered();
   const { query, mode, selected, filters, tab } = useUI();
   const stopCount = useUI((s) => s.route.stops.length);
-  const { setQuery, setMode, toggleLayer, setTab } = useUI.getState();
+  const { setQuery, setMode, toggleLayer, setTab, select } = useUI.getState();
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const searchRef = useRef<HTMLInputElement>(null);
   const place = selected ? placeBySlug.get(selected) : undefined;
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      const active = document.activeElement;
+      const isInput = active && (active.tagName === "INPUT" || active.tagName === "TEXTAREA");
+      if (e.key === "/" && !isInput) {
+        e.preventDefault();
+        setTab("explore");
+        searchRef.current?.focus();
+      } else if (e.key === "Escape" && selected) {
+        select(null);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [selected, select, setTab]);
 
   return (
     <div className="flex h-full min-h-0 flex-col">
@@ -86,12 +103,18 @@ export function Panel() {
         <label className="relative block">
           <MagnifyingGlass size={18} weight="bold" className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
           <input
+            ref={searchRef}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search pandals, baris, areas, food…"
             enterKeyHint="search"
-            className="h-11 w-full rounded-full border border-line bg-surface pl-10 pr-10 text-base outline-none transition-shadow focus:ring-2 focus:ring-primary/40"
+            className="h-11 w-full rounded-full border border-line bg-surface pl-10 pr-12 text-base outline-none transition-shadow focus:ring-2 focus:ring-primary/40"
           />
+          {!query && (
+            <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rounded-md border border-line bg-surface2 px-1.5 py-0.5 font-mono text-[10px] font-semibold text-muted shadow-2xs">
+              /
+            </span>
+          )}
           {query && (
             <button
               type="button"
