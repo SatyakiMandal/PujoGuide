@@ -35,3 +35,20 @@ export function findNearbyFood(from: Point, to: Point, allPlaces: Place[], exclu
     .sort((a, b) => a.dist - b.dist)
     .map((item) => item.place);
 }
+
+/** Finds the closest food and sweet spots near a single place. */
+export function findNearbyEats(
+  spot: Point,
+  allPlaces: Place[],
+  excludeSlugs: string[] = [],
+  maxKm = 1.0,
+  limit = 3,
+): { place: Place; distKm: number }[] {
+  const spotSlug = (spot as Place).slug;
+  const foodOnly = allPlaces.filter((p) => isFood(p.category) && p.slug !== spotSlug && !excludeSlugs.includes(p.slug) && !p.closed);
+  return foodOnly
+    .map((p) => ({ place: p, distKm: haversineKm(spot, p) }))
+    .filter((item) => item.distKm <= maxKm)
+    .sort((a, b) => a.distKm - b.distKm)
+    .slice(0, limit);
+}

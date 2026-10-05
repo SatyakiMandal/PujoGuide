@@ -6,6 +6,7 @@ import {
   CheckCircle,
   ClockCounterClockwise,
   Eye,
+  ForkKnife,
   Heart,
   Lightbulb,
   MapPinSimpleArea,
@@ -20,11 +21,12 @@ import {
   XCircle,
 } from "@phosphor-icons/react";
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { CATEGORY_META, CUISINE_LABEL, DIET_LABEL, PRICE, VIBE_LABEL } from "@/lib/categories";
-import { zoneName } from "@/lib/data";
+import { places, zoneName } from "@/lib/data";
 import { PlaceIcon } from "@/lib/placeIcon";
 import { isFood, type Crowd, type Place } from "@/lib/schema";
+import { findNearbyEats } from "@/lib/route/geo";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
 import { HoursCard } from "./HoursCard";
@@ -169,6 +171,8 @@ export function PlaceDetail({ place: p }: { place: Place }) {
       <HoursCard place={p} />
 
       <MenuCard place={p} />
+
+      <NearbyEatsCard spot={p} />
 
       {tipRows.length > 0 && (
         <section className="space-y-3 rounded-2xl border border-line bg-surface p-4">
@@ -346,5 +350,47 @@ function Toggle({ on, label, onClick, icon }: { on: boolean; label: string; onCl
     >
       {icon}
     </motion.button>
+  );
+}
+
+function NearbyEatsCard({ spot }: { spot: Place }) {
+  const stops = useUI((s) => s.route.stops);
+  const addStop = useUI((s) => s.addStop);
+  const select = useUI((s) => s.select);
+  const nearby = useMemo(() => findNearbyEats(spot, places, stops, 1.2, 3), [spot, stops]);
+
+  if (nearby.length === 0 || isFood(spot.category)) return null;
+
+  return (
+    <section className="space-y-2 rounded-2xl border border-line bg-surface p-4">
+      <h3 className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted">
+        <ForkKnife size={16} weight="duotone" className="text-primary" /> Famous food &amp; sweets nearby
+      </h3>
+      <div className="space-y-2 pt-1">
+        {nearby.map(({ place: f, distKm }) => (
+          <div key={f.slug} className="flex items-center justify-between gap-2 rounded-xl bg-surface2/60 p-2 text-xs">
+            <button
+              type="button"
+              onClick={() => select(f.slug)}
+              className="flex min-w-0 flex-1 items-center gap-2 text-left hover:underline"
+            >
+              <PlaceIcon place={f} size={15} />
+              <span className="truncate font-medium">{f.name.en}</span>
+              <span className="shrink-0 text-muted">
+                {distKm < 1 ? `${Math.round(distKm * 1000)}m` : `${distKm.toFixed(1)}km`}
+              </span>
+            </button>
+            <motion.button
+              type="button"
+              whileTap={{ scale: 0.9 }}
+              onClick={() => addStop(f.slug)}
+              className="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 font-semibold text-primary hover:bg-primary/20"
+            >
+              <Plus size={13} weight="bold" /> Add
+            </motion.button>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
