@@ -2,7 +2,7 @@
  {
   "slug": "kewpie-s-kitchen",
   "name": "Kewpie's Kitchen",
-  "reason": "unverified"
+  "reason": "closed"
  },
  {
   "slug": "barishh",
@@ -33,11 +33,6 @@
   "slug": "hickory-smoked-bistro-cafe",
   "name": "Hickory Smoked Bistro Cafe",
   "reason": "closed"
- },
- {
-  "slug": "gusto-caf-and-kitchen",
-  "name": "Gusto Café & Kitchen",
-  "reason": "unverified"
  },
  {
   "slug": "ibaco",
@@ -137,7 +132,7 @@
  {
   "slug": "barf-soda-paani-park-street",
   "name": "Barf Soda Paani - Park Street",
-  "reason": "unverified"
+  "reason": "closed"
  },
  {
   "slug": "zold-cafe-and-kitchen",
@@ -167,6 +162,11 @@
  {
   "slug": "flyers-multicuisine-restaurant",
   "name": "Flyers Multicuisine Restaurant",
+  "reason": "closed"
+ },
+ {
+  "slug": "caf-courting-coffees",
+  "name": "Café Courting Coffees",
   "reason": "closed"
  },
  {
@@ -248,11 +248,6 @@
   "slug": "bite-that-spoon-the-caf",
   "name": "Bite that Spoon: The Café",
   "reason": "closed"
- },
- {
-  "slug": "cafe-by-the-lane-garia",
-  "name": "Cafe by the Lane (Garia)",
-  "reason": "unverified"
  },
  {
   "slug": "rally-s-rose-syrup",

@@ -443,5 +443,218 @@
       { "name": "Caramel Custard", "diet": "veg", "kind": "dessert" },
       { "name": "Kesariya Rasmalai", "diet": "veg", "kind": "dessert" }
     ]
+  },
+  "the-melbourne-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "bakery", "continental"],
+    "vibes": ["aesthetic", "adda", "quick_bite"],
+    "menuSources": ["swiggy.com"],
+    "mustTry": {
+      "veg": ["The Melbourne Cafe Signature Veg", "Dark Chocolate Croissant", "Blueberry Cheesecake"],
+      "nonveg": ["Turkish Eggs", "The Melbourne Cafe Signature Non-veg", "Chicken Envelope Puff"],
+      "drinks": ["Cappuccino", "Tiramisu Latte", "Iced Cappuccino"]
+    },
+    "menu": [
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink", "price": 210 },
+      { "name": "Americano", "diet": "veg", "kind": "drink", "price": 210 },
+      { "name": "Turkish Eggs", "diet": "nonveg", "kind": "food", "price": 290 },
+      { "name": "Baked Beans on Crispy Toasts", "diet": "veg", "kind": "food", "price": 290 },
+      { "name": "The Melbourne Cafe Signature Veg", "diet": "veg", "kind": "food", "price": 450 },
+      { "name": "The Melbourne Cafe Signature Non-veg", "diet": "nonveg", "kind": "food", "price": 580 },
+      { "name": "Iced Cappuccino", "diet": "veg", "kind": "drink" },
+      { "name": "Tiramisu Latte", "diet": "veg", "kind": "drink" },
+      { "name": "Chicken Envelope Puff", "diet": "nonveg", "kind": "food" },
+      { "name": "Dark Chocolate Croissant", "diet": "veg", "kind": "food" },
+      { "name": "Blueberry Cheesecake", "diet": "veg", "kind": "dessert" },
+      { "name": "Shawarma Wrap", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "the-orient": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["asian", "chinese"],
+    "vibes": ["family", "aesthetic"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Mapo Tofu", "Braised Shiitakes", "China Town Cottage Cheese"],
+      "nonveg": ["Prawn XO", "Hong Kong Five Spice Honey Chilli Pepper Pork", "Chicken Supreme with Chili Oyster"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Prawn XO", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Supreme with Chili Oyster", "diet": "nonveg", "kind": "food" },
+      { "name": "Hong Kong Five Spice Honey Chilli Pepper Pork", "diet": "nonveg", "kind": "food" },
+      { "name": "Mapo Tofu", "diet": "veg", "kind": "food" },
+      { "name": "Braised Shiitakes", "diet": "veg", "kind": "food" },
+      { "name": "China Town Cottage Cheese", "diet": "veg", "kind": "food" },
+      { "name": "Thai Red Curry Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Steamed Jasmine Rice", "diet": "veg", "kind": "food" },
+      { "name": "Veg Hakka Noodles", "diet": "veg", "kind": "food" },
+      { "name": "Darsan with Ice Cream", "diet": "veg", "kind": "dessert" },
+      { "name": "Tender Coconut Ice Cream", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "allen-kitchen": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 1,
+    "cuisines": ["bengali", "street_food"],
+    "vibes": ["heritage", "quick_bite", "adda"],
+    "menuSources": ["whatshot.in", "district.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Special Prawn Cutlet", "Fish Diamond Fry", "Chicken Cutlet"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Special Prawn Cutlet", "diet": "nonveg", "kind": "food", "price": 180 },
+      { "name": "Fish Diamond Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Cutlet", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Steak", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Cutlet", "diet": "nonveg", "kind": "food" },
+      { "name": "Devilled Eggs", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "cafe-by-the-lane-shobhabazar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "coffee", "italian"],
+    "vibes": ["aesthetic", "quick_bite", "adda"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["White Sauce Pasta", "Garlic Bread", "Pancakes"],
+      "nonveg": ["Chicken Stroganoff", "Parsley Prawn", "Chicken Cheese Balls"],
+      "drinks": ["Wild Smoke Tea", "Chocolate Frappe"]
+    },
+    "menu": [
+      { "name": "White Sauce Pasta", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Stroganoff", "diet": "nonveg", "kind": "food" },
+      { "name": "Garlic Bread", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Cheese Balls", "diet": "nonveg", "kind": "food" },
+      { "name": "Hot Wings", "diet": "nonveg", "kind": "food" },
+      { "name": "Parsley Prawn", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Earl Grey Tea", "diet": "veg", "kind": "drink" },
+      { "name": "Wild Smoke Tea", "diet": "veg", "kind": "drink" },
+      { "name": "Chocolate Frappe", "diet": "veg", "kind": "drink" },
+      { "name": "Pancakes", "diet": "veg", "kind": "dessert" },
+      { "name": "Chocolate Brownie", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "mitra-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["bengali", "street_food"],
+    "vibes": ["heritage", "quick_bite", "adda"],
+    "menuSources": ["mitracafe.co.in", "swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Diamond Fish Fry", "Brain Chop", "Mutton Kabiraji"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Diamond Fish Fry", "diet": "nonveg", "kind": "food", "price": 190 },
+      { "name": "Brain Chop", "diet": "nonveg", "kind": "food", "price": 125 },
+      { "name": "Chicken Kabiraji", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Kabiraji", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Kabiraji", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Afghani Cutlet", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Cutlet", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Roll", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Kosha", "diet": "nonveg", "kind": "food" },
+      { "name": "Moglai Paratha", "diet": "nonveg", "kind": "food" },
+      { "name": "Caramel Pudding", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "nobin-chandra-das": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 1,
+    "cuisines": ["mishti", "dessert"],
+    "vibes": ["heritage", "quick_bite"],
+    "menuSources": ["district.in", "whatshot.in"],
+    "mustTry": {
+      "veg": ["Sponge Rosogolla", "Abar Khabo", "Kamalabhog"],
+      "nonveg": [],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Sponge Rosogolla", "diet": "veg", "kind": "dessert" },
+      { "name": "Abar Khabo", "diet": "veg", "kind": "dessert" },
+      { "name": "Kamalabhog", "diet": "veg", "kind": "dessert" },
+      { "name": "Rajbhog", "diet": "veg", "kind": "dessert" },
+      { "name": "Kachagolla", "diet": "veg", "kind": "dessert" },
+      { "name": "Jalbhara Sandesh", "diet": "veg", "kind": "dessert" },
+      { "name": "Baikuntha Bhog", "diet": "veg", "kind": "dessert" },
+      { "name": "Rasmalai", "diet": "veg", "kind": "dessert" },
+      { "name": "Nolen Gur Rosogolla", "diet": "veg", "kind": "dessert" },
+      { "name": "Lord Chomchom", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "boho-the-sky-caf": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "north_indian", "italian", "coffee"],
+    "vibes": ["rooftop", "aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Fettuccine Alfredo Alla Crema", "Paneer Tikka Burger", "Classic Margherita Pizza"],
+      "nonveg": ["Cheesy Fish Goujons", "Chicken Chizza Supreme", "Chicken Sausage Pizza"],
+      "drinks": ["Blue Lagoon Mocktail", "Oreo Shake"]
+    },
+    "menu": [
+      { "name": "Cheesy Fish Goujons", "diet": "nonveg", "kind": "food", "price": 580 },
+      { "name": "Chicken Chizza Supreme", "diet": "nonveg", "kind": "food", "price": 425 },
+      { "name": "Herb-grilled Chicken Skewers", "diet": "nonveg", "kind": "food", "price": 410 },
+      { "name": "Chicken Quesadilla Classica", "diet": "nonveg", "kind": "food", "price": 410 },
+      { "name": "Fettuccine Alfredo Alla Crema", "diet": "veg", "kind": "food" },
+      { "name": "Paneer Tikka Burger", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Sausage Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Classic Margherita Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Blue Lagoon Mocktail", "diet": "veg", "kind": "drink" },
+      { "name": "Oreo Shake", "diet": "veg", "kind": "drink" },
+      { "name": "Chocolate Brownie", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "cafe-by-the-lane-garia": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "coffee", "italian"],
+    "vibes": ["aesthetic", "quick_bite", "adda"],
+    "menuSources": ["district.in", "eazydiner.com", "facebook.com"],
+    "mustTry": {
+      "veg": ["Smokey Cheesy Mushrooms", "White Sauce Pasta", "Garlic Bread"],
+      "nonveg": ["Kasundi Chilli Chicken", "Wine Batter Fish", "BBQ Chicken Wings"],
+      "drinks": ["Wild Smoke Tea", "Chocolate Frappe"]
+    },
+    "menu": [
+      { "name": "Kasundi Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Wine Batter Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Smokey Cheesy Mushrooms", "diet": "veg", "kind": "food" },
+      { "name": "BBQ Chicken Wings", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Stroganoff", "diet": "nonveg", "kind": "food" },
+      { "name": "White Sauce Pasta", "diet": "veg", "kind": "food" },
+      { "name": "Garlic Bread", "diet": "veg", "kind": "food" },
+      { "name": "Earl Grey Tea", "diet": "veg", "kind": "drink" },
+      { "name": "Wild Smoke Tea", "diet": "veg", "kind": "drink" },
+      { "name": "Chocolate Frappe", "diet": "veg", "kind": "drink" },
+      { "name": "Chocolate Brownie", "diet": "veg", "kind": "dessert" }
+    ]
   }
 }

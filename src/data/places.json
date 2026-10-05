@@ -5709,8 +5709,7 @@
   "needsReview": true,
   "cuisines": [
    "bengali",
-   "street_food",
-   "rolls"
+   "street_food"
   ],
   "vibes": [
    "heritage",
@@ -5739,81 +5738,76 @@
   "checkedAt": "2026-10-06",
   "pureVeg": false,
   "menuSources": [
-   "zomato.com",
-   "swiggy.com"
+   "mitracafe.co.in",
+   "swiggy.com",
+   "magicpin.in"
   ],
   "mustTry": {
-   "veg": [
-    "Vegetable Chop",
-    "Paneer Cutlet"
-   ],
+   "veg": [],
    "nonveg": [
-    "Mutton Diamond Fry",
-    "Fish Kabiraji",
-    "Brain Chop"
+    "Diamond Fish Fry",
+    "Brain Chop",
+    "Mutton Kabiraji"
    ],
    "drinks": []
   },
   "menu": [
    {
-    "name": "Mutton Diamond Fry",
+    "name": "Diamond Fish Fry",
     "diet": "nonveg",
     "kind": "food",
-    "price": 240
-   },
-   {
-    "name": "Fish Kabiraji",
-    "diet": "nonveg",
-    "kind": "food",
-    "price": 210
+    "price": 190
    },
    {
     "name": "Brain Chop",
     "diet": "nonveg",
     "kind": "food",
-    "price": 140
+    "price": 125
    },
    {
-    "name": "Fish Roll",
+    "name": "Chicken Kabiraji",
     "diet": "nonveg",
-    "kind": "food",
-    "price": 180
+    "kind": "food"
    },
    {
-    "name": "Mutton Mughlai Paratha",
+    "name": "Mutton Kabiraji",
     "diet": "nonveg",
-    "kind": "food",
-    "price": 220
+    "kind": "food"
+   },
+   {
+    "name": "Fish Kabiraji",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mutton Afghani Cutlet",
+    "diet": "nonveg",
+    "kind": "food"
    },
    {
     "name": "Chicken Cutlet",
     "diet": "nonveg",
-    "kind": "food",
-    "price": 160
+    "kind": "food"
    },
    {
-    "name": "Mutton Stew",
+    "name": "Fish Roll",
     "diet": "nonveg",
-    "kind": "food",
-    "price": 250
+    "kind": "food"
    },
    {
-    "name": "Prawn Cutlet",
+    "name": "Mutton Kosha",
     "diet": "nonveg",
-    "kind": "food",
-    "price": 230
+    "kind": "food"
    },
    {
-    "name": "Vegetable Chop",
-    "diet": "veg",
-    "kind": "food",
-    "price": 40
+    "name": "Moglai Paratha",
+    "diet": "nonveg",
+    "kind": "food"
    },
    {
-    "name": "Paneer Cutlet",
+    "name": "Caramel Pudding",
     "diet": "veg",
-    "kind": "food",
-    "price": 120
+    "kind": "dessert"
    }
   ]
  },
@@ -6790,6 +6784,10 @@
    "late_night",
    "aesthetic"
   ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "openLate": true,
   "source": "new",
   "info": "researched",
@@ -6806,6 +6804,58 @@
    "watch": "It is a bar first. Puja Saturdays and Sundays will be busy.",
    "tip": "Reserve if you can, and note that it is on Chowringhee, far from the North Kolkata circuit."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 3,
+  "menuSources": [
+   "conversationroom.in",
+   "indulgexpress.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Pesto and Cottage Cheese Bombs"
+   ],
+   "nonveg": [
+    "Midnight Mangsho",
+    "Little Tigers"
+   ],
+   "drinks": [
+    "Sweet Lime of Mine",
+    "Smooth Talker"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Midnight Mangsho",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Pesto and Cottage Cheese Bombs",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Little Tigers",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Sweet Lime of Mine",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Smooth Talker",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Sober Old Fashioned",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 340
@@ -7950,12 +8000,74 @@
   "metro": [],
   "tags": [],
   "address": "8th floor, Shree Lekha Appartment, 42A, Park St, Mullick Bazar, Park Street area, Kolkata, West Bengal 700016",
-  "cuisines": [],
-  "vibes": [],
+  "cuisines": [
+   "north_indian",
+   "asian",
+   "continental",
+   "italian"
+  ],
+  "vibes": [
+   "aesthetic",
+   "rooftop",
+   "family"
+  ],
   "diet": [
    "veg"
   ],
   "source": "new",
+  "checkedAt": "2026-10-06",
+  "pureVeg": true,
+  "priceLevel": 3,
+  "menuSources": [
+   "swiggy.com",
+   "district.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Chilli Blast Paneer",
+    "Congy Crispy Chilli Baby Corn",
+    "Crispy Chilli Honey Potato"
+   ],
+   "nonveg": [],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Chilli Blast Paneer",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Congy Crispy Chilli Baby Corn",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Crispy Chilli Honey Potato",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Corn Salt and Pepper",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Tangra Style Chilli Paneer",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Subz Nargisi Curry",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Aloo Do Pyaza",
+    "diet": "veg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 223,
@@ -8583,15 +8695,21 @@
   "address": "29A, opposite Abin Design Studio, Golpark, Hindustan Park, Gariahat, Kolkata, West Bengal 700029",
   "cuisines": [
    "continental",
+   "italian",
    "coffee",
    "dessert"
   ],
   "vibes": [
-   "aesthetic"
+   "aesthetic",
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "new",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "Marbella's Hindustan Park / Golpark outlet, the cafe's busier Gariahat branch.",
   "tips": {
    "expect": "A pink-hued, photogenic cafe. About ₹800 to ₹900 for two.",
@@ -8599,6 +8717,73 @@
    "watch": "It is very busy on weekend evenings, especially during Puja.",
    "tip": "A good break between Hindustan Park, Maddox Square and Singhi Park."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "lbb.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Veg Mexican Bowl",
+    "Nutella Cheesecake"
+   ],
+   "nonveg": [
+    "Fish & Chips",
+    "Chicken Meatball Pizza"
+   ],
+   "drinks": [
+    "Hot Chocolate",
+    "Orange Coffee Tonic"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Veg Mexican Bowl",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Fish & Chips",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Meatball Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mushroom Sicilian Pizza",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Hot Chocolate",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Orange Coffee Tonic",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Nutella Cheesecake",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Fudgy Brownie",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Cappuccino",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 3189,
@@ -8782,15 +8967,21 @@
   ],
   "address": "FD-368, FD Block, Sector 3, Bidhannagar, Kolkata, West Bengal 700106",
   "cuisines": [
-   "coffee"
+   "coffee",
+   "continental",
+   "italian"
   ],
   "vibes": [
    "aesthetic",
-   "family"
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "new",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "The Salt Lake FD Block branch of Craft Coffee Experience Centre, a coffee-focused cafe in Sector 3.",
   "tips": {
    "expect": "A coffee-led cafe with food. Listings put it at roughly ₹1,000 to ₹1,500 for two.",
@@ -8798,6 +8989,62 @@
    "watch": "Salt Lake gets traffic-heavy at night, so plan the cab back.",
    "tip": "Pair with FD Block and Salt Lake's neighbouring blocks."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "district.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Classic Margherita Pizza",
+    "Truffle Fries"
+   ],
+   "nonveg": [
+    "Chicken Aglio Olio"
+   ],
+   "drinks": [
+    "Mandarin Coffucha",
+    "Pour Over Coffee"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Mandarin Coffucha",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Pour Over Coffee",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Flat White",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Truffle Fries",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Classic Margherita Pizza",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Aglio Olio",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Tiramisu",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.5,
   "ratingCount": 2809,
@@ -9117,15 +9364,21 @@
   ],
   "address": "26, Ballygunge Park Rd, Ballygunge Park, Ballygunge, Kolkata, West Bengal 700019",
   "cuisines": [
-   "coffee"
+   "coffee",
+   "bakery",
+   "continental"
   ],
   "vibes": [
    "aesthetic",
-   "family"
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "new",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "Craft Coffee Experience Centre at 26 Ballygunge Park Road, with a high rating among regulars.",
   "tips": {
    "expect": "A coffee-led cafe with a full menu. About ₹800 to ₹1,500 for two depending on the listing.",
@@ -9133,6 +9386,74 @@
    "watch": "Seating is limited on busy evenings.",
    "tip": "Combine with Ballygunge Cultural Association and Maddox Square."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "timesofindia.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Penne Alfredo Pasta",
+    "Tiramisu"
+   ],
+   "nonveg": [
+    "Morning Delight Breakfast Platter",
+    "High Protein Breakfast Platter"
+   ],
+   "drinks": [
+    "Pour Over",
+    "Turkish Coffee",
+    "Lavender Latte"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Pour Over",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Turkish Coffee",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Lavender Latte",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Cappuccino",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Tiramisu",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Morning Delight Breakfast Platter",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "High Protein Breakfast Platter",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Penne Alfredo Pasta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Margherita Pizza",
+    "diet": "veg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.5,
   "ratingCount": 4151,
@@ -9207,13 +9528,17 @@
    "chinese"
   ],
   "vibes": [
-   "late_night",
+   "aesthetic",
    "bar"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "openLate": true,
   "source": "new",
   "info": "researched",
-  "priceLevel": 3,
+  "priceLevel": 4,
   "blurb": "A pan-Asian restaurant on the third floor of City Mart, 169 Rash Behari Avenue.",
   "dishes": [
    "Dim sum and dumplings",
@@ -9226,6 +9551,78 @@
    "watch": "It is on an upper floor of a mall building and can be loud on weekends.",
    "tip": "Handy right on the Kalighat and Ballygunge pandal route."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "justdial.com",
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Avocado Nigiri Sushi",
+    "Thai Veg Spring Roll"
+   ],
+   "nonveg": [
+    "Ebi Miyazaki Tempura Uramaki",
+    "Thai Garlic Prawns",
+    "Tangra Style Chilli Chicken"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Ebi Miyazaki Tempura Uramaki",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 650
+   },
+   {
+    "name": "Tuna Nigiri Sushi",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 835
+   },
+   {
+    "name": "Avocado Nigiri Sushi",
+    "diet": "veg",
+    "kind": "food",
+    "price": 655
+   },
+   {
+    "name": "Thai Garlic Prawns",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 795
+   },
+   {
+    "name": "Spicy Prawn Hargao",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Hong Kong Chicken Dim Sum",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Tangra Style Chilli Chicken",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 435
+   },
+   {
+    "name": "Mountain Chilli Chicken",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 450
+   },
+   {
+    "name": "Thai Veg Spring Roll",
+    "diet": "veg",
+    "kind": "food",
+    "price": 465
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4,
   "ratingCount": 513,
@@ -9762,12 +10159,17 @@
    "coffee"
   ],
   "vibes": [
-   "quick_bite",
-   "aesthetic"
+   "aesthetic",
+   "late_night",
+   "quick_bite"
   ],
+  "diet": [
+   "veg"
+  ],
+  "openLate": true,
   "source": "new",
   "info": "researched",
-  "priceLevel": 1,
+  "priceLevel": 2,
   "blurb": "A small dessert cafe on Hindustan Road, Ballygunge, known for Middle Eastern-style sweets.",
   "dishes": [
    "Dulcie boba",
@@ -9780,6 +10182,66 @@
    "watch": "It's tiny, so seats can be hard to find in the evening.",
    "tip": "Next door to Amar Khamar on Hindustan Road. A natural sweet finish after dinner."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": true,
+  "menuSources": [
+   "swiggy.com",
+   "facebook.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Mango Kunafa",
+    "Mango Koshari",
+    "Mawaddah"
+   ],
+   "nonveg": [],
+   "drinks": [
+    "Dulcie Mango Boba",
+    "Mango Laban"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Mango Kunafa",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Mango Koshari",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Mango Biscoff Bliss",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Mawaddah",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "DD Cheesecake",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Falafel with Hummus",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Dulcie Mango Boba",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Mango Laban",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.8,
   "ratingCount": 253,
@@ -10117,10 +10579,84 @@
   "tags": [],
   "address": "Ground Floor, 23, 51, Gariahat Rd, next to South City College, Golpark, Kankulia, Kolkata, West Bengal 700029",
   "cuisines": [
-   "coffee"
+   "coffee",
+   "south_indian",
+   "continental",
+   "street_food"
   ],
-  "vibes": [],
+  "vibes": [
+   "quick_bite",
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "new",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 1,
+  "menuSources": [
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Coleslaw Sandwich",
+    "Vegetable Smash Burger"
+   ],
+   "nonveg": [
+    "Mutton Wrapped Egg Devil",
+    "Kolkata Bhetki Fish Finger",
+    "Chicken Pasta"
+   ],
+   "drinks": [
+    "Authentic South Indian Filter Coffee",
+    "Strawberry Slush"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Authentic South Indian Filter Coffee",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Strawberry Slush",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 130
+   },
+   {
+    "name": "Coleslaw Sandwich",
+    "diet": "veg",
+    "kind": "food",
+    "price": 100
+   },
+   {
+    "name": "Mutton Wrapped Egg Devil",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 180
+   },
+   {
+    "name": "Vegetable Smash Burger",
+    "diet": "veg",
+    "kind": "food",
+    "price": 130
+   },
+   {
+    "name": "Chicken Pasta",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 190
+   },
+   {
+    "name": "Kolkata Bhetki Fish Finger",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 260
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.8,
   "ratingCount": 159
@@ -11058,11 +11594,16 @@
    "biryani"
   ],
   "vibes": [
+   "heritage",
    "family"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
-  "priceLevel": 3,
+  "priceLevel": 4,
   "blurb": "A Mughlai, Afghan and North Indian restaurant in City Centre 1, Salt Lake.",
   "dishes": [
    "Tehari Murgh",
@@ -11077,6 +11618,69 @@
    "watch": "It is inside a mall, so closing time follows the mall.",
    "tip": "Good for dinner after the Salt Lake pandals, as City Centre is on the way back."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "magicpin.in",
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Paneer Ke Sholey",
+    "Makai Aur Paneer Ki Tikki"
+   ],
+   "nonveg": [
+    "Kabuli Tandoori Murgh",
+    "Gosht Sikandari"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Kabuli Tandoori Murgh",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Gosht Sikandari",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Murgh Sufiyani Pasanda",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Makai Aur Paneer Ki Tikki",
+    "diet": "veg",
+    "kind": "food",
+    "price": 445
+   },
+   {
+    "name": "Paneer Ke Sholey",
+    "diet": "veg",
+    "kind": "food",
+    "price": 445
+   },
+   {
+    "name": "Veg Seekh Kebab",
+    "diet": "veg",
+    "kind": "food",
+    "price": 545
+   },
+   {
+    "name": "Kesaria Firni",
+    "diet": "veg",
+    "kind": "dessert",
+    "price": 275
+   },
+   {
+    "name": "Khandani Naan",
+    "diet": "veg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 3320,
@@ -11106,21 +11710,84 @@
    "quiet"
   ],
   "cuisines": [
-   "coffee"
+   "coffee",
+   "dessert"
   ],
   "vibes": [
    "aesthetic",
    "quick_bite"
   ],
+  "diet": [
+   "veg"
+  ],
   "source": "old",
   "info": "researched",
-  "priceLevel": 1,
+  "priceLevel": 2,
   "blurb": "A small coffee bistro, ordering downstairs and seating upstairs, with mocha, Spanish coffee, house brew, espresso and cold brew. About ₹700 for two.",
   "tips": {
    "expect": "A tiny, cosy coffee spot open about 10 am to 10 pm.",
    "watch": "Details are from the chain's listings, and there are separate outlets at Salt Lake and Lake Market.",
    "tip": "A quick coffee stop between Sector 1 pandals."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": true,
+  "menuSources": [
+   "magicpin.in",
+   "justdial.com"
+  ],
+  "mustTry": {
+   "veg": [],
+   "nonveg": [],
+   "drinks": [
+    "Orange Cold Brew",
+    "Spanish Latte",
+    "Aerocano"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Spanish Latte",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 200
+   },
+   {
+    "name": "Orange Cold Brew",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 185
+   },
+   {
+    "name": "Aerocano",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 175
+   },
+   {
+    "name": "Macchiato",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 135
+   },
+   {
+    "name": "Breve",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 150
+   },
+   {
+    "name": "Affogato",
+    "diet": "veg",
+    "kind": "dessert",
+    "price": 200
+   },
+   {
+    "name": "Matcha Latte",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 225
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 201,
@@ -12438,7 +13105,8 @@
   ],
   "address": "77, Jatindra Mohan Ave, Sovabazar, Shobhabazar, Kolkata, West Bengal 700005",
   "cuisines": [
-   "mishti"
+   "mishti",
+   "dessert"
   ],
   "vibes": [
    "heritage",
@@ -12461,6 +13129,73 @@
    "watch": "Closing times vary, so go before the evening rush.",
    "tip": "It is two minutes from the Shobhabazar Rajbari. Buy a box before you start the bari walk."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": true,
+  "menuSources": [
+   "district.in",
+   "whatshot.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Sponge Rosogolla",
+    "Abar Khabo",
+    "Kamalabhog"
+   ],
+   "nonveg": [],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Sponge Rosogolla",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Abar Khabo",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Kamalabhog",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Rajbhog",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Kachagolla",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Jalbhara Sandesh",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Baikuntha Bhog",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Rasmalai",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Nolen Gur Rosogolla",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Lord Chomchom",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4,
   "ratingCount": 858,
@@ -12934,14 +13669,83 @@
   "tags": [],
   "address": "124B, Southern Ave, Golpark, Hindustan Park, Gariahat, Kolkata, West Bengal 700029",
   "cuisines": [
+   "chinese",
+   "continental",
    "coffee"
   ],
   "vibes": [
-   "bar",
-   "late_night"
+   "adda",
+   "aesthetic"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "openLate": true,
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 3,
+  "menuSources": [
+   "swiggy.com",
+   "restaurant-guru.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Crispy Cheese Balls",
+    "White Sauce Penne Pasta"
+   ],
+   "nonveg": [
+    "Chilli Chicken",
+    "Chicken Sizzler",
+    "Golden Fried Prawns"
+   ],
+   "drinks": [
+    "Cold Coffee"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Chilli Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "White Sauce Penne Pasta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Crispy Cheese Balls",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Sizzler",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Golden Fried Prawns",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Cold Coffee",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Cappuccino",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Brownie with Ice Cream",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 91,
@@ -13016,8 +13820,62 @@
   "cuisines": [
    "italian"
   ],
-  "vibes": [],
+  "vibes": [
+   "aesthetic",
+   "family"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 3,
+  "menuSources": [
+   "fabbricaoriginale.com",
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Margherita Con Bufala",
+    "Burrata Bruschetta"
+   ],
+   "nonveg": [
+    "Pollo Piccante Pizza"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Pollo Piccante Pizza",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 795
+   },
+   {
+    "name": "Margherita Con Bufala",
+    "diet": "veg",
+    "kind": "food",
+    "price": 585
+   },
+   {
+    "name": "Burrata Bruschetta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Handmade Pasta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Tiramisu",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 804,
@@ -13930,12 +14788,86 @@
   "tags": [],
   "address": "5th Floor, Gate 5, 70, Beck Bagan Row, opposite Quest Mall, Park Circus, Ballygunge, Kolkata, West Bengal 700017",
   "cuisines": [
-   "coffee",
-   "italian"
+   "italian",
+   "continental",
+   "north_indian",
+   "chinese",
+   "coffee"
   ],
-  "vibes": [],
+  "vibes": [
+   "rooftop",
+   "late_night",
+   "aesthetic"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "openLate": true,
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "district.in",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Penne Arbiatta"
+   ],
+   "nonveg": [
+    "BBQ Chicken Pizza",
+    "Dragon Chicken",
+    "Chicken Wings"
+   ],
+   "drinks": [
+    "Cold Coffee",
+    "Chocolate Shake"
+   ]
+  },
+  "menu": [
+   {
+    "name": "BBQ Chicken Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Dragon Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Wings",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Butter Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mixed Noodles",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Penne Arbiatta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Cold Coffee",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Chocolate Shake",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.5,
   "ratingCount": 1791,
@@ -14057,6 +14989,104 @@
   ]
  },
  {
+  "id": "gusto-caf-and-kitchen",
+  "slug": "gusto-caf-and-kitchen",
+  "category": "cafe",
+  "name": {
+   "en": "Gusto Café & Kitchen"
+  },
+  "aliases": [],
+  "zones": [
+   "ballygunge"
+  ],
+  "region": "south",
+  "area": "gariahat",
+  "lat": 22.51541,
+  "lng": 88.36517,
+  "coordConfidence": "verified",
+  "metro": [],
+  "tags": [],
+  "address": "P384A, Golpark, Hemanta Mukherjee Sarani, Hindustan Park, Ballygunge, Kolkata, West Bengal 700029",
+  "cuisines": [
+   "coffee",
+   "continental",
+   "north_indian",
+   "chinese"
+  ],
+  "vibes": [
+   "adda",
+   "aesthetic"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
+  "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "swiggy.com",
+   "eazydiner.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Spaghetti Aglio Olio",
+    "Chocolate Brownie"
+   ],
+   "nonveg": [
+    "Chicken Lasagna",
+    "Chicken Pie",
+    "Chicken Volcano"
+   ],
+   "drinks": [
+    "Cappuccino"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Chicken Lasagna",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Pie",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Tikka Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Volcano",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Cheese Honey Glazed Chicken Croque Monsieur",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Spaghetti Aglio Olio",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Cappuccino",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Chocolate Brownie",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ]
+ },
+ {
   "id": "chapter-2-southern-avenue",
   "slug": "chapter-2-southern-avenue",
   "category": "restaurant",
@@ -14078,8 +15108,76 @@
   "cuisines": [
    "continental"
   ],
-  "vibes": [],
+  "vibes": [
+   "heritage",
+   "family"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 4,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Vegetable Au Gratin",
+    "Caramel Custard"
+   ],
+   "nonveg": [
+    "Devilled Crab",
+    "Prawn Cocktail",
+    "English Fish & Chips"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Devilled Crab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Prawn Cocktail",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Meat Lasagna",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Seafood Chowder",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Stroganoff",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "English Fish & Chips",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Vegetable Au Gratin",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Caramel Custard",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.5,
   "ratingCount": 2029,
@@ -14768,9 +15866,85 @@
   "metro": [],
   "tags": [],
   "address": "7, Ballygunge Terrace, Dhakuria, Kankulia, Kolkata, West Bengal 700029",
-  "cuisines": [],
-  "vibes": [],
+  "cuisines": [
+   "bengali",
+   "mughlai",
+   "continental"
+  ],
+  "vibes": [
+   "adda",
+   "quick_bite"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "district.in",
+   "facebook.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Gondhoraj Lemon Sorbet"
+   ],
+   "nonveg": [
+    "Bangladeshi Keema Mutton Pulao",
+    "Bombay Mutton Keema Pav",
+    "Chicken Gondhoraj Cutlet"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Bangladeshi Keema Mutton Pulao",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Mughlai",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mutton Shami Kebab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Tikka Kebab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Bombay Mutton Keema Pav",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Gondhoraj Cutlet",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Golden Fried Fish Fingers",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mutton Ghugni",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Gondhoraj Lemon Sorbet",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.6,
   "ratingCount": 1145,
@@ -15516,11 +16690,16 @@
   "address": "385, 1, Keyatala Ln, Golpark, Hindustan Park, Gariahat, Kolkata, West Bengal 700029",
   "cuisines": [
    "coffee",
-   "continental"
+   "continental",
+   "chinese"
   ],
   "vibes": [
-   "aesthetic",
-   "adda"
+   "adda",
+   "aesthetic"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
@@ -15530,6 +16709,67 @@
    "expect": "A themed cafe in the Hindustan Park cluster.",
    "tip": "Near Hindustan Park, Bunaphile and Wise Owl."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Veg Twin Burger"
+   ],
+   "nonveg": [
+    "Double Fried Pork",
+    "Chicken Remix Pizza",
+    "Korean Fried Chicken"
+   ],
+   "drinks": [
+    "Elaichi Tea"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Double Fried Pork",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Remix Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Veg Twin Burger",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Korean Fried Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Ramen Bowl",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Elaichi Tea",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Lemon Tea",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Cappuccino",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 1882
@@ -15814,9 +17054,84 @@
   "metro": [],
   "tags": [],
   "address": "Globsyn Crystals, EP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091",
-  "cuisines": [],
-  "vibes": [],
+  "cuisines": [
+   "mughlai",
+   "north_indian",
+   "biryani"
+  ],
+  "vibes": [
+   "quick_bite",
+   "family"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Ulta Tawa Paratha",
+    "Shahi Tukda"
+   ],
+   "nonveg": [
+    "Galawat Kebab",
+    "Lucknowi Gosht Biryani",
+    "Pasanda Kebab"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Galawat Kebab",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 429
+   },
+   {
+    "name": "Ulta Tawa Paratha",
+    "diet": "veg",
+    "kind": "food",
+    "price": 75
+   },
+   {
+    "name": "Shahi Tukda",
+    "diet": "veg",
+    "kind": "dessert",
+    "price": 129
+   },
+   {
+    "name": "Seekh Kebab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Pasanda Kebab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Lucknowi Gosht Biryani",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Murgh Dumpukht",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Boti Masala",
+    "diet": "nonveg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 3.9,
   "ratingCount": 1479,
@@ -15891,11 +17206,16 @@
   "address": "City Near Kwality, Bus Stop, BE 97, BE Block, Sector 1, Bidhannagar, Kolkata, West Bengal 700064",
   "cuisines": [
    "mughlai",
-   "north_indian"
+   "north_indian",
+   "biryani"
   ],
   "vibes": [
-   "family",
-   "quick_bite"
+   "quick_bite",
+   "family"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
@@ -15910,6 +17230,69 @@
    "good": "The galawati kebab and the unusual paratha.",
    "tip": "A good meat-lover's stop in the Salt Lake block pandal area."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Ulta Tawa Paratha",
+    "Shahi Tukda"
+   ],
+   "nonveg": [
+    "Galawat Kebab",
+    "Lucknowi Gosht Biryani",
+    "Pasanda Kebab"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Galawat Kebab",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 429
+   },
+   {
+    "name": "Ulta Tawa Paratha",
+    "diet": "veg",
+    "kind": "food",
+    "price": 75
+   },
+   {
+    "name": "Shahi Tukda",
+    "diet": "veg",
+    "kind": "dessert",
+    "price": 129
+   },
+   {
+    "name": "Seekh Kebab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Pasanda Kebab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Lucknowi Gosht Biryani",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Murgh Dumpukht",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Boti Masala",
+    "diet": "nonveg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4,
   "ratingCount": 1386,
@@ -16124,22 +17507,99 @@
    "foodie"
   ],
   "cuisines": [
-   "bengali",
-   "continental"
+   "continental",
+   "italian",
+   "coffee",
+   "bengali"
   ],
   "vibes": [
-   "family",
-   "heritage"
+   "adda",
+   "aesthetic",
+   "late_night"
   ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
+  "openLate": true,
   "source": "old",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "A restaurant at BC 25, Sector 1, Salt Lake, about ₹950 for two.",
   "tips": {
    "expect": "A sit-down meal in Sector 1.",
    "watch": "Reported hours are about 11:30 am to 10:30 pm.",
    "tip": "Handy beside the Salt Lake block pandals."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Pasta In Pesto Sauce",
+    "Swiss Pie"
+   ],
+   "nonveg": [
+    "Fish Steak In Peri Peri Sauce",
+    "Baked Tandoori Chicken"
+   ],
+   "drinks": [
+    "Choco Latte"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Swiss Pie",
+    "diet": "veg",
+    "kind": "dessert",
+    "price": 147
+   },
+   {
+    "name": "Pasta In Pesto Sauce",
+    "diet": "veg",
+    "kind": "food",
+    "price": 247
+   },
+   {
+    "name": "Fish Steak In Peri Peri Sauce",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 538
+   },
+   {
+    "name": "Baked Tandoori Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "BBQ Chicken Sandwich",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Pasta in Pink Sauce",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Peri Peri Paneer Steak",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Strawberry Shake",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Choco Latte",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 6910
@@ -16167,14 +17627,21 @@
   ],
   "cuisines": [
    "mughlai",
-   "north_indian"
+   "north_indian",
+   "biryani",
+   "rolls"
   ],
   "vibes": [
-   "family"
+   "family",
+   "quick_bite"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "The Sector V outlet of the Mughlai name, in Srijan Corporate Park, open noon to 11 pm daily.",
   "dishes": [
    "Bheja fry",
@@ -16186,6 +17653,74 @@
    "watch": "It is a modern mall-style outlet, not the old Zakaria Street original.",
    "tip": "Convenient after the Salt Lake pandals."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Mushroom Kabab",
+    "Paneer Roll"
+   ],
+   "nonveg": [
+    "Murgh Potli Kebab",
+    "Gosht Nihari",
+    "Murgh Karachi"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Murgh Karachi",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Murgh Potli Kebab",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Gosht Nihari",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Peshawari Tikka",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mushroom Kabab",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Butter Garlic Mushroom",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Roll",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 115
+   },
+   {
+    "name": "Paneer Roll",
+    "diet": "veg",
+    "kind": "food",
+    "price": 105
+   },
+   {
+    "name": "Butter Naan",
+    "diet": "veg",
+    "kind": "food",
+    "price": 100
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 9951,
@@ -16887,13 +18422,85 @@
   "coordConfidence": "verified",
   "metro": [],
   "tags": [],
-  "cuisines": [],
+  "cuisines": [
+   "asian",
+   "continental",
+   "north_indian",
+   "biryani"
+  ],
   "vibes": [
+   "rooftop",
    "bar",
-   "late_night"
+   "aesthetic"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "openLate": true,
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 4,
+  "menuSources": [
+   "swiggy.com",
+   "eazydiner.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Charcoal Dahi Kebab",
+    "Crispy Lotus Stem",
+    "Motichoor Cheese Cake"
+   ],
+   "nonveg": [
+    "Asian BBQ Chicken Bao",
+    "Chimichurri Chicken Tacos",
+    "Oriental Chicken Dimsum"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Asian BBQ Chicken Bao",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chimichurri Chicken Tacos",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Oriental Chicken Dimsum",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Charcoal Dahi Kebab",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Crispy Lotus Stem",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Kolkata Dum Biryani",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Thai Curry with Rice",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Motichoor Cheese Cake",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 2753,
@@ -16922,11 +18529,83 @@
   "tags": [],
   "address": "DC 27/26, 1, beside City Centre, DC Block, Sector 1, Bidhannagar, Kolkata, West Bengal 700064",
   "cuisines": [
+   "continental",
+   "italian",
    "coffee"
   ],
-  "vibes": [],
+  "vibes": [
+   "aesthetic",
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "openLate": true,
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 3,
+  "menuSources": [
+   "caravancafeindia.com",
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Saffron Goat Cheese Risotto"
+   ],
+   "nonveg": [
+    "Chicken Parmesan",
+    "Lamb Stroganoff",
+    "Fish and Chips"
+   ],
+   "drinks": [
+    "Vietnamese Filter Coffee",
+    "Charcoal Latte"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Chicken Parmesan",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Lamb Stroganoff",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Saffron Goat Cheese Risotto",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Fish and Chips",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Buffalo Wings with Chilli Mayo",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Vietnamese Egg Coffee",
+    "diet": "nonveg",
+    "kind": "drink"
+   },
+   {
+    "name": "Charcoal Latte",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Vietnamese Filter Coffee",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 1387,
@@ -19015,9 +20694,87 @@
   ],
   "tags": [],
   "address": "City Centre, C-301, DC Block, Sector 1, Bidhannagar, Kolkata, West Bengal 700064",
-  "cuisines": [],
-  "vibes": [],
+  "cuisines": [
+   "continental",
+   "north_indian",
+   "chinese",
+   "italian"
+  ],
+  "vibes": [
+   "rooftop",
+   "bar",
+   "late_night"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 3,
+  "menuSources": [
+   "magicpin.in",
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Cheesy Garlic Bread",
+    "Lasagne"
+   ],
+   "nonveg": [
+    "Moroccan Chicken Skewer",
+    "Stir Fried Chicken"
+   ],
+   "drinks": [
+    "Cold Coffee"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Moroccan Chicken Skewer",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Stir Fried Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Cheesy Garlic Bread",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Lasagne",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Cold Coffee",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Butter Naan",
+    "diet": "veg",
+    "kind": "food",
+    "price": 79
+   },
+   {
+    "name": "Lachha Paratha",
+    "diet": "veg",
+    "kind": "food",
+    "price": 79
+   },
+   {
+    "name": "Tandoori Butter Roti",
+    "diet": "veg",
+    "kind": "food",
+    "price": 64
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 1089,
@@ -19049,12 +20806,17 @@
   "cuisines": [
    "continental",
    "north_indian",
-   "italian"
+   "italian",
+   "coffee"
   ],
   "vibes": [
    "rooftop",
    "aesthetic",
-   "family"
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
@@ -19071,6 +20833,89 @@
    "watch": "It is out in Garia, near Kavi Nazrul metro, not near the main pandal circuits.",
    "tip": "Only worth the trip if you are already on the Jadavpur and Garia side."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "eazydiner.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Fettuccine Alfredo Alla Crema",
+    "Paneer Tikka Burger",
+    "Classic Margherita Pizza"
+   ],
+   "nonveg": [
+    "Cheesy Fish Goujons",
+    "Chicken Chizza Supreme",
+    "Chicken Sausage Pizza"
+   ],
+   "drinks": [
+    "Blue Lagoon Mocktail",
+    "Oreo Shake"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Cheesy Fish Goujons",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 580
+   },
+   {
+    "name": "Chicken Chizza Supreme",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 425
+   },
+   {
+    "name": "Herb-grilled Chicken Skewers",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 410
+   },
+   {
+    "name": "Chicken Quesadilla Classica",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 410
+   },
+   {
+    "name": "Fettuccine Alfredo Alla Crema",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Paneer Tikka Burger",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Sausage Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Classic Margherita Pizza",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Blue Lagoon Mocktail",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Oreo Shake",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Chocolate Brownie",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 3239,
@@ -19235,11 +21080,16 @@
   ],
   "vibes": [
    "aesthetic",
+   "adda",
    "family"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "A bakery cafe at BD 97, Sector 1, Salt Lake, open noon to 11 pm daily.",
   "dishes": [
    "Chicken a la Kiev",
@@ -19253,6 +21103,51 @@
    "watch": "Seats are limited at peak times.",
    "tip": "A solid dinner stop after the Salt Lake pandals."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "facebook.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Four Cheese Pizza",
+    "White Sauce Pasta (Alfredo)"
+   ],
+   "nonveg": [
+    "Chicken Ala Kiev"
+   ],
+   "drinks": [
+    "Strawberry Shake"
+   ]
+  },
+  "menu": [
+   {
+    "name": "White Sauce Pasta (Alfredo)",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Four Cheese Pizza",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chilli Garlic Mushroom",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Ala Kiev",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Strawberry Shake",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 2092,
@@ -19795,12 +21690,16 @@
   ],
   "address": "City Center 1 Mall, 407, 4th Floor, Sector 1, Bidhannagar, Kolkata, West Bengal 700064",
   "cuisines": [
-   "chinese",
-   "asian"
+   "asian",
+   "chinese"
   ],
   "vibes": [
    "family",
-   "bar"
+   "aesthetic"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
@@ -19812,6 +21711,82 @@
    "watch": "Mall hours apply.",
    "tip": "A Salt Lake dinner after the Sector 1 blocks."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "eazydiner.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Mapo Tofu",
+    "Braised Shiitakes",
+    "China Town Cottage Cheese"
+   ],
+   "nonveg": [
+    "Prawn XO",
+    "Hong Kong Five Spice Honey Chilli Pepper Pork",
+    "Chicken Supreme with Chili Oyster"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Prawn XO",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Supreme with Chili Oyster",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Hong Kong Five Spice Honey Chilli Pepper Pork",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mapo Tofu",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Braised Shiitakes",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "China Town Cottage Cheese",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Thai Red Curry Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Steamed Jasmine Rice",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Veg Hakka Noodles",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Darsan with Ice Cream",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Tender Coconut Ice Cream",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 3307,
@@ -20024,18 +21999,23 @@
   "address": "City Centre 1,C301,3rd floor, DC Block, Sector 1, Bidhannagar, Kolkata, West Bengal 700064",
   "cuisines": [
    "street_food",
+   "chinese",
    "italian",
-   "chinese"
+   "north_indian"
   ],
   "vibes": [
    "bar",
    "late_night",
-   "family"
+   "rooftop"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "openLate": true,
   "source": "old",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 4,
   "blurb": "A pub on the 3rd floor of City Centre 1, Salt Lake, with live music and a dance floor.",
   "tips": {
    "expect": "A casual pub with pasta, pizza, seafood and street food. About ₹1,200 for two.",
@@ -20043,6 +22023,62 @@
    "watch": "Mall hours apply.",
    "tip": "A good Salt Lake wind-down."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Bread Pakoda",
+    "Fatafat Fryums"
+   ],
+   "nonveg": [
+    "Murg Chupa Rustom",
+    "Chicken 665"
+   ],
+   "drinks": [
+    "Signature Cocktails"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Murg Chupa Rustom",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken 665",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Fatafat Fryums",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Bread Pakoda",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Grilled Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Cheese Cake",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Signature Cocktails",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.1,
   "ratingCount": 2480,
@@ -20246,11 +22282,89 @@
   "tags": [],
   "address": "P-461, Southern Ave, Golpark, Hemanta Mukherjee Sarani, Hindustan Park, Keyatala, Kolkata, West Bengal 700029",
   "cuisines": [
-   "coffee"
+   "coffee",
+   "continental",
+   "italian"
   ],
-  "vibes": [],
+  "vibes": [
+   "adda",
+   "quick_bite"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "openLate": true,
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "eazydiner.com",
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Aglio E Olio Pasta",
+    "Margherita Pizza"
+   ],
+   "nonveg": [
+    "Chicken BBQ Pizza",
+    "Grilled Chicken Burger"
+   ],
+   "drinks": [
+    "Espresso",
+    "Affogato",
+    "Cappuccino"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Espresso",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Affogato",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Cappuccino",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Aglio E Olio Pasta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Penne Alfredo",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Margherita Pizza",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken BBQ Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Grilled Chicken Burger",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chocolate Brownie",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 540,
@@ -21298,12 +23412,16 @@
   ],
   "address": "25/1, Shakespeare Sarani Rd, Mullick Bazar, Elgin, Kolkata, West Bengal 700017",
   "cuisines": [
-   "street_food"
+   "street_food",
+   "coffee"
   ],
   "vibes": [
-   "adda",
    "quick_bite",
+   "adda",
    "heritage"
+  ],
+  "diet": [
+   "veg"
   ],
   "openLate": true,
   "source": "old",
@@ -21321,6 +23439,66 @@
    "watch": "Standing room only at peak times.",
    "tip": "A cheap pause between Elgin Road and Bhowanipore stops."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": true,
+  "menuSources": [
+   "swiggy.com",
+   "justdial.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Kesar Chai",
+    "Malai Toast",
+    "Club Kachori with Sabji"
+   ],
+   "nonveg": [],
+   "drinks": [
+    "Kesar Chai"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Kesar Chai",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 30
+   },
+   {
+    "name": "Malai Toast",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Butter Toast",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Club Kachori with Sabji",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Khasta Kachori",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Samosa",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Gulab Jamun",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Jalebi",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "photo": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFHrPOF2eVmYApc9D6T3xv2_y7Hcw_Mw_3uu77HVGs1Pksb4kllT-u1pMj4Yt60icpqgbgmE1Qg-PrGiDfWDy_r5PKA1nyLdzYikiYe1SUUua_riyNaybHfjdgjcWZMSJIb9Uva9onNaTftEu9keZyQUUlfubhcTQX4zN1jMcrTmZkTwK3MpO6F=w480-h320-k-no"
  },
@@ -22190,15 +24368,74 @@
    "family",
    "aesthetic"
   ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "The Forum Mall outlet on Elgin Road (listed as Siciliana by Mezzuna), about ₹1,200 for two.",
   "tips": {
    "expect": "An Italian and European menu in a mall setting.",
    "watch": "Mall hours apply, and the name differs from the South City outlet.",
    "tip": "Handy near the Bhowanipore Mallick Bari and Elgin Road."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "eazydiner.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Mushroom Tartlets",
+    "Creamy Mushroom Pasta"
+   ],
+   "nonveg": [
+    "Smoked Chili Shrimps",
+    "Thin Crust Chicken Pizza",
+    "Bacon Risotto"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Smoked Chili Shrimps",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mushroom Tartlets",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Roast Potato Salad",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Thin Crust Chicken Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Bacon Risotto",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chunky Tomato Pasta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Creamy Mushroom Pasta",
+    "diet": "veg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 3030,
@@ -23025,20 +25262,86 @@
   ],
   "address": "AE-329, A.E. Block sector 1, AE Block, Sector 1, Bidhannagar, Kolkata, West Bengal 700064",
   "cuisines": [
-   "continental",
-   "north_indian"
+   "north_indian",
+   "continental"
   ],
   "vibes": [
-   "family"
+   "family",
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
-  "priceLevel": 3,
+  "priceLevel": 2,
   "blurb": "A fine-dining restaurant at AE-329, Sector 1, Salt Lake, serving Continental and Indian food. Rated about 4.4.",
   "tips": {
    "expect": "A sit-down meal in the AE Block area.",
    "tip": "Next to the AE Block pandal."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "facebook.com",
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Dal Makhani"
+   ],
+   "nonveg": [
+    "Bhatti Ka Murgh",
+    "Dalcha Gosht",
+    "Masala Pomfret"
+   ],
+   "drinks": [
+    "Gondhoraj Mojito"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Prawn Spring Rolls",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Bhatti Ka Murgh",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Dalcha Gosht",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Murgh ka Khurchan",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Dal Makhani",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Masala Pomfret",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Gondhoraj Mojito",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Guava Lemonade",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 3.7,
   "ratingCount": 177
@@ -23349,82 +25652,6 @@
     [
      720,
      1410
-    ]
-   ]
-  ]
- },
- {
-  "id": "caf-courting-coffees",
-  "slug": "caf-courting-coffees",
-  "category": "cafe",
-  "name": {
-   "en": "Café Courting Coffees"
-  },
-  "aliases": [],
-  "zones": [
-   "salt_lake"
-  ],
-  "region": "saltlake",
-  "area": "sector-v",
-  "lat": 22.58876,
-  "lng": 88.42795,
-  "coordConfidence": "verified",
-  "metro": [
-   "Karunamoyee",
-   "Salt Lake Sector V"
-  ],
-  "tags": [],
-  "address": "BK 39, FP Road, BK Block, Sector II, Bidhannagar, Kolkata, West Bengal 700091",
-  "cuisines": [
-   "coffee"
-  ],
-  "vibes": [],
-  "source": "old",
-  "snapshotAt": "2026-10-05",
-  "rating": 4.6,
-  "ratingCount": 85,
-  "photo": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmUPbIfEV2rESbO9uuQTPKtDBWJ6D9ep9I9rFdvbzrxCyARLUVCp-JKs6kEZ9nWLrV1qVxY0_zn5PPT-3w6dWYzdyNx8v6x5xhwd6jj8bz4Dbz7tNFLlPMk7wJ4hlLoaF1picGqHO-6WpI=w480-h320-k-no",
-  "hours": [
-   [
-    [
-     600,
-     1320
-    ]
-   ],
-   [
-    [
-     600,
-     1320
-    ]
-   ],
-   [
-    [
-     600,
-     1320
-    ]
-   ],
-   [
-    [
-     600,
-     1320
-    ]
-   ],
-   [
-    [
-     600,
-     1320
-    ]
-   ],
-   [
-    [
-     600,
-     1320
-    ]
-   ],
-   [
-    [
-     600,
-     1320
     ]
    ]
   ]
@@ -23797,20 +26024,90 @@
    "continental"
   ],
   "vibes": [
-   "bar",
    "adda",
-   "quick_bite"
+   "family"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "openLate": true,
   "source": "old",
   "info": "researched",
-  "priceLevel": 1,
+  "priceLevel": 2,
   "blurb": "A cafe and bar in City Centre, Salt Lake, with a long list of teas and coffees and a mix of Indian, Italian and Continental food.",
   "tips": {
    "expect": "A casual, social place.",
    "good": "The tea and coffee variety, and the desserts.",
    "tip": "A calm break during a City Centre dinner."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Four Toppings Pizza",
+    "Mixed Sauce Pasta"
+   ],
+   "nonveg": [
+    "Chicken Lababdar Combo"
+   ],
+   "drinks": [
+    "Kesar Tea",
+    "Iced Cappuccino"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Four Toppings Pizza",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Mixed Sauce Pasta",
+    "diet": "veg",
+    "kind": "food",
+    "price": 365
+   },
+   {
+    "name": "Chicken Lababdar Combo",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 340
+   },
+   {
+    "name": "Kadhai Paneer Combo",
+    "diet": "veg",
+    "kind": "food",
+    "price": 300
+   },
+   {
+    "name": "Hakka Noodles",
+    "diet": "veg",
+    "kind": "food",
+    "price": 250
+   },
+   {
+    "name": "Kesar Tea",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 220
+   },
+   {
+    "name": "Iced Cappuccino",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 130
+   },
+   {
+    "name": "Brownie Break",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.1,
   "ratingCount": 228,
@@ -23839,10 +26136,111 @@
   "tags": [],
   "address": "DB-8, DB Block, Sector 1, Bidhannagar, Kolkata, West Bengal 700064",
   "cuisines": [
-   "coffee"
+   "coffee",
+   "bakery",
+   "continental"
   ],
-  "vibes": [],
+  "vibes": [
+   "aesthetic",
+   "adda",
+   "quick_bite"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "The Melbourne Cafe Signature Veg",
+    "Dark Chocolate Croissant",
+    "Blueberry Cheesecake"
+   ],
+   "nonveg": [
+    "Turkish Eggs",
+    "The Melbourne Cafe Signature Non-veg",
+    "Chicken Envelope Puff"
+   ],
+   "drinks": [
+    "Cappuccino",
+    "Tiramisu Latte",
+    "Iced Cappuccino"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Cappuccino",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 210
+   },
+   {
+    "name": "Americano",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 210
+   },
+   {
+    "name": "Turkish Eggs",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 290
+   },
+   {
+    "name": "Baked Beans on Crispy Toasts",
+    "diet": "veg",
+    "kind": "food",
+    "price": 290
+   },
+   {
+    "name": "The Melbourne Cafe Signature Veg",
+    "diet": "veg",
+    "kind": "food",
+    "price": 450
+   },
+   {
+    "name": "The Melbourne Cafe Signature Non-veg",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 580
+   },
+   {
+    "name": "Iced Cappuccino",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Tiramisu Latte",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Chicken Envelope Puff",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Dark Chocolate Croissant",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Blueberry Cheesecake",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Shawarma Wrap",
+    "diet": "nonveg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.1,
   "ratingCount": 875,
@@ -24184,17 +26582,61 @@
    "dessert"
   ],
   "vibes": [
-   "family",
+   "adda",
    "quick_bite"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
-  "priceLevel": 2,
+  "priceLevel": 3,
   "blurb": "A Salt Lake cafe with an Italian, North Indian and street food menu, about ₹800 for two.",
   "tips": {
    "expect": "A casual cafe with something for everyone.",
    "tip": "Easy to slot into the Sector 1 blocks plan."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Cheese Chilli Toast",
+    "Fully Loaded Nachos"
+   ],
+   "nonveg": [],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Cheese Chilli Toast",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Fries On Fire Platter",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Fully Loaded Nachos",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Baked Gur Rasgolla",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Brownies",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 382,
@@ -26506,10 +28948,97 @@
   "tags": [],
   "address": "CJ 26, Ground Floor, Sector II, Bidhannagar, Kolkata, West Bengal 700091",
   "cuisines": [
-   "coffee"
+   "coffee",
+   "italian",
+   "chinese",
+   "continental"
   ],
-  "vibes": [],
+  "vibes": [
+   "aesthetic",
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
   "source": "old",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "justdial.com",
+   "eazydiner.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Crispy Chilli Baby Corn",
+    "Mac & Cheese Pasta"
+   ],
+   "nonveg": [
+    "Pan Fried Chilli Fish",
+    "Stir Fry Broccoli Chicken"
+   ],
+   "drinks": [
+    "Signature Hot Chocolate",
+    "Cafe Latte"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Crispy Chilli Baby Corn",
+    "diet": "veg",
+    "kind": "food",
+    "price": 280
+   },
+   {
+    "name": "Stir Fry Broccoli Chicken",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 380
+   },
+   {
+    "name": "Pan Fried Chilli Fish",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 430
+   },
+   {
+    "name": "Chilli Prawns",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 480
+   },
+   {
+    "name": "Hakka Noodle",
+    "diet": "veg",
+    "kind": "food",
+    "price": 210
+   },
+   {
+    "name": "Mac & Cheese Pasta",
+    "diet": "veg",
+    "kind": "food",
+    "price": 370
+   },
+   {
+    "name": "Signature Hot Chocolate",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 280
+   },
+   {
+    "name": "Cafe Latte",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 220
+   },
+   {
+    "name": "Blueberry Cheese Milkshake",
+    "diet": "veg",
+    "kind": "drink",
+    "price": 300
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 851,
@@ -28891,11 +31420,16 @@
   "cuisines": [
    "continental",
    "coffee",
-   "asian"
+   "italian"
   ],
   "vibes": [
    "aesthetic",
-   "quick_bite"
+   "quick_bite",
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "source": "old",
   "info": "researched",
@@ -28905,6 +31439,91 @@
    "watch": "I could not confirm details for this specific outlet.",
    "tip": "A useful food stop beside the Shobhabazar Rajbaris."
   },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "swiggy.com",
+   "magicpin.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "White Sauce Pasta",
+    "Garlic Bread",
+    "Pancakes"
+   ],
+   "nonveg": [
+    "Chicken Stroganoff",
+    "Parsley Prawn",
+    "Chicken Cheese Balls"
+   ],
+   "drinks": [
+    "Wild Smoke Tea",
+    "Chocolate Frappe"
+   ]
+  },
+  "menu": [
+   {
+    "name": "White Sauce Pasta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Stroganoff",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Garlic Bread",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Cheese Balls",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Hot Wings",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Parsley Prawn",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Grilled Fish",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Earl Grey Tea",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Wild Smoke Tea",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Chocolate Frappe",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Pancakes",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Chocolate Brownie",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 3.9,
   "ratingCount": 953,
@@ -29042,6 +31661,134 @@
      1350
     ]
    ]
+  ]
+ },
+ {
+  "id": "cafe-by-the-lane-garia",
+  "slug": "cafe-by-the-lane-garia",
+  "category": "cafe",
+  "name": {
+   "en": "Cafe by the Lane (Garia)"
+  },
+  "aliases": [],
+  "zones": [
+   "south"
+  ],
+  "region": "south",
+  "area": "garia",
+  "lat": 22.47633,
+  "lng": 88.39122,
+  "coordConfidence": "verified",
+  "metro": [
+   "Kavi Subhash",
+   "Satyajit Roy"
+  ],
+  "tags": [
+   "quiet"
+  ],
+  "address": "Bapai Rd, Baishnabghata Patuli Twp, Patuli, Kolkata, West Bengal 700094",
+  "cuisines": [
+   "continental",
+   "coffee",
+   "italian"
+  ],
+  "vibes": [
+   "aesthetic",
+   "quick_bite",
+   "adda"
+  ],
+  "diet": [
+   "veg",
+   "nonveg"
+  ],
+  "source": "old",
+  "info": "researched",
+  "blurb": "A Patuli-side outlet of Cafe By The Lane.",
+  "tips": {
+   "expect": "The same easy mixed menu as the other outlets.",
+   "watch": "I could not confirm details for this outlet.",
+   "tip": "On the Garia and Patuli side, away from the main circuits."
+  },
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "priceLevel": 2,
+  "menuSources": [
+   "district.in",
+   "eazydiner.com",
+   "facebook.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Smokey Cheesy Mushrooms",
+    "White Sauce Pasta",
+    "Garlic Bread"
+   ],
+   "nonveg": [
+    "Kasundi Chilli Chicken",
+    "Wine Batter Fish",
+    "BBQ Chicken Wings"
+   ],
+   "drinks": [
+    "Wild Smoke Tea",
+    "Chocolate Frappe"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Kasundi Chilli Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Wine Batter Fish",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Smokey Cheesy Mushrooms",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "BBQ Chicken Wings",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Stroganoff",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "White Sauce Pasta",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Garlic Bread",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Earl Grey Tea",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Wild Smoke Tea",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Chocolate Frappe",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Chocolate Brownie",
+    "diet": "veg",
+    "kind": "dessert"
+   }
   ]
  },
  {
@@ -29867,12 +32614,18 @@
   ],
   "cuisines": [
    "coffee",
-   "continental"
+   "continental",
+   "asian"
   ],
   "vibes": [
    "bar",
-   "adda",
-   "aesthetic"
+   "aesthetic",
+   "adda"
+  ],
+  "priceLevel": 3,
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "openLate": true,
   "dishes": [
@@ -29887,6 +32640,58 @@
   "info": "researched",
   "source": "curated",
   "blurb": "A Park Street cafe by day that turns into a bar by night. Named Best Bar in Kolkata and ranked No. 12 on the 30 Best Bars India list.",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "district.in"
+  ],
+  "mustTry": {
+   "veg": [
+    "Mush'v'room"
+   ],
+   "nonveg": [
+    "Naga Chilli Chicken Bites",
+    "Roasted Chicken Pizza",
+    "Pho Chicken"
+   ],
+   "drinks": [
+    "Salted Caramel Iced Lungo",
+    "Matador"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Naga Chilli Chicken Bites",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Roasted Chicken Pizza",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Pho Chicken",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mush'v'room",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Salted Caramel Iced Lungo",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Matador",
+    "diet": "veg",
+    "kind": "drink"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.2,
   "ratingCount": 421,
@@ -31390,8 +34195,12 @@
    "bengali"
   ],
   "vibes": [
-   "family",
-   "quick_bite"
+   "family"
+  ],
+  "priceLevel": 3,
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "tips": {
    "expect": "A busy, no-frills Bengali meal.",
@@ -31400,6 +34209,83 @@
   "info": "researched",
   "source": "curated",
   "blurb": "Kasturi Food Plaza in Ballygunge, listed among the best Bengali restaurants for home-style thalis and Bangladeshi cooking.",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "swiggy.com",
+   "eazydiner.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Mochar Ghonto",
+    "Dhokar Dalna"
+   ],
+   "nonveg": [
+    "Kochupata Diye Chingri Bhapa",
+    "Jumbo Bhetki Paturi",
+    "Mutton Kasha"
+   ],
+   "drinks": [
+    "Ghol"
+   ]
+  },
+  "menu": [
+   {
+    "name": "Kochupata Diye Chingri Bhapa",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Jumbo Bhetki Paturi",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Katla Kaalia",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Pabda Shorshe",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Hilsa Shorshe",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mutton Kasha",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mochar Ghonto",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Dhokar Dalna",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Basanti Pulao",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Ghol",
+    "diet": "veg",
+    "kind": "drink"
+   },
+   {
+    "name": "Mishti Doi",
+    "diet": "veg",
+    "kind": "dessert"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 3972,
@@ -31559,12 +34445,18 @@
    "foodie"
   ],
   "cuisines": [
-   "bengali"
+   "bengali",
+   "street_food"
   ],
   "vibes": [
    "heritage",
-   "family",
-   "quick_bite"
+   "quick_bite",
+   "adda"
+  ],
+  "priceLevel": 1,
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "tips": {
    "expect": "Straightforward Bengali food.",
@@ -31573,6 +34465,59 @@
   "info": "researched",
   "source": "curated",
   "blurb": "A long-standing Bengali eatery in North Kolkata, rated about 4.3 from nearly 2,800 reviews.",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "whatshot.in",
+   "district.in"
+  ],
+  "mustTry": {
+   "veg": [],
+   "nonveg": [
+    "Special Prawn Cutlet",
+    "Fish Diamond Fry",
+    "Chicken Cutlet"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Special Prawn Cutlet",
+    "diet": "nonveg",
+    "kind": "food",
+    "price": 180
+   },
+   {
+    "name": "Fish Diamond Fry",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Fish Roll",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Cutlet",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chicken Steak",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Mutton Cutlet",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Devilled Eggs",
+    "diet": "nonveg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.3,
   "ratingCount": 2832,
@@ -33141,11 +36086,17 @@
    "date"
   ],
   "cuisines": [
-   "continental"
+   "continental",
+   "asian"
   ],
   "vibes": [
-   "bar",
-   "aesthetic"
+   "aesthetic",
+   "bar"
+  ],
+  "priceLevel": 4,
+  "diet": [
+   "veg",
+   "nonveg"
   ],
   "openLate": true,
   "tips": {
@@ -33155,6 +36106,49 @@
   "info": "researched",
   "source": "curated",
   "blurb": "A new fine-dining and lounge space in Bhowanipore that won Best Cocktail Bar at the Kolkata EazyDiner Foodie Awards 2026.",
+  "checkedAt": "2026-10-06",
+  "pureVeg": false,
+  "menuSources": [
+   "thehindu.com",
+   "swiggy.com"
+  ],
+  "mustTry": {
+   "veg": [
+    "Chocolate Fondue"
+   ],
+   "nonveg": [
+    "Chicken Bok Choy Dim Sum",
+    "Persian Kebab Platter"
+   ],
+   "drinks": []
+  },
+  "menu": [
+   {
+    "name": "Chicken Bok Choy Dim Sum",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Chocolate Fondue",
+    "diet": "veg",
+    "kind": "dessert"
+   },
+   {
+    "name": "Teppanyaki Fried Rice",
+    "diet": "veg",
+    "kind": "food"
+   },
+   {
+    "name": "Salmon Sushi",
+    "diet": "nonveg",
+    "kind": "food"
+   },
+   {
+    "name": "Persian Kebab Platter",
+    "diet": "nonveg",
+    "kind": "food"
+   }
+  ],
   "snapshotAt": "2026-10-05",
   "rating": 4.4,
   "ratingCount": 142,

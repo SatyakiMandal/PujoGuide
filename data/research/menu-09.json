@@ -237,5 +237,394 @@
       { "name": "Hot and Spicy Wings", "diet": "nonveg", "kind": "food" },
       { "name": "Onion Rings", "diet": "veg", "kind": "food" }
     ]
+  },
+  "caf-courting-coffees": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "cafe-proof": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["italian", "north_indian", "street_food", "dessert"],
+    "vibes": ["adda", "quick_bite"],
+    "menuSources": ["swiggy.com"],
+    "mustTry": {
+      "veg": ["Cheese Chilli Toast", "Fully Loaded Nachos"],
+      "nonveg": [],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Cheese Chilli Toast", "diet": "veg", "kind": "food" },
+      { "name": "Fries On Fire Platter", "diet": "veg", "kind": "food" },
+      { "name": "Fully Loaded Nachos", "diet": "veg", "kind": "food" },
+      { "name": "Baked Gur Rasgolla", "diet": "veg", "kind": "dessert" },
+      { "name": "Brownies", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "cafe82-kolkata": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "italian", "chinese", "continental"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["justdial.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Crispy Chilli Baby Corn", "Mac & Cheese Pasta"],
+      "nonveg": ["Pan Fried Chilli Fish", "Stir Fry Broccoli Chicken"],
+      "drinks": ["Signature Hot Chocolate", "Cafe Latte"]
+    },
+    "menu": [
+      { "name": "Crispy Chilli Baby Corn", "diet": "veg", "kind": "food", "price": 280 },
+      { "name": "Stir Fry Broccoli Chicken", "diet": "nonveg", "kind": "food", "price": 380 },
+      { "name": "Pan Fried Chilli Fish", "diet": "nonveg", "kind": "food", "price": 430 },
+      { "name": "Chilli Prawns", "diet": "nonveg", "kind": "food", "price": 480 },
+      { "name": "Hakka Noodle", "diet": "veg", "kind": "food", "price": 210 },
+      { "name": "Mac & Cheese Pasta", "diet": "veg", "kind": "food", "price": 370 },
+      { "name": "Signature Hot Chocolate", "diet": "veg", "kind": "drink", "price": 280 },
+      { "name": "Cafe Latte", "diet": "veg", "kind": "drink", "price": 220 },
+      { "name": "Blueberry Cheese Milkshake", "diet": "veg", "kind": "drink", "price": 300 }
+    ]
+  },
+  "calcutta-64": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "italian", "coffee", "bengali"],
+    "vibes": ["adda", "aesthetic", "late_night"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Pasta In Pesto Sauce", "Swiss Pie"],
+      "nonveg": ["Fish Steak In Peri Peri Sauce", "Baked Tandoori Chicken"],
+      "drinks": ["Choco Latte"]
+    },
+    "menu": [
+      { "name": "Swiss Pie", "diet": "veg", "kind": "dessert", "price": 147 },
+      { "name": "Pasta In Pesto Sauce", "diet": "veg", "kind": "food", "price": 247 },
+      { "name": "Fish Steak In Peri Peri Sauce", "diet": "nonveg", "kind": "food", "price": 538 },
+      { "name": "Baked Tandoori Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "BBQ Chicken Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Pasta in Pink Sauce", "diet": "veg", "kind": "food" },
+      { "name": "Peri Peri Paneer Steak", "diet": "veg", "kind": "food" },
+      { "name": "Strawberry Shake", "diet": "veg", "kind": "drink" },
+      { "name": "Choco Latte", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "calcutta-bakery-cafe-saltlake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bakery", "coffee", "italian", "continental"],
+    "vibes": ["aesthetic", "adda", "family"],
+    "menuSources": ["swiggy.com", "facebook.com"],
+    "mustTry": {
+      "veg": ["Four Cheese Pizza", "White Sauce Pasta (Alfredo)"],
+      "nonveg": ["Chicken Ala Kiev"],
+      "drinks": ["Strawberry Shake"]
+    },
+    "menu": [
+      { "name": "White Sauce Pasta (Alfredo)", "diet": "veg", "kind": "food" },
+      { "name": "Four Cheese Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Chilli Garlic Mushroom", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Ala Kiev", "diet": "nonveg", "kind": "food" },
+      { "name": "Strawberry Shake", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "canteen-pub-and-grub": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["street_food", "chinese", "italian", "north_indian"],
+    "vibes": ["bar", "late_night", "rooftop"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Bread Pakoda", "Fatafat Fryums"],
+      "nonveg": ["Murg Chupa Rustom", "Chicken 665"],
+      "drinks": ["Signature Cocktails"]
+    },
+    "menu": [
+      { "name": "Murg Chupa Rustom", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken 665", "diet": "nonveg", "kind": "food" },
+      { "name": "Fatafat Fryums", "diet": "veg", "kind": "food" },
+      { "name": "Bread Pakoda", "diet": "veg", "kind": "food" },
+      { "name": "Grilled Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Cheese Cake", "diet": "veg", "kind": "dessert" },
+      { "name": "Signature Cocktails", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "caravan-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "italian", "coffee"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["caravancafeindia.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Saffron Goat Cheese Risotto"],
+      "nonveg": ["Chicken Parmesan", "Lamb Stroganoff", "Fish and Chips"],
+      "drinks": ["Vietnamese Filter Coffee", "Charcoal Latte"]
+    },
+    "menu": [
+      { "name": "Chicken Parmesan", "diet": "nonveg", "kind": "food" },
+      { "name": "Lamb Stroganoff", "diet": "nonveg", "kind": "food" },
+      { "name": "Saffron Goat Cheese Risotto", "diet": "veg", "kind": "food" },
+      { "name": "Fish and Chips", "diet": "nonveg", "kind": "food" },
+      { "name": "Buffalo Wings with Chilli Mayo", "diet": "nonveg", "kind": "food" },
+      { "name": "Vietnamese Egg Coffee", "diet": "nonveg", "kind": "drink" },
+      { "name": "Charcoal Latte", "diet": "veg", "kind": "drink" },
+      { "name": "Vietnamese Filter Coffee", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "chai-break-cafe-and-bar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "north_indian", "italian", "continental"],
+    "vibes": ["adda", "family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Four Toppings Pizza", "Mixed Sauce Pasta"],
+      "nonveg": ["Chicken Lababdar Combo"],
+      "drinks": ["Kesar Tea", "Iced Cappuccino"]
+    },
+    "menu": [
+      { "name": "Four Toppings Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Mixed Sauce Pasta", "diet": "veg", "kind": "food", "price": 365 },
+      { "name": "Chicken Lababdar Combo", "diet": "nonveg", "kind": "food", "price": 340 },
+      { "name": "Kadhai Paneer Combo", "diet": "veg", "kind": "food", "price": 300 },
+      { "name": "Hakka Noodles", "diet": "veg", "kind": "food", "price": 250 },
+      { "name": "Kesar Tea", "diet": "veg", "kind": "drink", "price": 220 },
+      { "name": "Iced Cappuccino", "diet": "veg", "kind": "drink", "price": 130 },
+      { "name": "Brownie Break", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "craft-coffee-experience-centre-salt-lake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["coffee", "continental", "italian"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "district.in"],
+    "mustTry": {
+      "veg": ["Classic Margherita Pizza", "Truffle Fries"],
+      "nonveg": ["Chicken Aglio Olio"],
+      "drinks": ["Mandarin Coffucha", "Pour Over Coffee"]
+    },
+    "menu": [
+      { "name": "Mandarin Coffucha", "diet": "veg", "kind": "drink" },
+      { "name": "Pour Over Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Flat White", "diet": "veg", "kind": "drink" },
+      { "name": "Truffle Fries", "diet": "veg", "kind": "food" },
+      { "name": "Classic Margherita Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Aglio Olio", "diet": "nonveg", "kind": "food" },
+      { "name": "Tiramisu", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "eddy-s": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "evabrew-salt-lake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "dessert"],
+    "vibes": ["aesthetic", "quick_bite"],
+    "menuSources": ["magicpin.in", "justdial.com"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": [],
+      "drinks": ["Orange Cold Brew", "Spanish Latte", "Aerocano"]
+    },
+    "menu": [
+      { "name": "Spanish Latte", "diet": "veg", "kind": "drink", "price": 200 },
+      { "name": "Orange Cold Brew", "diet": "veg", "kind": "drink", "price": 185 },
+      { "name": "Aerocano", "diet": "veg", "kind": "drink", "price": 175 },
+      { "name": "Macchiato", "diet": "veg", "kind": "drink", "price": 135 },
+      { "name": "Breve", "diet": "veg", "kind": "drink", "price": 150 },
+      { "name": "Affogato", "diet": "veg", "kind": "dessert", "price": 200 },
+      { "name": "Matcha Latte", "diet": "veg", "kind": "drink", "price": 225 }
+    ]
+  },
+  "fabbrica-salt-lake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["italian"],
+    "vibes": ["aesthetic", "family"],
+    "menuSources": ["fabbricaoriginale.com", "swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Margherita Con Bufala", "Burrata Bruschetta"],
+      "nonveg": ["Pollo Piccante Pizza"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Pollo Piccante Pizza", "diet": "nonveg", "kind": "food", "price": 795 },
+      { "name": "Margherita Con Bufala", "diet": "veg", "kind": "food", "price": 585 },
+      { "name": "Burrata Bruschetta", "diet": "veg", "kind": "food" },
+      { "name": "Handmade Pasta", "diet": "veg", "kind": "food" },
+      { "name": "Tiramisu", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "galawat-salt-lake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["mughlai", "north_indian", "biryani"],
+    "vibes": ["quick_bite", "family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Ulta Tawa Paratha", "Shahi Tukda"],
+      "nonveg": ["Galawat Kebab", "Lucknowi Gosht Biryani", "Pasanda Kebab"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Galawat Kebab", "diet": "nonveg", "kind": "food", "price": 429 },
+      { "name": "Ulta Tawa Paratha", "diet": "veg", "kind": "food", "price": 75 },
+      { "name": "Shahi Tukda", "diet": "veg", "kind": "dessert", "price": 129 },
+      { "name": "Seekh Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Pasanda Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Lucknowi Gosht Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Murgh Dumpukht", "diet": "nonveg", "kind": "food" },
+      { "name": "Boti Masala", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "galawat-sector-v": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["mughlai", "north_indian", "biryani"],
+    "vibes": ["quick_bite", "family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Ulta Tawa Paratha", "Shahi Tukda"],
+      "nonveg": ["Galawat Kebab", "Lucknowi Gosht Biryani", "Pasanda Kebab"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Galawat Kebab", "diet": "nonveg", "kind": "food", "price": 429 },
+      { "name": "Ulta Tawa Paratha", "diet": "veg", "kind": "food", "price": 75 },
+      { "name": "Shahi Tukda", "diet": "veg", "kind": "dessert", "price": 129 },
+      { "name": "Seekh Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Pasanda Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Lucknowi Gosht Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Murgh Dumpukht", "diet": "nonveg", "kind": "food" },
+      { "name": "Boti Masala", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "grubvibe": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "harry-s-bistro": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["north_indian", "continental"],
+    "vibes": ["family", "adda"],
+    "menuSources": ["facebook.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Dal Makhani"],
+      "nonveg": ["Bhatti Ka Murgh", "Dalcha Gosht", "Masala Pomfret"],
+      "drinks": ["Gondhoraj Mojito"]
+    },
+    "menu": [
+      { "name": "Prawn Spring Rolls", "diet": "nonveg", "kind": "food" },
+      { "name": "Bhatti Ka Murgh", "diet": "nonveg", "kind": "food" },
+      { "name": "Dalcha Gosht", "diet": "nonveg", "kind": "food" },
+      { "name": "Murgh ka Khurchan", "diet": "nonveg", "kind": "food" },
+      { "name": "Dal Makhani", "diet": "veg", "kind": "food" },
+      { "name": "Masala Pomfret", "diet": "nonveg", "kind": "food" },
+      { "name": "Gondhoraj Mojito", "diet": "veg", "kind": "drink" },
+      { "name": "Guava Lemonade", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "k-local": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "north_indian", "chinese", "italian"],
+    "vibes": ["rooftop", "bar", "late_night"],
+    "menuSources": ["magicpin.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Cheesy Garlic Bread", "Lasagne"],
+      "nonveg": ["Moroccan Chicken Skewer", "Stir Fried Chicken"],
+      "drinks": ["Cold Coffee"]
+    },
+    "menu": [
+      { "name": "Moroccan Chicken Skewer", "diet": "nonveg", "kind": "food" },
+      { "name": "Stir Fried Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Cheesy Garlic Bread", "diet": "veg", "kind": "food" },
+      { "name": "Lasagne", "diet": "veg", "kind": "food" },
+      { "name": "Cold Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Butter Naan", "diet": "veg", "kind": "food", "price": 79 },
+      { "name": "Lachha Paratha", "diet": "veg", "kind": "food", "price": 79 },
+      { "name": "Tandoori Butter Roti", "diet": "veg", "kind": "food", "price": 64 }
+    ]
+  },
+  "kaafila": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["mughlai", "north_indian", "biryani"],
+    "vibes": ["heritage", "family"],
+    "menuSources": ["magicpin.in", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Paneer Ke Sholey", "Makai Aur Paneer Ki Tikki"],
+      "nonveg": ["Kabuli Tandoori Murgh", "Gosht Sikandari"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Kabuli Tandoori Murgh", "diet": "nonveg", "kind": "food" },
+      { "name": "Gosht Sikandari", "diet": "nonveg", "kind": "food" },
+      { "name": "Murgh Sufiyani Pasanda", "diet": "nonveg", "kind": "food" },
+      { "name": "Makai Aur Paneer Ki Tikki", "diet": "veg", "kind": "food", "price": 445 },
+      { "name": "Paneer Ke Sholey", "diet": "veg", "kind": "food", "price": 445 },
+      { "name": "Veg Seekh Kebab", "diet": "veg", "kind": "food", "price": 545 },
+      { "name": "Kesaria Firni", "diet": "veg", "kind": "dessert", "price": 275 },
+      { "name": "Khandani Naan", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "kareem-s": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["mughlai", "north_indian", "biryani", "rolls"],
+    "vibes": ["family", "quick_bite"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Mushroom Kabab", "Paneer Roll"],
+      "nonveg": ["Murgh Potli Kebab", "Gosht Nihari", "Murgh Karachi"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Murgh Karachi", "diet": "nonveg", "kind": "food" },
+      { "name": "Murgh Potli Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Gosht Nihari", "diet": "nonveg", "kind": "food" },
+      { "name": "Peshawari Tikka", "diet": "nonveg", "kind": "food" },
+      { "name": "Mushroom Kabab", "diet": "veg", "kind": "food" },
+      { "name": "Butter Garlic Mushroom", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Roll", "diet": "nonveg", "kind": "food", "price": 115 },
+      { "name": "Paneer Roll", "diet": "veg", "kind": "food", "price": 105 },
+      { "name": "Butter Naan", "diet": "veg", "kind": "food", "price": 100 }
+    ]
   }
 }
