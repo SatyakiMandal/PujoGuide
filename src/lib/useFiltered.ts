@@ -23,7 +23,8 @@ export function useFiltered() {
   return useMemo(() => {
     const mine = { saved: new Set(saved), visited: new Set(visited) };
     const { visible, matched } = applyFilters(places, filters, search(query), mine, weekday === undefined || minute === undefined ? undefined : { weekday, minute });
-    const rendered = mode === "filter" ? visible.filter((p) => matched.has(p.id)) : visible;
+    const hasSearchQuery = query.trim().length > 0;
+    const rendered = hasSearchQuery || mode === "filter" ? visible.filter((p) => matched.has(p.id)) : visible;
     const list = visible
       .filter((p) => matched.has(p.id))
       .sort((a, b) => a.name.en.localeCompare(b.name.en));

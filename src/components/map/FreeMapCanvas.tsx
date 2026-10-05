@@ -90,6 +90,31 @@ export function FreeMapCanvas() {
     });
   }, [selected]);
 
+  // Smoothly frame search results when typing a search query.
+  const query = useUI((s) => s.query);
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!query.trim() || !map || rendered.length === 0 || selected) return;
+    const { inset } = useUI.getState();
+    if (rendered.length === 1) {
+      const p = rendered[0];
+      map.easeTo({
+        center: [p.lng, p.lat],
+        zoom: Math.max(map.getZoom(), 15),
+        padding: { left: inset.left, bottom: inset.bottom, top: 0, right: 0 },
+        duration: 650,
+      });
+    } else {
+      const lngs = rendered.map((p) => p.lng);
+      const lats = rendered.map((p) => p.lat);
+      map.fitBounds([Math.min(...lngs), Math.min(...lats), Math.max(...lngs), Math.max(...lats)], {
+        padding: { top: 60, right: 60, left: inset.left + 40, bottom: inset.bottom + 40 },
+        maxZoom: 15.5,
+        duration: 750,
+      });
+    }
+  }, [query, rendered, selected]);
+
   // In the Plan tab, frame the whole route (keyed on the *set* of stops so reordering doesn't re-fit).
   const stopSet = [...stops].sort().join(",");
   useEffect(() => {

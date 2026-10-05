@@ -67,6 +67,19 @@ function Markers() {
     if (map && p) focusPlace(map, p);
   }, [map, selected]);
 
+  const query = useUI((s) => s.query);
+  useEffect(() => {
+    if (!map || !query.trim() || rendered.length === 0 || selected) return;
+    if (rendered.length === 1) {
+      focusPlace(map, rendered[0]);
+    } else {
+      const bounds = new google.maps.LatLngBounds();
+      rendered.forEach((p) => bounds.extend({ lat: p.lat, lng: p.lng }));
+      const { inset } = useUI.getState();
+      map.fitBounds(bounds, { top: 60, right: 60, bottom: inset.bottom + 40, left: 40 });
+    }
+  }, [map, query, rendered, selected]);
+
   return (
     <>
       {rendered.map((p) => {
