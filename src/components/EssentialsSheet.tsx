@@ -55,15 +55,22 @@ export function EssentialsSheet() {
             transition={{ type: "spring", stiffness: 380, damping: 34 }}
             className="max-h-[88dvh] w-full max-w-lg overflow-y-auto rounded-t-3xl border border-line bg-bg p-5 shadow-float sm:rounded-3xl"
           >
-            <div className="relative mb-4 overflow-hidden rounded-2xl border border-line/60">
-              <img src="/assets/textures.jpg" alt="Festive Kolkata banner" className="h-28 w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg/90 to-transparent flex items-end p-4">
-                <div className="flex w-full items-center justify-between">
-                  <h2 className="font-display text-xl font-semibold text-fg">Essentials & Safety</h2>
-                  <button type="button" onClick={close} aria-label="Close" className="grid size-9 place-items-center rounded-full border border-line bg-surface/80 backdrop-blur-sm text-fg">
-                    <X size={18} weight="bold" />
-                  </button>
+            <div className="relative mb-5 overflow-hidden rounded-2xl border border-line bg-gradient-to-r from-primary/10 via-surface to-accent/10 p-5">
+              <div className="absolute -right-4 -top-6 size-32 opacity-15 pointer-events-none">
+                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className="w-full h-full text-primary" strokeWidth="2">
+                  <circle cx="50" cy="50" r="40" strokeDasharray="4 4" />
+                  <circle cx="50" cy="50" r="28" />
+                  <path d="M50 10 L50 90 M10 50 L90 50 M22 22 L78 78 M22 78 L78 22" />
+                </svg>
+              </div>
+              <div className="flex w-full items-center justify-between">
+                <div>
+                  <h2 className="font-display text-xl font-semibold text-fg">Essentials &amp; Safety</h2>
+                  <p className="text-xs text-muted mt-0.5">Emergency helplines and crowd guidance for Pujo 2026</p>
                 </div>
+                <button type="button" onClick={close} aria-label="Close" className="grid size-9 shrink-0 place-items-center rounded-full border border-line bg-surface text-fg hover:bg-surface2">
+                  <X size={18} weight="bold" />
+                </button>
               </div>
             </div>
 

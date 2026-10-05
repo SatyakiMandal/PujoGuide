@@ -1,1 +1,241 @@
-{}
+{
+  "trincas-restaurant-and-bar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "north_indian", "chinese", "mughlai"],
+    "vibes": ["heritage", "bar", "family"],
+    "menuSources": ["swiggy.com", "trincas.in"],
+    "mustTry": {
+      "veg": ["Paneer Irani Chelo", "Vegetarian Lasagna"],
+      "nonveg": ["Chicken a la Kiev", "Shepherd's Pie", "Devilled Crab"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chicken a la Kiev", "diet": "nonveg", "kind": "food", "price": 525 },
+      { "name": "Paneer Irani Chelo", "diet": "veg", "kind": "food", "price": 465 },
+      { "name": "Paneer Butter Masala", "diet": "veg", "kind": "food", "price": 295 },
+      { "name": "Shepherd's Pie", "diet": "nonveg", "kind": "food" },
+      { "name": "Devilled Crab", "diet": "nonveg", "kind": "food" },
+      { "name": "Spicy Roast Pork", "diet": "nonveg", "kind": "food" },
+      { "name": "Drums of Heaven", "diet": "nonveg", "kind": "food" },
+      { "name": "Vegetarian Lasagna", "diet": "veg", "kind": "food" },
+      { "name": "Murgh Peshawari", "diet": "nonveg", "kind": "food" },
+      { "name": "Egg Hakka Noodles", "diet": "nonveg", "kind": "food", "price": 275 },
+      { "name": "Caramel Custard", "diet": "veg", "kind": "dessert", "price": 185 }
+    ]
+  },
+  "wafira": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["asian", "north_indian", "continental", "italian"],
+    "vibes": ["bar", "late_night"],
+    "openLate": true,
+    "menuSources": ["goldenparkk.com", "eazydiner.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Crispy Lotus Stem"],
+      "nonveg": ["Malaysian Lamb Shank", "Murgh Reshmi Kebab"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Malaysian Lamb Shank", "diet": "nonveg", "kind": "food" },
+      { "name": "Murgh Reshmi Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Crispy Lotus Stem", "diet": "veg", "kind": "food" },
+      { "name": "Paneer Tikka", "diet": "veg", "kind": "food" },
+      { "name": "Dim Sums", "diet": "nonveg", "kind": "food" },
+      { "name": "Truffle Fries", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "wokaholic": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["chinese", "asian"],
+    "vibes": ["quick_bite"],
+    "menuSources": ["swiggy.com"],
+    "mustTry": {
+      "veg": ["Cream Cheese Rangoon"],
+      "nonveg": ["Gandhoraj Panko Fish", "Lat Mein Kai Chicken", "Chilli Chicken"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Hakka Noodles", "diet": "veg", "kind": "food" },
+      { "name": "Mixed Fried Rice", "diet": "nonveg", "kind": "food" },
+      { "name": "Cream Cheese Rangoon", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Momos", "diet": "nonveg", "kind": "food" },
+      { "name": "Lat Mein Kai Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Gandhoraj Panko Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Make Your Own Wok", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "yokocho": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["asian", "bbq"],
+    "vibes": ["bar", "late_night", "aesthetic"],
+    "openLate": true,
+    "menuSources": ["thehindu.com", "ellegourmet.in", "district.in"],
+    "mustTry": {
+      "veg": ["BBQ Begun", "Butternut and Shaak Gyoza"],
+      "nonveg": ["Calcutta Temaki Tacos", "Pork Belly Char Siu", "Shiozake Salmon"],
+      "drinks": ["Date Palm Jaggery Cocktail"]
+    },
+    "menu": [
+      { "name": "Calcutta Temaki Tacos", "diet": "nonveg", "kind": "food" },
+      { "name": "Pork Belly Char Siu", "diet": "nonveg", "kind": "food" },
+      { "name": "Shiozake Salmon", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Bagda Chingri", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Momo", "diet": "nonveg", "kind": "food" },
+      { "name": "BBQ Begun", "diet": "veg", "kind": "food" },
+      { "name": "Butternut and Shaak Gyoza", "diet": "veg", "kind": "food" },
+      { "name": "Date Palm Jaggery Cocktail", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "25-main-street-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["asian", "continental", "coffee", "italian"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "25mainstreetcafe.in"],
+    "mustTry": {
+      "veg": ["Gondhoraj Paneer Mango Salsa", "Peri Peri French Fries"],
+      "nonveg": ["Kolkata Fish Fry", "Bibimbap", "Fish Finger"],
+      "drinks": ["Cappuccino"]
+    },
+    "menu": [
+      { "name": "Fish Finger", "diet": "nonveg", "kind": "food" },
+      { "name": "Kolkata Fish Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Peri Peri French Fries", "diet": "veg", "kind": "food" },
+      { "name": "Gondhoraj Paneer Mango Salsa", "diet": "veg", "kind": "food" },
+      { "name": "Korean BBQ", "diet": "nonveg", "kind": "food" },
+      { "name": "Bibimbap", "diet": "nonveg", "kind": "food" },
+      { "name": "Kimchi Fried Rice", "diet": "nonveg", "kind": "food" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "absolute-barbecues-salt-lake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["bbq", "north_indian", "biryani"],
+    "vibes": ["family"],
+    "menuSources": ["swiggy.com", "absolutebarbecues.com"],
+    "mustTry": {
+      "veg": ["Grilled Churrasco Pineapple", "Crispy Corn"],
+      "nonveg": ["Genie's Meat Platter", "Fantastic Five Non-Veg"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Genie's Meat Platter", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Jumbo Platter", "diet": "nonveg", "kind": "food" },
+      { "name": "Fantastic Four Veg", "diet": "veg", "kind": "food" },
+      { "name": "Fantastic Five Non-Veg", "diet": "nonveg", "kind": "food" },
+      { "name": "Assorted Chicken Kebab Platter", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Churrasco Pineapple", "diet": "veg", "kind": "food" },
+      { "name": "Special Biryani Combo", "diet": "nonveg", "kind": "food" },
+      { "name": "Butter Chicken & Chicken Biryani Combo", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Tikka", "diet": "veg", "kind": "food" },
+      { "name": "Crispy Corn", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "altair-capella": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "italian", "north_indian", "asian"],
+    "vibes": ["rooftop", "bar", "aesthetic"],
+    "openLate": true,
+    "menuSources": ["eazydiner.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Naga Chilli Babycorn"],
+      "nonveg": ["Dhaba-style Butter Chicken"],
+      "drinks": ["Signature Cocktails"]
+    },
+    "menu": [
+      { "name": "Naga Chilli Babycorn", "diet": "veg", "kind": "food" },
+      { "name": "Dhaba-style Butter Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Thin Crust Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Pan Fried Dim Sums", "diet": "nonveg", "kind": "food" },
+      { "name": "Signature Cocktails", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "ambrosia-restaurant-and-bar": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "chinese", "continental"],
+    "vibes": ["bar", "family"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Tandoori Chicken", "Mutton Lababdar", "Shikari Murgh"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Tandoori Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Sweet and Sour Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Kadai Murg", "diet": "nonveg", "kind": "food" },
+      { "name": "Shikari Murgh", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Lababdar", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "bengal-dhaba": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["bengali", "north_indian", "chinese", "mughlai"],
+    "vibes": ["family", "quick_bite"],
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Paneer Malai Kebab", "Kadai Paneer"],
+      "nonveg": ["Sadda Wadda Kukkad", "Chicken Kosha", "Fish Fry"],
+      "drinks": ["Lassi"]
+    },
+    "menu": [
+      { "name": "Sadda Wadda Kukkad", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Kosha", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Malai Kebab", "diet": "veg", "kind": "food" },
+      { "name": "Kadai Paneer", "diet": "veg", "kind": "food" },
+      { "name": "Egg Tadka", "diet": "nonveg", "kind": "food" },
+      { "name": "Lassi", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "burger-in-law": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental"],
+    "vibes": ["quick_bite", "late_night"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Onion Rings"],
+      "nonveg": ["Chica Licka Burger", "La La Lamb", "The Messy Jessy"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chica Licka Burger", "diet": "nonveg", "kind": "food" },
+      { "name": "La La Lamb", "diet": "nonveg", "kind": "food" },
+      { "name": "The Messy Jessy", "diet": "nonveg", "kind": "food" },
+      { "name": "Taco Burger", "diet": "nonveg", "kind": "food" },
+      { "name": "Big Kahuna Burger", "diet": "nonveg", "kind": "food" },
+      { "name": "Hot and Spicy Wings", "diet": "nonveg", "kind": "food" },
+      { "name": "Onion Rings", "diet": "veg", "kind": "food" }
+    ]
+  }
+}

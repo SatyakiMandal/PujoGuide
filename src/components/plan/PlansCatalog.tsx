@@ -25,21 +25,22 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
 
   return (
     <div className="space-y-4">
-      {view !== "auto" && (
-        <div className="space-y-2">
-          <div className="overflow-hidden rounded-2xl border border-line/60 bg-surface shadow-sm">
-            <img
-              src="/assets/banner-routes.png"
-              alt="Explore new routes & share stories"
-              className="w-full h-auto object-cover max-h-40"
-            />
-          </div>
-          <h2 className="font-display text-lg font-semibold">Ready-made plans</h2>
-          <p className="text-sm text-muted">
-            {PLANS.length} plans that between them cover every pandal and Bonedi Bari. Load one, then edit it.
-          </p>
-        </div>
-      )}
+      <div className="space-y-1">
+        <h2 className="font-display text-lg font-semibold">
+          {view === "auto"
+            ? "Smart Auto-Planner"
+            : view === "area"
+            ? "Ready-made plans by Area"
+            : view === "interest"
+            ? "Ready-made plans by Interest"
+            : "Day-by-Day Festival Guide"}
+        </h2>
+        <p className="text-sm text-muted">
+          {view === "auto"
+            ? "Tell us when you are free and what you like. We will generate a custom itinerary with travel time, meals and rituals."
+            : `${PLANS.length} curated plans covering every pandal and Bonedi Bari. Select one to load or customise.`}
+        </p>
+      </div>
 
       <div role="tablist" className="grid grid-cols-4 rounded-full border border-line bg-surface p-0.5">
         {(

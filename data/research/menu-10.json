@@ -245,5 +245,203 @@
       { "name": "Choco Inferno", "diet": "veg", "kind": "dessert" },
       { "name": "Cheesecake", "diet": "veg", "kind": "dessert" }
     ]
+  },
+  "nomnom-the-thainese-cuisine": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "oudh-1590-saltlake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["mughlai", "biryani", "north_indian"],
+    "vibes": ["heritage", "family", "aesthetic"],
+    "menuSources": ["oudh1590.com", "swiggy.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Paneer Sugandhi Kebab", "Subz Biryani"],
+      "nonveg": ["Mutton Awadhi Handi Biryani", "Mutton Galawati Kebab", "Nehari Khaas"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Mutton Awadhi Handi Biryani", "diet": "nonveg", "kind": "food", "price": 435 },
+      { "name": "Chicken Awadhi Handi Biryani", "diet": "nonveg", "kind": "food", "price": 595 },
+      { "name": "Mutton Galawati Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Sugandhi Kebab", "diet": "veg", "kind": "food" },
+      { "name": "Chicken Malai Kebab", "diet": "nonveg", "kind": "food" },
+      { "name": "Nehari Khaas", "diet": "nonveg", "kind": "food" },
+      { "name": "Mutton Khade Masala", "diet": "nonveg", "kind": "food" },
+      { "name": "Subz Biryani", "diet": "veg", "kind": "food" },
+      { "name": "Shahi Tukda", "diet": "veg", "kind": "dessert" },
+      { "name": "Firni", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "pour-house": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "refinery-091": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["north_indian", "continental", "asian", "italian"],
+    "vibes": ["bar", "aesthetic", "late_night"],
+    "openLate": true,
+    "menuSources": ["swiggy.com", "refinery091.in"],
+    "mustTry": {
+      "veg": ["Burmese Khow Suey", "Pasta Arrabiata"],
+      "nonveg": ["Goan Prawn Curry", "Chicken Burmese Khow Suey", "Peri Peri Chicken Pizza"],
+      "drinks": ["Cosmopolitan"]
+    },
+    "menu": [
+      { "name": "Burmese Khow Suey", "diet": "veg", "kind": "food", "price": 360 },
+      { "name": "Chicken Burmese Khow Suey", "diet": "nonveg", "kind": "food", "price": 460 },
+      { "name": "Goan Prawn Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Pasta Arrabiata", "diet": "veg", "kind": "food", "price": 430 },
+      { "name": "Pasta Carbonara", "diet": "nonveg", "kind": "food", "price": 560 },
+      { "name": "Classic Margherita Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Peri Peri Chicken Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Craft Beer", "diet": "veg", "kind": "drink" },
+      { "name": "Cosmopolitan", "diet": "veg", "kind": "drink" },
+      { "name": "Brownie with Ice Cream", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "sky-view-caf-hotel-de-sovrani": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "chinese", "italian", "north_indian", "coffee"],
+    "vibes": ["rooftop", "aesthetic", "family"],
+    "menuSources": ["eazydiner.com", "swiggy.com"],
+    "mustTry": {
+      "veg": ["Mushroom Caps", "Paneer Shashlik", "Dulce de Leche"],
+      "nonveg": ["BBQ Chicken Wings", "Beijing Lamb", "Grilled Fish with Lemon Butter"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "BBQ Chicken Wings", "diet": "nonveg", "kind": "food" },
+      { "name": "Mushroom Caps", "diet": "veg", "kind": "food" },
+      { "name": "Beijing Lamb", "diet": "nonveg", "kind": "food" },
+      { "name": "Grilled Fish with Lemon Butter", "diet": "nonveg", "kind": "food" },
+      { "name": "Fish in Salsa Sauce", "diet": "nonveg", "kind": "food" },
+      { "name": "Mahi Fish Tikka", "diet": "nonveg", "kind": "food" },
+      { "name": "Paneer Shashlik", "diet": "veg", "kind": "food" },
+      { "name": "Pasta Marinara", "diet": "veg", "kind": "food" },
+      { "name": "Mexicano Pineapple", "diet": "veg", "kind": "food" },
+      { "name": "Dulce de Leche", "diet": "veg", "kind": "dessert" },
+      { "name": "Pina Colada Jelly", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "snowberry-artisanal-desserts": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": true,
+    "diet": ["veg"],
+    "priceLevel": 3,
+    "cuisines": ["dessert"],
+    "vibes": ["aesthetic", "quick_bite"],
+    "menuSources": ["swiggy.com"],
+    "mustTry": {
+      "veg": ["Korean Mango Bingsu", "Kunafa Sundae", "Classic Acai Bowl"],
+      "nonveg": [],
+      "drinks": ["Blackberry Shake", "Cold Coffee"]
+    },
+    "menu": [
+      { "name": "Korean Mango Bingsu", "diet": "veg", "kind": "dessert" },
+      { "name": "Classic Acai Bowl", "diet": "veg", "kind": "dessert" },
+      { "name": "Kunafa Sundae", "diet": "veg", "kind": "dessert" },
+      { "name": "Kunafa Cake", "diet": "veg", "kind": "dessert" },
+      { "name": "Real Fruit Strawberry Ice Cream", "diet": "veg", "kind": "dessert" },
+      { "name": "Churros with Chocolate Sauce", "diet": "veg", "kind": "dessert" },
+      { "name": "Blackberry Shake", "diet": "veg", "kind": "drink" },
+      { "name": "Cranberry Shake", "diet": "veg", "kind": "drink" },
+      { "name": "Kiwi Shake", "diet": "veg", "kind": "drink" },
+      { "name": "Cold Coffee", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "sonar-tori": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["bengali"],
+    "vibes": ["heritage", "family", "aesthetic"],
+    "menuSources": ["swiggy.com", "eazydiner.com", "neotiahospitality.com"],
+    "mustTry": {
+      "veg": ["Bamun Barir Sukto", "Basanti Pulao", "Bhapa Doi"],
+      "nonveg": ["Chital Macher Muitha", "Ilish Barishali", "Kosha Murgi"],
+      "drinks": ["Aam Pora Shorbot"]
+    },
+    "menu": [
+      { "name": "North Kolkata Fish Fry", "diet": "nonveg", "kind": "food" },
+      { "name": "Pur Bhora Bhetki with Kasundi", "diet": "nonveg", "kind": "food" },
+      { "name": "Hing Koraisutir Tikki", "diet": "veg", "kind": "food" },
+      { "name": "Kosha Murgi", "diet": "nonveg", "kind": "food" },
+      { "name": "Chital Macher Muitha", "diet": "nonveg", "kind": "food" },
+      { "name": "Ilish Barishali", "diet": "nonveg", "kind": "food" },
+      { "name": "Bamun Barir Sukto", "diet": "veg", "kind": "food" },
+      { "name": "Basanti Pulao", "diet": "veg", "kind": "food" },
+      { "name": "Luchi", "diet": "veg", "kind": "food" },
+      { "name": "Bhapa Doi", "diet": "veg", "kind": "dessert" },
+      { "name": "Malpua", "diet": "veg", "kind": "dessert" },
+      { "name": "Aam Pora Shorbot", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "stumptown-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["coffee", "continental", "chinese"],
+    "vibes": ["adda", "aesthetic", "quick_bite"],
+    "menuSources": ["swiggy.com", "facebook.com"],
+    "mustTry": {
+      "veg": ["Pasta Arrabiata", "Loaded Nachos"],
+      "nonveg": ["Nasi Goreng", "Grilled Chicken Sandwich"],
+      "drinks": ["Cold Brew", "Cappuccino"]
+    },
+    "menu": [
+      { "name": "Espresso", "diet": "veg", "kind": "drink" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" },
+      { "name": "Cold Brew", "diet": "veg", "kind": "drink" },
+      { "name": "Nasi Goreng", "diet": "nonveg", "kind": "food" },
+      { "name": "Pasta Arrabiata", "diet": "veg", "kind": "food" },
+      { "name": "Classic Margherita Pizza", "diet": "veg", "kind": "food" },
+      { "name": "Grilled Chicken Sandwich", "diet": "nonveg", "kind": "food" },
+      { "name": "Loaded Nachos", "diet": "veg", "kind": "food" },
+      { "name": "Peri Peri Fries", "diet": "veg", "kind": "food" }
+    ]
+  },
+  "the-canisters": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "the-conclave-city-centre-salt-lake": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["continental", "italian", "mughlai", "north_indian", "biryani"],
+    "vibes": ["heritage", "family", "aesthetic"],
+    "menuSources": ["neotiahospitality.com", "eazydiner.com", "facebook.com"],
+    "mustTry": {
+      "veg": ["Rajbarir Vegetable Cutlet", "Dahi ke Kebab", "Lasagne Verde"],
+      "nonveg": ["Mutton Railway Curry", "Lasooni Tandoori Prawns", "Gosht Khas Biryani"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Rajbarir Vegetable Cutlet", "diet": "veg", "kind": "food" },
+      { "name": "Dahi ke Kebab", "diet": "veg", "kind": "food" },
+      { "name": "Lasooni Tandoori Prawns", "diet": "nonveg", "kind": "food" },
+      { "name": "Garlic Butter Prawns", "diet": "nonveg", "kind": "food" },
+      { "name": "Spinach Cheese Flakes", "diet": "veg", "kind": "food" },
+      { "name": "Mutton Railway Curry", "diet": "nonveg", "kind": "food" },
+      { "name": "Lasagne Verde", "diet": "veg", "kind": "food" },
+      { "name": "Dum Ki Murgh Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Gosht Khas Biryani", "diet": "nonveg", "kind": "food" },
+      { "name": "Caramel Custard", "diet": "veg", "kind": "dessert" },
+      { "name": "Kesariya Rasmalai", "diet": "veg", "kind": "dessert" }
+    ]
   }
 }

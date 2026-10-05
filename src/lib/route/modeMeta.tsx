@@ -1,10 +1,11 @@
-import { Jeep, Motorcycle, PersonSimpleWalk, Taxi, TrainSimple, type Icon } from "@phosphor-icons/react";
+import { Motorcycle, PersonSimpleWalk, Taxi, TrainSimple, type Icon } from "@phosphor-icons/react";
+import { AutoRickshawIcon } from "@/components/ui/AutoRickshawIcon";
 import type { Mode } from "./types";
 
-export const MODE_META: Record<Mode, { label: string; icon: Icon; color: string; dashed?: boolean }> = {
+export const MODE_META: Record<Mode, { label: string; icon: Icon | React.ComponentType<{ size?: number; className?: string; weight?: string }>; color: string; dashed?: boolean }> = {
   walk: { label: "Walk", icon: PersonSimpleWalk, color: "#2f7d46", dashed: true },
   metro: { label: "Metro", icon: TrainSimple, color: "#4b4fd1" },
-  auto: { label: "Auto", icon: Jeep, color: "#9a6400" },
+  auto: { label: "Auto", icon: AutoRickshawIcon, color: "#9a6400" },
   cab: { label: "Cab", icon: Taxi, color: "#4a4a52" },
   bike: { label: "Bike", icon: Motorcycle, color: "#9340c0" },
 };

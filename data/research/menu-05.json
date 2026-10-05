@@ -132,5 +132,269 @@
       { "name": "Greenhouse Sliders", "diet": "veg", "kind": "food" },
       { "name": "Lemon Cheesecake", "diet": "veg", "kind": "dessert" }
     ]
+  },
+  "calcutta-bakery-cafe-jadavpur": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["bakery", "coffee", "continental", "chinese"],
+    "vibes": ["adda", "family"],
+    "menuSources": ["swiggy.com", "lbb.in", "calcuttabakerycafe.com"],
+    "mustTry": {
+      "veg": ["Bunker Fries"],
+      "nonveg": ["Chicken Ala Kiev", "Fish Fingers", "Ham and Cheese Omelet"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Chicken Ala Kiev", "diet": "nonveg", "kind": "food", "price": 520 },
+      { "name": "Fish Fingers", "diet": "nonveg", "kind": "food", "price": 199 },
+      { "name": "Ham and Cheese Omelet", "diet": "nonveg", "kind": "food" },
+      { "name": "Bunker Fries", "diet": "veg", "kind": "food" },
+      { "name": "Cloud Eggs", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Lollipop", "diet": "nonveg", "kind": "food" },
+      { "name": "Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Hot Garlic Fish", "diet": "nonveg", "kind": "food" },
+      { "name": "Cheesecake", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "colab-coffee-calcutta": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["coffee", "italian", "continental"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "district.in", "menucard.in"],
+    "mustTry": {
+      "veg": ["Burrata & Basil Pizza", "Wild Mushroom and Cheese Sandwich"],
+      "nonveg": ["Pesto Chicken Bruschetta", "Polo Pesto Pizza"],
+      "drinks": ["Cranberry Cold Brew"]
+    },
+    "menu": [
+      { "name": "Burrata & Basil Pizza", "diet": "veg", "kind": "food", "price": 799 },
+      { "name": "Pesto Chicken Bruschetta", "diet": "nonveg", "kind": "food", "price": 499 },
+      { "name": "Polo Pesto Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Wild Mushroom and Cheese Sandwich", "diet": "veg", "kind": "food" },
+      { "name": "Nachos with Avocado Mousse", "diet": "veg", "kind": "food" },
+      { "name": "House Fries", "diet": "veg", "kind": "food" },
+      { "name": "Cranberry Cold Brew", "diet": "veg", "kind": "drink" },
+      { "name": "Cappuccino", "diet": "veg", "kind": "drink" },
+      { "name": "Latte", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "hickory-smoked-bistro-cafe": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "just-buns": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 1,
+    "cuisines": ["bakery", "dessert"],
+    "vibes": ["quick_bite", "aesthetic"],
+    "menuSources": ["swiggy.com", "magicpin.in", "facebook.com"],
+    "mustTry": {
+      "veg": ["Hokkaido Milk Cream Bun", "Dark Chocolate Lava Bun"],
+      "nonveg": ["Creamy Chicken Bun", "Barbeque Chicken Bun"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Hokkaido Milk Cream Bun", "diet": "veg", "kind": "dessert", "price": 65 },
+      { "name": "Mini Castella", "diet": "veg", "kind": "dessert", "price": 100 },
+      { "name": "Creamy Chicken Bun", "diet": "nonveg", "kind": "food" },
+      { "name": "Dark Chocolate Lava Bun", "diet": "veg", "kind": "dessert" },
+      { "name": "Salted Egg Crumble Bun", "diet": "nonveg", "kind": "dessert" },
+      { "name": "Coffee Toffee Nut Bun", "diet": "veg", "kind": "dessert" },
+      { "name": "Blueberry Cream Cheese Bun", "diet": "veg", "kind": "dessert" },
+      { "name": "Barbeque Chicken Bun", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Sausage Bun", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Pizza Bun", "diet": "nonveg", "kind": "food" },
+      { "name": "Double Cheese Bun", "diet": "veg", "kind": "food" },
+      { "name": "Fudge Brownie", "diet": "veg", "kind": "dessert" }
+    ]
+  },
+  "king-s-bakery-jodhpur-park": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "mise-en-place": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["asian"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["swiggy.com", "justdial.com", "district.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Beef Bulgogi", "Korean Pork Mandu", "Spicy Peanut Creamy Tan Tan Noodles"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Beef Bulgogi", "diet": "nonveg", "kind": "food", "price": 385 },
+      { "name": "Pork Bulgogi", "diet": "nonveg", "kind": "food", "price": 450 },
+      { "name": "Korean Chicken Mandu", "diet": "nonveg", "kind": "food", "price": 380 },
+      { "name": "Korean Pork Mandu", "diet": "nonveg", "kind": "food", "price": 400 },
+      { "name": "Spicy Peanut Creamy Tan Tan Noodles", "diet": "nonveg", "kind": "food", "price": 470 },
+      { "name": "Shoyu Ramen", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "momo-amore": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "riyasat": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["north_indian", "mughlai", "biryani"],
+    "vibes": ["family", "heritage"],
+    "menuSources": ["swiggy.com", "magicpin.in", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Dhunaar Paneer Tulsi", "Shabdegh Dal Makhani"],
+      "nonveg": ["Rajwada Lal Maas", "Bhetki Kairi", "Oudhi Gosht Biryani"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Dhunaar Paneer Tulsi", "diet": "veg", "kind": "food", "price": 685 },
+      { "name": "Rajwada Lal Maas", "diet": "nonveg", "kind": "food" },
+      { "name": "Oudhi Gosht Biryani", "diet": "nonveg", "kind": "food", "price": 550 },
+      { "name": "Bhetki Kairi", "diet": "nonveg", "kind": "food" },
+      { "name": "Safed Murg", "diet": "nonveg", "kind": "food" },
+      { "name": "Shabdegh Dal Makhani", "diet": "veg", "kind": "food" },
+      { "name": "Galauti Kebab", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "snacking": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "chinese", "italian", "coffee"],
+    "vibes": ["adda", "aesthetic"],
+    "menuSources": ["swiggy.com", "bloggerduo.com", "magicpin.in"],
+    "mustTry": {
+      "veg": ["Mushroom Blini"],
+      "nonveg": ["Chicken Stroganoff", "Hot Garlic Chicken", "Mexican Chicken Platter"],
+      "drinks": ["Lemon Iced Tea"]
+    },
+    "menu": [
+      { "name": "Egg Fried Rice", "diet": "nonveg", "kind": "food", "price": 240 },
+      { "name": "Hot Garlic Chicken", "diet": "nonveg", "kind": "food", "price": 310 },
+      { "name": "Chicken Stroganoff", "diet": "nonveg", "kind": "food", "price": 360 },
+      { "name": "Lemon Iced Tea", "diet": "veg", "kind": "drink", "price": 180 },
+      { "name": "Mushroom Blini", "diet": "veg", "kind": "food" },
+      { "name": "Mexican Chicken Platter", "diet": "nonveg", "kind": "food" },
+      { "name": "Salami Pizza", "diet": "nonveg", "kind": "food" }
+    ]
+  },
+  "steamin-mugs": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 2,
+    "cuisines": ["continental", "chinese", "italian", "coffee"],
+    "vibes": ["adda", "quick_bite"],
+    "menuSources": ["swiggy.com", "facebook.com", "magicpin.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Grilled Fish Sizzler", "Chicken Cordon Blue", "Bacon Wrapped Chicken"],
+      "drinks": ["Brownie Shake"]
+    },
+    "menu": [
+      { "name": "Grilled Fish Sizzler", "diet": "nonveg", "kind": "food", "price": 315 },
+      { "name": "Chicken Cordon Blue", "diet": "nonveg", "kind": "food", "price": 290 },
+      { "name": "Bacon Wrapped Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Brownie Shake", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "the-beanshot-cafe": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["coffee", "continental", "italian"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["thebeanshotcafe.com", "swiggy.com", "district.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Illegal Cheesy Avalanche Burger", "The Sin Burger"],
+      "drinks": ["Selfieccino"]
+    },
+    "menu": [
+      { "name": "Illegal Cheesy Avalanche Burger", "diet": "nonveg", "kind": "food" },
+      { "name": "The Sin Burger", "diet": "nonveg", "kind": "food" },
+      { "name": "Selfieccino", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "the-tavern-cafe": {
+    "closed": true,
+    "checkedAt": "2026-10-06"
+  },
+  "travelistan": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 3,
+    "cuisines": ["continental", "italian", "coffee"],
+    "vibes": ["aesthetic", "adda"],
+    "menuSources": ["travelistan.in", "eazydiner.com", "lbb.in"],
+    "mustTry": {
+      "veg": [],
+      "nonveg": ["Chicken Mosedang", "Bacon Cheese Maggi", "Chicken Princess"],
+      "drinks": ["Vietnamese Coffee", "Honey Lime Cold Brew"]
+    },
+    "menu": [
+      { "name": "Chicken Mosedang", "diet": "nonveg", "kind": "food" },
+      { "name": "Bacon Cheese Maggi", "diet": "nonveg", "kind": "food" },
+      { "name": "Chicken Princess", "diet": "nonveg", "kind": "food" },
+      { "name": "Vietnamese Coffee", "diet": "veg", "kind": "drink" },
+      { "name": "Honey Lime Cold Brew", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "veneto-bar-and-kitchen": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "priceLevel": 4,
+    "cuisines": ["italian", "continental", "dessert"],
+    "vibes": ["bar", "family", "aesthetic"],
+    "menuSources": ["eazydiner.com", "swiggy.com", "timesofindia.com"],
+    "mustTry": {
+      "veg": ["Patate Al Forno Due Volte", "Tiramisu"],
+      "nonveg": ["Spaghetti Carbonara", "Goan Chorizo Pizza"],
+      "drinks": ["Mimosa"]
+    },
+    "menu": [
+      { "name": "Tiramisu", "diet": "veg", "kind": "dessert", "price": 575 },
+      { "name": "Spaghetti Carbonara", "diet": "nonveg", "kind": "food" },
+      { "name": "Goan Chorizo Pizza", "diet": "nonveg", "kind": "food" },
+      { "name": "Patate Al Forno Due Volte", "diet": "veg", "kind": "food" },
+      { "name": "Mimosa", "diet": "veg", "kind": "drink" }
+    ]
+  },
+  "warehouse-cafe-kolkata": {
+    "checkedAt": "2026-10-06",
+    "pureVeg": false,
+    "diet": ["veg", "nonveg"],
+    "openLate": true,
+    "priceLevel": 4,
+    "cuisines": ["asian", "chinese", "continental", "italian"],
+    "vibes": ["bar", "rooftop", "aesthetic", "late_night"],
+    "menuSources": ["warehousecafe.in", "swiggy.com", "eazydiner.com"],
+    "mustTry": {
+      "veg": ["Sesame Honey Chilli Fries", "Cheesecake"],
+      "nonveg": ["Sushi", "Indo-Chinese Chilli Chicken"],
+      "drinks": []
+    },
+    "menu": [
+      { "name": "Sesame Honey Chilli Fries", "diet": "veg", "kind": "food" },
+      { "name": "Indo-Chinese Chilli Chicken", "diet": "nonveg", "kind": "food" },
+      { "name": "Sushi", "diet": "nonveg", "kind": "food" },
+      { "name": "Cheesecake", "diet": "veg", "kind": "dessert" }
+    ]
   }
 }

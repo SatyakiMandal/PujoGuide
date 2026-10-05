@@ -76,8 +76,12 @@ export function TodayStrip() {
   const wet = forecast !== null && forecast.rain >= 50;
   return (
     <div className="relative overflow-hidden flex items-center justify-between gap-3 rounded-2xl border border-line bg-surface p-3 text-xs shadow-sm">
-      <div className="absolute -right-2 -top-4 -bottom-4 w-36 opacity-30 pointer-events-none overflow-hidden">
-        <img src="/assets/dhunuchi-shiuli-hero.png" alt="" className="h-full w-full object-cover object-center" />
+      <div className="absolute -right-2 -top-4 -bottom-4 w-32 opacity-15 pointer-events-none overflow-hidden">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className="w-full h-full text-accent">
+          <circle cx="80" cy="50" r="30" strokeWidth="1.5" strokeDasharray="3 3" />
+          <path d="M50 30 Q 70 50 50 70 Q 30 50 50 30 Z" strokeWidth="1.5" />
+          <circle cx="50" cy="50" r="6" fill="currentColor" />
+        </svg>
       </div>
       <button type="button" onClick={() => setTab("plan")} className="relative z-10 flex min-w-0 items-center gap-2 text-left font-medium">
         <Confetti size={18} weight="duotone" className="shrink-0 text-accent" />

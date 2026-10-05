@@ -111,13 +111,6 @@ export function AutoPlanner({ hasRoute, onDone }: { hasRoute: boolean; onDone: (
         run([]);
       }}
     >
-      <div className="space-y-1">
-        <h2 className="font-display text-lg font-semibold">Plan my day</h2>
-        <p className="text-sm text-muted">
-          Tell me when you are free and what you like. I will line up stops with travel time, meals and the day&apos;s rituals.
-        </p>
-      </div>
-
       <Field label="Which day">
         <div className="flex flex-wrap gap-2">
           {PUJA_CAL.map((d) => (

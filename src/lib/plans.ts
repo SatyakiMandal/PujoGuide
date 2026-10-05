@@ -237,7 +237,7 @@ export const PLANS: Plan[] = [
       "deshbandhu-park",
       "mallick-bari",
       "yours-truly-coffee-roaster",
-      "kewpie-s-kitchen",
+      "bhojohori-manna-ballygunge",
     ],
   },
   {
@@ -353,7 +353,7 @@ export const PLANS: Plan[] = [
     getting: "Cab for the Behala leg.",
     stops: [
       "mallick-bari",
-      "kewpie-s-kitchen",
+      "babu-culture",
       "amarendra-bhavan-roy-bari",
       "sabarna-roy-chowdhury-atchala-bari",
     ],
@@ -544,7 +544,7 @@ export const PLANS: Plan[] = [
     best: "Late afternoon to early evening",
     crowd: "medium",
     getting: "Cab door to door. No long walks.",
-    stops: ["mallick-bari", "alipore-78-pally", "deshbandhu-park", "kewpie-s-kitchen"],
+    stops: ["mallick-bari", "alipore-78-pally", "deshbandhu-park", "6-ballygunge-place"],
   },
   {
     id: "late-night-south",
