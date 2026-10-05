@@ -205,19 +205,39 @@ export function PlaceDetail({ place: p }: { place: Place }) {
       )}
 
       {p.crowd && (
-        <p className="flex items-center gap-2 text-sm">
-          <Users size={20} weight="duotone" className="text-muted" />
-          <span>Crowd at peak hours:</span>
-          <b>{CROWD[p.crowd].label}</b>
-          <span aria-hidden className="flex gap-1">
-            {[1, 2, 3, 4].map((i) => (
-              <i
-                key={i}
-                className={clsx("size-2 rounded-full", i <= CROWD[p.crowd!].dots ? "bg-primary" : "bg-line")}
-              />
-            ))}
-          </span>
-        </p>
+        <div className="space-y-2 rounded-2xl border border-line bg-surface p-3.5">
+          <div className="flex items-center justify-between gap-2">
+            <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted">
+              <Users size={18} weight="duotone" className="text-accent" /> Crowd &amp; Timing Guide
+            </span>
+            <span className="flex items-center gap-1.5 text-xs font-semibold">
+              <span className="text-muted">Peak:</span>
+              <b>{CROWD[p.crowd].label}</b>
+              <span aria-hidden className="flex gap-1 ml-0.5">
+                {[1, 2, 3, 4].map((i) => (
+                  <i
+                    key={i}
+                    className={clsx("size-2 rounded-full", i <= CROWD[p.crowd!].dots ? "bg-primary" : "bg-line")}
+                  />
+                ))}
+              </span>
+            </span>
+          </div>
+          <div className="grid grid-cols-3 gap-2 text-center text-xs">
+            <div className="rounded-xl bg-emerald-500/10 p-2 text-emerald-700 dark:text-emerald-300">
+              <b className="block font-semibold">6 AM – 11 AM</b>
+              <span className="text-[11px] opacity-90">Best / Quickest</span>
+            </div>
+            <div className="rounded-xl bg-amber-500/10 p-2 text-amber-700 dark:text-amber-300">
+              <b className="block font-semibold">12 PM – 4 PM</b>
+              <span className="text-[11px] opacity-90">Moderate</span>
+            </div>
+            <div className="rounded-xl bg-primary/10 p-2 text-primary">
+              <b className="block font-semibold">5 PM – 3 AM</b>
+              <span className="text-[11px] opacity-90">Peak queues</span>
+            </div>
+          </div>
+        </div>
       )}
 
       {isFood(p.category) && (

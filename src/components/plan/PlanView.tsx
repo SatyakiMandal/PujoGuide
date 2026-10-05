@@ -7,8 +7,11 @@ import {
   ArrowSquareOut,
   CaretDown,
   Clock,
+  Copy,
   CurrencyInr,
+  DeviceMobile,
   DotsSixVertical,
+  DownloadSimple,
   ForkKnife,
   Hourglass,
   Lightning,
@@ -46,6 +49,7 @@ export function PlanView() {
   const routePlacesList = routePlaces(stops);
   const [copied, setCopied] = useState(false);
   const [browse, setBrowse] = useState(false);
+  const [offlineOpen, setOfflineOpen] = useState(false);
 
   if (routePlacesList.length === 0 || browse) {
     return <PlansCatalog hasRoute={routePlacesList.length > 0} onDone={() => setBrowse(false)} />;
@@ -121,6 +125,9 @@ export function PlanView() {
         <Action onClick={optimise} disabled={places.length < 4} icon={<Shuffle size={17} weight="bold" />}>
           Optimise order
         </Action>
+        <Action onClick={() => setOfflineOpen(true)} icon={<DeviceMobile size={17} weight="bold" />}>
+          Offline mode
+        </Action>
         {links.map((href, i) => (
           <a
             key={href}
@@ -140,6 +147,8 @@ export function PlanView() {
           Clear
         </Action>
       </div>
+
+      <OfflinePlanModal open={offlineOpen} onClose={() => setOfflineOpen(false)} places={routePlacesList} />
 
       <p className="text-xs leading-relaxed text-muted">
         Times and fares are estimates. Pins are approximate until verified, and auto, cab and bike prices are rough
@@ -399,5 +408,110 @@ function Action({
       {icon}
       {children}
     </motion.button>
+  );
+}
+
+function OfflinePlanModal({
+  open,
+  onClose,
+  places,
+}: {
+  open: boolean;
+  onClose: () => void;
+  places: Place[];
+}) {
+  const [copied, setCopied] = useState(false);
+
+  if (!open) return null;
+
+  const text = formattedShareText(location.origin, places);
+
+  const copyOffline = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* fallback ignore */
+    }
+  };
+
+  const downloadTxt = () => {
+    const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `PujoGuide-Offline-Plan-${new Date().toISOString().slice(0, 10)}.txt`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-50 grid place-items-center bg-black/60 p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+      >
+        <motion.div
+          role="dialog"
+          aria-label="Offline Plan"
+          onClick={(e) => e.stopPropagation()}
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.95, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 400, damping: 32 }}
+          className="max-h-[85dvh] w-full max-w-lg overflow-y-auto rounded-3xl border border-line bg-bg p-5 shadow-float"
+        >
+          <div className="flex items-center justify-between pb-3 border-b border-line">
+            <h3 className="flex items-center gap-2 font-display text-lg font-semibold">
+              <DeviceMobile size={20} weight="duotone" className="text-primary" />
+              Offline Plan Access
+            </h3>
+            <button
+              type="button"
+              onClick={onClose}
+              className="grid size-8 place-items-center rounded-full text-muted hover:bg-surface2"
+            >
+              <X size={18} weight="bold" />
+            </button>
+          </div>
+
+          <p className="mt-3 text-xs leading-relaxed text-muted">
+            Network towers near major pandals get jammed during Puja nights. Save or copy this text plan so you have full route directions offline!
+          </p>
+
+          <pre className="mt-3 max-h-60 overflow-y-auto whitespace-pre-wrap rounded-2xl border border-line bg-surface p-3 font-mono text-xs leading-relaxed">
+            {text}
+          </pre>
+
+          <div className="mt-4 space-y-2">
+            <div className="grid grid-cols-2 gap-2">
+              <motion.button
+                type="button"
+                whileTap={{ scale: 0.94 }}
+                onClick={copyOffline}
+                className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full border border-line bg-surface px-4 text-xs font-semibold"
+              >
+                <Copy size={16} weight="bold" /> {copied ? "Copied!" : "Copy Text"}
+              </motion.button>
+              <motion.button
+                type="button"
+                whileTap={{ scale: 0.94 }}
+                onClick={downloadTxt}
+                className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-primary px-4 text-xs font-semibold text-primary-fg"
+              >
+                <DownloadSimple size={16} weight="bold" /> Download .txt
+              </motion.button>
+            </div>
+            <p className="text-[11px] text-center text-muted">
+              Emergency Numbers: <b>112</b> (All) · <b>100</b> (Police) · <b>108</b> (Ambulance)
+            </p>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
   );
 }
