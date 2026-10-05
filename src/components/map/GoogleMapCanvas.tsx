@@ -2,7 +2,7 @@
 
 import { AdvancedMarker, APIProvider, Map, useMap } from "@vis.gl/react-google-maps";
 import { MarkerClusterer, SuperClusterAlgorithm } from "@googlemaps/markerclusterer";
-import { CrosshairSimple } from "@phosphor-icons/react";
+import { CrosshairSimple, ShieldCheck, TrainSimple } from "@phosphor-icons/react";
 import { useTheme } from "next-themes";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
@@ -11,6 +11,7 @@ import { placeBySlug } from "@/lib/data";
 import { KOLKATA_BOUNDS, type Place } from "@/lib/schema";
 import { useFiltered } from "@/lib/useFiltered";
 import { useUI } from "@/store/ui";
+import { clsx } from "clsx";
 
 // DEMO_MAP_ID lets Advanced Markers work in development; set a real Cloud Map ID for styled maps.
 const MAP_ID = process.env.NEXT_PUBLIC_MAP_ID || "DEMO_MAP_ID";
@@ -101,8 +102,9 @@ function UserMarker() {
   );
 }
 
-function LocateButton() {
+function MapControls() {
   const map = useMap();
+  const showMetro = useUI((s) => s.showMetro);
   const locate = () =>
     navigator.geolocation?.getCurrentPosition(
       ({ coords }) => {
@@ -114,16 +116,51 @@ function LocateButton() {
       () => {},
       { enableHighAccuracy: true, timeout: 8000 },
     );
+
+  return (
+    <div className="absolute right-3 top-[4.5rem] z-10 flex flex-col gap-2">
+      <MapButton label="Show my location" onClick={locate}>
+        <CrosshairSimple size={22} weight="bold" />
+      </MapButton>
+      <MapButton label="Essentials and safety" onClick={() => useUI.getState().setEssentials(true)}>
+        <ShieldCheck size={22} weight="bold" />
+      </MapButton>
+      <MapButton
+        label={showMetro ? "Hide metro lines" : "Show metro lines"}
+        active={showMetro}
+        onClick={() => useUI.getState().toggleMetro()}
+      >
+        <TrainSimple size={22} weight={showMetro ? "fill" : "bold"} />
+      </MapButton>
+    </div>
+  );
+}
+
+function MapButton({
+  children,
+  label,
+  onClick,
+  active,
+}: {
+  children: React.ReactNode;
+  label: string;
+  onClick: () => void;
+  active?: boolean;
+}) {
   return (
     <motion.button
       type="button"
-      onClick={locate}
+      onClick={onClick}
       whileTap={{ scale: 0.88 }}
       whileHover={{ scale: 1.06 }}
-      aria-label="Show my location"
-      className="absolute right-3 top-[4.5rem] z-10 grid size-11 place-items-center rounded-full border border-line bg-surface text-fg shadow-float transition-colors"
+      aria-label={label}
+      aria-pressed={active}
+      className={clsx(
+        "grid size-11 place-items-center rounded-full border border-line shadow-float transition-colors",
+        active ? "bg-primary text-primary-fg" : "bg-surface text-fg",
+      )}
     >
-      <CrosshairSimple size={22} weight="bold" />
+      {children}
     </motion.button>
   );
 }
@@ -134,29 +171,29 @@ export function GoogleMapCanvas({ apiKey }: { apiKey: string }) {
   return (
     <APIProvider apiKey={apiKey}>
       <div className="relative size-full">
-      <Map
-        mapId={MAP_ID}
-        colorScheme={resolvedTheme === "dark" ? "DARK" : "LIGHT"}
-        defaultCenter={CENTER}
-        defaultZoom={12}
-        minZoom={10}
-        gestureHandling="greedy"
-        disableDefaultUI
-        clickableIcons={false}
-        restriction={{
-          latLngBounds: {
-            south: KOLKATA_BOUNDS.south - 0.1,
-            north: KOLKATA_BOUNDS.north + 0.1,
-            west: KOLKATA_BOUNDS.west - 0.1,
-            east: KOLKATA_BOUNDS.east + 0.1,
-          },
-        }}
-        className="size-full"
-      >
-        <Markers />
-        <UserMarker />
-      </Map>
-      <LocateButton />
+        <Map
+          mapId={MAP_ID}
+          colorScheme={resolvedTheme === "dark" ? "DARK" : "LIGHT"}
+          defaultCenter={CENTER}
+          defaultZoom={12}
+          minZoom={10}
+          gestureHandling="greedy"
+          disableDefaultUI
+          clickableIcons={false}
+          restriction={{
+            latLngBounds: {
+              south: KOLKATA_BOUNDS.south - 0.1,
+              north: KOLKATA_BOUNDS.north + 0.1,
+              west: KOLKATA_BOUNDS.west - 0.1,
+              east: KOLKATA_BOUNDS.east + 0.1,
+            },
+          }}
+          className="size-full"
+        >
+          <Markers />
+          <UserMarker />
+        </Map>
+        <MapControls />
       </div>
     </APIProvider>
   );

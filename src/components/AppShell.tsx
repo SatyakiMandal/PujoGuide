@@ -74,20 +74,20 @@ export function AppShell() {
   }
 
   return (
-    <main className="relative flex h-dvh w-full">
+    <main className="relative flex h-dvh w-full overflow-hidden">
       <EssentialsSheet />
       {isDesktop && (
         <aside
           style={{ width: PANEL_W }}
-          className="relative z-10 flex shrink-0 flex-col border-r border-line bg-bg pt-4 shadow-float"
+          className="relative z-30 flex shrink-0 flex-col border-r border-line bg-bg pt-4 shadow-float"
         >
           <Panel />
         </aside>
       )}
 
-      <div className="relative min-w-0 flex-1">
+      <div className="relative z-0 min-w-0 flex-1 isolate">
         <MapCanvas />
-        <ThemeToggle className="absolute right-3 top-3 z-10" />
+        <ThemeToggle className="absolute right-3 top-3 z-20" />
       </div>
 
       {isDesktop === false && (
@@ -103,10 +103,10 @@ export function AppShell() {
           <Drawer.Portal>
             <Drawer.Content
               aria-describedby={undefined}
-              className="fixed inset-x-0 bottom-0 z-20 flex h-dvh flex-col rounded-t-3xl border border-b-0 border-line bg-bg shadow-float outline-none"
+              className="fixed inset-x-0 bottom-0 z-40 flex h-dvh flex-col rounded-t-3xl border border-b-0 border-line bg-bg shadow-float outline-none isolate"
             >
               <Drawer.Title className="sr-only">Places</Drawer.Title>
-              <Drawer.Handle className="!my-2.5 !h-1.5 !w-12 !bg-line" />
+              <Drawer.Handle className="!my-2.5 !h-1.5 !w-12 !bg-line cursor-grab active:cursor-grabbing" />
               {/* Content is viewport-tall (vaul's offset maths needs that), so size the scroll area to what's visible. */}
               <div
                 style={{ height: `calc(${(typeof snap === "number" ? snap : SNAPS[0]) * 100}dvh - 1.75rem)` }}
