@@ -28,6 +28,8 @@ function useIsDesktop() {
   );
 }
 
+import { OfflineBanner } from "@/components/OfflineBanner";
+
 export function AppShell() {
   const isDesktop = useIsDesktop();
   const selected = useUI((s) => s.selected);
@@ -91,6 +93,7 @@ export function AppShell() {
 
   return (
     <main ref={mainRef} className="relative flex h-dvh w-full overflow-hidden">
+      <OfflineBanner />
       <EssentialsSheet />
       {/* Always in the DOM at its final width on wide screens, so the map never jumps when we learn the viewport size. */}
       <aside
