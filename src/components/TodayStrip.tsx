@@ -79,8 +79,8 @@ export function TodayStrip() {
 
   const wet = forecast !== null && forecast.rain >= 50;
   return (
-    <div className="space-y-2">
-      <div className="relative overflow-hidden flex items-center justify-between gap-3 rounded-2xl border border-line bg-surface p-3 text-xs shadow-sm">
+    <div className="space-y-1.5 lg:space-y-2">
+      <div className="relative overflow-hidden flex items-center justify-between gap-2 lg:gap-3 rounded-2xl border border-line bg-surface p-2 lg:p-3 text-[11px] lg:text-xs shadow-sm">
         <div className="absolute -right-2 -top-4 -bottom-4 w-32 opacity-15 pointer-events-none overflow-hidden">
           <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className="w-full h-full text-accent">
             <circle cx="80" cy="50" r="30" strokeWidth="1.5" strokeDasharray="3 3" />
@@ -88,13 +88,15 @@ export function TodayStrip() {
             <circle cx="50" cy="50" r="6" fill="currentColor" />
           </svg>
         </div>
-        <button type="button" onClick={() => setTab("plan")} className="relative z-10 flex min-w-0 items-center gap-2 text-left font-medium">
-          <Confetti size={18} weight="duotone" className="shrink-0 text-accent" />
+        <button type="button" onClick={() => setTab("plan")} className="relative z-10 flex min-w-0 items-center gap-1.5 lg:gap-2 text-left font-medium">
+          <Confetti size={16} weight="duotone" className="shrink-0 text-accent lg:hidden" />
+          <Confetti size={18} weight="duotone" className="shrink-0 text-accent hidden lg:block" />
           <span className="truncate">{festivalLine(today, kolkataNow().minute)}</span>
         </button>
         {forecast && (
-          <span className="relative z-10 flex shrink-0 items-center gap-1.5 rounded-full bg-surface2/90 backdrop-blur-sm px-2.5 py-1 text-muted" title="Next six hours, Kolkata">
-            {wet ? <CloudRain size={16} weight="duotone" className="text-primary" /> : <CloudSun size={16} weight="duotone" />}
+          <span className="relative z-10 flex shrink-0 items-center gap-1 lg:gap-1.5 rounded-full bg-surface2/90 backdrop-blur-sm px-2 py-0.5 lg:px-2.5 lg:py-1 text-[10px] lg:text-xs text-muted" title="Next six hours, Kolkata">
+            {wet ? <CloudRain size={14} weight="duotone" className="text-primary lg:hidden" /> : <CloudSun size={14} weight="duotone" className="lg:hidden" />}
+            {wet ? <CloudRain size={16} weight="duotone" className="text-primary hidden lg:block" /> : <CloudSun size={16} weight="duotone" className="hidden lg:block" />}
             {forecast.temp}°{wet ? ` · rain ${forecast.rain}%` : ""}
           </span>
         )}
@@ -104,17 +106,17 @@ export function TodayStrip() {
         type="button"
         onClick={togglePujaDayMode}
         className={clsx(
-          "flex w-full items-center justify-between rounded-2xl border px-3 py-2 text-xs font-bold transition-all active:scale-98 shadow-sm",
+          "flex w-full items-center justify-between rounded-2xl border px-2.5 py-1.5 lg:px-3 lg:py-2 text-[11px] lg:text-xs font-bold transition-all active:scale-98 shadow-sm",
           pujaDayMode
             ? "border-amber-500/60 bg-gradient-to-r from-amber-500/20 via-primary/20 to-accent/20 text-fg ring-1 ring-amber-500/40"
             : "border-line bg-surface hover:bg-surface2 text-muted hover:text-fg"
         )}
       >
-        <div className="flex items-center gap-2">
-          <span className="text-sm">🪔</span>
+        <div className="flex items-center gap-1.5 lg:gap-2">
+          <span className="text-xs lg:text-sm">🪔</span>
           <span>{pujaDayMode ? "Puja Day Mode Active" : "Enable Puja Day Mode"}</span>
         </div>
-        <span className={clsx("rounded-full px-2 py-0.5 text-[10px] uppercase font-extrabold tracking-wider", pujaDayMode ? "bg-amber-500 text-black shadow-xs" : "bg-surface2 text-muted")}>
+        <span className={clsx("rounded-full px-1.5 py-0.5 lg:px-2 text-[9px] lg:text-[10px] uppercase font-extrabold tracking-wider", pujaDayMode ? "bg-amber-500 text-black shadow-xs" : "bg-surface2 text-muted")}>
           {pujaDayMode ? "ON" : "OFF"}
         </span>
       </button>

@@ -32,23 +32,24 @@ export function FilterToggle({ open, onToggle }: { open: boolean; onToggle: () =
   const n = activeFacetCount(filters);
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1.5 lg:gap-2">
       <button
         type="button"
         onClick={onToggle}
         aria-expanded={open}
-        className="inline-flex min-h-9 items-center gap-2 rounded-full border border-line bg-surface px-3.5 text-sm font-medium hover:bg-surface2"
+        className="inline-flex min-h-7 lg:min-h-9 items-center gap-1 lg:gap-2 rounded-full border border-line bg-surface px-2.5 lg:px-3.5 text-xs lg:text-sm font-medium hover:bg-surface2"
       >
-        <SlidersHorizontal size={17} weight="bold" />
+        <SlidersHorizontal size={15} weight="bold" className="lg:hidden" />
+        <SlidersHorizontal size={17} weight="bold" className="hidden lg:block" />
         Filters
         {n > 0 && (
-          <span className="grid size-5 place-items-center rounded-full bg-primary text-xs text-primary-fg">
+          <span className="grid size-4 lg:size-5 place-items-center rounded-full bg-primary text-[10px] lg:text-xs text-primary-fg">
             {n}
           </span>
         )}
       </button>
       {n > 0 && (
-        <button type="button" onClick={reset} className="text-sm font-medium text-primary underline-offset-4 hover:underline">
+        <button type="button" onClick={reset} className="text-xs lg:text-sm font-medium text-primary underline-offset-4 hover:underline">
           Clear
         </button>
       )}

@@ -28,12 +28,12 @@ export function Chip({
       transition={{ type: "spring", stiffness: 500, damping: 30 }}
       style={active ? { background: c, borderColor: c, color: "var(--pin-fg)" } : undefined}
       className={clsx(
-        "inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-sm font-medium transition-colors",
+        "inline-flex min-h-7 lg:min-h-9 shrink-0 items-center gap-1 lg:gap-1.5 rounded-full border px-2.5 lg:px-3.5 text-xs lg:text-sm font-medium transition-colors",
         !active && "border-line bg-surface text-fg hover:bg-surface2",
       )}
     >
       {children}
-      {count !== undefined && <span className="text-xs opacity-85">{count}</span>}
+      {count !== undefined && <span className="text-[10px] lg:text-xs opacity-85">{count}</span>}
     </motion.button>
   );
 }

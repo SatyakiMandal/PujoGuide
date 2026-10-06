@@ -85,7 +85,7 @@ function iconKey(p: Place): Key {
 }
 
 /** A place's glyph. A component (not a function returning one) so it can be used freely in render. */
-export function PlaceIcon({ place, size = 20, weight = "duotone" }: { place: Place; size?: number; weight?: IconWeight }) {
+export function PlaceIcon({ place, size = 20, weight = "duotone", className }: { place: Place; size?: number; weight?: IconWeight; className?: string }) {
   const Glyph = ICONS[iconKey(place)];
-  return <Glyph size={size} weight={weight} />;
+  return <Glyph size={size} weight={weight} className={className} />;
 }
