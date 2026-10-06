@@ -71,6 +71,22 @@ export type Crowd = (typeof CROWDS)[number];
 export const OPENS_ON = ["mahalaya", "panchami", "shashthi", "saptami"] as const;
 export type OpensOn = (typeof OPENS_ON)[number];
 
+export const AMENITY_TYPES = ["toilet", "water", "police_booth", "first_aid"] as const;
+export type AmenityType = (typeof AMENITY_TYPES)[number];
+
+export const amenitySchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  type: z.enum(AMENITY_TYPES),
+  lat: z.number(),
+  lng: z.number(),
+  area: z.string(),
+  address: z.string().optional(),
+  notes: z.string().optional(),
+  source: z.string().optional(),
+});
+export type Amenity = z.infer<typeof amenitySchema>;
+
 /** Short, practical notes shown in "Know before you go". Any field may be missing. */
 export const tipsSchema = z.object({
   expect: z.string().optional(),

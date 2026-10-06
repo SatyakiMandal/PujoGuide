@@ -4,6 +4,7 @@ import { Drop, Footprints, Phone, ShieldCheck, TrainSimple, Umbrella, Warning, X
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
 import { useUI } from "@/store/ui";
+import { findNearestAmenity } from "@/lib/amenities";
 
 /** National emergency numbers that work anywhere in India. */
 const NUMBERS = [
@@ -88,6 +89,35 @@ export function EssentialsSheet() {
                 </li>
               ))}
             </ul>
+
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted">Practical Amenities &amp; Assistance</h3>
+            <div className="mb-5 grid grid-cols-2 gap-2">
+              {[
+                { type: "toilet" as const, label: "Restroom / Toilet", icon: "🚽" },
+                { type: "water" as const, label: "Drinking Water", icon: "🚰" },
+                { type: "police_booth" as const, label: "Police Help Desk", icon: "👮" },
+                { type: "first_aid" as const, label: "First Aid Post", icon: "🏥" },
+              ].map(({ type, label, icon }) => (
+                <button
+                  key={type}
+                  type="button"
+                  onClick={() => {
+                    const nearest = findNearestAmenity(22.5726, 88.3639, type); // Central Kolkata default
+                    if (nearest) {
+                      const url = `https://www.google.com/maps/dir/?api=1&destination=${nearest.amenity.lat},${nearest.amenity.lng}`;
+                      window.open(url, "_blank");
+                    }
+                  }}
+                  className="flex items-center gap-2.5 rounded-2xl border border-line bg-surface p-3 text-left transition-all active:scale-95 hover:border-accent/40 hover:bg-surface2"
+                >
+                  <span className="text-xl">{icon}</span>
+                  <span className="min-w-0 flex-1">
+                    <b className="block text-xs font-semibold leading-tight text-fg">{label}</b>
+                    <span className="text-[10px] text-muted">Find nearest on map</span>
+                  </span>
+                </button>
+              ))}
+            </div>
 
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted">Staying comfortable and safe</h3>
             <ul className="space-y-3">
