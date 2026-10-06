@@ -47,6 +47,12 @@ export function EditRouteModal({
       .slice(0, 5);
   }, [addQuery, stops]);
 
+  const suggestedPicks = useMemo(() => {
+    return places
+      .filter((p) => !stops.includes(p.slug) && !p.closed && (p.source === "curated" || p.tags.includes("famous")))
+      .slice(0, 4);
+  }, [stops]);
+
   if (!open) return null;
 
   const optimise = () => {
@@ -75,7 +81,7 @@ export function EditRouteModal({
         >
           {/* Modal Header */}
           <div className="flex items-center justify-between pb-3 border-b border-line">
-            <h3 className="font-display text-lg font-bold">Edit &amp; Customise Route</h3>
+            <h3 className="font-display text-lg font-bold">Build &amp; Customise Route</h3>
             <button
               type="button"
               onClick={onClose}
@@ -97,6 +103,38 @@ export function EditRouteModal({
                 className="h-11 w-full rounded-2xl border border-line bg-surface pl-10 pr-4 text-sm outline-none focus:ring-2 focus:ring-primary/40"
               />
             </label>
+
+            {!addQuery.trim() && stops.length === 0 && suggestedPicks.length > 0 && (
+              <div className="space-y-1.5 rounded-2xl border border-dashed border-primary/40 bg-surface p-2.5">
+                <span className="block text-[11px] font-semibold text-muted uppercase tracking-wider">
+                  Popular places to start your route:
+                </span>
+                {suggestedPicks.map((p) => {
+                  const meta = CATEGORY_META[p.category];
+                  return (
+                    <div key={p.slug} className="flex items-center justify-between gap-2 rounded-xl p-1.5 hover:bg-surface2 text-xs">
+                      <div className="flex items-center gap-2 truncate">
+                        <span
+                          className="grid size-6 shrink-0 place-items-center rounded-full"
+                          style={{ background: `var(${meta.cssVar})`, color: "var(--pin-fg)" }}
+                        >
+                          <PlaceIcon place={p} size={13} />
+                        </span>
+                        <span className="font-medium truncate">{p.name.en}</span>
+                      </div>
+                      <motion.button
+                        type="button"
+                        whileTap={{ scale: 0.9 }}
+                        onClick={() => addStop(p.slug)}
+                        className="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-bold text-primary hover:bg-primary hover:text-primary-fg"
+                      >
+                        <Plus size={13} weight="bold" /> Add
+                      </motion.button>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
 
             {searchResults.length > 0 && (
               <div className="space-y-1 rounded-2xl border border-line bg-surface p-2 shadow-xs">
@@ -134,13 +172,19 @@ export function EditRouteModal({
           {/* Drag & Reorder List */}
           <div className="space-y-2">
             <span className="text-xs font-semibold uppercase tracking-wider text-muted">
-              Reorder Stops ({stops.length})
+              Route Stops ({stops.length})
             </span>
-            <Reorder.Group axis="y" values={stops} onReorder={setStops} className="space-y-1.5">
-              {routePlacesList.map((p, i) => (
-                <EditStopRow key={p.slug} place={p} index={i} onRemove={() => removeStop(p.slug)} />
-              ))}
-            </Reorder.Group>
+            {stops.length === 0 ? (
+              <div className="rounded-2xl border border-dashed border-line p-4 text-center text-xs text-muted">
+                Your custom route is currently empty. Use the search bar above or tap a suggested spot to add your first stop!
+              </div>
+            ) : (
+              <Reorder.Group axis="y" values={stops} onReorder={setStops} className="space-y-1.5">
+                {routePlacesList.map((p, i) => (
+                  <EditStopRow key={p.slug} place={p} index={i} onRemove={() => removeStop(p.slug)} />
+                ))}
+              </Reorder.Group>
+            )}
           </div>
 
           {/* Action Row */}

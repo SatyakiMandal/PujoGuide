@@ -16,7 +16,15 @@ type View = PlanGroup | "day" | "auto";
 
 const CROWD_LABEL: Record<Crowd, string> = { low: "Quiet", medium: "Moderate", high: "Busy", extreme: "Very crowded" };
 
-export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRoute: boolean }) {
+export function PlansCatalog({
+  onDone,
+  onStartCustomRoute,
+  hasRoute,
+}: {
+  onDone: () => void;
+  onStartCustomRoute?: () => void;
+  hasRoute: boolean;
+}) {
   const [view, setView] = useState<View>("auto");
   const [tag, setTag] = useState<string | null>(null);
 
@@ -41,7 +49,11 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
           onClick={() => {
             useUI.getState().setStops([]);
             useUI.getState().setTab("plan");
-            onDone();
+            if (onStartCustomRoute) {
+              onStartCustomRoute();
+            } else {
+              onDone();
+            }
           }}
           className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-primary px-3.5 py-2 text-xs font-bold text-primary-fg shadow-xs"
         >

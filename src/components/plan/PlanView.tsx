@@ -60,8 +60,19 @@ export function PlanView() {
   const [editOpen, setEditOpen] = useState(false);
   const [activeTourIndex, setActiveTourIndex] = useState<number | null>(null);
 
-  if (routePlacesList.length === 0 || browse) {
-    return <PlansCatalog hasRoute={routePlacesList.length > 0} onDone={() => setBrowse(false)} />;
+  const startCustomRoute = () => {
+    setBrowse(false);
+    setEditOpen(true);
+  };
+
+  if ((routePlacesList.length === 0 || browse) && !editOpen) {
+    return (
+      <PlansCatalog
+        hasRoute={routePlacesList.length > 0}
+        onDone={() => setBrowse(false)}
+        onStartCustomRoute={startCustomRoute}
+      />
+    );
   }
 
   if (activeTourIndex !== null) {
