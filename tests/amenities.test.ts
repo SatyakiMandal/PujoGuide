@@ -16,8 +16,8 @@ describe("amenities module", () => {
   });
 
   it("finds the nearest amenity to a given coordinate", () => {
-    // Shyambazar 5-point crossing (22.6001, 88.3702)
-    const result = findNearestAmenity(22.6001, 88.3702, "toilet");
+    // Shyambazar 5-point crossing (22.6014, 88.3725)
+    const result = findNearestAmenity(22.6014, 88.3725, "toilet");
     expect(result).not.toBeNull();
     expect(result?.distanceKm).toBeLessThan(0.2);
     expect(result?.amenity.id).toBe("toilet-shyambazar");

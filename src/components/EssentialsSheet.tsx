@@ -27,6 +27,8 @@ const TIPS = [
 
 export function EssentialsSheet() {
   const open = useUI((s) => s.essentials);
+  const userPos = useUI((s) => s.userPos);
+  const selectedSlug = useUI((s) => s.selected);
   const close = () => useUI.getState().setEssentials(false);
 
   useEffect(() => {
@@ -102,7 +104,10 @@ export function EssentialsSheet() {
                   key={type}
                   type="button"
                   onClick={() => {
-                    const nearest = findNearestAmenity(22.5726, 88.3639, type); // Central Kolkata default
+                    const refLat = userPos?.lat ?? 22.5726;
+                    const refLng = userPos?.lng ?? 88.3639;
+                    const nearest = findNearestAmenity(refLat, refLng, type);
+                    useUI.setState({ showAmenities: true, essentials: false });
                     if (nearest) {
                       const url = `https://www.google.com/maps/dir/?api=1&destination=${nearest.amenity.lat},${nearest.amenity.lng}`;
                       window.open(url, "_blank");
@@ -113,7 +118,7 @@ export function EssentialsSheet() {
                   <span className="text-xl">{icon}</span>
                   <span className="min-w-0 flex-1">
                     <b className="block text-xs font-semibold leading-tight text-fg">{label}</b>
-                    <span className="text-[10px] text-muted">Find nearest on map</span>
+                    <span className="text-[10px] text-muted">Show nearest on map</span>
                   </span>
                 </button>
               ))}

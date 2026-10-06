@@ -365,7 +365,7 @@ export function FreeMapCanvas() {
                   <span className="text-[11px] font-medium text-muted">{selectedAmenity.area}</span>
                 )}
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${selectedAmenity.lat},${selectedAmenity.lng}`}
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${selectedAmenity.lat},${selectedAmenity.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-auto inline-flex items-center gap-1 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-fg hover:opacity-90"
