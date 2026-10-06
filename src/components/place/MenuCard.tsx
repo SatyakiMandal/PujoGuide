@@ -70,7 +70,9 @@ export function MenuCard({ place: p }: { place: Place }) {
                   {item.kind === "dessert" && <IceCream size={13} className="text-muted" />}
                 </div>
                 {item.price !== undefined && (
-                  <span className="font-mono font-medium text-muted">₹{item.price}</span>
+                  <span className="font-mono font-bold text-fg bg-surface2/80 px-2 py-0.5 rounded-md border border-line/60">
+                    ₹{item.price}
+                  </span>
                 )}
               </div>
             ))}

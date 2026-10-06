@@ -138,6 +138,28 @@ export function PlaceDetail({ place: p }: { place: Place }) {
         <h2 className="font-display text-2xl font-semibold leading-tight">{p.name.en}</h2>
         {p.aliases.length > 0 && <p className="text-sm text-muted">Also known as: {p.aliases.join(", ")}</p>}
         <p className="text-sm text-muted">{p.zones.map((z) => zoneName.get(z)).join(" · ")}</p>
+        {isFood(p.category) && (
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
+            {p.priceLevel && (
+              <span className="inline-flex items-center gap-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 font-bold text-emerald-700 dark:text-emerald-300">
+                <span>Budget: {PRICE(p.priceLevel)}</span>
+                <span className="font-normal opacity-90">
+                  ({p.priceLevel === 1 ? "Budget · under ₹200 for 2" : p.priceLevel === 2 ? "Moderate · ~₹200–₹500 for 2" : p.priceLevel === 3 ? "Mid-range · ~₹500–₹1200 for 2" : "Splurge · ₹1200+ for 2"})
+                </span>
+              </span>
+            )}
+            {p.cuisines && p.cuisines.length > 0 && (
+              <span className="rounded-full bg-surface2 px-2.5 py-0.5 font-medium text-muted">
+                {p.cuisines.map((c) => CUISINE_LABEL[c] || c).join(", ")}
+              </span>
+            )}
+            {p.vibes && p.vibes.length > 0 && (
+              <span className="rounded-full bg-surface2 px-2.5 py-0.5 font-medium text-muted">
+                {p.vibes.map((v) => VIBE_LABEL[v] || v).join(" · ")}
+              </span>
+            )}
+          </div>
+        )}
       </header>
 
       {(p.theme || p.artist || (p.awards && p.awards.length > 0)) && (
