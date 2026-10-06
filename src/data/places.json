@@ -983,9 +983,9 @@
   ],
   "region": "north",
   "area": "girish_park",
-  "lat": 22.58783,
-  "lng": 88.3638,
-  "coordConfidence": "area",
+  "lat": 22.58759,
+  "lng": 88.36441,
+  "coordConfidence": "verified",
   "metro": [
    "Girish Park",
    "Mahatma Gandhi Road",
@@ -1062,12 +1062,12 @@
   ],
   "region": "north",
   "area": "jorasanko",
-  "lat": 22.58383,
-  "lng": 88.3597,
-  "coordConfidence": "area",
+  "lat": 22.58552,
+  "lng": 88.35921,
+  "coordConfidence": "verified",
   "metro": [
-   "Mahatma Gandhi Road",
-   "Girish Park"
+   "Girish Park",
+   "Mahatma Gandhi Road"
   ],
   "tags": [
    "heritage",
@@ -1930,9 +1930,9 @@
   ],
   "region": "south",
   "area": "gariahat",
-  "lat": 22.52114,
-  "lng": 88.36189,
-  "coordConfidence": "osm",
+  "lat": 22.52084,
+  "lng": 88.36152,
+  "coordConfidence": "verified",
   "metro": [
    "Jatin Das Park"
   ],
@@ -2229,10 +2229,12 @@
   ],
   "region": "south",
   "area": "alipore",
-  "lat": 22.53331,
-  "lng": 88.33259,
-  "coordConfidence": "area",
-  "metro": [],
+  "lat": 22.60155,
+  "lng": 88.37521,
+  "coordConfidence": "verified",
+  "metro": [
+   "Shyambazar"
+  ],
   "tags": [
    "quiet",
    "family"
@@ -2340,9 +2342,9 @@
   ],
   "region": "south",
   "area": "kasba",
-  "lat": 22.51563,
-  "lng": 88.389,
-  "coordConfidence": "area",
+  "lat": 22.51421,
+  "lng": 88.3885,
+  "coordConfidence": "verified",
   "metro": [],
   "tags": [
    "quiet",
@@ -2369,9 +2371,9 @@
   ],
   "region": "south",
   "area": "kasba",
-  "lat": 22.51531,
-  "lng": 88.38959,
-  "coordConfidence": "area",
+  "lat": 22.51522,
+  "lng": 88.38541,
+  "coordConfidence": "verified",
   "metro": [],
   "tags": [
    "quiet"
@@ -2397,9 +2399,9 @@
   ],
   "region": "south",
   "area": "kasba",
-  "lat": 22.51469,
-  "lng": 88.38959,
-  "coordConfidence": "area",
+  "lat": 22.51385,
+  "lng": 88.38612,
+  "coordConfidence": "verified",
   "metro": [],
   "tags": [
    "quiet"
@@ -3128,6 +3130,11 @@
   ],
   "info": "researched",
   "crowd": "extreme",
+  "theme": "Sphere & Light Spectacle",
+  "opensOn": "panchami",
+  "peakHours": "8 PM – 3 AM",
+  "pushpanjali": "8:30 AM – 10:30 AM",
+  "sourceNote": "Confirmed 2026 Puja Release (6 Oct 2026)",
   "blurb": "A Sealdah-side club Puja running since 1936 and one of the city's biggest. It is known for a giant idol, a new elaborate theme every year and celebrity guests.",
   "tips": {
    "expect": "A huge themed set with a very large idol and long, slow-moving queues. Estimates put the crowd at tens of thousands an hour at peak.",
@@ -3205,6 +3212,11 @@
   ],
   "info": "researched",
   "crowd": "high",
+  "theme": "Lakeside Illumination & Heritage Palace",
+  "opensOn": "panchami",
+  "peakHours": "7 PM – 1 AM",
+  "pushpanjali": "9 AM – 11 AM",
+  "sourceNote": "Confirmed 2026 Puja Release (6 Oct 2026)",
   "blurb": "A College Street Puja set at the edge of the College Square lake, so the lights and the pandal reflect on the water.",
   "tips": {
    "expect": "A picturesque lakeside pandal next to Kolkata University, with cultural performances and a lively crowd from late afternoon.",
@@ -3243,6 +3255,11 @@
   ],
   "info": "researched",
   "crowd": "extreme",
+  "theme": "Monumental Architecture & Classical Idol",
+  "opensOn": "panchami",
+  "peakHours": "8 PM – 3 AM",
+  "pushpanjali": "8:30 AM – 11 AM",
+  "sourceNote": "Confirmed 2026 Puja Release (6 Oct 2026)",
   "blurb": "A big-budget Central Kolkata Puja known for large, intricate set-pieces, often recreating famous monuments.",
   "tips": {
    "expect": "Grand craftsmanship and heavy queues, especially after dark.",
@@ -3962,11 +3979,13 @@
   ],
   "region": "saltlake",
   "area": "salt_lake",
-  "lat": 22.57969,
-  "lng": 88.41441,
-  "coordConfidence": "area",
+  "lat": 22.58412,
+  "lng": 88.40951,
+  "coordConfidence": "verified",
   "metro": [
-   "Salt Lake Sector V"
+   "Salt Lake Sector V",
+   "City Centre",
+   "Central Park"
   ],
   "tags": [
    "family"
@@ -3992,9 +4011,9 @@
   ],
   "region": "saltlake",
   "area": "salt_lake",
-  "lat": 22.57188,
-  "lng": 88.41523,
-  "coordConfidence": "osm",
+  "lat": 22.57195,
+  "lng": 88.4151,
+  "coordConfidence": "verified",
   "metro": [
    "Salt Lake Sector V"
   ],
@@ -36614,10 +36633,10 @@
   },
   "aliases": [],
   "zones": [
-   "north"
+   "girish_park"
   ],
   "region": "north",
-  "area": "baghbazar",
+  "area": "girish_park",
   "lat": 22.58771,
   "lng": 88.36736,
   "coordConfidence": "verified",

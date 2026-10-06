@@ -338,5 +338,50 @@
     "lat": 22.495671,
     "lng": 88.370545,
     "src": "Google Maps: Jadavpur 8B Bus Terminus"
+  },
+  "lala-bari": {
+    "lat": 22.587588,
+    "lng": 88.364412,
+    "src": "Google Maps: Simla Lala Bari"
+  },
+  "daw-bari-bandook-wala": {
+    "lat": 22.58552,
+    "lng": 88.35921,
+    "src": "Google Maps: Narsingha Daw Bari"
+  },
+  "deshbandhu-park": {
+    "lat": 22.60155,
+    "lng": 88.37521,
+    "src": "Google Maps: Deshbandhu Park Shyambazar"
+  },
+  "kasba-14-pally": {
+    "lat": 22.51421,
+    "lng": 88.3885,
+    "src": "Google Maps: Kasba 14 Pally Durga Puja"
+  },
+  "natun-dal": {
+    "lat": 22.51522,
+    "lng": 88.38541,
+    "src": "Google Maps: Bosepukur Natun Dal"
+  },
+  "udichi": {
+    "lat": 22.51385,
+    "lng": 88.38612,
+    "src": "Google Maps: Udichi Club Durga Puja"
+  },
+  "ab-block": {
+    "lat": 22.58412,
+    "lng": 88.40951,
+    "src": "Google Maps: Salt Lake AB Block Durga Puja"
+  },
+  "ib-block": {
+    "lat": 22.57195,
+    "lng": 88.4151,
+    "src": "Google Maps: Salt Lake IB Block Durga Puja"
+  },
+  "dover-lane": {
+    "lat": 22.52084,
+    "lng": 88.36152,
+    "src": "Google Maps: Dover Lane Sarbojanin"
   }
 }

@@ -66,6 +66,9 @@ export type Diet = (typeof DIETS)[number];
 export const CROWDS = ["low", "medium", "high", "extreme"] as const;
 export type Crowd = (typeof CROWDS)[number];
 
+export const OPENS_ON = ["mahalaya", "panchami", "shashthi", "saptami"] as const;
+export type OpensOn = (typeof OPENS_ON)[number];
+
 /** Short, practical notes shown in "Know before you go". Any field may be missing. */
 export const tipsSchema = z.object({
   expect: z.string().optional(),
@@ -120,6 +123,12 @@ export const placeSchema = z.object({
   notes: z.string().optional(),
   address: z.string().optional(),
   needsReview: z.boolean().optional(),
+  // Pandal facts
+  theme: z.string().optional(),
+  opensOn: z.enum(OPENS_ON).optional(),
+  peakHours: z.string().optional(),
+  pushpanjali: z.string().optional(),
+  sourceNote: z.string().optional(),
   // food only
   cuisines: z.array(z.enum(CUISINES)).optional(),
   vibes: z.array(z.enum(VIBES)).optional(),

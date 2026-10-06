@@ -257,6 +257,7 @@ for (let i = places.length - 1; i >= 0; i--) {
   places.splice(i, 1);
 }
 writeFileSync("data/removed-report.json", JSON.stringify(dropped.reverse(), null, 1));
+writeFileSync("data/closed.json", JSON.stringify(dropped.filter((d) => d.reason === "closed"), null, 1));
 
 // ── Several places can share one exact pin (same building): fan them out ~12 m so each is clickable ──
 const stacks = new Map<string, Place[]>();

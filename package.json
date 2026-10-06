@@ -10,6 +10,7 @@
     "data": "tsx scripts/build-data.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test",
     "metro": "tsx scripts/fetch-metro.ts",
     "postinstall": "node scripts/copy-maplibre-worker.mjs",
     "geocode": "tsx scripts/geocode-osm.ts",

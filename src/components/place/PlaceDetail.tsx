@@ -139,6 +139,41 @@ export function PlaceDetail({ place: p }: { place: Place }) {
         <p className="text-sm text-muted">{p.zones.map((z) => zoneName.get(z)).join(" · ")}</p>
       </header>
 
+      {p.theme && (
+        <div className="space-y-1.5 rounded-2xl border border-purple-500/30 bg-purple-500/5 p-4 shadow-xs">
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-xs font-semibold uppercase tracking-wider text-purple-700 dark:text-purple-300">
+              ✨ 2026 Pandal Theme
+            </span>
+            {p.opensOn && (
+              <span className="rounded-full bg-purple-500/20 px-2.5 py-0.5 text-[11px] font-bold text-purple-800 dark:text-purple-200 capitalize">
+                Opens {p.opensOn}
+              </span>
+            )}
+          </div>
+          <h3 className="font-display text-lg font-bold text-fg">{p.theme}</h3>
+          {(p.pushpanjali || p.peakHours) && (
+            <div className="grid grid-cols-2 gap-2 pt-1 text-xs">
+              {p.pushpanjali && (
+                <div className="rounded-xl border border-line bg-surface p-2">
+                  <b className="block text-muted font-medium">Pushpanjali Timing</b>
+                  <span className="font-semibold">{p.pushpanjali}</span>
+                </div>
+              )}
+              {p.peakHours && (
+                <div className="rounded-xl border border-line bg-surface p-2">
+                  <b className="block text-muted font-medium">Peak Crowd Hours</b>
+                  <span className="font-semibold">{p.peakHours}</span>
+                </div>
+              )}
+            </div>
+          )}
+          {p.sourceNote && (
+            <span className="block text-[10px] text-muted pt-1">Verified: {p.sourceNote}</span>
+          )}
+        </div>
+      )}
+
       {p.closed && (
         <p className="flex gap-2 rounded-xl border border-primary/40 bg-surface2 p-3 text-sm">
           <XCircle size={20} weight="duotone" className="mt-0.5 shrink-0 text-primary" />

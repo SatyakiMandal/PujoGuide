@@ -1,0 +1,252 @@
+[
+ {
+  "slug": "kewpie-s-kitchen",
+  "name": "Kewpie's Kitchen",
+  "reason": "closed"
+ },
+ {
+  "slug": "barishh",
+  "name": "Barishh",
+  "reason": "closed"
+ },
+ {
+  "slug": "mabrooks-cafe",
+  "name": "Mabrooks Cafe",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-corner-courtyard",
+  "name": "The Corner Courtyard",
+  "reason": "closed"
+ },
+ {
+  "slug": "mqxt",
+  "name": "MQXT",
+  "reason": "closed"
+ },
+ {
+  "slug": "my-big-fat-belly",
+  "name": "My Big Fat Belly",
+  "reason": "closed"
+ },
+ {
+  "slug": "hickory-smoked-bistro-cafe",
+  "name": "Hickory Smoked Bistro Cafe",
+  "reason": "closed"
+ },
+ {
+  "slug": "ibaco",
+  "name": "Ibaco",
+  "reason": "closed"
+ },
+ {
+  "slug": "milee-droog-coffee-and-bistro",
+  "name": "Milee Droog Coffee & Bistro",
+  "reason": "closed"
+ },
+ {
+  "slug": "momo-amore",
+  "name": "MoMo Amore",
+  "reason": "closed"
+ },
+ {
+  "slug": "ozora",
+  "name": "Ozora",
+  "reason": "closed"
+ },
+ {
+  "slug": "forkfull",
+  "name": "FORKFULL",
+  "reason": "closed"
+ },
+ {
+  "slug": "tram-world-caf",
+  "name": "Tram World Café",
+  "reason": "closed"
+ },
+ {
+  "slug": "botanik",
+  "name": "Botanik",
+  "reason": "closed"
+ },
+ {
+  "slug": "soul-the-sky-lounge",
+  "name": "Soul - The Sky Lounge",
+  "reason": "closed"
+ },
+ {
+  "slug": "blue-moose-cafe",
+  "name": "Blue Moose Cafe",
+  "reason": "closed"
+ },
+ {
+  "slug": "bianco",
+  "name": "Bianco",
+  "reason": "closed"
+ },
+ {
+  "slug": "grubvibe",
+  "name": "GRUBVIBE",
+  "reason": "closed"
+ },
+ {
+  "slug": "king-s-bakery-jodhpur-park",
+  "name": "King's Bakery (Jodhpur Park)",
+  "reason": "closed"
+ },
+ {
+  "slug": "eddy-s",
+  "name": "Eddy’s",
+  "reason": "closed"
+ },
+ {
+  "slug": "hatari-grillz",
+  "name": "Hatari Grillz",
+  "reason": "closed"
+ },
+ {
+  "slug": "honey-da-dhaba",
+  "name": "Honey Da Dhaba",
+  "reason": "closed"
+ },
+ {
+  "slug": "naanzza",
+  "name": "Naanzza",
+  "reason": "closed"
+ },
+ {
+  "slug": "baan-thai",
+  "name": "Baan Thai",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-sixth-sense",
+  "name": "the sixth sense",
+  "reason": "closed"
+ },
+ {
+  "slug": "barf-soda-paani-park-street",
+  "name": "Barf Soda Paani - Park Street",
+  "reason": "closed"
+ },
+ {
+  "slug": "zold-cafe-and-kitchen",
+  "name": "Zold - Cafe & Kitchen",
+  "reason": "closed"
+ },
+ {
+  "slug": "social-hideout",
+  "name": "Social Hideout",
+  "reason": "closed"
+ },
+ {
+  "slug": "caf-na-ru-meg",
+  "name": "Café Na-Ru-Meg",
+  "reason": "closed"
+ },
+ {
+  "slug": "wabi-sabi",
+  "name": "Wabi Sabi",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-steak-factory-sarat-bose",
+  "name": "The Steak Factory Sarat Bose",
+  "reason": "closed"
+ },
+ {
+  "slug": "flyers-multicuisine-restaurant",
+  "name": "Flyers Multicuisine Restaurant",
+  "reason": "closed"
+ },
+ {
+  "slug": "caf-courting-coffees",
+  "name": "Café Courting Coffees",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-canisters",
+  "name": "The Canisters'",
+  "reason": "closed"
+ },
+ {
+  "slug": "burgrill-park-street",
+  "name": "Burgrill - Park Street",
+  "reason": "closed"
+ },
+ {
+  "slug": "mutton-golbari",
+  "name": "Mutton Golbari",
+  "reason": "closed"
+ },
+ {
+  "slug": "nomnom-the-thainese-cuisine",
+  "name": "NOMNOM THE THAINESE CUISINE",
+  "reason": "closed"
+ },
+ {
+  "slug": "hard-rock-cafe",
+  "name": "Hard Rock Cafe",
+  "reason": "closed"
+ },
+ {
+  "slug": "melting-pot",
+  "name": "Melting Pot",
+  "reason": "closed"
+ },
+ {
+  "slug": "caafe-360-degree-salt-lake",
+  "name": "Caafe 360 Degree Salt Lake",
+  "reason": "closed"
+ },
+ {
+  "slug": "trapeze",
+  "name": "Trapeze",
+  "reason": "closed"
+ },
+ {
+  "slug": "pour-house",
+  "name": "Pour House",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-day-room-cafe",
+  "name": "The Day Room Cafe",
+  "reason": "closed"
+ },
+ {
+  "slug": "kafe9",
+  "name": "KAFE9",
+  "reason": "closed"
+ },
+ {
+  "slug": "friends-of-pho",
+  "name": "Friends of Pho",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-10e-cafe-park-street",
+  "name": "The 10e cafe (Park Street)",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-10e-cafe-park-circus",
+  "name": "The 10e cafe (Park Circus)",
+  "reason": "closed"
+ },
+ {
+  "slug": "the-tavern-cafe",
+  "name": "The Tavern Cafe",
+  "reason": "closed"
+ },
+ {
+  "slug": "bite-that-spoon-the-caf",
+  "name": "Bite that Spoon: The Café",
+  "reason": "closed"
+ },
+ {
+  "slug": "paranthe-wali-galli",
+  "name": "Paranthe Wali Galli",
+  "reason": "closed"
+ }
+]

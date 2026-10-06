@@ -173,9 +173,9 @@ describe("Google Maps snapshot, hours and picks", () => {
     expect(Math.hypot(d.lat - n.lat, d.lng - n.lng)).toBeGreaterThan(0.01);
   });
 
-  it("pins most baris and pandals to a verified or matched spot", () => {
+  it("pins zero baris and pandals to area level", () => {
     const sights = all.filter((p) => p.category === "bonedi_bari" || p.category === "pandal");
     const approx = sights.filter((p) => p.coordConfidence === "area");
-    expect(approx.length).toBeLessThan(15);
+    expect(approx.length).toBe(0);
   });
 });
