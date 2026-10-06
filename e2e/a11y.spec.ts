@@ -1,6 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
-import { openApp, openAutoPlanner } from "./helpers";
+import { expandSheet, openApp, openAutoPlanner } from "./helpers";
 
 /** Serious and critical WCAG A/AA problems fail the test; the report names the rule and element. */
 async function scan(page: Page, label: string) {
@@ -48,7 +48,10 @@ test("auto-planner form and results", async ({ page }) => {
 
 test("plan view with a route", async ({ page }) => {
   await page.goto("/?route=deshapriya-park,maddox-square,singhi-park");
+  await expandSheet(page);
   await expect(page.getByText("Singhi Park")).toBeVisible();
+  // Leg cards pulse while the free router answers; axe reads a half-faded card as low contrast.
+  await expect(page.locator(".animate-pulse")).toHaveCount(0, { timeout: 30_000 });
   await scan(page, "route");
 });
 
@@ -56,7 +59,7 @@ test("keyboard: tabs and chips are reachable and operable", async ({ page }) => 
   await openApp(page);
   await page.getByRole("tab", { name: /^Plan/ }).focus();
   await page.keyboard.press("Enter");
-  await expect(page.getByRole("heading", { name: "Plan my day" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Auto-Planner|Plan my day/ })).toBeVisible();
   const chip = page.getByRole("button", { name: /Navami/ });
   await chip.focus();
   await page.keyboard.press("Space");

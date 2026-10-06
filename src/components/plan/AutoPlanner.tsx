@@ -124,7 +124,7 @@ export function AutoPlanner({ hasRoute, onDone }: { hasRoute: boolean; onDone: (
                 patch({ day: kept[0] });
               }}
             >
-              {d.name} <span className="text-xs opacity-85">{d.weekday} {d.date.slice(8)}</span>
+              {d.name} <span className="text-xs">{d.weekday} {d.date.slice(8)}</span>
             </Chip>
           ))}
         </div>
@@ -197,7 +197,7 @@ export function AutoPlanner({ hasRoute, onDone }: { hasRoute: boolean; onDone: (
           {([1, 2, 3, 4] as const).map((b) => (
             <Chip key={b} active={req.budget === b} onClick={() => patch({ budget: b })}>
               {"₹".repeat(b)}
-              <span className="text-xs opacity-85">{["street", "casual", "nice", "splurge"][b - 1]}</span>
+              <span className="text-xs">{["street", "casual", "nice", "splurge"][b - 1]}</span>
             </Chip>
           ))}
           <Chip active={req.diet === "veg"} onClick={() => patch({ diet: req.diet === "veg" ? "any" : "veg" })}>

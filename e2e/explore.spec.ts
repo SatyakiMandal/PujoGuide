@@ -43,14 +43,11 @@ test("a food place shows rating and opening hours from the Google Maps snapshot"
   await expect(page.getByLabel(/Rated \d\.\d out of 5/)).toBeVisible();
 });
 
-test("closed places are hidden by default and can be revealed", async ({ page }) => {
+test("places Google lists as closed are not offered", async ({ page }) => {
   await openApp(page);
   await page.getByRole("button", { name: /Restaurants/ }).click();
-  await page.getByPlaceholder(/Search pandals/).fill("Soul");
+  await page.getByPlaceholder(/Search pandals/).fill("Soul - The Sky Lounge");
   await expect(page.getByRole("button", { name: /^Soul - The Sky Lounge/ })).toHaveCount(0);
-  await page.getByRole("button", { name: /Filters/ }).click();
-  await page.getByRole("button", { name: "Show closed" }).click();
-  await expect(page.getByRole("button", { name: /^Soul - The Sky Lounge/ })).toHaveCount(1);
 });
 
 test("filters: highlight vs filter mode changes the shown count", async ({ page }) => {

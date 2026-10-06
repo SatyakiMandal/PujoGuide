@@ -19,6 +19,7 @@ import {
   Moon,
   Path,
   Plus,
+  QrCode,
   Ruler,
   Shuffle,
   Trash,
@@ -35,6 +36,7 @@ import { routePlaces, summarise, useLegs, type Leg } from "@/lib/route/useLegs";
 import { placeDwellMin } from "@/lib/route/dwell";
 import { findNearbyFood } from "@/lib/route/geo";
 import { isFood, type Place } from "@/lib/schema";
+import { generateQRCodeSVG } from "@/lib/qrcode";
 import { PlansCatalog } from "./PlansCatalog";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
@@ -50,6 +52,7 @@ export function PlanView() {
   const [copied, setCopied] = useState(false);
   const [browse, setBrowse] = useState(false);
   const [offlineOpen, setOfflineOpen] = useState(false);
+  const [qrOpen, setQrOpen] = useState(false);
 
   if (routePlacesList.length === 0 || browse) {
     return <PlansCatalog hasRoute={routePlacesList.length > 0} onDone={() => setBrowse(false)} />;
@@ -137,6 +140,9 @@ export function PlanView() {
         <Action onClick={() => setOfflineOpen(true)} icon={<DeviceMobile size={17} weight="bold" />}>
           Offline mode
         </Action>
+        <Action onClick={() => setQrOpen(true)} icon={<QrCode size={17} weight="bold" />}>
+          QR Code
+        </Action>
         {links.map((href, i) => (
           <a
             key={href}
@@ -158,6 +164,7 @@ export function PlanView() {
       </div>
 
       <OfflinePlanModal open={offlineOpen} onClose={() => setOfflineOpen(false)} places={routePlacesList} />
+      <QRCodeModal open={qrOpen} onClose={() => setQrOpen(false)} url={shareUrl(location.origin, stops)} />
 
       <p className="text-xs leading-relaxed text-muted">
         Times and fares are estimates. Pins are approximate until verified, and auto, cab and bike prices are rough
@@ -519,6 +526,58 @@ function OfflinePlanModal({
               Emergency Numbers: <b>112</b> (All) · <b>100</b> (Police) · <b>108</b> (Ambulance)
             </p>
           </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
+function QRCodeModal({ open, onClose, url }: { open: boolean; onClose: () => void; url: string }) {
+  if (!open) return null;
+  const svgMarkup = generateQRCodeSVG(url);
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-50 grid place-items-center bg-black/60 p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+      >
+        <motion.div
+          role="dialog"
+          aria-label="Scan QR Code to clone route"
+          onClick={(e) => e.stopPropagation()}
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.95, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 400, damping: 32 }}
+          className="w-full max-w-sm rounded-3xl border border-line bg-bg p-6 text-center shadow-float"
+        >
+          <div className="flex items-center justify-between pb-3 border-b border-line">
+            <h3 className="flex items-center gap-2 font-display text-base font-semibold">
+              <QrCode size={20} weight="duotone" className="text-primary" /> Scan to Clone Route
+            </h3>
+            <button
+              type="button"
+              onClick={onClose}
+              className="grid size-8 place-items-center rounded-full text-muted hover:bg-surface2"
+            >
+              <X size={18} weight="bold" />
+            </button>
+          </div>
+
+          <div className="mt-4 flex justify-center">
+            <div
+              className="size-56 rounded-2xl bg-white p-3 text-black shadow-inner"
+              dangerouslySetInnerHTML={{ __html: svgMarkup }}
+            />
+          </div>
+
+          <p className="mt-4 text-xs leading-relaxed text-muted">
+            Point any phone camera at this screen to instantly open and clone this exact Puja route!
+          </p>
         </motion.div>
       </motion.div>
     </AnimatePresence>

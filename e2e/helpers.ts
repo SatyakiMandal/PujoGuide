@@ -33,7 +33,7 @@ export async function expandSheet(page: Page) {
 /** Opens the app and waits until the list is interactive. */
 export async function openApp(page: Page, path = "/", opts: { expand?: boolean } = {}) {
   await page.goto(path);
-  await expect(page.getByText(/\d+ of \d+ shown/).or(page.getByRole("heading", { level: 1 }))).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   if (opts.expand !== false) await expandSheet(page);
 }
 
@@ -46,5 +46,5 @@ export const exploreTab = (page: Page) => page.getByRole("tab", { name: /^Explor
 /** Opens the auto-planner form (the default view of the Plan tab when no route exists). */
 export async function openAutoPlanner(page: Page) {
   await planTab(page).click();
-  await expect(page.getByRole("heading", { name: "Plan my day" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Auto-Planner|Plan my day/ })).toBeVisible();
 }

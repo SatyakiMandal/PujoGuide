@@ -4,7 +4,7 @@ import { useEffect, useMemo } from "react";
 import { placeBySlug } from "@/lib/data";
 import { isFood, type Place } from "@/lib/schema";
 import { useUI } from "@/store/ui";
-import { DWELL_MIN, placeDwellMin } from "./dwell";
+import { placeDwellMin } from "./dwell";
 import { legOptions, pickMode } from "./estimate";
 import { fetchRouted } from "./osrm";
 import type { LegOption, Mode } from "./types";
