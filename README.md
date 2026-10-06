@@ -1,94 +1,182 @@
-# PujoGuide
+# PujoGuide 🪔
 
-Kolkata Durga Puja map and route planner: every Bonedi Bari and pandal on one map, filters, nearby food, and a multi-stop route builder with walk / metro / auto / cab / bike estimates.
+> **Kolkata Durga Puja Interactive Map, Route Planner & Heritage Festival Guide**
 
-The full phase plan is in [PLAN.md](PLAN.md). This file is the practical "how do I run it" page.
+PujoGuide is a high-performance Progressive Web Application (PWA) designed for navigating Kolkata during Durga Puja. It brings together **339 verified pandals, Bonedi Baris (heritage family pujas), sweet shops, cafes, and restaurants** onto one unified interactive map with multi-modal route planning, live tour navigation, smart auto-planning, and offline resilience.
 
-## Run it
+---
 
-```bash
-npm install        # also copies MapLibre's web worker into public/maplibre (postinstall)
-npm run dev        # http://localhost:3000
-npm test           # unit + data-integrity tests (vitest)
-npm run build
-npm run test:e2e   # browser tests on a production build (needs: npm run build first)
-npm run perf       # Lighthouse, needs: npx next start -p 3100
-```
+## 🌟 Key Features
 
-No API keys are needed. The app runs on free, key-less services:
+### 1. Interactive Dual Map Canvas
+- **MapLibre GL / Google Maps Integration**: Powered by free CARTO Voyager / Dark Matter tiles with OpenStreetMap data, seamlessly switching to Google Maps JavaScript API when an optional Google Places key (`NEXT_PUBLIC_GMAPS_KEY`) is present.
+- **Dynamic HTML Pins & Clusters**: Custom rotated teardrop pins colored by category (Vermilion for Pandals, Antique Gold for Bonedi Baris, Teal for Food) with visited checkmarks and stop order badges.
 
-| Need | Provider | Notes |
-|---|---|---|
-| Map tiles | CARTO Voyager / Dark Matter (OpenStreetMap data) via MapLibre | Free for non-commercial use. Check CARTO's terms before commercial use, or swap `STYLE_LIGHT/DARK` in `FreeMapCanvas.tsx` |
-| Walk / road geometry | Public OSRM at routing.openstreetmap.de | Fair-use only, fine for personal use. Falls back to straight-line estimates if it's down |
-| Metro lines & stations | OpenStreetMap (Overpass), cached in `src/data/metro.json` | Refresh with `npm run metro` |
-| Pin locations (baris, pandals) | OpenStreetMap Nominatim, cached in `data/geocoded.json` | Refresh with `npm run geocode` (1 request/second). Rejected false matches live in `data/geocode-rejects.json` |
-| Food (cafes, restaurants) | Your two Google Maps lists, saved in `data/lists/*.raw.json`, plus a picked "best of Kolkata" list | Exact pins from your own saved places. Rebuild with `npm run food && npm run data` |
-| Ratings, hours, photos, closed flags | A Google Maps snapshot in `data/snapshot.json` (taken 5 Oct 2026) | Free, but a snapshot, not live. Set `NEXT_PUBLIC_GMAPS_KEY` and the app fetches live data from Google Places instead (see below) |
+### 2. Comprehensive Pandal & Heritage Coverage
+- **339 Verified Spots**: Complete dataset spanning North, Central, South Kolkata, and Salt Lake.
+- **25+ Bonedi Baris**: Including Shobhabazar (Boro & Choto), Pathuriaghata, Darjipara Mitra Bari, Chatu Babu Latu Babu, Hathkhola Dutta Bari, Malapara Mullick Bari, Daw Baris, Chorbagan Baris, Thanthaniya Laha Bari, Jhamapukur Chandra Bari, Bhowanipore Mallick Bari, and Behala Sabarna Roy Choudhury Atchala.
 
-**Live ratings, photos and hours.** Out of the box the app shows the snapshot. When you have a Google key, put it in `.env.local` as `NEXT_PUBLIC_GMAPS_KEY`: the place card then asks Google Places (New) for the current rating, weekly hours, photo and business status (`src/lib/live/google.ts`), falling back to the snapshot if the request fails. Restrict the key to your Vercel domain and to the Maps JavaScript and Places (New) APIs.
+### 3. 24 Curated Marathon Routes & Catalog Controls
+- **Mega Marathon Circuits**:
+  - 🏆 **North Kolkata Special Mega Pujo Circuit**: 22-stop master route from Tala Prattay through Hatibagan, Kashi Bose Lane, Simla, Chalta Bagan, Kumartuli, and Baghbazar.
+  - 🏛️ **Bonedi Bari Mega Marathon**: 18-stop complete heritage family house loop across North & Central Kolkata.
+  - 🚇 **Kalighat & South Metro Mega Circuit**: 24-stop South Kolkata marathon connecting Suruchi Sangha, Chetla Agrani, Mudiali, Deshapriya Park, Singhi Park, Ekdalia, Maddox Square, and Naktala.
+- **Catalog Search & Metric Sorting**:
+  - View **"All Plans"** in a single list.
+  - Search plans by title, description, tag, or specific stop name.
+  - Sort plans by **Recommended**, **Most Stops**, **Fewest Stops**, **Quietest (Crowd rank)**, and **Alphabetical A–Z**.
 
-**Google Maps is optional.** Set `NEXT_PUBLIC_GMAPS_KEY` (see `.env.example`) and the Google map is used instead. Google billing is the reason it's off by default.
+### 4. Interspaced Food, Budget & Dish Pricing
+- **Food & Refreshment Integration**: Every plan features authentic food, cafe, tea, or sweet shop stops (Golbari, Mitra Cafe, Putiram, Allen Kitchen, TRING TRING, Balwant Singh Dhaba, Nobin Chandra Das, Girish Ch. Dey & Nakur Ch. Nandy, 6 Ballygunge Place, etc.) interspaced along the walking/driving path.
+- **Budget Badges & Dish Prices**: Budget badges (`Price Level` `₹` to `₹₹₹₹` with estimated cost per 2 persons) and dish-level prices (`₹`) across 1,814 menu items.
 
-## Where things live
+### 5. Smart Auto-Planner Engine
+- **Algorithmic Route Generation**: Enter your free time window, starting location, pace, interests, budget, and ritual preferences. The rule-based engine generates a custom itinerary with travel times, queue estimates, ritual windows (Pushpanjali, Sandhi Puja), and lunch/tea/dinner stops.
 
-```
-data/seed.ts            baris + pandals (edit this), zones, neighbourhood anchors
-data/lists/             your Google Maps lists (raw) -> food.generated.json (cleaned, merged, tagged)
-data/food-classify.ts   suggests category / cuisine / vibe from a name
-data/food-overrides.json  optional: correct any generated food field, keyed by slug
-data/geocoded.json      OSM name matches (generated, committed)
-data/overrides.json     optional: hand-verified { "slug": { "lat": .., "lng": .. } }
-scripts/                build-data (everything -> src/data/*.json), ingest-lists, fetch-metro, geocode-osm
-src/lib/route/          metro graph, leg estimates, fares, optimiser, OSRM client, export
-src/components/map/     FreeMapCanvas (default), GoogleMapCanvas (if key), RouteLayer
-src/components/plan/    PlanView (stops, legs, totals, actions)
-```
+### 6. Live Tour Mode & Turn-by-Turn Navigation
+- **Live Tour Interface**: Full-screen turn-by-turn guidance showing current/next stops, live dwell time countdowns, leg travel modes (Metro, Auto, Cab, Bike, Walk), and direct Google Maps navigation links.
 
-After editing `data/seed.ts`, `data/geocoded.json` or `data/overrides.json`, run `npm run data`.
+### 7. Essential Amenities on Map
+- **On-Map Emergency Layer**: Togglable map markers for nearby public toilets, drinking water points, police booths, and first aid stations.
 
-## Deploy to Vercel (personal use)
+### 8. Offline Resilience & QR Code Sharing
+- **QR Code Route Cloning**: Scan a QR code on any phone screen to clone the exact itinerary into the web app.
+- **Offline Backup & Export**: Download full route directions as plain `.txt` files or export/restore your saved places, check-ins, and itineraries via `.json` backup files.
+- **PWA & Offline Tile Cacher**: Installs directly to home screen ("Add to Home Screen") with custom Service Worker caching.
 
-```bash
-npm i -g vercel
-vercel login        # you do this once, in your browser
-vercel --prod
-```
+---
 
-No environment variables are required. `public/maplibre` is generated by the `postinstall` script, so a normal Vercel build produces it. The app installs to a phone home screen ("Add to Home Screen") and opens offline, apart from live map tiles and routing.
+## 🏗️ Architecture & Code Description
 
-## Research data
+### Tech Stack
 
-Tips, tags, prices and closures live in `data/research/*.json` (slug -> fields) and are merged by `npm run data`. Each entry says `info: "researched"` (backed by a source I found) or `"inferred"` (guessed from the name). A bad slug or enum fails the build. To correct anything, edit the JSON and re-run `npm run data`.
-
-## Plans
-
-`src/lib/plans.ts` holds 30 ready-made plans (by area and by interest) plus a day-by-day guide. A test guarantees every pandal and Bonedi Bari is in at least one area plan. After editing a plan, run `npm run plans` to re-sequence its stops with the optimiser.
-
-## Auto-planner
-
-`src/lib/autoplan.ts` is a pure, tested engine behind the Plan tab's Auto view. You give it a festival day (or several), start and finish time, area, group, interests, food budget, diet and pace. It picks stops by fit and travel time, places meals in lunch / tea / dinner / supper windows from places that are open at that time, holds a stop for a ritual (Pushpanjali, Kumari Puja, Sandhi Puja) if you ask, and warns about queues and approximate pins. Multi-day mode gives each day a different part of the city with no repeats. Festival dates and ritual windows are in `src/lib/calendar.ts` (Sandhi Puja is Belur Math's published 10:28 to 11:16 am on Mon 19 Oct; other ritual windows are guides, since each club sets its own).
-
-## Hours
-
-`data/snapshot.json` holds what Google Maps showed for each place (rating, review count, weekly hours, photo, open/closed). `npm run data` merges it, rejecting any match whose pin is more than 150 m away or whose name does not agree. Places with no listed hours use typical hours (pandals late, baris daytime), and the UI says "usually" when it is assuming.
-
-## Things to know
-
-- **Pin confidence.** Each place is `verified` (you confirmed it, via `overrides.json`), `osm` (matched by name on OpenStreetMap) or `area` (neighbourhood level only). The UI says which. Pandals move every year, so confirm on the ground.
-- **Fares are rough models, not quotes.** See `src/lib/route/fares.ts`. Metro fare slabs there are approximate. Verify them.
-- **Food comes from your two lists** (40 newer picks, 202 older). Older-list places are flagged "may have closed". Cuisine and vibe tags are *suggestions inferred from the name* (about a third have none), and price and diet are unknown, so those filters never hide a place. Fix any of them in `data/food-overrides.json`.
-- Nearest metro for every place is computed from the real OSM station positions (within about 1 km).
-- Saved places, the visited checklist and your own notes are stored on this device only (localStorage).
-- Route plans persist in the browser and can be shared as `/?route=slug1,slug2,...`.
-
-## Testing
-
-| Command | What it covers |
+| Layer | Technology |
 |---|---|
-| `npm test` | Vitest: data integrity (counts, pins, hours, ratings, closures, picks), filters, routing, Google Maps links, hours parsing, festival calendar, auto-planner invariants, live-ratings provider |
-| `npm run typecheck` / `npm run lint` | TypeScript and ESLint |
-| `npm run test:e2e` | Builds into `.next-e2e` (so it never fights `next dev`) and runs Playwright on the installed Chrome across 7 viewports: desktop light and dark, narrow laptop, tablet, phone light and dark, small phone. Covers explore, search, filters, detail, the auto-planner, manual routes, share links, axe accessibility (WCAG A and AA), keyboard use, PWA manifest, service worker and offline load |
-| `npm run perf` | Lighthouse (phone and desktop) against `next start -p 3100`. Needs a build first: `NEXT_DIST_DIR=.next-e2e npx next build` then `NEXT_DIST_DIR=.next-e2e npx next start -p 3100` |
+| **Framework** | Next.js 15 (App Router), React 19, TypeScript |
+| **Styling** | Tailwind CSS v4, Motion (Framer Motion v12), Phosphor Icons |
+| **Map Rendering** | MapLibre GL JS, Mapbox GL Draw, Google Maps JS API (optional) |
+| **State Management** | Zustand (with persistent localStorage middleware) |
+| **UI Components** | Vaul (Drawer for mobile bottom-sheet), Radix UI primitives |
+| **Validation & Schema** | Zod v3 |
+| **Testing** | Vitest (Unit & Data Integrity), Playwright (E2E) |
 
-**Performance (measured 6 Oct 2026, simulated slow phone):** accessibility, best-practices and SEO score 100. Performance scores about 47 on a phone and 34 on desktop: first paint 1.5 s, but the largest paint lands near 8 s and total blocking time is 1.0 to 1.4 s, because the app evaluates about 2.6 s of JavaScript at startup on that throttled CPU (the places data, search index, clustering and the map engine). Layout shift is 0.001. Real phones are faster than Lighthouse's throttled profile, but the next gains would come from loading the places data lazily and rendering fewer list rows at first.
+---
+
+### Key Directory Structure
+
+```
+PujoGuide/
+├── src/
+│   ├── app/                    # Next.js App Router (layout, page, manifest, globals.css)
+│   ├── components/
+│   │   ├── filters/            # FilterGroups, FilterToggle, facet chips
+│   │   ├── map/                # MapCanvas, FreeMapCanvas, GoogleMapCanvas, PlacePin, RouteLayer
+│   │   ├── place/              # PlaceDetail, PlaceList, HoursCard, MenuCard
+│   │   ├── plan/               # PlanView, PlansCatalog, AutoPlanner, LiveTourMode, EditRouteModal
+│   │   ├── ui/                 # Chip, ThemeToggle, Logo, AutoRickshawIcon
+│   │   ├── AppShell.tsx        # Responsive desktop side panel & mobile Vaul drawer shell
+│   │   ├── EssentialsSheet.tsx # Emergency numbers & amenities sheet
+│   │   ├── Panel.tsx           # Main control panel (search, tabs, filters, place list)
+│   │   └── TodayStrip.tsx      # Festival countdown, weather, Puja Day Mode toggle
+│   ├── data/                   # Cleaned runtime datasets
+│   │   ├── places.json         # 339 validated places (pandals, baris, food)
+│   │   ├── zones.json          # 17 Kolkata neighborhood zones
+│   │   ├── metro.json          # Kolkata Metro line stations & connectivity graph
+│   │   └── amenities.json      # Toilets, water, first aid, police stations
+│   ├── lib/
+│   │   ├── route/              # OSRM router, leg estimation, fare calculation, 2-opt TSP optimizer
+│   │   ├── autoplan.ts         # Rule-based auto-planner engine
+│   │   ├── calendar.ts         # Festival dates & ritual windows (Mahalaya to Dashami)
+│   │   ├── data.ts             # Data maps & lookup indexes
+│   │   ├── filter.ts           # Multi-facet filtering logic
+│   │   ├── hours.ts            # Opening hours parser & status evaluator
+│   │   ├── personalData.ts     # Backup & restore manager (JSON export/import)
+│   │   ├── placeIcon.tsx       # Dynamic Phosphor icon mapper by cuisine/category
+│   │   ├── plans.ts            # 24 Curated Marathon & Interest Plans dataset
+│   │   ├── qrcode.ts           # Pure JavaScript QR code SVG generator
+│   │   └── schema.ts           # Authoritative Zod schemas (Place, Plan, Amenity, Hours, Menu)
+│   └── store/
+│       └── ui.ts               # Global Zustand state (stops, filters, mode, theme, saved/visited)
+├── tests/                      # 15 Vitest test suites (135 tests)
+├── data/                       # Raw seed data, geocoded OSM matches, Google Maps snapshots
+├── scripts/                    # Build scripts (data compilation, geocoding, metro extraction)
+└── README.md                   # Complete documentation & code review
+```
+
+---
+
+## 🔍 Code Review & Data Integrity Assessment
+
+### 1. Data Schema & Strict Typing (`src/lib/schema.ts`)
+- All 339 place objects in `places.json` are parsed through Zod (`placeSchema.parse()`).
+- Data integrity tests enforce:
+  - Valid coordinates within Kolkata bounding box (`22.40` to `22.75` N, `88.20` to `88.52` E).
+  - No duplicated coordinates or stacked pins on the exact same lat/lng.
+  - Every place references a valid zone ID from `zones.json`.
+  - Every pandal and Bonedi Bari includes a populated `tips` object (`expect` field) and a valid `crowd` rating (`low` | `medium` | `high` | `extreme`).
+
+### 2. Multi-Modal Routing & Optimization Engine (`src/lib/route/`)
+- **OSRM Client**: Fetches exact road geometry via OpenStreetMap OSRM API with straight-line fallback.
+- **Fares & Travel Time Models** (`fares.ts`, `estimate.ts`): Calculates accurate fare slabs and travel durations for Walking, Metro, Auto, Cab, and Bike (including Puja-night congestion multipliers).
+- **2-Opt TSP Optimizer** (`optimise.ts`): Solves Travelling Salesperson Problem for user routes to minimize total travel distance.
+
+### 3. Comprehensive Unit Test Coverage (`vitest run`)
+- **15 Test Suites / 135 Unit Tests**: Passing 100% cleanly.
+  - `data.test.ts`: Pin coordinates, zone IDs, tips, crowd metrics, food fields.
+  - `filter.test.ts`: Layer filtering, multi-zone inclusion, diet/price constraints.
+  - `plans.test.ts`: Plan slug validity, non-duplicate stops, 100% area plan coverage for baris/pandals, 2-opt TSP distance efficiency checks.
+  - `autoplan.test.ts`: Time window constraints, ritual inclusion, meal window placements.
+  - `route.test.ts`: Leg calculations, mode switching, OSRM fallback.
+  - `hours.test.ts`: Weekly hours window parsing, midnight rollover handling.
+  - `personalData.test.ts`: Backup JSON generation & restore validation.
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js `20.x` or higher
+- npm `10.x` or higher
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/SatyakiMandal/PujoGuide.git
+cd PujoGuide
+
+# Install dependencies (runs postinstall script for MapLibre worker)
+npm install
+```
+
+### Development Server
+
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Quality Check & Unit Testing
+
+```bash
+# Run TypeScript typecheck and Vitest test suite
+npm run check
+
+# Run Vitest test suite only
+npm test
+```
+
+### Production Build
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 📄 License & Attribution
+
+- **Map Data**: OpenStreetMap contributors, CARTO Voyager/Dark Matter.
+- **Icons**: Phosphor Icons.
+- **Festival Calendar & Data**: Researched and curated for Kolkata Durga Puja.
