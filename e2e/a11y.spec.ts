@@ -65,3 +65,9 @@ test("keyboard: tabs and chips are reachable and operable", async ({ page }) => 
   await page.keyboard.press("Space");
   await expect(chip).toHaveAttribute("aria-pressed", "true");
 });
+
+test("the whole app stays exposed to assistive tech (the bottom sheet must not aria-hide the map controls)", async ({ page }) => {
+  await openApp(page);
+  await expect(page.locator("main")).not.toHaveAttribute("aria-hidden", "true");
+  await expect(page.getByRole("button", { name: /Switch to (dark|light) mode/ })).toBeVisible();
+});

@@ -22,7 +22,7 @@ const MODES: { id: FilterMode; label: string; hint: string }[] = [
   { id: "filter", label: "Filter", hint: "Hide everything that doesn't match" },
 ];
 
-export function Panel() {
+export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
   const { list, matched, visibleCount } = useFiltered();
   const { query, mode, selected, filters, tab } = useUI();
   const stopCount = useUI((s) => s.route.stops.length);
@@ -115,10 +115,11 @@ export function Panel() {
           <input
             ref={searchRef}
             value={query}
+            onFocus={onSearchFocus}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search pandals, baris, areas, food…"
             enterKeyHint="search"
-            className="h-11 w-full rounded-full border border-line bg-surface pl-10 pr-12 text-base outline-none transition-shadow focus:ring-2 focus:ring-primary/40"
+            className="h-12 w-full rounded-full border border-line bg-surface pl-10 pr-12 text-base outline-none transition-shadow focus:ring-2 focus:ring-primary/40"
           />
           {!query && (
             <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rounded-md border border-line bg-surface2 px-1.5 py-0.5 font-mono text-[10px] font-semibold text-muted shadow-2xs">

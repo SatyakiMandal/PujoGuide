@@ -15,8 +15,8 @@
     "geocode": "tsx scripts/geocode-osm.ts",
     "food": "tsx scripts/ingest-lists.ts",
     "plans": "tsx scripts/order-plans.ts",
-    "test:e2e": "playwright test",
-    "test:all": "npm run typecheck && npm run lint && npm test && next build && playwright test",
+    "test:e2e": "node scripts/e2e.mjs",
+    "test:all": "npm run typecheck && npm run lint && npm test && node scripts/e2e.mjs",
     "perf": "tsx scripts/lighthouse.ts"
   },
   "dependencies": {

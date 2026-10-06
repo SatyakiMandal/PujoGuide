@@ -49,12 +49,12 @@ export function PlaceList({ list }: { list: Place[] }) {
                     <span className="flex items-center gap-1.5 font-medium leading-snug">
                       <span className="truncate">{p.name.en}</span>
                       {p.pureVeg && (
-                        <span className="shrink-0 rounded-md bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-600 dark:text-emerald-400">
+                        <span className="shrink-0 rounded-md bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 dark:text-emerald-400">
                           Veg
                         </span>
                       )}
                       {p.source === "curated" && (
-                        <span className="shrink-0 rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-amber-600 dark:text-amber-400">
+                        <span className="shrink-0 rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-amber-700 dark:text-amber-400">
                           ★ Best-of
                         </span>
                       )}

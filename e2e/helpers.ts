@@ -19,6 +19,10 @@ export async function expandSheet(page: Page) {
   if (!isMobileWidth(page)) return;
   const handle = page.locator("[data-vaul-handle]");
   await expect(handle).toBeVisible();
+  // The sheet slides in on load; wait for it to come to rest before dragging.
+  const vh = page.viewportSize()!.height;
+  await expect.poll(async () => (await handle.boundingBox())?.y ?? vh, { timeout: 10_000 }).toBeLessThan(vh - 40);
+  await page.waitForTimeout(400);
   const box = (await handle.boundingBox())!;
   const x = box.x + box.width / 2;
   const y = box.y + box.height / 2;

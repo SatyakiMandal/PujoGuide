@@ -18,7 +18,7 @@ export function MenuCard({ place: p }: { place: Place }) {
           <ForkKnife size={16} weight="bold" className="text-primary" /> Menu & Recommendations
         </h3>
         {p.pureVeg && (
-          <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+          <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
             100% Pure Veg
           </span>
         )}
@@ -38,13 +38,13 @@ export function MenuCard({ place: p }: { place: Place }) {
             )}
             {p.mustTry!.veg.length > 0 && (
               <div>
-                <span className="font-medium text-emerald-600 dark:text-emerald-400">Veg: </span>
+                <span className="font-medium text-emerald-700 dark:text-emerald-400">Veg: </span>
                 <span className="text-muted">{p.mustTry!.veg.join(" · ")}</span>
               </div>
             )}
             {p.mustTry!.drinks.length > 0 && (
               <div>
-                <span className="font-medium text-amber-600 dark:text-amber-400">Drinks: </span>
+                <span className="font-medium text-amber-700 dark:text-amber-400">Drinks: </span>
                 <span className="text-muted">{p.mustTry!.drinks.join(" · ")}</span>
               </div>
             )}

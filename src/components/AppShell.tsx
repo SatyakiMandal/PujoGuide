@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Drawer } from "vaul";
 import { MapCanvas } from "@/components/map/MapCanvas";
 import { EssentialsSheet } from "@/components/EssentialsSheet";
@@ -34,6 +34,22 @@ export function AppShell() {
   const [snap, setSnap] = useState<number | string | null>(SNAPS[0]);
 
   useLegLoader();
+
+  // The bottom sheet's library marks the whole app <main> aria-hidden, which hides the map controls and theme
+  // toggle from screen readers. The sheet is non-modal, so keep everything reachable.
+  const mainRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const main = mainRef.current;
+    if (!main) return;
+    const reveal = () => {
+      main.removeAttribute("aria-hidden");
+      main.removeAttribute("data-aria-hidden");
+    };
+    reveal();
+    const observer = new MutationObserver(reveal);
+    observer.observe(main, { attributes: true, attributeFilter: ["aria-hidden", "data-aria-hidden"] });
+    return () => observer.disconnect();
+  }, []);
 
   // Restore the saved route, then apply deep links: /?place=slug and /?route=a,b,c (shared plan).
   useEffect(() => {
@@ -74,7 +90,7 @@ export function AppShell() {
   }
 
   return (
-    <main className="relative flex h-dvh w-full overflow-hidden">
+    <main ref={mainRef} className="relative flex h-dvh w-full overflow-hidden">
       <EssentialsSheet />
       {isDesktop && (
         <aside
@@ -112,7 +128,7 @@ export function AppShell() {
                 style={{ height: `calc(${(typeof snap === "number" ? snap : SNAPS[0]) * 100}dvh - 1.75rem)` }}
                 className="pb-[env(safe-area-inset-bottom)]"
               >
-                <Panel />
+                <Panel onSearchFocus={() => !isDesktop && setSnap(0.92)} />
               </div>
             </Drawer.Content>
           </Drawer.Portal>

@@ -109,12 +109,12 @@ export function PlaceDetail({ place: p }: { place: Place }) {
               {p.tags.includes("rajbari") && " · Rajbari"}
             </span>
             {p.pureVeg && (
-              <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+              <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 dark:text-emerald-400">
                 100% Pure Veg
               </span>
             )}
             {p.source === "curated" && (
-              <span className="rounded-full bg-amber-500/10 px-2.5 py-0.5 text-xs font-semibold text-amber-600 dark:text-amber-400">
+              <span className="rounded-full bg-amber-500/10 px-2.5 py-0.5 text-xs font-semibold text-amber-700 dark:text-amber-400">
                 ★ Best-of Pick
               </span>
             )}
@@ -279,7 +279,7 @@ export function PlaceDetail({ place: p }: { place: Place }) {
             : "Notes are general guidance, not official information."}
       </p>
 
-      <div className="space-y-2 pt-1">
+      <div className="sticky bottom-0 -mx-4 border-t border-line/60 bg-bg/95 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-2.5 backdrop-blur-md z-20 space-y-2 shadow-xs">
         <motion.button
           type="button"
           whileTap={{ scale: 0.96 }}
@@ -299,7 +299,7 @@ export function PlaceDetail({ place: p }: { place: Place }) {
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 0.96 }}
-            className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-colors"
+            className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-colors hover:bg-surface2"
           >
             <NavigationArrow size={18} weight="fill" /> Directions
           </motion.a>
@@ -307,7 +307,7 @@ export function PlaceDetail({ place: p }: { place: Place }) {
             type="button"
             onClick={share}
             whileTap={{ scale: 0.96 }}
-            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-colors"
+            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-surface px-5 font-medium transition-colors hover:bg-surface2"
           >
             <ShareNetwork size={18} weight="bold" /> {shared ? "Link copied" : "Share"}
           </motion.button>

@@ -227,7 +227,7 @@ function StopRow({
               {time ? `${fmtClock(time.arrive)} – ${fmtClock(time.depart)} · ` : ""}
               {zoneName.get(place.zones[0])}
               {dwell.queue > 0 && (
-                <span className="ml-1.5 font-medium text-amber-600 dark:text-amber-400">
+                <span className="ml-1.5 font-medium text-amber-700 dark:text-amber-400">
                   ⌛ ~{dwell.queue}m queue
                 </span>
               )}
@@ -288,7 +288,7 @@ function MidRouteFoodFinder({ leg }: { leg: Leg }) {
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-1.5 font-medium">
                           <span className="truncate">{p.name.en}</span>
-                          {p.pureVeg && <span className="rounded bg-emerald-500/10 px-1 py-0.2 text-[9px] font-semibold text-emerald-600">Veg</span>}
+                          {p.pureVeg && <span className="rounded bg-emerald-500/10 px-1 py-0.2 text-[9px] font-semibold text-emerald-700">Veg</span>}
                         </div>
                         <span className="block truncate text-[10px] text-muted">
                           {meta.label} · {p.mustTry?.nonveg[0] || p.mustTry?.veg[0] || p.cuisines?.[0] || "Good food"}

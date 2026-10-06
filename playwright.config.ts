@@ -32,6 +32,7 @@ export default defineConfig({
   ],
   webServer: {
     command: `npx next start -p ${PORT}`,
+    env: { NEXT_DIST_DIR: ".next-e2e" },
     url: `http://localhost:${PORT}`,
     reuseExistingServer: true,
     timeout: 60_000,

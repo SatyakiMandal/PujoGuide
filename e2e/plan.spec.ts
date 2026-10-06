@@ -65,8 +65,8 @@ test("manual route: add stops from detail, reorder tools and the share link", as
   await page.getByPlaceholder(/Search pandals/).fill("Maddox");
   await page.getByRole("button", { name: "Add Maddox Square Durga Pujo to route" }).or(page.getByRole("button", { name: /Add Maddox Square.* to route/ })).click();
   await planTab(page).click();
-  await expect(page.getByText("Deshapriya Park")).toBeVisible();
-  await expect(page.getByText(/Maddox Square/)).toBeVisible();
+  await expect(page.getByText("Deshapriya Park", { exact: true })).toBeVisible();
+  await expect(page.getByText(/^Maddox Square/)).toBeVisible();
   await page.getByRole("button", { name: /Copy link/ }).click();
   await exploreTab(page).click();
 });
