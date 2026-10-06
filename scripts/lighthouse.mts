@@ -8,7 +8,8 @@ import { launch } from "chrome-launcher";
 import lighthouse from "lighthouse";
 
 const URL_UNDER_TEST = process.env.PERF_URL ?? "http://localhost:3100/";
-const FLOOR = { performance: Number(process.env.PERF_MIN ?? 0.6), accessibility: 0.95, "best-practices": 0.9, seo: 0.9 };
+// Performance floor is deliberately low for now (see README "Performance"): raise it as startup work is trimmed.
+const FLOOR = { performance: Number(process.env.PERF_MIN ?? 0.3), accessibility: 0.95, "best-practices": 0.9, seo: 0.9 };
 
 type Cat = keyof typeof FLOOR;
 

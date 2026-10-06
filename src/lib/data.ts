@@ -1,9 +1,11 @@
 import placesJson from "@/data/places.json";
 import zonesJson from "@/data/zones.json";
-import { placeSchema, zoneSchema, type Place, type Zone } from "./schema";
+import type { Place, Zone } from "./schema";
 
-export const places: Place[] = placesJson.map((p) => placeSchema.parse(p));
-export const zones: Zone[] = zonesJson.map((z) => zoneSchema.parse(z));
+// Validated against the zod schemas when the data is built (scripts/build-data.ts) and again in tests, so the
+// browser does not pay to re-parse several hundred places on every load.
+export const places = placesJson as unknown as Place[];
+export const zones = zonesJson as unknown as Zone[];
 export const placeBySlug = new Map(places.map((p) => [p.slug, p]));
 export const zoneName = new Map(zones.map((z) => [z.id, z.name]));
 

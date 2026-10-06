@@ -81,3 +81,14 @@ Tips, tags, prices and closures live in `data/research/*.json` (slug -> fields) 
 - Nearest metro for every place is computed from the real OSM station positions (within about 1 km).
 - Saved places, the visited checklist and your own notes are stored on this device only (localStorage).
 - Route plans persist in the browser and can be shared as `/?route=slug1,slug2,...`.
+
+## Testing
+
+| Command | What it covers |
+|---|---|
+| `npm test` | Vitest: data integrity (counts, pins, hours, ratings, closures, picks), filters, routing, Google Maps links, hours parsing, festival calendar, auto-planner invariants, live-ratings provider |
+| `npm run typecheck` / `npm run lint` | TypeScript and ESLint |
+| `npm run test:e2e` | Builds into `.next-e2e` (so it never fights `next dev`) and runs Playwright on the installed Chrome across 7 viewports: desktop light and dark, narrow laptop, tablet, phone light and dark, small phone. Covers explore, search, filters, detail, the auto-planner, manual routes, share links, axe accessibility (WCAG A and AA), keyboard use, PWA manifest, service worker and offline load |
+| `npm run perf` | Lighthouse (phone and desktop) against `next start -p 3100`. Needs a build first: `NEXT_DIST_DIR=.next-e2e npx next build` then `NEXT_DIST_DIR=.next-e2e npx next start -p 3100` |
+
+**Performance (measured 6 Oct 2026, simulated slow phone):** accessibility, best-practices and SEO score 100. Performance scores about 47 on a phone and 34 on desktop: first paint 1.5 s, but the largest paint lands near 8 s and total blocking time is 1.0 to 1.4 s, because the app evaluates about 2.6 s of JavaScript at startup on that throttled CPU (the places data, search index, clustering and the map engine). Layout shift is 0.001. Real phones are faster than Lighthouse's throttled profile, but the next gains would come from loading the places data lazily and rendering fewer list rows at first.

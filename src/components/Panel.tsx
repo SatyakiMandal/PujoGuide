@@ -47,6 +47,16 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [selected, select, setTab]);
 
+  if (place) {
+    return (
+      <div className="flex h-full min-h-0 flex-col overflow-y-auto overscroll-contain px-4 pb-4 pt-1">
+        <AnimatePresence mode="wait" initial={false}>
+          <PlaceDetail key={place.id} place={place} />
+        </AnimatePresence>
+      </div>
+    );
+  }
+
   return (
     <div className="flex h-full min-h-0 flex-col">
       <div className="space-y-3 px-4 pb-3 pt-1">
@@ -64,7 +74,7 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
           )}
         </div>
 
-        <TodayStrip />
+        {!query && <TodayStrip />}
 
         <div role="tablist" className="grid grid-cols-2 rounded-full border border-line bg-surface p-0.5 relative">
           {(
@@ -198,9 +208,7 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
 
       <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain border-t border-line px-3 py-3">
         <AnimatePresence mode="wait" initial={false}>
-          {place ? (
-            <PlaceDetail key={place.id} place={place} />
-          ) : tab === "plan" ? (
+          {tab === "plan" ? (
             <div key="plan">
               <PlanView />
             </div>

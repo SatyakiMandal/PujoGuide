@@ -14,6 +14,9 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Generated / vendored files, not ours to lint.
     "public/**",
+    ".next-e2e/**",
+    "e2e-report/**",
+    "test-results/**",
     "e2e-report/**",
     "test-results/**",
     "playwright-report/**",

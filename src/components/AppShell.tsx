@@ -92,14 +92,13 @@ export function AppShell() {
   return (
     <main ref={mainRef} className="relative flex h-dvh w-full overflow-hidden">
       <EssentialsSheet />
-      {isDesktop && (
-        <aside
-          style={{ width: PANEL_W }}
-          className="relative z-30 flex shrink-0 flex-col border-r border-line bg-bg pt-4 shadow-float"
-        >
-          <Panel />
-        </aside>
-      )}
+      {/* Always in the DOM at its final width on wide screens, so the map never jumps when we learn the viewport size. */}
+      <aside
+        style={{ width: PANEL_W }}
+        className="relative z-30 hidden shrink-0 flex-col border-r border-line bg-bg pt-4 shadow-float lg:flex"
+      >
+        {isDesktop && <Panel />}
+      </aside>
 
       <div className="relative z-0 min-w-0 flex-1 isolate">
         <MapCanvas />
