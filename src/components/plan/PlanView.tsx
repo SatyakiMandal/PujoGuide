@@ -18,6 +18,8 @@ import {
   LinkSimple,
   Moon,
   Path,
+  PencilSimple,
+  Play,
   Plus,
   QrCode,
   Ruler,
@@ -38,6 +40,8 @@ import { findNearbyFood } from "@/lib/route/geo";
 import { isFood, type Place } from "@/lib/schema";
 import { generateQRCodeSVG } from "@/lib/qrcode";
 import { PlansCatalog } from "./PlansCatalog";
+import { LiveTourMode } from "./LiveTourMode";
+import { EditRouteModal } from "./EditRouteModal";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
 
@@ -53,9 +57,23 @@ export function PlanView() {
   const [browse, setBrowse] = useState(false);
   const [offlineOpen, setOfflineOpen] = useState(false);
   const [qrOpen, setQrOpen] = useState(false);
+  const [editOpen, setEditOpen] = useState(false);
+  const [activeTourIndex, setActiveTourIndex] = useState<number | null>(null);
 
   if (routePlacesList.length === 0 || browse) {
     return <PlansCatalog hasRoute={routePlacesList.length > 0} onDone={() => setBrowse(false)} />;
+  }
+
+  if (activeTourIndex !== null) {
+    return (
+      <LiveTourMode
+        places={routePlacesList}
+        legs={legs}
+        activeIndex={activeTourIndex}
+        onChangeIndex={setActiveTourIndex}
+        onExit={() => setActiveTourIndex(null)}
+      />
+    );
   }
 
   const sum = summarise(legs, routePlacesList, { pujaNight });
@@ -83,6 +101,26 @@ export function PlanView() {
 
   return (
     <div className="space-y-4">
+      {/* Primary Action Hero: Run Tour & Edit Route */}
+      <div className="grid grid-cols-2 gap-2">
+        <motion.button
+          type="button"
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setActiveTourIndex(0)}
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-primary px-4 font-bold text-primary-fg shadow-xs transition-transform"
+        >
+          <Play size={20} weight="fill" /> Run Plan (Live Tour)
+        </motion.button>
+        <motion.button
+          type="button"
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setEditOpen(true)}
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-line bg-surface px-4 font-semibold transition-transform hover:bg-surface2"
+        >
+          <PencilSimple size={18} weight="bold" /> Edit / Customise
+        </motion.button>
+      </div>
+
       <section className="space-y-3 rounded-2xl border border-line bg-surface p-4">
         <div className="grid grid-cols-4 gap-1 text-center">
           <Stat icon={<Clock size={18} weight="duotone" />} value={fmtMin(sum.total)} label="total time" />
@@ -125,16 +163,19 @@ export function PlanView() {
       )}
 
       <Reorder.Group axis="y" values={stops} onReorder={setStops} className="space-y-1">
-        {places.map((p, i) => (
+        {routePlacesList.map((p, i) => (
           <StopRow key={p.slug} place={p} index={i} leg={legAfter(i)} time={schedule?.[p.slug]} onOpen={() => select(p.slug)} />
         ))}
       </Reorder.Group>
 
       <div className="flex flex-wrap gap-2">
+        <Action onClick={() => setEditOpen(true)} icon={<PencilSimple size={17} weight="bold" />}>
+          Edit route
+        </Action>
         <Action onClick={() => setBrowse(true)} icon={<Path size={17} weight="bold" />}>
           Plans &amp; auto-plan
         </Action>
-        <Action onClick={optimise} disabled={places.length < 4} icon={<Shuffle size={17} weight="bold" />}>
+        <Action onClick={optimise} disabled={routePlacesList.length < 4} icon={<Shuffle size={17} weight="bold" />}>
           Optimise order
         </Action>
         <Action onClick={() => setOfflineOpen(true)} icon={<DeviceMobile size={17} weight="bold" />}>
@@ -163,6 +204,7 @@ export function PlanView() {
         </Action>
       </div>
 
+      <EditRouteModal open={editOpen} onClose={() => setEditOpen(false)} />
       <OfflinePlanModal open={offlineOpen} onClose={() => setOfflineOpen(false)} places={routePlacesList} />
       <QRCodeModal open={qrOpen} onClose={() => setQrOpen(false)} url={shareUrl(location.origin, stops)} />
 

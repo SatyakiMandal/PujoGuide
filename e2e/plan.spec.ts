@@ -75,6 +75,8 @@ test("route survives a reload", async ({ page }) => {
   await openApp(page, "/?place=deshapriya-park");
   await page.getByRole("button", { name: "Add to route" }).click();
   await page.reload();
+  // The deep link reopens the place; go back to the list to see the tab bar.
+  await page.getByRole("button", { name: /All places/ }).click();
   await expect(planTab(page)).toContainText("1");
 });
 

@@ -1,6 +1,13 @@
 {
   "santosh-mitra-square": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy", "late-night"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy",
+      "late-night"
+    ],
     "blurb": "A Sealdah-side club Puja running since 1936 and one of the city's biggest. It is known for a giant idol, a new elaborate theme every year and celebrity guests.",
     "tips": {
       "expect": "A huge themed set with a very large idol and long, slow-moving queues. Estimates put the crowd at tens of thousands an hour at peak.",
@@ -10,7 +17,13 @@
     }
   },
   "college-square": {
-    "info": "researched", "crowd": "high", "tags": ["photogenic", "date", "theme"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "photogenic",
+      "date",
+      "theme"
+    ],
     "blurb": "A College Street Puja set at the edge of the College Square lake, so the lights and the pandal reflect on the water.",
     "tips": {
       "expect": "A picturesque lakeside pandal next to Kolkata University, with cultural performances and a lively crowd from late afternoon.",
@@ -20,7 +33,13 @@
     }
   },
   "mohammed-ali-park": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy"
+    ],
     "blurb": "A big-budget Central Kolkata Puja known for large, intricate set-pieces, often recreating famous monuments.",
     "tips": {
       "expect": "Grand craftsmanship and heavy queues, especially after dark.",
@@ -30,7 +49,11 @@
     }
   },
   "taltala-sarbojanin": {
-    "info": "inferred", "crowd": "medium", "tags": ["family"],
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
     "tips": {
       "expect": "A neighbourhood community Puja in Taltala, close to Park Street and the Esplanade area.",
       "watch": "I couldn't find reliable details. The theme and idol change every year.",
@@ -38,7 +61,11 @@
     }
   },
   "chorbagan-sarbojanin": {
-    "info": "inferred", "crowd": "medium", "tags": ["traditional"],
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "traditional"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja in Chorbagan, the same area as several Bonedi Baris.",
       "watch": "I found no reliable details, and the theme changes every year.",
@@ -46,9 +73,17 @@
     }
   },
   "baghbazar-sarbojanin": {
-    "info": "researched", "crowd": "high", "tags": ["traditional", "heritage"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "traditional",
+      "heritage"
+    ],
     "blurb": "One of the oldest and most respected Pujas of North Kolkata, with more than a century of history. Netaji and Deshbandhu Chittaranjan Das have both been associated with it.",
-    "dishes": ["Classical rituals", "Traditional ekchala-style idol"],
+    "dishes": [
+      "Classical rituals",
+      "Traditional ekchala-style idol"
+    ],
     "tips": {
       "expect": "A devotion-first Puja with a simple, strong pandal and a classic idol, rather than a theme spectacle.",
       "good": "The idol and the authentic old-Kolkata atmosphere. It is close to Kumartuli.",
@@ -57,7 +92,12 @@
     }
   },
   "hatibagan-sarbojanin": {
-    "info": "researched", "crowd": "high", "tags": ["traditional", "theme"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "traditional",
+      "theme"
+    ],
     "blurb": "A well-known North Kolkata Puja on Hatibagan's busy market streets. In a recent year it used recycled materials and a simple, sober concept.",
     "tips": {
       "expect": "A busy market-area pandal with a calm, ethereal idol.",
@@ -67,7 +107,13 @@
     }
   },
   "kumartuli-park": {
-    "info": "researched", "crowd": "high", "tags": ["traditional", "photogenic", "heritage"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "traditional",
+      "photogenic",
+      "heritage"
+    ],
     "blurb": "A Puja in the potters' quarter itself, known in recent years for live demonstrations of clay idol making.",
     "tips": {
       "expect": "Traditional handicraft themes in the neighbourhood where almost every Kolkata idol is made.",
@@ -76,17 +122,13 @@
       "tip": "Visit Kumartuli's workshops in the daytime before Mahalaya for the idols, and the pandals in the evening."
     }
   },
-  "kumartuli-sarbojanin": {
-    "info": "researched", "crowd": "high", "tags": ["traditional", "heritage"],
-    "tips": {
-      "expect": "A neighbourhood Puja in the idol-makers' quarter, with a strong sense of craft.",
-      "good": "The idols here are made a few lanes away, and often by the family running the Puja.",
-      "watch": "Narrow, crowded lanes.",
-      "tip": "Go with Kumartuli Park, Baghbazar and Ahiritola in one walk."
-    }
-  },
   "kashi-bose-lane": {
-    "info": "researched", "crowd": "medium", "tags": ["theme", "quiet"],
+    "info": "researched",
+    "crowd": "medium",
+    "tags": [
+      "theme",
+      "quiet"
+    ],
     "blurb": "A North Kolkata community Puja with a literary bent. One year's pandal drew on Leela Majumdar's autobiographical sketch 'Pakdondi'.",
     "tips": {
       "expect": "A thoughtful, themed pandal in the old lanes, with a literary or cultural idea behind the decoration.",
@@ -96,7 +138,12 @@
     }
   },
   "chaltabagan-lohapatty": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic"
+    ],
     "blurb": "A multi-award-winning North Kolkata Puja, rooted in eco-awareness with renewable lighting and artistic shows.",
     "tips": {
       "expect": "A polished, creative set with a social or environmental idea and folk or cultural performances.",
@@ -105,18 +152,14 @@
       "tip": "Reach it from Girish Park metro."
     }
   },
-  "maniktala-chaltabagan": {
-    "info": "researched", "crowd": "high", "tags": ["theme"],
-    "blurb": "A Maniktala Puja next to Chaltabagan Lohapatty, known for award-winning decoration and folk dances.",
-    "tips": {
-      "expect": "Vibrant community-driven celebration with folk dance and decoration.",
-      "good": "It sits in a cluster of pandals, so you can hop on foot.",
-      "watch": "Possible overlap with Chaltabagan Lohapatty, depending on how you read the name. Check the exact address before you go.",
-      "tip": "Do it in the same walk as Bholanath Dham and Maniktala Saha Bari."
-    }
-  },
   "ahritola-sarbojanin": {
-    "info": "researched", "crowd": "medium", "tags": ["traditional", "heritage", "family"],
+    "info": "researched",
+    "crowd": "medium",
+    "tags": [
+      "traditional",
+      "heritage",
+      "family"
+    ],
     "blurb": "A century-old Puja near Ahiritola, known for classical dance, art exhibitions and a rich traditional setting.",
     "tips": {
       "expect": "A relatively simple pandal with traditional set-up and cultural programmes.",
@@ -126,7 +169,12 @@
     }
   },
   "tala-prattay": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic"
+    ],
     "blurb": "A historic North Kolkata Puja that marked its 100th year in 2025 with a theme conceptualised by the artist Bhabatosh Sutar.",
     "tips": {
       "expect": "A highly artistic, concept-led pandal with big crowds.",
@@ -136,7 +184,12 @@
     }
   },
   "dum-dum-park": {
-    "info": "researched", "crowd": "medium", "tags": ["family", "theme"],
+    "info": "researched",
+    "crowd": "medium",
+    "tags": [
+      "family",
+      "theme"
+    ],
     "blurb": "Dum Dum Park Tarun Sangha, known for colourful celebrations and folk performances, and for creative ideas such as a Byomkesh Bakshi theme in one recent year.",
     "tips": {
       "expect": "A lively, family-friendly Puja with cultural energy.",
@@ -146,7 +199,13 @@
     }
   },
   "shreebhumi-sporting-club": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy"
+    ],
     "blurb": "A palatial, big-theme Puja in Lake Town that regularly counts among the most visited in the city.",
     "tips": {
       "expect": "Huge sets, grand lighting, and very long queues.",
@@ -156,7 +215,12 @@
     }
   },
   "lalabagan-nabankur": {
-    "info": "inferred", "crowd": "medium", "tags": ["traditional", "quiet"],
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "traditional",
+      "quiet"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja in the Lalabagan area of North Kolkata.",
       "watch": "I found no reliable details, and the theme changes yearly.",
@@ -164,7 +228,11 @@
     }
   },
   "kalighat-milan-sangha": {
-    "info": "inferred", "crowd": "medium", "tags": ["family"],
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja near Kalighat, close to the temple and the metro.",
       "watch": "I couldn't find reliable details. Themes change each year.",
@@ -172,7 +240,11 @@
     }
   },
   "64-pally": {
-    "info": "inferred", "crowd": "medium", "tags": ["quiet"],
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "quiet"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja in the Kalighat area.",
       "watch": "I found no reliable details, and the exact spot on this map is approximate. It is separate from 66 Pally and 68 Pally.",
@@ -180,7 +252,12 @@
     }
   },
   "66-pally": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic"
+    ],
     "blurb": "A Kalighat-area club Puja that has featured Bengali-cuisine and regional-spice themes.",
     "tips": {
       "expect": "A creative, theme-led pandal, popular with crowds, with media events around it.",
@@ -190,7 +267,11 @@
     }
   },
   "68-pally": {
-    "info": "inferred", "crowd": "medium", "tags": ["quiet"],
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "quiet"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja near 64 and 66 Pally.",
       "watch": "I couldn't find reliable details.",
@@ -198,7 +279,12 @@
     }
   },
   "mudiali-club": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic"
+    ],
     "blurb": "A Kalighat club Puja known for pushing creative boundaries. One year's pandal was built as a monastery interior with ornamental prayer wheels.",
     "tips": {
       "expect": "An inventive, strongly designed pandal, usually with a full interior experience.",
@@ -208,7 +294,12 @@
     }
   },
   "tridhara-sammilani": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic"
+    ],
     "blurb": "A Kalighat Puja known for sculptural work, large mountain-like structures and a theme song each year.",
     "tips": {
       "expect": "Elaborate set-building with sculptural elements and sound design.",
@@ -218,7 +309,13 @@
     }
   },
   "deshapriya-park": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy"
+    ],
     "blurb": "A legendary Puja committee in the Kalighat area, known for a very large idol and a big-scale set.",
     "tips": {
       "expect": "One of South Kolkata's biggest draws, with huge queues and a large, imposing idol.",
@@ -228,7 +325,13 @@
     }
   },
   "ballygunge-cultural-association": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic", "date"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic",
+      "date"
+    ],
     "blurb": "A well-known club Puja that marked its 75th year in 2025, with a reputation for blending heritage and creative design.",
     "tips": {
       "expect": "A polished set in a leafy part of Ballygunge, with big crowds in the evening.",
@@ -238,7 +341,13 @@
     }
   },
   "singhi-park": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy"
+    ],
     "blurb": "One of the most famous Pujas in South Kolkata, celebrating its 84th year in 2025 and drawing thousands of visitors.",
     "tips": {
       "expect": "A very popular pandal with long queues and a strong idol.",
@@ -248,7 +357,13 @@
     }
   },
   "hindustan-park": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic", "date"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic",
+      "date"
+    ],
     "blurb": "A Gariahat Puja known for creative themes and for highlighting endangered folk arts. It is surrounded by some of the city's best-loved cafes.",
     "tips": {
       "expect": "Artistic, craft-driven sets in a neighbourhood that also has Sienna, Marbella's and Bunaphile.",
@@ -258,7 +373,14 @@
     }
   },
   "maddox-square": {
-    "info": "researched", "crowd": "high", "tags": ["traditional", "photogenic", "date", "late-night"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "traditional",
+      "photogenic",
+      "date",
+      "late-night"
+    ],
     "blurb": "Established in 1935 and a local institution for adda, with a classic ekchala idol in sabeki style. It is known for its lights and for being busy at any hour.",
     "tips": {
       "expect": "A lively park setting with food stalls and entertainment, popular with college crowds who call it 'the Thek' (the adda spot).",
@@ -268,7 +390,13 @@
     }
   },
   "dover-lane": {
-    "info": "researched", "crowd": "medium", "tags": ["theme", "photogenic", "date"],
+    "info": "researched",
+    "crowd": "medium",
+    "tags": [
+      "theme",
+      "photogenic",
+      "date"
+    ],
     "blurb": "A South Kolkata Puja with a name for creative themes, bamboo construction and an artistic idol, in a lane also known for its music festival.",
     "tips": {
       "expect": "A well-built set with fine architectural detail in a relatively calm lane.",
@@ -278,7 +406,12 @@
     }
   },
   "jadavpur-8b": {
-    "info": "inferred", "crowd": "medium", "tags": ["quiet", "family"],
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "quiet",
+      "family"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja by the Jadavpur 8B bus stand, popular with the university crowd.",
       "watch": "I found no reliable details. Themes change yearly.",
@@ -286,7 +419,13 @@
     }
   },
   "suruchi-sangha": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy"
+    ],
     "blurb": "One of South Kolkata's best-loved Pujas since 1952, with colourful, ambitious sets. Visitors often wait more than an hour to enter.",
     "tips": {
       "expect": "A riot of colour and light, with a long queue at peak times.",
@@ -296,7 +435,13 @@
     }
   },
   "ekdalia-evergreen": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy"
+    ],
     "blurb": "Founded in 1943 and one of South Kolkata's most popular Pujas, known for tall idols and eye-catching sets that recreate famous temples.",
     "tips": {
       "expect": "A tall, ornate idol in a large themed set, with a heavy crowd.",
@@ -306,7 +451,12 @@
     }
   },
   "aikatan": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet", "family"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet",
+      "family"
+    ],
     "tips": {
       "expect": "A local Jadavpur-area Puja.",
       "watch": "I couldn't find reliable details.",
@@ -314,7 +464,12 @@
     }
   },
   "alipore-78-pally": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet", "family"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet",
+      "family"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja in leafy Alipore, usually calmer than the clubs of Kalighat and Ballygunge.",
       "watch": "I found no reliable details.",
@@ -322,7 +477,12 @@
     }
   },
   "deshbandhu-park": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet", "family"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet",
+      "family"
+    ],
     "tips": {
       "expect": "An Alipore community Puja.",
       "watch": "I couldn't find reliable details.",
@@ -330,7 +490,12 @@
     }
   },
   "netaji-sangha": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet", "family"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet",
+      "family"
+    ],
     "tips": {
       "expect": "An Alipore community Puja.",
       "watch": "I found no reliable details. It is not Netaji Jatiya Sebadal, a separate and better-known pandal.",
@@ -338,7 +503,12 @@
     }
   },
   "alipore-sarbojanin": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet", "family"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet",
+      "family"
+    ],
     "tips": {
       "expect": "An Alipore Puja, possibly the same as one of the three Alipore pandals on your list.",
       "watch": "No reliable details found.",
@@ -346,7 +516,12 @@
     }
   },
   "kasba-14-pally": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet", "family"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet",
+      "family"
+    ],
     "tips": {
       "expect": "A neighbourhood Puja in Kasba, calmer than the main south circuit.",
       "watch": "I found no reliable details.",
@@ -354,7 +529,11 @@
     }
   },
   "natun-dal": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet"
+    ],
     "tips": {
       "expect": "A Kasba neighbourhood Puja.",
       "watch": "No reliable details found. Not the Behala Nutan Dal, which is a different club.",
@@ -362,7 +541,11 @@
     }
   },
   "udichi": {
-    "info": "inferred", "crowd": "low", "tags": ["quiet"],
+    "info": "inferred",
+    "crowd": "low",
+    "tags": [
+      "quiet"
+    ],
     "tips": {
       "expect": "A Kasba neighbourhood Puja.",
       "watch": "No reliable details found.",
@@ -370,7 +553,12 @@
     }
   },
   "bosepukur-sitala-mandir": {
-    "info": "researched", "crowd": "medium", "tags": ["theme", "traditional"],
+    "info": "researched",
+    "crowd": "medium",
+    "tags": [
+      "theme",
+      "traditional"
+    ],
     "blurb": "A Kasba Puja on the main road, around the Sitala Mandir, known for combining art, culture and devotion.",
     "tips": {
       "expect": "A well-organised pandal on a main street, with a devotional feel.",
@@ -380,7 +568,12 @@
     }
   },
   "chetla-agrani": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic"
+    ],
     "blurb": "A Chetla club Puja noted for very elaborate decoration. One year's idol was adorned with three crore rudraksha beads.",
     "tips": {
       "expect": "Ornate, ambitious sets in a part of the city that sees fewer visitors than Kalighat.",
@@ -390,7 +583,11 @@
     }
   },
   "badamtala-ashar-sangha": {
-    "info": "researched", "crowd": "high", "tags": ["theme"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme"
+    ],
     "blurb": "A Kalighat-area club with a history of socially minded themes, such as one about daily-wage workers. It won an award for creative excellence in 2010.",
     "tips": {
       "expect": "A concept-driven pandal with a social message.",
@@ -400,7 +597,12 @@
     }
   },
   "naktala-udayan-sangha": {
-    "info": "researched", "crowd": "high", "tags": ["theme", "photogenic"],
+    "info": "researched",
+    "crowd": "high",
+    "tags": [
+      "theme",
+      "photogenic"
+    ],
     "blurb": "An award-winning Naktala Puja that regularly earns praise for creative, vibrant presentation.",
     "tips": {
       "expect": "An inventive pandal that is a source of local pride.",
@@ -410,7 +612,13 @@
     }
   },
   "fd-block": {
-    "info": "researched", "crowd": "extreme", "tags": ["theme", "photogenic", "busy"],
+    "info": "researched",
+    "crowd": "extreme",
+    "tags": [
+      "theme",
+      "photogenic",
+      "busy"
+    ],
     "blurb": "One of the most popular Salt Lake Pujas, known for innovative themes and big-scale artwork. One recorded set featured a 48-foot fibreglass idol against artificial Kailash mountains.",
     "tips": {
       "expect": "Large themed sets and big crowds in Sector 3.",
@@ -420,7 +628,12 @@
     }
   },
   "bj-block": {
-    "info": "researched", "crowd": "medium", "tags": ["traditional", "photogenic"],
+    "info": "researched",
+    "crowd": "medium",
+    "tags": [
+      "traditional",
+      "photogenic"
+    ],
     "blurb": "A Salt Lake Puja with a reputation for a classic Durga Puja experience, with a focus on preserving Bengali art forms.",
     "tips": {
       "expect": "A more traditional pandal with a beautifully made idol and detailed decoration.",
@@ -429,12 +642,100 @@
       "tip": "A calm Salt Lake stop."
     }
   },
-  "ak-block": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A Salt Lake community Puja in Sector 2.", "watch": "I found no reliable details.", "tip": "Salt Lake blocks are close to each other by cab, but distances add up on foot." } },
-  "ae-block": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A Salt Lake community Puja in Sector 1.", "watch": "I found no reliable details.", "tip": "Combine with AB, BJ and CE blocks nearby." } },
-  "ab-block": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A Salt Lake community Puja in Sector 1.", "watch": "I couldn't find reliable details.", "tip": "Combine with AE and BJ blocks." } },
-  "ib-block": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A Salt Lake community Puja in Sector 3.", "watch": "I found no reliable details.", "tip": "Pair with FD and FE blocks in Sector 3." } },
-  "gd-block": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A Salt Lake community Puja in Sector 3.", "watch": "I couldn't find reliable details.", "tip": "Pair with FD and IB blocks." } },
-  "fe-block": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A Salt Lake community Puja in Sector 3.", "watch": "I found no reliable details.", "tip": "Pair with FD and IB blocks." } },
-  "ce-block": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A Salt Lake community Puja in Sector 1.", "watch": "I found no reliable details.", "tip": "Combine with AE, AB and BJ blocks." } },
-  "laboni-estate": { "info": "inferred", "crowd": "medium", "tags": ["family"], "tips": { "expect": "A housing-estate community Puja in Salt Lake.", "watch": "I found no reliable details.", "tip": "A calm option with easy parking." } }
+  "ak-block": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A Salt Lake community Puja in Sector 2.",
+      "watch": "I found no reliable details.",
+      "tip": "Salt Lake blocks are close to each other by cab, but distances add up on foot."
+    }
+  },
+  "ae-block": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A Salt Lake community Puja in Sector 1.",
+      "watch": "I found no reliable details.",
+      "tip": "Combine with AB, BJ and CE blocks nearby."
+    }
+  },
+  "ab-block": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A Salt Lake community Puja in Sector 1.",
+      "watch": "I couldn't find reliable details.",
+      "tip": "Combine with AE and BJ blocks."
+    }
+  },
+  "ib-block": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A Salt Lake community Puja in Sector 3.",
+      "watch": "I found no reliable details.",
+      "tip": "Pair with FD and FE blocks in Sector 3."
+    }
+  },
+  "gd-block": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A Salt Lake community Puja in Sector 3.",
+      "watch": "I couldn't find reliable details.",
+      "tip": "Pair with FD and IB blocks."
+    }
+  },
+  "fe-block": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A Salt Lake community Puja in Sector 3.",
+      "watch": "I found no reliable details.",
+      "tip": "Pair with FD and IB blocks."
+    }
+  },
+  "ce-block": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A Salt Lake community Puja in Sector 1.",
+      "watch": "I found no reliable details.",
+      "tip": "Combine with AE, AB and BJ blocks."
+    }
+  },
+  "laboni-estate": {
+    "info": "inferred",
+    "crowd": "medium",
+    "tags": [
+      "family"
+    ],
+    "tips": {
+      "expect": "A housing-estate community Puja in Salt Lake.",
+      "watch": "I found no reliable details.",
+      "tip": "A calm option with easy parking."
+    }
+  }
 }

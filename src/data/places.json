@@ -2237,7 +2237,7 @@
    "quiet",
    "family"
   ],
-  "notes": "Google Maps only shows a Deshbandhu Park pandal in Shyambazar (north). Confirm which one you mean before routing.",
+  "notes": "No Deshbandhu Park pandal was found in Alipore on Google Maps (the link given resolved to Jharkhand). A Deshbandhu Park exists in Shyambazar (north). Confirm which one you mean.",
   "needsReview": true,
   "info": "inferred",
   "crowd": "low",
@@ -2589,7 +2589,10 @@
   "name": {
    "en": "Kumartuli Park"
   },
-  "aliases": [],
+  "aliases": [
+   "Kumartuli Sarbojanin",
+   "Kumartuli Park Sarbojanin"
+  ],
   "zones": [
    "north"
   ],
@@ -2618,88 +2621,6 @@
   "snapshotAt": "2026-10-05",
   "rating": 4.6,
   "ratingCount": 59
- },
- {
-  "id": "kumartuli-sarbojanin",
-  "slug": "kumartuli-sarbojanin",
-  "category": "pandal",
-  "name": {
-   "en": "Kumartuli Sarbojanin"
-  },
-  "aliases": [],
-  "zones": [
-   "north"
-  ],
-  "region": "north",
-  "area": "kumartuli",
-  "lat": 22.60111,
-  "lng": 88.36179,
-  "coordConfidence": "area",
-  "metro": [
-   "Shobhabazar Sutanuti"
-  ],
-  "tags": [
-   "traditional",
-   "heritage"
-  ],
-  "notes": "Google Maps only lists Kumartuli Park for this area; this may be the same pandal. Confirm.",
-  "needsReview": true,
-  "info": "researched",
-  "crowd": "high",
-  "tips": {
-   "expect": "A neighbourhood Puja in the idol-makers' quarter, with a strong sense of craft.",
-   "good": "The idols here are made a few lanes away, and often by the family running the Puja.",
-   "watch": "Narrow, crowded lanes.",
-   "tip": "Go with Kumartuli Park, Baghbazar and Ahiritola in one walk."
-  },
-  "snapshotAt": "2026-10-05",
-  "rating": 4.5,
-  "ratingCount": 6640,
-  "photo": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkhKe-gpix8oCzbhOlM5STDmK4soMgPvuxU5Etn5t5KAepP5pmV4kennm1reUnCC4cIdqjql4aANlDOBBas1zgbx4Z7LbEai2uGzRUdByGYakBFLjessjzjjs1Y-mnaRZl3oP8IHw=w480-h320-k-no",
-  "hours": [
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ]
-  ]
  },
  {
   "id": "kashi-bose-lane",
@@ -2791,13 +2712,16 @@
   "name": {
    "en": "Chaltabagan Lohapatty"
   },
-  "aliases": [],
+  "aliases": [
+   "Maniktala Chaltabagan",
+   "Maniktala Chaltabagan Lohapatty"
+  ],
   "zones": [
    "north"
   ],
   "region": "north",
   "area": "chaltabagan",
-  "lat": 22.585,
+  "lat": 22.58489,
   "lng": 88.37215,
   "coordConfidence": "verified",
   "metro": [
@@ -2807,8 +2731,6 @@
    "theme",
    "photogenic"
   ],
-  "notes": "Google Maps shows a single Maniktala Chaltabagan Lohapatty committee, so this and Maniktala Chaltabagan are probably one pandal.",
-  "needsReview": true,
   "info": "researched",
   "crowd": "high",
   "blurb": "A multi-award-winning North Kolkata Puja, rooted in eco-awareness with renewable lighting and artistic shows.",
@@ -2822,87 +2744,6 @@
   "rating": 4.6,
   "ratingCount": 204,
   "photo": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmduVQbt1RyPUjZ3j2jeDSW_nkI3jwH02zcHTvchk2CZ5CRvShGJUuB5iQyEOBNq6K6b3xO-tgmK7s5gq_2ZhA3V5k0wPmdXaxQUSh1k3ju7g8oNQl01PjRRB4eI6e3tjigaHcT=w480-h320-k-no",
-  "hours": [
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ],
-   [
-    [
-     0,
-     1440
-    ]
-   ]
-  ]
- },
- {
-  "id": "maniktala-chaltabagan",
-  "slug": "maniktala-chaltabagan",
-  "category": "pandal",
-  "name": {
-   "en": "Maniktala Chaltabagan"
-  },
-  "aliases": [],
-  "zones": [
-   "north"
-  ],
-  "region": "north",
-  "area": "maniktala",
-  "lat": 22.58478,
-  "lng": 88.37215,
-  "coordConfidence": "verified",
-  "metro": [
-   "Girish Park"
-  ],
-  "tags": [
-   "theme"
-  ],
-  "notes": "Probably the same pandal as Chaltabagan Lohapatty (one listing on Google Maps).",
-  "needsReview": true,
-  "info": "researched",
-  "crowd": "high",
-  "blurb": "A Maniktala Puja next to Chaltabagan Lohapatty, known for award-winning decoration and folk dances.",
-  "tips": {
-   "expect": "Vibrant community-driven celebration with folk dance and decoration.",
-   "good": "It sits in a cluster of pandals, so you can hop on foot.",
-   "watch": "Possible overlap with Chaltabagan Lohapatty, depending on how you read the name. Check the exact address before you go.",
-   "tip": "Do it in the same walk as Bholanath Dham and Maniktala Saha Bari."
-  },
-  "snapshotAt": "2026-10-05",
-  "rating": 4.6,
-  "ratingCount": 204,
   "hours": [
    [
     [

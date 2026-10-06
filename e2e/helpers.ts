@@ -37,7 +37,9 @@ export async function expandSheet(page: Page) {
 /** Opens the app and waits until the list is interactive. */
 export async function openApp(page: Page, path = "/", opts: { expand?: boolean } = {}) {
   await page.goto(path);
-  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  // A place deep link opens straight onto the detail view, which has no app title.
+  const landing = path.includes("place=") ? page.locator("article").getByRole("heading", { level: 2 }) : page.getByRole("heading", { level: 1 });
+  await expect(landing).toBeVisible();
   if (opts.expand !== false) await expandSheet(page);
 }
 

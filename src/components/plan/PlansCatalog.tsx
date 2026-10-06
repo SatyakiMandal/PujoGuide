@@ -1,6 +1,6 @@
 "use client";
 
-import { CaretDown, CalendarBlank, Clock, MagicWand, MapTrifold, Plus, Sparkle, Users } from "@phosphor-icons/react";
+import { CaretDown, CalendarBlank, Clock, MagicWand, MapTrifold, PencilSimple, Plus, Sparkle, Users } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { Chip } from "@/components/ui/Chip";
@@ -25,6 +25,30 @@ export function PlansCatalog({ onDone, hasRoute }: { onDone: () => void; hasRout
 
   return (
     <div className="space-y-4">
+      {/* Custom Route Builder Banner */}
+      <div className="flex items-center justify-between gap-3 rounded-2xl border-2 border-dashed border-primary/40 bg-surface p-3.5 shadow-xs">
+        <div className="min-w-0">
+          <span className="block font-display text-sm font-bold text-fg">
+            Custom Route Builder
+          </span>
+          <span className="block text-xs text-muted">
+            Build your own itinerary from scratch by searching pandals &amp; food spots
+          </span>
+        </div>
+        <motion.button
+          type="button"
+          whileTap={{ scale: 0.94 }}
+          onClick={() => {
+            useUI.getState().setStops([]);
+            useUI.getState().setTab("plan");
+            onDone();
+          }}
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-primary px-3.5 py-2 text-xs font-bold text-primary-fg shadow-xs"
+        >
+          <PencilSimple size={15} weight="bold" /> Build Custom Route
+        </motion.button>
+      </div>
+
       <div className="space-y-1">
         <h2 className="font-display text-lg font-semibold">
           {view === "auto"

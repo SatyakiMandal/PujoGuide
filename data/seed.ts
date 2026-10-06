@@ -207,7 +207,7 @@ pandal("Aikatan", ["jadavpur"], "jadavpur");
 // Alipore
 pandal("Alipore 78 Pally", ["alipore"], "alipore");
 pandal("Deshbandhu Park", ["alipore"], "alipore", {
-  notes: "Google Maps only shows a Deshbandhu Park pandal in Shyambazar (north). Confirm which one you mean before routing.",
+  notes: "No Deshbandhu Park pandal was found in Alipore on Google Maps (the link given resolved to Jharkhand). A Deshbandhu Park exists in Shyambazar (north). Confirm which one you mean.",
   review: true,
 });
 pandal("Netaji Sangha", ["alipore"], "alipore");
@@ -220,20 +220,9 @@ pandal("Udichi", ["kasba"], "kasba");
 // North Kolkata
 pandal("Baghbazar Sarbojanin", ["north"], "baghbazar");
 pandal("Hatibagan Sarbojanin", ["north"], "hatibagan");
-pandal("Kumartuli Park", ["north"], "kumartuli");
-pandal("Kumartuli Sarbojanin", ["north"], "kumartuli", {
-  notes: "Google Maps only lists Kumartuli Park for this area; this may be the same pandal. Confirm.",
-  review: true,
-});
+pandal("Kumartuli Park", ["north"], "kumartuli", { aliases: ["Kumartuli Sarbojanin", "Kumartuli Park Sarbojanin"] });
 pandal("Kashi Bose Lane", ["north"], "baghbazar", { notes: INFERRED, review: true });
-pandal("Chaltabagan Lohapatty", ["north"], "chaltabagan", {
-  notes: "Google Maps shows a single Maniktala Chaltabagan Lohapatty committee, so this and Maniktala Chaltabagan are probably one pandal.",
-  review: true,
-});
-pandal("Maniktala Chaltabagan", ["north"], "maniktala", {
-  notes: "Probably the same pandal as Chaltabagan Lohapatty (one listing on Google Maps).",
-  review: true,
-});
+pandal("Chaltabagan Lohapatty", ["north"], "chaltabagan", { aliases: ["Maniktala Chaltabagan", "Maniktala Chaltabagan Lohapatty"] });
 pandal("Ahritola Sarbojanin", ["north"], "ahiritola", { aliases: ["Ahiritola Sarbojanin"] });
 pandal("Tala Prattay", ["north"], "tala");
 pandal("Dum Dum Park", ["north"], "dumdum_park");

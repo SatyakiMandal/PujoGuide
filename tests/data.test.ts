@@ -8,7 +8,7 @@ const all = places.map((p) => placeSchema.parse(p));
 describe("places data", () => {
   it("matches the de-duplicated source list counts", () => {
     expect(all.filter((p) => p.category === "bonedi_bari")).toHaveLength(25);
-    expect(all.filter((p) => p.category === "pandal")).toHaveLength(54);
+    expect(all.filter((p) => p.category === "pandal")).toHaveLength(52);
   });
 
   it("has unique slugs and ids", () => {
@@ -162,6 +162,10 @@ describe("Google Maps snapshot, hours and picks", () => {
     expect(by.get("pathuriaghata-rajbari")!.coordConfidence).toBe("verified");
     expect(by.get("khelat-ghosh-babu-bari")).toBeUndefined(); // merged into Pathuriaghata Rajbari
     expect(by.get("jorasanko-daw-bari")).toBeUndefined(); // merged into Shib Krishna Daw Bari
+    expect(by.get("maniktala-chaltabagan")).toBeUndefined(); // same committee as Chaltabagan Lohapatty
+    expect(by.get("kumartuli-sarbojanin")).toBeUndefined(); // same pandal as Kumartuli Park
+    expect(by.get("chaltabagan-lohapatty")!.aliases).toContain("Maniktala Chaltabagan");
+    expect(by.get("kumartuli-park")!.aliases).toContain("Kumartuli Sarbojanin");
     expect(by.get("darjipara-mitra-bari")).toBeDefined();
     expect(by.get("nilmani-mitra-bari")).toBeDefined(); // a separate stop, not a duplicate
     const d = by.get("darjipara-mitra-bari")!;

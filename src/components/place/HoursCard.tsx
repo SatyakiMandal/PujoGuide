@@ -89,7 +89,7 @@ export function HoursCard({ place }: { place: Place }) {
                   <tr key={name} className={clsx(today && "font-semibold")}>
                     <th scope="row" className="py-0.5 pr-3 text-left font-normal">
                       {name.slice(0, 3)}
-                      {fest && <span className="ml-1.5 text-[11px] text-accent">{fest}</span>}
+                      {fest && <span className="ml-1.5 text-[11px] text-primary">{fest}</span>}
                     </th>
                     <td className="py-0.5 text-right tabular-nums">{fmtWindows(shown.hours![i])}</td>
                   </tr>
