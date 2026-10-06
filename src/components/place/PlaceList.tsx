@@ -2,7 +2,7 @@
 
 import { PlaceIcon } from "@/lib/placeIcon";
 import { AnimatePresence, motion } from "motion/react";
-import { Check, Plus } from "@phosphor-icons/react";
+import { Check, Heart, Plus } from "@phosphor-icons/react";
 import { CATEGORY_META } from "@/lib/categories";
 import { zoneName } from "@/lib/data";
 import type { Place } from "@/lib/schema";
@@ -33,7 +33,7 @@ export function PlaceList({ list }: { list: Place[] }) {
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.22, delay: Math.min(index * 0.02, 0.2) }}
             >
-              <div className="group flex items-center rounded-2xl border border-line/60 bg-surface p-1 transition-all hover:border-line hover:bg-surface2">
+              <div className="group flex items-center gap-1 rounded-2xl border border-line/60 bg-surface p-1 transition-all hover:border-line hover:bg-surface2">
                 <button
                   type="button"
                   onClick={() => select(p.slug)}
@@ -67,13 +67,34 @@ export function PlaceList({ list }: { list: Place[] }) {
                     </span>
                   </span>
                 </button>
-                <AddButton slug={p.slug} name={p.name.en} />
+                <div className="flex items-center gap-1 pr-1">
+                  <SaveButton slug={p.slug} name={p.name.en} />
+                  <AddButton slug={p.slug} name={p.name.en} />
+                </div>
               </div>
             </motion.li>
           );
         })}
       </AnimatePresence>
     </ul>
+  );
+}
+
+function SaveButton({ slug, name }: { slug: string; name: string }) {
+  const saved = useUI((s) => s.saved.includes(slug));
+  return (
+    <motion.button
+      type="button"
+      whileTap={{ scale: 0.88 }}
+      aria-label={saved ? `Remove ${name} from saved` : `Save ${name}`}
+      aria-pressed={saved}
+      onClick={() => useUI.getState().toggleSaved(slug)}
+      className={`grid size-9 shrink-0 place-items-center rounded-full border transition-colors ${
+        saved ? "border-transparent bg-primary/15 text-primary" : "border-line/60 bg-surface text-muted hover:text-fg hover:bg-surface2"
+      }`}
+    >
+      <Heart size={16} weight={saved ? "fill" : "bold"} />
+    </motion.button>
   );
 }
 
@@ -86,11 +107,11 @@ function AddButton({ slug, name }: { slug: string; name: string }) {
       aria-label={inRoute ? `Remove ${name} from route` : `Add ${name} to route`}
       aria-pressed={inRoute}
       onClick={() => (inRoute ? useUI.getState().removeStop(slug) : useUI.getState().addStop(slug))}
-      className={`mr-1.5 grid size-10 shrink-0 place-items-center rounded-full border transition-colors ${
+      className={`grid size-9 shrink-0 place-items-center rounded-full border transition-colors ${
         inRoute ? "border-transparent bg-primary text-primary-fg" : "border-line bg-surface text-fg hover:bg-surface2"
       }`}
     >
-      {inRoute ? <Check size={18} weight="bold" /> : <Plus size={18} weight="bold" />}
+      {inRoute ? <Check size={16} weight="bold" /> : <Plus size={16} weight="bold" />}
     </motion.button>
   );
 }
