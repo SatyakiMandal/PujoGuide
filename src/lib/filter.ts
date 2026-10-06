@@ -79,7 +79,14 @@ function passesFacets(p: Place, f: FilterState, mine?: Mine, now?: Clock): boole
  * Highlight mode renders visible places and dims the unmatched; Filter mode renders only matched.
  */
 export function applyFilters(places: Place[], f: FilterState, searchIds: Set<string> | null, mine?: Mine, now?: Clock) {
-  const visible = places.filter((p) => f.layers.includes(p.category) && (f.showClosed || !p.closed));
+  const visible = places.filter((p) => {
+    if (!f.showClosed && p.closed) return false;
+    if (f.personal && mine) {
+      if (f.personal === "saved" && mine.saved.has(p.slug)) return true;
+      if (f.personal === "visited" && mine.visited.has(p.slug)) return true;
+    }
+    return f.layers.includes(p.category);
+  });
   const matched = new Set(
     visible
       .filter((p) => passesFacets(p, f, mine, now) && (searchIds === null || searchIds.has(p.id)))

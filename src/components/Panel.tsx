@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
+import { CheckCircle, Heart, MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
 import { FilterGroups, FilterToggle } from "@/components/filters/Filters";
 import { PlaceDetail } from "@/components/place/PlaceDetail";
 import { PlanView } from "@/components/plan/PlanView";
@@ -26,7 +26,9 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
   const { list, matched, visibleCount } = useFiltered();
   const { query, mode, selected, filters, tab } = useUI();
   const stopCount = useUI((s) => s.route.stops.length);
-  const { setQuery, setMode, toggleLayer, setTab, select } = useUI.getState();
+  const savedCount = useUI((s) => s.saved.length);
+  const visitedCount = useUI((s) => s.visited.length);
+  const { setQuery, setMode, toggleLayer, setTab, select, setPersonal } = useUI.getState();
   const [filtersOpen, setFiltersOpen] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
   const place = selected ? placeBySlug.get(selected) : undefined;
@@ -170,6 +172,24 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
         )}
 
         <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0">
+          {savedCount > 0 && (
+            <Chip
+              active={filters.personal === "saved"}
+              onClick={() => setPersonal(filters.personal === "saved" ? null : "saved")}
+            >
+              <Heart size={16} weight={filters.personal === "saved" ? "fill" : "duotone"} className="text-primary" />
+              Saved ({savedCount})
+            </Chip>
+          )}
+          {visitedCount > 0 && (
+            <Chip
+              active={filters.personal === "visited"}
+              onClick={() => setPersonal(filters.personal === "visited" ? null : "visited")}
+            >
+              <CheckCircle size={16} weight={filters.personal === "visited" ? "fill" : "duotone"} className="text-emerald-500" />
+              Visited ({visitedCount})
+            </Chip>
+          )}
           {CATEGORIES.map((c) => {
             const meta = CATEGORY_META[c];
             const Icon = meta.icon;
