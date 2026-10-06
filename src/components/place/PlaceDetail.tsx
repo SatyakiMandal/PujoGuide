@@ -28,6 +28,7 @@ import { PlaceIcon } from "@/lib/placeIcon";
 import { isFood, type Crowd, type Place } from "@/lib/schema";
 import { findNearbyEats } from "@/lib/route/geo";
 import { useUI } from "@/store/ui";
+import { findNearestAmenity } from "@/lib/amenities";
 import { clsx } from "clsx";
 import { HoursCard } from "./HoursCard";
 import { MenuCard } from "./MenuCard";
@@ -230,6 +231,8 @@ export function PlaceDetail({ place: p }: { place: Place }) {
       <MenuCard place={p} />
 
       <NearbyEatsCard spot={p} />
+
+      <NearbyAmenitiesCard place={p} />
 
       {tipRows.length > 0 && (
         <section className="space-y-3 rounded-2xl border border-line bg-surface p-4">
@@ -447,6 +450,82 @@ function NearbyEatsCard({ spot }: { spot: Place }) {
             </motion.button>
           </div>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function NearbyAmenitiesCard({ place }: { place: Place }) {
+  const toilet = findNearestAmenity(place.lat, place.lng, "toilet");
+  const police = findNearestAmenity(place.lat, place.lng, "police_booth");
+
+  if (!toilet && !police) return null;
+
+  return (
+    <section className="space-y-2.5 rounded-2xl border border-line bg-surface p-4">
+      <div className="flex items-center justify-between">
+        <h3 className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted">
+          <span>🚽</span> Nearby Public Amenities
+        </h3>
+        <button
+          type="button"
+          onClick={() => useUI.getState().setEssentials(true)}
+          className="text-xs font-semibold text-primary hover:underline"
+        >
+          View all
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 gap-2 text-xs">
+        {toilet && (
+          <div className="flex items-center justify-between rounded-xl border border-line/60 bg-surface2 p-2.5">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="text-base">🚽</span>
+              <div className="min-w-0">
+                <b className="block truncate font-semibold">{toilet.amenity.name}</b>
+                <span className="text-[11px] text-muted">
+                  {toilet.distanceKm < 1
+                    ? `${Math.round(toilet.distanceKm * 1000)} m away`
+                    : `${toilet.distanceKm.toFixed(1)} km away`}{" "}
+                  · {toilet.amenity.area}
+                </span>
+              </div>
+            </div>
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${toilet.amenity.lat},${toilet.amenity.lng}`}
+              target="_blank"
+              rel="noreferrer"
+              className="shrink-0 rounded-lg bg-primary/10 px-2.5 py-1 text-[11px] font-bold text-primary hover:bg-primary/20"
+            >
+              Directions
+            </a>
+          </div>
+        )}
+
+        {police && (
+          <div className="flex items-center justify-between rounded-xl border border-line/60 bg-surface2 p-2.5">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="text-base">👮</span>
+              <div className="min-w-0">
+                <b className="block truncate font-semibold">{police.amenity.name}</b>
+                <span className="text-[11px] text-muted">
+                  {police.distanceKm < 1
+                    ? `${Math.round(police.distanceKm * 1000)} m away`
+                    : `${police.distanceKm.toFixed(1)} km away`}{" "}
+                  · {police.amenity.area}
+                </span>
+              </div>
+            </div>
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${police.amenity.lat},${police.amenity.lng}`}
+              target="_blank"
+              rel="noreferrer"
+              className="shrink-0 rounded-lg bg-primary/10 px-2.5 py-1 text-[11px] font-bold text-primary hover:bg-primary/20"
+            >
+              Directions
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

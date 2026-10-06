@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { CheckCircle, Heart, MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
+import { CaretDown, CaretUp, CheckCircle, Heart, MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
 import { FilterGroups, FilterToggle } from "@/components/filters/Filters";
 import { PlaceDetail } from "@/components/place/PlaceDetail";
 import { PlanView } from "@/components/plan/PlanView";
@@ -30,6 +30,7 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
   const visitedCount = useUI((s) => s.visited.length);
   const { setQuery, setMode, toggleLayer, setTab, select, setPersonal } = useUI.getState();
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [filterSectionCollapsed, setFilterSectionCollapsed] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
   const place = selected ? placeBySlug.get(selected) : undefined;
 
@@ -150,78 +151,126 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
           )}
         </label>
 
-        {!query && (
-          <div className="flex flex-wrap items-center gap-1.5 text-xs">
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-muted">Try:</span>
-            {[
-              ["Bonedi Bari", "bonedi bari"],
-              ["North Kolkata", "North Kolkata"],
-              ["Pure Veg", "veg"],
-              ["College Street", "College Street"],
-            ].map(([label, q]) => (
+        {filterSectionCollapsed ? (
+          <div className="flex items-center justify-between rounded-2xl border border-line bg-surface p-2.5 text-xs">
+            <span className="font-semibold text-muted">
+              Filters collapsed · {filters.layers.length} categories active
+            </span>
+            <div className="flex items-center gap-1.5">
               <button
-                key={q}
                 type="button"
-                onClick={() => setQuery(q)}
-                className="rounded-full border border-line/70 bg-surface2/60 px-2.5 py-0.5 text-xs text-muted transition-colors hover:bg-surface2 hover:text-fg"
+                onClick={() => useUI.getState().setEssentials(true)}
+                className="rounded-full border border-line/80 bg-surface2 px-2.5 py-1 font-semibold text-fg hover:bg-surface2/80"
               >
-                {label}
+                🚽 Amenities
               </button>
-            ))}
+              <button
+                type="button"
+                onClick={() => setFilterSectionCollapsed(false)}
+                className="flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 font-bold text-primary hover:bg-primary/20"
+              >
+                <span>Expand</span>
+                <CaretDown size={14} weight="bold" />
+              </button>
+            </div>
           </div>
+        ) : (
+          <>
+            {!query && (
+              <div className="flex flex-wrap items-center gap-1.5 text-xs">
+                <span className="text-[11px] font-semibold uppercase tracking-wider text-muted">Try:</span>
+                {[
+                  ["Bonedi Bari", "bonedi bari"],
+                  ["North Kolkata", "North Kolkata"],
+                  ["Pure Veg", "veg"],
+                  ["College Street", "College Street"],
+                ].map(([label, q]) => (
+                  <button
+                    key={q}
+                    type="button"
+                    onClick={() => setQuery(q)}
+                    className="rounded-full border border-line/70 bg-surface2/60 px-2.5 py-0.5 text-xs text-muted transition-colors hover:bg-surface2 hover:text-fg"
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0">
+              {savedCount > 0 && (
+                <Chip
+                  active={filters.personal === "saved"}
+                  onClick={() => setPersonal(filters.personal === "saved" ? null : "saved")}
+                >
+                  <Heart size={16} weight={filters.personal === "saved" ? "fill" : "duotone"} className="text-primary" />
+                  Saved ({savedCount})
+                </Chip>
+              )}
+              {visitedCount > 0 && (
+                <Chip
+                  active={filters.personal === "visited"}
+                  onClick={() => setPersonal(filters.personal === "visited" ? null : "visited")}
+                >
+                  <CheckCircle size={16} weight={filters.personal === "visited" ? "fill" : "duotone"} className="text-emerald-500" />
+                  Visited ({visitedCount})
+                </Chip>
+              )}
+              {CATEGORIES.map((c) => {
+                const meta = CATEGORY_META[c];
+                const Icon = meta.icon;
+                return (
+                  <Chip key={c} color={meta.cssVar} active={filters.layers.includes(c)} onClick={() => toggleLayer(c)}>
+                    <Icon size={17} weight="duotone" /> {meta.plural}
+                  </Chip>
+                );
+              })}
+            </div>
+
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <FilterToggle open={filtersOpen} onToggle={() => setFiltersOpen((o) => !o)} />
+                <button
+                  type="button"
+                  onClick={() => useUI.getState().setEssentials(true)}
+                  className="inline-flex min-h-9 items-center gap-1 rounded-full border border-line bg-surface px-3 text-sm font-medium hover:bg-surface2"
+                >
+                  <span>🚽</span> Amenities
+                </button>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <div role="radiogroup" aria-label="How filters apply" className="flex rounded-full border border-line bg-surface p-0.5">
+                  {MODES.map((m) => (
+                    <button
+                      key={m.id}
+                      type="button"
+                      role="radio"
+                      aria-checked={mode === m.id}
+                      title={m.hint}
+                      onClick={() => setMode(m.id)}
+                      className={clsx(
+                        "min-h-8 rounded-full px-3 text-sm font-medium transition-colors",
+                        mode === m.id ? "bg-fg text-bg" : "text-muted hover:text-fg",
+                      )}
+                    >
+                      {m.label}
+                    </button>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setFilterSectionCollapsed(true)}
+                  aria-label="Collapse filters section"
+                  title="Collapse filters section"
+                  className="grid size-9 shrink-0 place-items-center rounded-full border border-line bg-surface text-muted hover:bg-surface2 hover:text-fg active:scale-95"
+                >
+                  <CaretUp size={16} weight="bold" />
+                </button>
+              </div>
+            </div>
+          </>
         )}
-
-        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0">
-          {savedCount > 0 && (
-            <Chip
-              active={filters.personal === "saved"}
-              onClick={() => setPersonal(filters.personal === "saved" ? null : "saved")}
-            >
-              <Heart size={16} weight={filters.personal === "saved" ? "fill" : "duotone"} className="text-primary" />
-              Saved ({savedCount})
-            </Chip>
-          )}
-          {visitedCount > 0 && (
-            <Chip
-              active={filters.personal === "visited"}
-              onClick={() => setPersonal(filters.personal === "visited" ? null : "visited")}
-            >
-              <CheckCircle size={16} weight={filters.personal === "visited" ? "fill" : "duotone"} className="text-emerald-500" />
-              Visited ({visitedCount})
-            </Chip>
-          )}
-          {CATEGORIES.map((c) => {
-            const meta = CATEGORY_META[c];
-            const Icon = meta.icon;
-            return (
-              <Chip key={c} color={meta.cssVar} active={filters.layers.includes(c)} onClick={() => toggleLayer(c)}>
-                <Icon size={17} weight="duotone" /> {meta.plural}
-              </Chip>
-            );
-          })}
-        </div>
-
-        <div className="flex items-center justify-between gap-3">
-          <FilterToggle open={filtersOpen} onToggle={() => setFiltersOpen((o) => !o)} />
-          <div role="radiogroup" aria-label="How filters apply" className="flex rounded-full border border-line bg-surface p-0.5">
-            {MODES.map((m) => (
-              <button
-                key={m.id}
-                type="button"
-                role="radio"
-                aria-checked={mode === m.id}
-                title={m.hint}
-                onClick={() => setMode(m.id)}
-                className={clsx(
-                  "min-h-8 rounded-full px-3 text-sm font-medium transition-colors",
-                  mode === m.id ? "bg-fg text-bg" : "text-muted hover:text-fg",
-                )}
-              >
-                {m.label}
-              </button>
-            ))}
-          </div>
-        </div>
           </>
         )}
       </div>
