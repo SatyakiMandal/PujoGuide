@@ -139,11 +139,11 @@ export function PlaceDetail({ place: p }: { place: Place }) {
         <p className="text-sm text-muted">{p.zones.map((z) => zoneName.get(z)).join(" · ")}</p>
       </header>
 
-      {p.theme && (
-        <div className="space-y-1.5 rounded-2xl border border-purple-500/30 bg-purple-500/5 p-4 shadow-xs">
+      {(p.theme || p.artist || (p.awards && p.awards.length > 0)) && (
+        <div className="space-y-2 rounded-2xl border border-purple-500/30 bg-purple-500/5 p-4 shadow-xs">
           <div className="flex items-center justify-between gap-2">
             <span className="text-xs font-semibold uppercase tracking-wider text-purple-700 dark:text-purple-300">
-              ✨ 2026 Pandal Theme
+              ✨ 2026 Pandal Theme &amp; Artistry
             </span>
             {p.opensOn && (
               <span className="rounded-full bg-purple-500/20 px-2.5 py-0.5 text-[11px] font-bold text-purple-800 dark:text-purple-200 capitalize">
@@ -151,7 +151,29 @@ export function PlaceDetail({ place: p }: { place: Place }) {
               </span>
             )}
           </div>
-          <h3 className="font-display text-lg font-bold text-fg">{p.theme}</h3>
+          {p.theme && <h3 className="font-display text-lg font-bold text-fg">{p.theme}</h3>}
+          {p.artist && (
+            <div className="flex items-center gap-1.5 text-xs text-purple-900 dark:text-purple-200 font-medium">
+              <span>🎨 <b className="font-semibold">Artist / Designer:</b> {p.artist}</span>
+            </div>
+          )}
+          {p.awards && p.awards.length > 0 && (
+            <div className="pt-1.5 space-y-1">
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400 block">
+                🏆 Accolades &amp; Awards
+              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {p.awards.map((award) => (
+                  <span
+                    key={award}
+                    className="rounded-lg border border-amber-500/30 bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium text-amber-900 dark:text-amber-200"
+                  >
+                    🏆 {award}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
           {(p.pushpanjali || p.peakHours) && (
             <div className="grid grid-cols-2 gap-2 pt-1 text-xs">
               {p.pushpanjali && (

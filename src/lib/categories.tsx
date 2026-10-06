@@ -32,6 +32,8 @@ export const CUISINE_LABEL: Record<Cuisine, string> = {
 
 export const VIBE_LABEL: Record<Vibe, string> = {
   heritage: "Heritage",
+  classic: "Classic",
+  fine_dining: "Fine dining",
   adda: "Adda",
   family: "Family",
   quick_bite: "Quick bite",

@@ -171,6 +171,7 @@ type Research = Partial<{
   openLate: boolean; closed: boolean; dishes: string[]; tips: Place["tips"]; crowd: Place["crowd"]; blurb: string;
   info: Place["info"]; aliases: string[]; category: Place["category"];
   menu: Place["menu"]; menuSources: string[]; mustTry: Place["mustTry"]; pureVeg: boolean; checkedAt: string;
+  theme: string; artist: string; awards: string[]; opensOn: Place["opensOn"]; peakHours: string; pushpanjali: string; sourceNote: string;
 }>;
 const researchFiles = existsSync("data/research") ? readdirSync("data/research").filter((f) => f.endsWith(".json")).sort() : [];
 const bySlug = new Map(places.map((p) => [p.slug, p]));

@@ -64,6 +64,11 @@ export function PlaceList({ list }: { list: Place[] }) {
                             ✨ {p.theme}
                           </span>
                         )}
+                        {p.awards && p.awards.length > 0 && (
+                          <span className="shrink-0 rounded-md bg-amber-500/15 px-1.5 py-0.5 text-[10px] font-semibold text-amber-800 dark:text-amber-300">
+                            🏆 Awarded
+                          </span>
+                        )}
                         {p.source === "curated" && (
                           <span className="shrink-0 rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-amber-700 dark:text-amber-400">
                             ★ Best-of

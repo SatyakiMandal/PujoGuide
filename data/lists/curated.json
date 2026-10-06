@@ -1,846 +1,1815 @@
 [
- {
-  "slug": "raa-bistro",
-  "name": "Raa Bistro",
-  "lat": 22.5439535,
-  "lng": 88.365612,
-  "category": "cafe",
-  "cuisines": [
-   "coffee",
-   "continental"
-  ],
-  "vibes": [
-   "aesthetic",
-   "quick_bite"
-  ],
-  "tags": [
-   "quiet",
-   "date"
-  ],
-  "blurb": "A new cafe in Park Circus with a relaxed vibe, elegant interiors and a comforting menu of coffee and hearty bites.",
-  "tips": {
-   "expect": "A calm, stylish coffee stop.",
-   "tip": "Handy between the Central and South Kolkata circuits."
+  {
+    "slug": "raa-bistro",
+    "name": "Raa Bistro",
+    "lat": 22.5439535,
+    "lng": 88.365612,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "continental"
+    ],
+    "vibes": [
+      "aesthetic",
+      "quick_bite"
+    ],
+    "tags": [
+      "quiet",
+      "date"
+    ],
+    "blurb": "A new cafe in Park Circus with a relaxed vibe, elegant interiors and a comforting menu of coffee and hearty bites.",
+    "tips": {
+      "expect": "A calm, stylish coffee stop.",
+      "tip": "Handy between the Central and South Kolkata circuits."
+    }
+  },
+  {
+    "slug": "ampm-park-street",
+    "name": "AMPM (Park Street)",
+    "lat": 22.5510022,
+    "lng": 88.3539198,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "continental"
+    ],
+    "vibes": [
+      "bar",
+      "adda",
+      "aesthetic"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "openLate": true,
+    "blurb": "A Park Street cafe by day that turns into a bar by night. Named Best Bar in Kolkata and ranked No. 12 on the 30 Best Bars India list.",
+    "dishes": [
+      "Before PM Martini (Bengali chilli liqueur, tequila, espresso)",
+      "Park Street Negroni with coffee-infused whisky"
+    ],
+    "tips": {
+      "expect": "A seamless day-to-night format with live energy after dark.",
+      "good": "The coffee-led cocktails.",
+      "tip": "A good Park Street stop before or after the Central pandals."
+    }
+  },
+  {
+    "slug": "the-bhawanipur-house",
+    "name": "The Bhawanipur House",
+    "lat": 22.5261802,
+    "lng": 88.347769,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "continental"
+    ],
+    "vibes": [
+      "aesthetic",
+      "family"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "blurb": "An all-day cafe in Bhowanipore that won Best All Day Cafe at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "A comfortable all-day sit-down.",
+      "tip": "Close to the Bhowanipore and Kalighat routes."
+    }
+  },
+  {
+    "slug": "cafe-icanflyy",
+    "name": "ICanFlyy Tea Kafi",
+    "lat": 22.5256483,
+    "lng": 88.3544626,
+    "category": "cafe",
+    "cuisines": [
+      "coffee"
+    ],
+    "vibes": [
+      "aesthetic",
+      "quick_bite"
+    ],
+    "tags": [
+      "quiet",
+      "photogenic"
+    ],
+    "blurb": "A tea and coffee cafe run by staff with special needs, with exposed brick walls and motivational quotes.",
+    "dishes": [
+      "BBQ spicy chicken poppers",
+      "Cheese pots",
+      "Chicken cheese maggi"
+    ],
+    "tips": {
+      "expect": "A small, warm, feel-good cafe.",
+      "tip": "Near Ballygunge, so easy to add to the Gariahat and Ballygunge pandals."
+    }
+  },
+  {
+    "slug": "travelistan",
+    "name": "Travelistan Cafe",
+    "lat": 22.4923536,
+    "lng": 88.3602764,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "continental"
+    ],
+    "vibes": [
+      "aesthetic",
+      "adda"
+    ],
+    "tags": [
+      "photogenic"
+    ],
+    "blurb": "A travel-themed cafe at Golf Green with a world-map ceiling and Tintin characters on the walls.",
+    "tips": {
+      "expect": "A playful, themed room for a long chat.",
+      "watch": "It is on the far south side, so plan it with the Jadavpur and Naktala pandals."
+    }
+  },
+  {
+    "slug": "artsy-cafe",
+    "name": "Artsy - Coffee & Culture",
+    "lat": 22.5406023,
+    "lng": 88.3537885,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "continental"
+    ],
+    "vibes": [
+      "aesthetic"
+    ],
+    "tags": [
+      "photogenic",
+      "date",
+      "quiet"
+    ],
+    "blurb": "Billed as Kolkata's first art cafe: whitewashed walls hung with artworks, an indoor faux gazebo and a European-piazza feel.",
+    "tips": {
+      "expect": "Pretty and calm, good for photos.",
+      "tip": "A quiet pause on the Bhowanipore side."
+    }
+  },
+  {
+    "slug": "perimas",
+    "name": "Perima's",
+    "lat": 22.5370862,
+    "lng": 88.3575411,
+    "category": "restaurant",
+    "cuisines": [
+      "south_indian"
+    ],
+    "vibes": [
+      "aesthetic",
+      "quick_bite"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "blurb": "A fun-dining bistro rooted in South Indian flavours.",
+    "dishes": [
+      "Sabakki-Moz Vada",
+      "Maddur Falafel",
+      "Uttapam Tacos",
+      "Banana Doffle",
+      "Filter Kappi"
+    ],
+    "tips": {
+      "expect": "Playful South Indian plates.",
+      "tip": "A light change from rich Puja food."
+    }
+  },
+  {
+    "slug": "park-street-social",
+    "name": "Park Street SOCIAL",
+    "lat": 22.5541859,
+    "lng": 88.3509684,
+    "category": "restaurant",
+    "cuisines": [
+      "continental",
+      "north_indian"
+    ],
+    "vibes": [
+      "bar",
+      "adda",
+      "late_night"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "openLate": true,
+    "blurb": "A lively all-day cafe-bar on Park Street with a creative menu and co-working-meets-cafe energy.",
+    "tips": {
+      "expect": "Busy and social, loud on weekends.",
+      "tip": "On the Park Street strip with AMPM, Mocambo and Trincas."
+    }
+  },
+  {
+    "slug": "mintelaa",
+    "name": "Mintelaa - By the Air",
+    "lat": 22.5853181,
+    "lng": 88.4043166,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "family",
+      "aesthetic"
+    ],
+    "tags": [
+      "foodie",
+      "date"
+    ],
+    "priceLevel": 3,
+    "blurb": "A Salt Lake Sector 1 restaurant that won Best Fine Dining and Best All Day Cafe at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "A polished sit-down meal.",
+      "watch": "Book ahead on Puja weekends.",
+      "tip": "A good dinner after the Salt Lake block pandals."
+    }
+  },
+  {
+    "slug": "sonar-tori",
+    "name": "Sonar Tori (Salt Lake)",
+    "lat": 22.5882831,
+    "lng": 88.4086044,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "family",
+      "heritage"
+    ],
+    "tags": [
+      "foodie",
+      "family"
+    ],
+    "blurb": "A Salt Lake Bengali restaurant that won Best Bengali Food Experience at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "A proper Bengali sit-down meal.",
+      "tip": "Close to the Salt Lake pandals."
+    }
+  },
+  {
+    "slug": "oh-calcutta",
+    "name": "Oh! Calcutta",
+    "lat": 22.5380508,
+    "lng": 88.3512716,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "family",
+      "heritage"
+    ],
+    "tags": [
+      "foodie",
+      "family"
+    ],
+    "blurb": "A well-known Bengali restaurant at Forum Mall on Elgin Road, among the city's top-rated restaurants.",
+    "tips": {
+      "expect": "Refined Bengali food in a mall setting.",
+      "watch": "Mall hours apply, and it fills up on Puja weekends.",
+      "tip": "Handy for the Elgin Road and Bhowanipore side."
+    }
+  },
+  {
+    "slug": "bhojohori-manna-ballygunge",
+    "name": "Bhojohori Manna (Ballygunge)",
+    "lat": 22.5203221,
+    "lng": 88.3610458,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "family"
+    ],
+    "tags": [
+      "foodie",
+      "family"
+    ],
+    "priceLevel": 2,
+    "blurb": "The Ballygunge outlet of the Bengali chain that won Taste of Bengal at the Kolkata EazyDiner Foodie Awards 2026. About ₹390 a head on Google.",
+    "tips": {
+      "expect": "Reliable home-style Bengali plates.",
+      "tip": "A practical lunch near the Gariahat and Ballygunge pandals."
+    }
+  },
+  {
+    "slug": "kasturi-restaurant",
+    "name": "Kasturi Food Plaza",
+    "lat": 22.5243736,
+    "lng": 88.3686398,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "family",
+      "quick_bite"
+    ],
+    "tags": [
+      "foodie",
+      "family"
+    ],
+    "blurb": "Kasturi Food Plaza in Ballygunge, listed among the best Bengali restaurants for home-style thalis and Bangladeshi cooking.",
+    "tips": {
+      "expect": "A busy, no-frills Bengali meal.",
+      "tip": "Near Gariahat."
+    }
+  },
+  {
+    "slug": "calcutta-nostalgia",
+    "name": "Calcutta Nostalgia",
+    "lat": 22.5103164,
+    "lng": 88.346911,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "family",
+      "heritage"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "blurb": "A Bengali restaurant near Mudiali and Lake Market, listed among the best Bengali restaurants.",
+    "tips": {
+      "expect": "Old-Calcutta flavours.",
+      "tip": "Close to Mudiali Club and the Kalighat pandals."
+    }
+  },
+  {
+    "slug": "allen-kitchen",
+    "name": "Allen Kitchen",
+    "lat": 22.5943014,
+    "lng": 88.3649571,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "heritage",
+      "family",
+      "quick_bite"
+    ],
+    "tags": [
+      "heritage",
+      "foodie"
+    ],
+    "blurb": "A long-standing Bengali eatery in North Kolkata, rated about 4.3 from nearly 2,800 reviews.",
+    "tips": {
+      "expect": "Straightforward Bengali food.",
+      "tip": "A natural meal stop on the Baghbazar and Hatibagan circuit."
+    }
+  },
+  {
+    "slug": "dilkhusha-cabin",
+    "name": "Dilkhusha Cabin",
+    "lat": 22.5767561,
+    "lng": 88.3643244,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "heritage",
+      "adda",
+      "quick_bite"
+    ],
+    "tags": [
+      "heritage"
+    ],
+    "blurb": "An old-style cabin eatery by College Street.",
+    "tips": {
+      "expect": "A no-frills cabin from old Calcutta.",
+      "tip": "Pair it with the College Street baris and the Indian Coffee House."
+    }
+  },
+  {
+    "slug": "kwality-park-street",
+    "name": "Kwality (Park Street)",
+    "lat": 22.5539963,
+    "lng": 88.3517969,
+    "category": "restaurant",
+    "cuisines": [
+      "north_indian",
+      "mughlai"
+    ],
+    "vibes": [
+      "heritage",
+      "family"
+    ],
+    "tags": [
+      "heritage",
+      "family"
+    ],
+    "blurb": "Kwality on Park Street, an old-school Indian restaurant (Google lists it as a heritage Indian restaurant).",
+    "tips": {
+      "expect": "Classic North Indian and Mughlai plates.",
+      "tip": "On the Park Street stretch."
+    }
+  },
+  {
+    "slug": "mocambo",
+    "name": "Mocambo",
+    "lat": 22.5532545,
+    "lng": 88.3531098,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "heritage",
+      "family",
+      "bar"
+    ],
+    "tags": [
+      "heritage",
+      "foodie"
+    ],
+    "blurb": "A Park Street classic, named in the Conde Nast India x District Top Restaurant Awards 2025. Rated about 4.3 from over 17,000 reviews.",
+    "tips": {
+      "expect": "A retro dining room and bar.",
+      "watch": "Very popular. Book for Puja evenings.",
+      "tip": "Part of the Park Street cluster."
+    }
+  },
+  {
+    "slug": "shiraz-golden-restaurant",
+    "name": "Shiraz Golden Restaurant",
+    "lat": 22.5467154,
+    "lng": 88.3618794,
+    "category": "restaurant",
+    "cuisines": [
+      "biryani",
+      "mughlai"
+    ],
+    "vibes": [
+      "family",
+      "heritage"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "blurb": "A Mughlai restaurant at Park Circus, rated about 4.1 from nearly 9,000 reviews.",
+    "tips": {
+      "expect": "A busy Mughlai and biryani meal.",
+      "tip": "A Park Circus stop between the central and south circuits."
+    }
+  },
+  {
+    "slug": "zeeshan",
+    "name": "Zeeshan",
+    "lat": 22.5414472,
+    "lng": 88.3659858,
+    "category": "restaurant",
+    "cuisines": [
+      "mughlai"
+    ],
+    "vibes": [
+      "family",
+      "quick_bite"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "blurb": "A Mughlai restaurant at Park Circus, rated about 4.0 from nearly 5,000 reviews.",
+    "tips": {
+      "expect": "Quick, filling Mughlai food.",
+      "tip": "Near Shiraz and Park Circus."
+    }
+  },
+  {
+    "slug": "pa-pa-ya",
+    "name": "PaPaYa Modern Asian Bistro",
+    "lat": 22.5510131,
+    "lng": 88.3532113,
+    "category": "restaurant",
+    "cuisines": [
+      "asian"
+    ],
+    "vibes": [
+      "aesthetic",
+      "bar"
+    ],
+    "tags": [
+      "foodie",
+      "date"
+    ],
+    "blurb": "PaPaYa, a modern Asian bistro on Park Street that won Best Sushi at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "Polished pan-Asian plates and sushi.",
+      "tip": "On Park Street."
+    }
+  },
+  {
+    "slug": "yauatcha",
+    "name": "Yauatcha Kolkata",
+    "lat": 22.5389882,
+    "lng": 88.3656083,
+    "category": "restaurant",
+    "cuisines": [
+      "asian"
+    ],
+    "vibes": [
+      "aesthetic",
+      "family"
+    ],
+    "tags": [
+      "foodie",
+      "date"
+    ],
+    "priceLevel": 3,
+    "blurb": "A dim sum restaurant at Quest Mall that won Best Pan-Asian at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "Upscale dim sum and Asian plates.",
+      "watch": "Mall hours apply.",
+      "tip": "Combine with the Ballygunge pandals."
+    }
+  },
+  {
+    "slug": "someplace-else",
+    "name": "Someplace Else",
+    "lat": 22.5541543,
+    "lng": 88.3518671,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "bar",
+      "adda",
+      "late_night"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "openLate": true,
+    "blurb": "A pub at The Park on Park Street, known for rock and live music.",
+    "tips": {
+      "expect": "A classic Park Street pub night.",
+      "tip": "Part of the Park Street bar strip."
+    }
+  },
+  {
+    "slug": "roots-chowringhee",
+    "name": "Roots (Chowringhee)",
+    "lat": 22.5428065,
+    "lng": 88.3476774,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "rooftop",
+      "bar",
+      "adda"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "openLate": true,
+    "blurb": "A rooftop pub on Chowringhee that won Best Rooftop Bar at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "A rooftop drinks-and-bites crowd.",
+      "tip": "Close to Elgin Road and the Esplanade end of the Central circuit."
+    }
+  },
+  {
+    "slug": "glook-the-sky-lounge",
+    "name": "Glook The Sky Lounge",
+    "lat": 22.5824412,
+    "lng": 88.4624293,
+    "category": "restaurant",
+    "cuisines": [
+      "continental",
+      "north_indian"
+    ],
+    "vibes": [
+      "rooftop",
+      "bar",
+      "aesthetic"
+    ],
+    "tags": [
+      "date"
+    ],
+    "blurb": "A sky lounge that won Best View at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "City views from a rooftop lounge.",
+      "watch": "It is out in New Town, away from the main Puja circuits.",
+      "tip": "Only worth it if you are already out that way."
+    }
+  },
+  {
+    "slug": "ambrosia-restaurant-and-bar",
+    "name": "Ambrosia Bar and Restaurant",
+    "lat": 22.5900053,
+    "lng": 88.4112629,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "bar",
+      "aesthetic"
+    ],
+    "tags": [
+      "date"
+    ],
+    "openLate": true,
+    "blurb": "A Salt Lake bar and restaurant that won Best Cocktail Bar at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "Cocktails in a polished setting.",
+      "tip": "A Salt Lake evening stop after the block pandals."
+    }
+  },
+  {
+    "slug": "la-soiree",
+    "name": "La Soirée Kolkata",
+    "lat": 22.540745,
+    "lng": 88.352095,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "bar",
+      "aesthetic"
+    ],
+    "tags": [
+      "date"
+    ],
+    "openLate": true,
+    "blurb": "A new fine-dining and lounge space in Bhowanipore that won Best Cocktail Bar at the Kolkata EazyDiner Foodie Awards 2026.",
+    "tips": {
+      "expect": "A stylish lounge and cocktails.",
+      "tip": "A drink on the Bhowanipore side."
+    }
+  },
+  {
+    "slug": "little-bit-sober",
+    "name": "Little Bit Sober",
+    "lat": 22.5403118,
+    "lng": 88.3472843,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "bar",
+      "aesthetic"
+    ],
+    "tags": [
+      "date"
+    ],
+    "openLate": true,
+    "blurb": "A Bhowanipore cocktail bar that builds drinks around Bengal ingredients such as gondhoraj lemon and nolen gur.",
+    "tips": {
+      "expect": "Local-flavour cocktails.",
+      "tip": "Near Bhowanipore."
+    }
+  },
+  {
+    "slug": "the-junction-alipore",
+    "name": "The Junction (Alipore)",
+    "lat": 22.5376736,
+    "lng": 88.3343253,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "bar",
+      "heritage"
+    ],
+    "tags": [
+      "heritage"
+    ],
+    "openLate": true,
+    "blurb": "A historic Alipore whisky bar with rare single malts and a British-era feel.",
+    "tips": {
+      "expect": "A quiet, old-school whisky bar.",
+      "watch": "Only a few reviews (about 60), so check before you go.",
+      "tip": "Near the Alipore pandals."
+    }
+  },
+  {
+    "slug": "olterra",
+    "name": "Olterra (Park Street)",
+    "lat": 22.5523227,
+    "lng": 88.3525956,
+    "category": "restaurant",
+    "cuisines": [
+      "continental"
+    ],
+    "vibes": [
+      "bar",
+      "adda",
+      "aesthetic"
+    ],
+    "tags": [
+      "foodie"
+    ],
+    "openLate": true,
+    "blurb": "An artisanal brewery and cocktail bar on Park Street with Greek-myth decor. Rated about 4.8 from over 2,700 reviews.",
+    "tips": {
+      "expect": "Craft beer and cocktails in a showy room.",
+      "tip": "On the Park Street strip."
+    }
+  },
+  {
+    "slug": "sen-mahasay",
+    "name": "Sen Mahasay",
+    "lat": 22.5986591,
+    "lng": 88.373027,
+    "category": "sweets",
+    "cuisines": [
+      "mishti"
+    ],
+    "vibes": [
+      "quick_bite",
+      "heritage"
+    ],
+    "tags": [
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "A North Kolkata sweet shop rated about 4.3 from over 900 reviews.",
+    "tips": {
+      "expect": "Counter-service mishti.",
+      "tip": "A sweet stop on the Hatibagan and Maniktala side."
+    }
+  },
+  {
+    "slug": "girish-chandra-dey-nakur-chandra-nandy",
+    "name": "Girish Ch. Dey & Nakur Ch. Nandy",
+    "lat": 22.5877111,
+    "lng": 88.3673613,
+    "category": "sweets",
+    "cuisines": [
+      "mishti"
+    ],
+    "vibes": [
+      "quick_bite",
+      "heritage"
+    ],
+    "tags": [
+      "heritage",
+      "foodie"
+    ],
+    "priceLevel": 1,
+    "blurb": "A famous Bagbazar sweet shop, rated about 4.6 from nearly 11,000 reviews.",
+    "tips": {
+      "expect": "Classic Bengali sweets.",
+      "good": "The very high rating from many reviewers.",
+      "tip": "Slot it into the Baghbazar and Kumartuli loop."
+    }
+  },
+  {
+    "slug": "putiram",
+    "name": "Putiram Sweets",
+    "lat": 22.5740341,
+    "lng": 88.3635836,
+    "category": "sweets",
+    "cuisines": [
+      "mishti",
+      "street_food"
+    ],
+    "vibes": [
+      "quick_bite",
+      "heritage"
+    ],
+    "tags": [
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "Putiram Sweets on College Street, rated about 4.3 from nearly 4,000 reviews.",
+    "tips": {
+      "expect": "A busy counter with sweets and savouries.",
+      "tip": "Pair with College Square and the Indian Coffee House."
+    }
+  },
+  {
+    "slug": "bhim-chandra-nag",
+    "name": "Bhim Chandra Nag",
+    "lat": 22.5688804,
+    "lng": 88.3602721,
+    "category": "sweets",
+    "cuisines": [
+      "mishti"
+    ],
+    "vibes": [
+      "quick_bite",
+      "heritage"
+    ],
+    "tags": [
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "A traditional mishti shop in Bowbazar, rated about 4.4.",
+    "tips": {
+      "expect": "Classic sandesh-and-sweets counter.",
+      "tip": "Near the Central heritage circuit."
+    }
+  },
+  {
+    "slug": "balaram-mullick-radharaman-mullick",
+    "name": "Balaram Mullick & Radharaman Mullick",
+    "lat": 22.5331411,
+    "lng": 88.3470082,
+    "category": "sweets",
+    "cuisines": [
+      "mishti"
+    ],
+    "vibes": [
+      "quick_bite",
+      "heritage"
+    ],
+    "tags": [
+      "heritage",
+      "foodie"
+    ],
+    "priceLevel": 1,
+    "blurb": "A Bhowanipore mishti institution that won Best Mishti at the Kolkata EazyDiner Foodie Awards 2026. Rated about 4.3 from nearly 9,700 reviews.",
+    "tips": {
+      "expect": "A long-standing sweet shop.",
+      "tip": "Near the Bhowanipore and Kalighat routes."
+    }
+  },
+  {
+    "slug": "behala-club",
+    "name": "Behala Club",
+    "lat": 22.4985,
+    "lng": 88.3182,
+    "category": "pandal",
+    "tags": [
+      "theme",
+      "photogenic",
+      "south"
+    ],
+    "blurb": "A major South-West Kolkata pandal in Behala known for thought-provoking artistic direction by Bhabatosh Sutar.",
+    "tips": {
+      "expect": "Immersive artistic installation and massive crowds.",
+      "tip": "Combine with Behala Nutan Sangha."
+    }
+  },
+  {
+    "slug": "behala-nutan-sangha",
+    "name": "Behala Nutan Sangha",
+    "lat": 22.4962,
+    "lng": 88.3145,
+    "category": "pandal",
+    "tags": [
+      "theme",
+      "artistic",
+      "south"
+    ],
+    "blurb": "Famous Behala pandal showcasing installations by Sanatan Dinda and social thematic concepts.",
+    "tips": {
+      "expect": "Thoughtful theme design and vibrant evening lights.",
+      "tip": "Located in the Behala pandal cluster."
+    }
+  },
+  {
+    "slug": "selimpur-club",
+    "name": "Selimpur Club",
+    "lat": 22.5085,
+    "lng": 88.3682,
+    "category": "pandal",
+    "tags": [
+      "theme",
+      "photogenic",
+      "south"
+    ],
+    "blurb": "A prominent Dhakuria pandal known for its intricate architectural themes and innovative lighting arrangements.",
+    "tips": {
+      "expect": "Grand architectural artwork and vibrant illumination.",
+      "tip": "Close to Babubagan Sarbojanin."
+    }
+  },
+  {
+    "slug": "babubagan-sarbojanin",
+    "name": "Babubagan Sarbojanin",
+    "lat": 22.5098,
+    "lng": 88.3695,
+    "category": "pandal",
+    "tags": [
+      "theme",
+      "heritage",
+      "south"
+    ],
+    "blurb": "Famous Dhakuria pandal celebrated for creating themes using antique collectibles, coin art, and ceramic craft.",
+    "tips": {
+      "expect": "Intricate detail work and long entry queues.",
+      "tip": "Near Dhakuria railway station."
+    }
+  },
+  {
+    "slug": "dum-dum-park-tarun-sangha",
+    "name": "Dum Dum Park Tarun Sangha",
+    "lat": 22.6055,
+    "lng": 88.4068,
+    "category": "pandal",
+    "tags": [
+      "theme",
+      "photogenic",
+      "north"
+    ],
+    "blurb": "A top North Kolkata destination in Dum Dum Park featuring elaborate handicraft themes and artistic light designs.",
+    "tips": {
+      "expect": "Vibrant handicraft artwork and crowded avenues.",
+      "tip": "Part of the Dum Dum Park circuit."
+    }
+  },
+  {
+    "slug": "kc-das-esplanade",
+    "name": "K.C. Das (Esplanade)",
+    "lat": 22.5645,
+    "lng": 88.3518,
+    "category": "sweets",
+    "cuisines": [
+      "mishti"
+    ],
+    "vibes": [
+      "heritage",
+      "quick_bite"
+    ],
+    "tags": [
+      "heritage",
+      "pure_veg"
+    ],
+    "priceLevel": 1,
+    "blurb": "The legendary sweet shop where Nobin Chandra Das's legacy birthed the Kolkata Rossogolla. A landmark opposite Esplanade Mansion.",
+    "dishes": [
+      "Rossogolla",
+      "Rajbhog",
+      "Mishti Doi",
+      "Kachori Alur Dom"
+    ],
+    "tips": {
+      "expect": "Classic sweet shop counter.",
+      "tip": "Right by Esplanade Metro Station."
+    }
+  },
+  {
+    "slug": "nahoum-and-sons",
+    "name": "Nahoum & Sons",
+    "lat": 22.5606,
+    "lng": 88.3524,
+    "category": "sweets",
+    "cuisines": [
+      "bakery",
+      "dessert"
+    ],
+    "vibes": [
+      "heritage",
+      "classic"
+    ],
+    "tags": [
+      "heritage",
+      "foodie"
+    ],
+    "priceLevel": 2,
+    "blurb": "A 120-year-old Jewish bakery in New Market with original teakwood showcases, famous for rich fruit cake, lemon tarts, and rum balls.",
+    "dishes": [
+      "Rich Fruit Cake",
+      "Lemon Tart",
+      "Brownies",
+      "Baklava"
+    ],
+    "tips": {
+      "expect": "Old-world charm and queue during festive seasons.",
+      "tip": "Located inside New Market main block."
+    }
+  },
+  {
+    "slug": "anand-restaurant-chandni",
+    "name": "Anand Restaurant",
+    "lat": 22.5678,
+    "lng": 88.3541,
+    "category": "restaurant",
+    "cuisines": [
+      "south_indian"
+    ],
+    "vibes": [
+      "heritage",
+      "family",
+      "quick_bite"
+    ],
+    "tags": [
+      "pure_veg",
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "A revered Central Kolkata pure vegetarian institution serving authentic South Indian tiffins, crisp rava dosas, and filter coffee.",
+    "dishes": [
+      "Rava Masala Dosa",
+      "Filter Coffee",
+      "Idli Vada Combo",
+      "Special Paper Dosa"
+    ],
+    "tips": {
+      "expect": "Bustling family atmosphere and quick service.",
+      "tip": "Near Chandni Chowk Metro Station."
+    }
+  },
+  {
+    "slug": "govindas-iskcon-camac-street",
+    "name": "Govinda's (ISKCON)",
+    "lat": 22.5412,
+    "lng": 88.3532,
+    "category": "restaurant",
+    "cuisines": [
+      "north_indian",
+      "bengali"
+    ],
+    "vibes": [
+      "family",
+      "classic"
+    ],
+    "tags": [
+      "pure_veg",
+      "family"
+    ],
+    "priceLevel": 2,
+    "blurb": "Pure sattvic vegetarian dining operated by ISKCON on Gurusaday Road, offering wholesome thalis, paneer delicacies, and pure ghee sweets.",
+    "dishes": [
+      "Sattvic Special Thali",
+      "Paneer Butter Masala",
+      "Kheer",
+      "Pure Veg Biryani"
+    ],
+    "tips": {
+      "expect": "Peaceful atmosphere and strictly vegetarian/onion-garlic-free food.",
+      "tip": "Near Beckbagan / Park Circus connector."
+    }
+  },
+  {
+    "slug": "chitto-babur-dokan-dacres-lane",
+    "name": "Chitto Babur Dokan (Dacres Lane)",
+    "lat": 22.5689,
+    "lng": 88.3521,
+    "category": "street_food",
+    "cuisines": [
+      "street_food"
+    ],
+    "vibes": [
+      "heritage",
+      "quick_bite"
+    ],
+    "tags": [
+      "street_food",
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "The legendary street food stall in Dacres Lane (James Hickey Sarani) famous for buttered chicken stew, buttered toast, and fried cutlets.",
+    "dishes": [
+      "Chicken Stew with Butter Toast",
+      "Fish Fry",
+      "Mutton Cutlet"
+    ],
+    "tips": {
+      "expect": "Busy alleyway street food stall with high turnaround.",
+      "tip": "Best visited during day hours in Esplanade."
+    }
+  },
+  {
+    "slug": "oudh-1590-deshapriya-park",
+    "name": "Oudh 1590 (Deshapriya Park)",
+    "lat": 22.5215,
+    "lng": 88.3578,
+    "category": "restaurant",
+    "cuisines": [
+      "mughlai",
+      "biryani"
+    ],
+    "vibes": [
+      "fine_dining",
+      "classic"
+    ],
+    "tags": [
+      "foodie",
+      "family"
+    ],
+    "priceLevel": 3,
+    "blurb": "Kolkata's pioneer period dining restaurant featuring royal Awadhi recipes, brassware, classical sitar music, and melt-in-mouth kebabs.",
+    "dishes": [
+      "Raan Biryani",
+      "Murgh Parda Biryani",
+      "Galawati Kebab",
+      "Shahi Tukda"
+    ],
+    "tips": {
+      "expect": "Royal Awadhi decor and aromatic Dum Biryani.",
+      "tip": "Opposite Priya Cinema at Deshapriya Park."
+    }
+  },
+  {
+    "slug": "nalin-chandra-das-hedua",
+    "name": "Nalin Chandra Das & Sons",
+    "lat": 22.5852,
+    "lng": 88.3685,
+    "category": "sweets",
+    "cuisines": [
+      "mishti"
+    ],
+    "vibes": [
+      "heritage",
+      "quick_bite"
+    ],
+    "tags": [
+      "pure_veg",
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "A 175-year-old North Kolkata sweet maker famed for inventing Chocolate Sandesh and crafting iconic Jolbhora Talsas Sandesh.",
+    "dishes": [
+      "Jolbhora Sandesh",
+      "Chocolate Sandesh",
+      "Aam Sandesh",
+      "Kancha Golla"
+    ],
+    "tips": {
+      "expect": "Authentic North Kolkata mishti shop.",
+      "tip": "Located near Hedua Park."
+    }
+  },
+  {
+    "slug": "chowman-golf-green",
+    "name": "Chowman (Golf Green)",
+    "lat": 22.4935,
+    "lng": 88.3612,
+    "category": "restaurant",
+    "cuisines": [
+      "chinese",
+      "asian"
+    ],
+    "vibes": [
+      "family",
+      "classic"
+    ],
+    "tags": [
+      "family",
+      "foodie"
+    ],
+    "priceLevel": 2,
+    "blurb": "The flagship outlet of Kolkata's favorite neighborhood Chinese chain, offering red-and-black cozy ambience and Chinese classics.",
+    "dishes": [
+      "Chowman Special Noodles",
+      "Drums of Heaven",
+      "Kung Pao Chicken",
+      "Manchow Soup"
+    ],
+    "tips": {
+      "expect": "Cozy neighborhood Chinese dining.",
+      "tip": "Near Golf Green park."
+    }
+  },
+  {
+    "slug": "kasturi-free-school-street",
+    "name": "Kasturi (Free School Street)",
+    "lat": 22.5562,
+    "lng": 88.3548,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "classic",
+      "family"
+    ],
+    "tags": [
+      "bengali",
+      "foodie"
+    ],
+    "priceLevel": 2,
+    "blurb": "Pioneer of authentic Dhakai Bengali cuisine in Kolkata, famous for Kochu Pata Chingri Bhapa and aromatic Kanti dishes.",
+    "dishes": [
+      "Kochu Pata Chingri Bhapa",
+      "Bhetki Paturi",
+      "Jhuri Aloo Bhaja",
+      "Kosha Mangsho"
+    ],
+    "tips": {
+      "expect": "Rich Bangladeshi Bengali flavors.",
+      "tip": "On Mirza Ghalib Street / Free School Street."
+    }
+  },
+  {
+    "slug": "tung-fong-park-street",
+    "name": "Tung Fong (Park Street)",
+    "lat": 22.5532,
+    "lng": 88.3528,
+    "category": "restaurant",
+    "cuisines": [
+      "chinese"
+    ],
+    "vibes": [
+      "family",
+      "classic"
+    ],
+    "tags": [
+      "family",
+      "foodie"
+    ],
+    "priceLevel": 2,
+    "blurb": "A Park Street staple for classic Tangra-style Chinese and lunch buffets, serving dim sums, Szechwan specials, and sizzling platters.",
+    "dishes": [
+      "Dim Sum Basket",
+      "Szechwan Prawns",
+      "Crispy Chilli Lamb",
+      "Chicken Hakka Noodles"
+    ],
+    "tips": {
+      "expect": "Generous portions and prompt family service.",
+      "tip": "Situated right on Park Street."
+    }
+  },
+  {
+    "slug": "sharma-tea-house-bhowanipore",
+    "name": "Sharma Tea House (Bhowanipore)",
+    "lat": 22.5358,
+    "lng": 88.3475,
+    "category": "street_food",
+    "cuisines": [
+      "street_food",
+      "north_indian"
+    ],
+    "vibes": [
+      "heritage",
+      "quick_bite"
+    ],
+    "tags": [
+      "pure_veg",
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "Famous South Kolkata Marwari breakfast joint serving hot piping Club Kachoris, crisp Jalebis, and saffron kulhad chai.",
+    "dishes": [
+      "Club Kachori with Alur Dom",
+      "Hot Jalebi",
+      "Kesariya Kulhad Chai",
+      "Kesar Rabri"
+    ],
+    "tips": {
+      "expect": "Bustling morning crowd standing around hot wok counters.",
+      "tip": "Near Exide / Rabindra Sadan Metro."
+    }
+  },
+  {
+    "slug": "maharani-kachori-deshapriya-park",
+    "name": "Maharani & Maharaja (Deshapriya Park)",
+    "lat": 22.5208,
+    "lng": 88.3582,
+    "category": "street_food",
+    "cuisines": [
+      "street_food"
+    ],
+    "vibes": [
+      "quick_bite",
+      "heritage"
+    ],
+    "tags": [
+      "pure_veg",
+      "street_food"
+    ],
+    "priceLevel": 1,
+    "blurb": "Twin legendary eateries at Lake Market / Deshapriya Park corner, renowned for early morning Hing Kachori, Jalebi, and chai.",
+    "dishes": [
+      "Hing Kachori with Chholar Dal",
+      "Crispy Jalebi",
+      "Malai Tea",
+      "Samosa"
+    ],
+    "tips": {
+      "expect": "Classic South Kolkata morning breakfast hub.",
+      "tip": "Near Deshapriya Park pandal circuit."
+    }
+  },
+  {
+    "slug": "bedwin-gariahata",
+    "name": "Bedwin (Gariahat)",
+    "lat": 22.5188,
+    "lng": 88.3652,
+    "category": "street_food",
+    "cuisines": [
+      "rolls",
+      "mughlai"
+    ],
+    "vibes": [
+      "quick_bite"
+    ],
+    "tags": [
+      "street_food",
+      "foodie"
+    ],
+    "priceLevel": 1,
+    "blurb": "A South Kolkata institution near Gariahat crossing famous for flaky Kathi Rolls, Moghlai Parathas, and Biryani.",
+    "dishes": [
+      "Double Chicken Egg Roll",
+      "Mutton Moghlai Paratha",
+      "Chicken Kathi Roll"
+    ],
+    "tips": {
+      "expect": "Quick grab-and-go roll counter.",
+      "tip": "Near Gariahat flyover."
+    }
+  },
+  {
+    "slug": "roastery-coffee-house-hindustan-park",
+    "name": "Roastery Coffee House (Hindustan Park)",
+    "lat": 22.5168,
+    "lng": 88.3615,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "continental"
+    ],
+    "vibes": [
+      "aesthetic",
+      "heritage",
+      "adda"
+    ],
+    "tags": [
+      "photogenic",
+      "foodie"
+    ],
+    "priceLevel": 2,
+    "blurb": "Housed inside a charming colonial bungalow in Hindustan Park, offering specialty pour-overs, Cascara, and patio seating.",
+    "dishes": [
+      "Cranberry Coffee",
+      "Cold Brew Float",
+      "Chicken Club Sandwich",
+      "Brownie with Ice Cream"
+    ],
+    "tips": {
+      "expect": "Green courtyard setting and artisanal coffee menu.",
+      "tip": "In the heart of South Kolkata cafe lane."
+    }
+  },
+  {
+    "slug": "sienna-store-cafe-hindustan-park",
+    "name": "Sienna Store & Cafe (Hindustan Park)",
+    "lat": 22.5172,
+    "lng": 88.3621,
+    "category": "cafe",
+    "cuisines": [
+      "continental",
+      "coffee"
+    ],
+    "vibes": [
+      "aesthetic",
+      "adda"
+    ],
+    "tags": [
+      "photogenic",
+      "date"
+    ],
+    "priceLevel": 3,
+    "blurb": "An award-winning farm-to-table cafe and ceramics studio serving seasonal local ingredients, handmade pasta, and specialty coffee.",
+    "dishes": [
+      "Artisanal Sourdough Toast",
+      "Seasonal Local Produce Bowl",
+      "Handmade Pasta",
+      "Iced Espresso Latte"
+    ],
+    "tips": {
+      "expect": "Creative menu that changes seasonally with exquisite terracotta pottery.",
+      "tip": "Near Hindustan Park pandals."
+    }
+  },
+  {
+    "slug": "blue-tokai-ballygunge",
+    "name": "Blue Tokai Coffee Roasters (Ballygunge)",
+    "lat": 22.5285,
+    "lng": 88.3628,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "bakery"
+    ],
+    "vibes": [
+      "aesthetic",
+      "adda"
+    ],
+    "tags": [
+      "quiet",
+      "date"
+    ],
+    "priceLevel": 2,
+    "blurb": "Specialty coffee roastery in Ballygunge serving single-origin Indian coffees, fresh viennoiserie, and sourdough toasts.",
+    "dishes": [
+      "Flat White",
+      "Butter Croissant",
+      "Avocado Toast",
+      "Cortado"
+    ],
+    "tips": {
+      "expect": "Clean modern coffee lounge with high-speed wifi.",
+      "tip": "Near Southern Avenue."
+    }
+  },
+  {
+    "slug": "kewpies-kitchen-elgin",
+    "name": "Kewpie's Kitchen (Elgin)",
+    "lat": 22.5398,
+    "lng": 88.3495,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali"
+    ],
+    "vibes": [
+      "heritage",
+      "family"
+    ],
+    "tags": [
+      "heritage",
+      "bengali"
+    ],
+    "priceLevel": 2,
+    "blurb": "Homestyle traditional Bengali restaurant inside a residential bungalow on Elgin Lane, serving thalis in terra-cotta dishes.",
+    "dishes": [
+      "Mahabhoj Thali",
+      "Daab Chingri",
+      "Kosha Mangsho",
+      "Aam Pora Sharbat"
+    ],
+    "tips": {
+      "expect": "Warm homestyle hospitality and authentic family recipes.",
+      "tip": "Off Elgin Road."
+    }
+  },
+  {
+    "slug": "dacres-lane-chowmein-stalls",
+    "name": "Dacres Lane Chowmein & Cutlet Stalls",
+    "lat": 22.5692,
+    "lng": 88.3525,
+    "category": "street_food",
+    "cuisines": [
+      "street_food",
+      "chinese"
+    ],
+    "vibes": [
+      "quick_bite",
+      "heritage"
+    ],
+    "tags": [
+      "street_food"
+    ],
+    "priceLevel": 1,
+    "blurb": "Kolkata's most famous street food alley near Raj Bhavan, famous for wok-tossed Kolkata Desi Chowmein and Fish Cutlets.",
+    "dishes": [
+      "Kolkata Egg Chicken Chowmein",
+      "Fish Diamond Cutlet",
+      "Kulhad Lassi"
+    ],
+    "tips": {
+      "expect": "High-energy lunchtime street food experience.",
+      "tip": "Near Esplanade / BBD Bagh."
+    }
+  },
+  {
+    "slug": "ganguram-and-sons-maniktala",
+    "name": "Ganguram & Sons (Maniktala)",
+    "lat": 22.5825,
+    "lng": 88.3712,
+    "category": "sweets",
+    "cuisines": [
+      "mishti",
+      "street_food"
+    ],
+    "vibes": [
+      "heritage",
+      "quick_bite"
+    ],
+    "tags": [
+      "pure_veg",
+      "heritage"
+    ],
+    "priceLevel": 1,
+    "blurb": "A 130-year-old sweet institution legendary for its morning Radhaballavi served with spiced Alur Dom and Indrani mishti.",
+    "dishes": [
+      "Radhaballavi with Alur Dom",
+      "Indrani",
+      "Mishti Doi",
+      "Mihidana"
+    ],
+    "tips": {
+      "expect": "Busy sweet counter, especially for Sunday morning breakfast.",
+      "tip": "Near Maniktala crossing."
+    }
+  },
+  {
+    "slug": "tewari-brothers-bara-bazar",
+    "name": "Tewari Brothers (Burrabazar)",
+    "lat": 22.5788,
+    "lng": 88.3542,
+    "category": "sweets",
+    "cuisines": [
+      "street_food",
+      "mishti",
+      "north_indian"
+    ],
+    "vibes": [
+      "heritage",
+      "quick_bite"
+    ],
+    "tags": [
+      "pure_veg",
+      "street_food"
+    ],
+    "priceLevel": 1,
+    "blurb": "Central Kolkata's premier pure veg Ghee sweet shop, world-famous for crisp pure ghee Samosas, Raj Kachori, and Gulab Jamun.",
+    "dishes": [
+      "Ghee Samosa with Chutney",
+      "Raj Kachori",
+      "Gulab Jamun",
+      "Motichoor Ladoo"
+    ],
+    "tips": {
+      "expect": "Fresh hot Ghee fried samosas made continuously.",
+      "tip": "In Burrabazar / Mahatma Gandhi Road."
+    }
+  },
+  {
+    "slug": "haldirams-prabhuji-burrabazar",
+    "name": "Haldiram's Prabhuji (Burrabazar)",
+    "lat": 22.5802,
+    "lng": 88.3555,
+    "category": "restaurant",
+    "cuisines": [
+      "north_indian",
+      "street_food"
+    ],
+    "vibes": [
+      "family",
+      "quick_bite"
+    ],
+    "tags": [
+      "pure_veg",
+      "family"
+    ],
+    "priceLevel": 1,
+    "blurb": "The iconic Central Kolkata branch of Prabhuji Haldiram's serving pure vegetarian Chole Bhature, Pav Bhaji, and Dhokla.",
+    "dishes": [
+      "Special Chole Bhature",
+      "Pav Bhaji",
+      "Raj Bhog",
+      "Kaju Katli"
+    ],
+    "tips": {
+      "expect": "Busy multi-counter pure veg eatery.",
+      "tip": "Near MG Road Metro Station."
+    }
+  },
+  {
+    "slug": "koley-market-street-food-sealdah",
+    "name": "Koley Market Night Street Food Stalls",
+    "lat": 22.5672,
+    "lng": 88.3705,
+    "category": "street_food",
+    "cuisines": [
+      "street_food"
+    ],
+    "vibes": [
+      "late_night",
+      "quick_bite"
+    ],
+    "tags": [
+      "street_food",
+      "late_night"
+    ],
+    "priceLevel": 1,
+    "blurb": "Night-owl street food hub outside Sealdah station operating till dawn during Puja, famous for hot Puri Sabzi, Chai, and Egg Rolls.",
+    "dishes": [
+      "Hot Puri Sabzi",
+      "Kolkata Egg Roll",
+      "Cutting Chai"
+    ],
+    "tips": {
+      "expect": "24x7 street food energy next to Sealdah terminal.",
+      "tip": "Perfect late-night stop after Sealdah pandals."
+    }
+  },
+  {
+    "slug": "bijoli-grill-bhowanipore",
+    "name": "Bijoli Grill (Bhowanipore)",
+    "lat": 22.5312,
+    "lng": 88.3482,
+    "category": "restaurant",
+    "cuisines": [
+      "bengali",
+      "street_food"
+    ],
+    "vibes": [
+      "heritage",
+      "classic"
+    ],
+    "tags": [
+      "heritage",
+      "foodie"
+    ],
+    "priceLevel": 2,
+    "blurb": "Kolkata's legendary fish fry and catering brand, renowned for its crunchy Bhetki Fish Fry, Fish Orly, and Mutton Kabiraji.",
+    "dishes": [
+      "Bhetki Fish Fry",
+      "Fish Orly",
+      "Mutton Roll",
+      "Prawn Cutlet"
+    ],
+    "tips": {
+      "expect": "Classic Kolkata fry and cutlet standard bearer.",
+      "tip": "Near Bhowanipore / Netaji Bhavan Metro."
+    }
+  },
+  {
+    "slug": "dada-boudi-biryani-hub",
+    "name": "Dada Boudi Biryani (Kolkata Hub)",
+    "lat": 22.6125,
+    "lng": 88.3852,
+    "category": "restaurant",
+    "cuisines": [
+      "biryani",
+      "mughlai"
+    ],
+    "vibes": [
+      "family"
+    ],
+    "tags": [
+      "foodie",
+      "family"
+    ],
+    "priceLevel": 2,
+    "blurb": "Famous Biryani institution renowned across Bengal for massive portions, ultra-tender large mutton pieces, and rich flavorful rice.",
+    "dishes": [
+      "Special Mutton Biryani with Potato & Egg",
+      "Chicken Chaap",
+      "Firni"
+    ],
+    "tips": {
+      "expect": "Huge crowds and generous biryani portions.",
+      "tip": "North Kolkata / Belgharia road."
+    }
+  },
+  {
+    "slug": "santas-fantasea-golpark",
+    "name": "Santa's Fantasea (Golpark)",
+    "lat": 22.5162,
+    "lng": 88.3668,
+    "category": "restaurant",
+    "cuisines": [
+      "asian",
+      "bengali"
+    ],
+    "vibes": [
+      "family",
+      "aesthetic"
+    ],
+    "tags": [
+      "foodie",
+      "family"
+    ],
+    "priceLevel": 2,
+    "blurb": "Unique tribal and seafood specialty restaurant serving Nagaland Bamboo Shoot Mutton, Odisha Tribal Chicken, and fresh Crabs.",
+    "dishes": [
+      "Banshkora Mutton",
+      "Jhinga Nisha",
+      "Octopus Fry",
+      "Crab Curry"
+    ],
+    "tips": {
+      "expect": "Underwater and tribal-themed decor with exotic seafood.",
+      "tip": "Near Golpark crossing."
+    }
+  },
+  {
+    "slug": "hatari-triangular-park",
+    "name": "Hatari (Triangular Park)",
+    "lat": 22.5192,
+    "lng": 88.3635,
+    "category": "restaurant",
+    "cuisines": [
+      "chinese",
+      "mughlai"
+    ],
+    "vibes": [
+      "family",
+      "classic"
+    ],
+    "tags": [
+      "family",
+      "classic"
+    ],
+    "priceLevel": 2,
+    "blurb": "A beloved South Kolkata family restaurant near Triangular Park serving nostalgic Indo-Chinese, Kebabs, and classic sizzlers.",
+    "dishes": [
+      "Mixed Hakka Noodles",
+      "Chilli Chicken",
+      "Reshmi Kebab",
+      "Sizzling Brownie"
+    ],
+    "tips": {
+      "expect": "Nostalgic family atmosphere right on Rashbehari Avenue.",
+      "tip": "Adjacent to Triangular Park."
+    }
+  },
+  {
+    "slug": "peter-hu-park-street",
+    "name": "Peter Hu? (Park Street)",
+    "lat": 22.5518,
+    "lng": 88.3535,
+    "category": "restaurant",
+    "cuisines": [
+      "asian"
+    ],
+    "vibes": [
+      "aesthetic",
+      "fine_dining"
+    ],
+    "tags": [
+      "foodie",
+      "date"
+    ],
+    "priceLevel": 3,
+    "blurb": "A stylish modern Pan-Asian dining destination on Park Street created by the team behind Peter Cat and Mocambo.",
+    "dishes": [
+      "Truffle Dim Sum",
+      "Sushi Platter",
+      "Ramen Bowl",
+      "Pork Belly Bao"
+    ],
+    "tips": {
+      "expect": "Chic modern Asian interiors with craft mocktails.",
+      "tip": "On Park Street next to Peter Cat."
+    }
+  },
+  {
+    "slug": "artsun-cafe-bhowanipore",
+    "name": "Artsun Cafe (Bhowanipore)",
+    "lat": 22.5342,
+    "lng": 88.3492,
+    "category": "cafe",
+    "cuisines": [
+      "coffee",
+      "continental"
+    ],
+    "vibes": [
+      "aesthetic",
+      "adda"
+    ],
+    "tags": [
+      "photogenic",
+      "date"
+    ],
+    "priceLevel": 2,
+    "blurb": "A serene art cafe housed in a restored Bhowanipore courtyard, featuring rotating local art exhibitions and artisanal coffees.",
+    "dishes": [
+      "Cortado",
+      "Spinach Corn Tart",
+      "Tiramisu",
+      "Artisanal Cold Coffee"
+    ],
+    "tips": {
+      "expect": "Quiet artistic courtyard hideaway.",
+      "tip": "Near Netaji Bhavan."
+    }
+  },
+  {
+    "slug": "calcutta-bakery-cafe-hindustan-park",
+    "name": "Calcutta Bakery Cafe (Hindustan Park)",
+    "lat": 22.5162,
+    "lng": 88.3618,
+    "category": "cafe",
+    "cuisines": [
+      "bakery",
+      "coffee"
+    ],
+    "vibes": [
+      "aesthetic",
+      "quick_bite"
+    ],
+    "tags": [
+      "photogenic",
+      "foodie"
+    ],
+    "priceLevel": 2,
+    "blurb": "A cozy bakery cafe specializing in freshly baked sourdough breads, butter croissants, flaky quiches, and pour-over coffee.",
+    "dishes": [
+      "Fresh Sourdough Sandwich",
+      "Almond Croissant",
+      "Filter Cold Brew",
+      "Cheese Danish"
+    ],
+    "tips": {
+      "expect": "Aroma of freshly baked sourdough every morning.",
+      "tip": "In Hindustan Park lane."
+    }
   }
- },
- {
-  "slug": "ampm-park-street",
-  "name": "AMPM (Park Street)",
-  "lat": 22.5510022,
-  "lng": 88.3539198,
-  "category": "cafe",
-  "cuisines": [
-   "coffee",
-   "continental"
-  ],
-  "vibes": [
-   "bar",
-   "adda",
-   "aesthetic"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "openLate": true,
-  "blurb": "A Park Street cafe by day that turns into a bar by night. Named Best Bar in Kolkata and ranked No. 12 on the 30 Best Bars India list.",
-  "dishes": [
-   "Before PM Martini (Bengali chilli liqueur, tequila, espresso)",
-   "Park Street Negroni with coffee-infused whisky"
-  ],
-  "tips": {
-   "expect": "A seamless day-to-night format with live energy after dark.",
-   "good": "The coffee-led cocktails.",
-   "tip": "A good Park Street stop before or after the Central pandals."
-  }
- },
- {
-  "slug": "the-bhawanipur-house",
-  "name": "The Bhawanipur House",
-  "lat": 22.5261802,
-  "lng": 88.347769,
-  "category": "cafe",
-  "cuisines": [
-   "coffee",
-   "continental"
-  ],
-  "vibes": [
-   "aesthetic",
-   "family"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "blurb": "An all-day cafe in Bhowanipore that won Best All Day Cafe at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "A comfortable all-day sit-down.",
-   "tip": "Close to the Bhowanipore and Kalighat routes."
-  }
- },
- {
-  "slug": "cafe-icanflyy",
-  "name": "ICanFlyy Tea Kafi",
-  "lat": 22.5256483,
-  "lng": 88.3544626,
-  "category": "cafe",
-  "cuisines": [
-   "coffee"
-  ],
-  "vibes": [
-   "aesthetic",
-   "quick_bite"
-  ],
-  "tags": [
-   "quiet",
-   "photogenic"
-  ],
-  "blurb": "A tea and coffee cafe run by staff with special needs, with exposed brick walls and motivational quotes.",
-  "dishes": [
-   "BBQ spicy chicken poppers",
-   "Cheese pots",
-   "Chicken cheese maggi"
-  ],
-  "tips": {
-   "expect": "A small, warm, feel-good cafe.",
-   "tip": "Near Ballygunge, so easy to add to the Gariahat and Ballygunge pandals."
-  }
- },
- {
-  "slug": "travelistan",
-  "name": "Travelistan Cafe",
-  "lat": 22.4923536,
-  "lng": 88.3602764,
-  "category": "cafe",
-  "cuisines": [
-   "coffee",
-   "continental"
-  ],
-  "vibes": [
-   "aesthetic",
-   "adda"
-  ],
-  "tags": [
-   "photogenic"
-  ],
-  "blurb": "A travel-themed cafe at Golf Green with a world-map ceiling and Tintin characters on the walls.",
-  "tips": {
-   "expect": "A playful, themed room for a long chat.",
-   "watch": "It is on the far south side, so plan it with the Jadavpur and Naktala pandals."
-  }
- },
- {
-  "slug": "artsy-cafe",
-  "name": "Artsy - Coffee & Culture",
-  "lat": 22.5406023,
-  "lng": 88.3537885,
-  "category": "cafe",
-  "cuisines": [
-   "coffee",
-   "continental"
-  ],
-  "vibes": [
-   "aesthetic"
-  ],
-  "tags": [
-   "photogenic",
-   "date",
-   "quiet"
-  ],
-  "blurb": "Billed as Kolkata's first art cafe: whitewashed walls hung with artworks, an indoor faux gazebo and a European-piazza feel.",
-  "tips": {
-   "expect": "Pretty and calm, good for photos.",
-   "tip": "A quiet pause on the Bhowanipore side."
-  }
- },
- {
-  "slug": "perimas",
-  "name": "Perima's",
-  "lat": 22.5370862,
-  "lng": 88.3575411,
-  "category": "restaurant",
-  "cuisines": [
-   "south_indian"
-  ],
-  "vibes": [
-   "aesthetic",
-   "quick_bite"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "blurb": "A fun-dining bistro rooted in South Indian flavours.",
-  "dishes": [
-   "Sabakki-Moz Vada",
-   "Maddur Falafel",
-   "Uttapam Tacos",
-   "Banana Doffle",
-   "Filter Kappi"
-  ],
-  "tips": {
-   "expect": "Playful South Indian plates.",
-   "tip": "A light change from rich Puja food."
-  }
- },
- {
-  "slug": "park-street-social",
-  "name": "Park Street SOCIAL",
-  "lat": 22.5541859,
-  "lng": 88.3509684,
-  "category": "restaurant",
-  "cuisines": [
-   "continental",
-   "north_indian"
-  ],
-  "vibes": [
-   "bar",
-   "adda",
-   "late_night"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "openLate": true,
-  "blurb": "A lively all-day cafe-bar on Park Street with a creative menu and co-working-meets-cafe energy.",
-  "tips": {
-   "expect": "Busy and social, loud on weekends.",
-   "tip": "On the Park Street strip with AMPM, Mocambo and Trincas."
-  }
- },
- {
-  "slug": "mintelaa",
-  "name": "Mintelaa - By the Air",
-  "lat": 22.5853181,
-  "lng": 88.4043166,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "family",
-   "aesthetic"
-  ],
-  "tags": [
-   "foodie",
-   "date"
-  ],
-  "priceLevel": 3,
-  "blurb": "A Salt Lake Sector 1 restaurant that won Best Fine Dining and Best All Day Cafe at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "A polished sit-down meal.",
-   "watch": "Book ahead on Puja weekends.",
-   "tip": "A good dinner after the Salt Lake block pandals."
-  }
- },
- {
-  "slug": "sonar-tori",
-  "name": "Sonar Tori (Salt Lake)",
-  "lat": 22.5882831,
-  "lng": 88.4086044,
-  "category": "restaurant",
-  "cuisines": [
-   "bengali"
-  ],
-  "vibes": [
-   "family",
-   "heritage"
-  ],
-  "tags": [
-   "foodie",
-   "family"
-  ],
-  "blurb": "A Salt Lake Bengali restaurant that won Best Bengali Food Experience at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "A proper Bengali sit-down meal.",
-   "tip": "Close to the Salt Lake pandals."
-  }
- },
- {
-  "slug": "oh-calcutta",
-  "name": "Oh! Calcutta",
-  "lat": 22.5380508,
-  "lng": 88.3512716,
-  "category": "restaurant",
-  "cuisines": [
-   "bengali"
-  ],
-  "vibes": [
-   "family",
-   "heritage"
-  ],
-  "tags": [
-   "foodie",
-   "family"
-  ],
-  "blurb": "A well-known Bengali restaurant at Forum Mall on Elgin Road, among the city's top-rated restaurants.",
-  "tips": {
-   "expect": "Refined Bengali food in a mall setting.",
-   "watch": "Mall hours apply, and it fills up on Puja weekends.",
-   "tip": "Handy for the Elgin Road and Bhowanipore side."
-  }
- },
- {
-  "slug": "bhojohori-manna-ballygunge",
-  "name": "Bhojohori Manna (Ballygunge)",
-  "lat": 22.5203221,
-  "lng": 88.3610458,
-  "category": "restaurant",
-  "cuisines": [
-   "bengali"
-  ],
-  "vibes": [
-   "family"
-  ],
-  "tags": [
-   "foodie",
-   "family"
-  ],
-  "priceLevel": 2,
-  "blurb": "The Ballygunge outlet of the Bengali chain that won Taste of Bengal at the Kolkata EazyDiner Foodie Awards 2026. About ₹390 a head on Google.",
-  "tips": {
-   "expect": "Reliable home-style Bengali plates.",
-   "tip": "A practical lunch near the Gariahat and Ballygunge pandals."
-  }
- },
- {
-  "slug": "kasturi-restaurant",
-  "name": "Kasturi Food Plaza",
-  "lat": 22.5243736,
-  "lng": 88.3686398,
-  "category": "restaurant",
-  "cuisines": [
-   "bengali"
-  ],
-  "vibes": [
-   "family",
-   "quick_bite"
-  ],
-  "tags": [
-   "foodie",
-   "family"
-  ],
-  "blurb": "Kasturi Food Plaza in Ballygunge, listed among the best Bengali restaurants for home-style thalis and Bangladeshi cooking.",
-  "tips": {
-   "expect": "A busy, no-frills Bengali meal.",
-   "tip": "Near Gariahat."
-  }
- },
- {
-  "slug": "calcutta-nostalgia",
-  "name": "Calcutta Nostalgia",
-  "lat": 22.5103164,
-  "lng": 88.346911,
-  "category": "restaurant",
-  "cuisines": [
-   "bengali"
-  ],
-  "vibes": [
-   "family",
-   "heritage"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "blurb": "A Bengali restaurant near Mudiali and Lake Market, listed among the best Bengali restaurants.",
-  "tips": {
-   "expect": "Old-Calcutta flavours.",
-   "tip": "Close to Mudiali Club and the Kalighat pandals."
-  }
- },
- {
-  "slug": "allen-kitchen",
-  "name": "Allen Kitchen",
-  "lat": 22.5943014,
-  "lng": 88.3649571,
-  "category": "restaurant",
-  "cuisines": [
-   "bengali"
-  ],
-  "vibes": [
-   "heritage",
-   "family",
-   "quick_bite"
-  ],
-  "tags": [
-   "heritage",
-   "foodie"
-  ],
-  "blurb": "A long-standing Bengali eatery in North Kolkata, rated about 4.3 from nearly 2,800 reviews.",
-  "tips": {
-   "expect": "Straightforward Bengali food.",
-   "tip": "A natural meal stop on the Baghbazar and Hatibagan circuit."
-  }
- },
- {
-  "slug": "dilkhusha-cabin",
-  "name": "Dilkhusha Cabin",
-  "lat": 22.5767561,
-  "lng": 88.3643244,
-  "category": "restaurant",
-  "cuisines": [
-   "bengali"
-  ],
-  "vibes": [
-   "heritage",
-   "adda",
-   "quick_bite"
-  ],
-  "tags": [
-   "heritage"
-  ],
-  "blurb": "An old-style cabin eatery by College Street.",
-  "tips": {
-   "expect": "A no-frills cabin from old Calcutta.",
-   "tip": "Pair it with the College Street baris and the Indian Coffee House."
-  }
- },
- {
-  "slug": "kwality-park-street",
-  "name": "Kwality (Park Street)",
-  "lat": 22.5539963,
-  "lng": 88.3517969,
-  "category": "restaurant",
-  "cuisines": [
-   "north_indian",
-   "mughlai"
-  ],
-  "vibes": [
-   "heritage",
-   "family"
-  ],
-  "tags": [
-   "heritage",
-   "family"
-  ],
-  "blurb": "Kwality on Park Street, an old-school Indian restaurant (Google lists it as a heritage Indian restaurant).",
-  "tips": {
-   "expect": "Classic North Indian and Mughlai plates.",
-   "tip": "On the Park Street stretch."
-  }
- },
- {
-  "slug": "mocambo",
-  "name": "Mocambo",
-  "lat": 22.5532545,
-  "lng": 88.3531098,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "heritage",
-   "family",
-   "bar"
-  ],
-  "tags": [
-   "heritage",
-   "foodie"
-  ],
-  "blurb": "A Park Street classic, named in the Conde Nast India x District Top Restaurant Awards 2025. Rated about 4.3 from over 17,000 reviews.",
-  "tips": {
-   "expect": "A retro dining room and bar.",
-   "watch": "Very popular. Book for Puja evenings.",
-   "tip": "Part of the Park Street cluster."
-  }
- },
- {
-  "slug": "shiraz-golden-restaurant",
-  "name": "Shiraz Golden Restaurant",
-  "lat": 22.5467154,
-  "lng": 88.3618794,
-  "category": "restaurant",
-  "cuisines": [
-   "biryani",
-   "mughlai"
-  ],
-  "vibes": [
-   "family",
-   "heritage"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "blurb": "A Mughlai restaurant at Park Circus, rated about 4.1 from nearly 9,000 reviews.",
-  "tips": {
-   "expect": "A busy Mughlai and biryani meal.",
-   "tip": "A Park Circus stop between the central and south circuits."
-  }
- },
- {
-  "slug": "zeeshan",
-  "name": "Zeeshan",
-  "lat": 22.5414472,
-  "lng": 88.3659858,
-  "category": "restaurant",
-  "cuisines": [
-   "mughlai"
-  ],
-  "vibes": [
-   "family",
-   "quick_bite"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "blurb": "A Mughlai restaurant at Park Circus, rated about 4.0 from nearly 5,000 reviews.",
-  "tips": {
-   "expect": "Quick, filling Mughlai food.",
-   "tip": "Near Shiraz and Park Circus."
-  }
- },
- {
-  "slug": "pa-pa-ya",
-  "name": "PaPaYa Modern Asian Bistro",
-  "lat": 22.5510131,
-  "lng": 88.3532113,
-  "category": "restaurant",
-  "cuisines": [
-   "asian"
-  ],
-  "vibes": [
-   "aesthetic",
-   "bar"
-  ],
-  "tags": [
-   "foodie",
-   "date"
-  ],
-  "blurb": "PaPaYa, a modern Asian bistro on Park Street that won Best Sushi at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "Polished pan-Asian plates and sushi.",
-   "tip": "On Park Street."
-  }
- },
- {
-  "slug": "yauatcha",
-  "name": "Yauatcha Kolkata",
-  "lat": 22.5389882,
-  "lng": 88.3656083,
-  "category": "restaurant",
-  "cuisines": [
-   "asian"
-  ],
-  "vibes": [
-   "aesthetic",
-   "family"
-  ],
-  "tags": [
-   "foodie",
-   "date"
-  ],
-  "priceLevel": 3,
-  "blurb": "A dim sum restaurant at Quest Mall that won Best Pan-Asian at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "Upscale dim sum and Asian plates.",
-   "watch": "Mall hours apply.",
-   "tip": "Combine with the Ballygunge pandals."
-  }
- },
- {
-  "slug": "someplace-else",
-  "name": "Someplace Else",
-  "lat": 22.5541543,
-  "lng": 88.3518671,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "bar",
-   "adda",
-   "late_night"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "openLate": true,
-  "blurb": "A pub at The Park on Park Street, known for rock and live music.",
-  "tips": {
-   "expect": "A classic Park Street pub night.",
-   "tip": "Part of the Park Street bar strip."
-  }
- },
- {
-  "slug": "roots-chowringhee",
-  "name": "Roots (Chowringhee)",
-  "lat": 22.5428065,
-  "lng": 88.3476774,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "rooftop",
-   "bar",
-   "adda"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "openLate": true,
-  "blurb": "A rooftop pub on Chowringhee that won Best Rooftop Bar at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "A rooftop drinks-and-bites crowd.",
-   "tip": "Close to Elgin Road and the Esplanade end of the Central circuit."
-  }
- },
- {
-  "slug": "glook-the-sky-lounge",
-  "name": "Glook The Sky Lounge",
-  "lat": 22.5824412,
-  "lng": 88.4624293,
-  "category": "restaurant",
-  "cuisines": [
-   "continental",
-   "north_indian"
-  ],
-  "vibes": [
-   "rooftop",
-   "bar",
-   "aesthetic"
-  ],
-  "tags": [
-   "date"
-  ],
-  "blurb": "A sky lounge that won Best View at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "City views from a rooftop lounge.",
-   "watch": "It is out in New Town, away from the main Puja circuits.",
-   "tip": "Only worth it if you are already out that way."
-  }
- },
- {
-  "slug": "ambrosia-restaurant-and-bar",
-  "name": "Ambrosia Bar and Restaurant",
-  "lat": 22.5900053,
-  "lng": 88.4112629,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "bar",
-   "aesthetic"
-  ],
-  "tags": [
-   "date"
-  ],
-  "openLate": true,
-  "blurb": "A Salt Lake bar and restaurant that won Best Cocktail Bar at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "Cocktails in a polished setting.",
-   "tip": "A Salt Lake evening stop after the block pandals."
-  }
- },
- {
-  "slug": "la-soiree",
-  "name": "La Soirée Kolkata",
-  "lat": 22.540745,
-  "lng": 88.352095,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "bar",
-   "aesthetic"
-  ],
-  "tags": [
-   "date"
-  ],
-  "openLate": true,
-  "blurb": "A new fine-dining and lounge space in Bhowanipore that won Best Cocktail Bar at the Kolkata EazyDiner Foodie Awards 2026.",
-  "tips": {
-   "expect": "A stylish lounge and cocktails.",
-   "tip": "A drink on the Bhowanipore side."
-  }
- },
- {
-  "slug": "little-bit-sober",
-  "name": "Little Bit Sober",
-  "lat": 22.5403118,
-  "lng": 88.3472843,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "bar",
-   "aesthetic"
-  ],
-  "tags": [
-   "date"
-  ],
-  "openLate": true,
-  "blurb": "A Bhowanipore cocktail bar that builds drinks around Bengal ingredients such as gondhoraj lemon and nolen gur.",
-  "tips": {
-   "expect": "Local-flavour cocktails.",
-   "tip": "Near Bhowanipore."
-  }
- },
- {
-  "slug": "the-junction-alipore",
-  "name": "The Junction (Alipore)",
-  "lat": 22.5376736,
-  "lng": 88.3343253,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "bar",
-   "heritage"
-  ],
-  "tags": [
-   "heritage"
-  ],
-  "openLate": true,
-  "blurb": "A historic Alipore whisky bar with rare single malts and a British-era feel.",
-  "tips": {
-   "expect": "A quiet, old-school whisky bar.",
-   "watch": "Only a few reviews (about 60), so check before you go.",
-   "tip": "Near the Alipore pandals."
-  }
- },
- {
-  "slug": "olterra",
-  "name": "Olterra (Park Street)",
-  "lat": 22.5523227,
-  "lng": 88.3525956,
-  "category": "restaurant",
-  "cuisines": [
-   "continental"
-  ],
-  "vibes": [
-   "bar",
-   "adda",
-   "aesthetic"
-  ],
-  "tags": [
-   "foodie"
-  ],
-  "openLate": true,
-  "blurb": "An artisanal brewery and cocktail bar on Park Street with Greek-myth decor. Rated about 4.8 from over 2,700 reviews.",
-  "tips": {
-   "expect": "Craft beer and cocktails in a showy room.",
-   "tip": "On the Park Street strip."
-  }
- },
- {
-  "slug": "sen-mahasay",
-  "name": "Sen Mahasay",
-  "lat": 22.5986591,
-  "lng": 88.373027,
-  "category": "sweets",
-  "cuisines": [
-   "mishti"
-  ],
-  "vibes": [
-   "quick_bite",
-   "heritage"
-  ],
-  "tags": [
-   "heritage"
-  ],
-  "priceLevel": 1,
-  "blurb": "A North Kolkata sweet shop rated about 4.3 from over 900 reviews.",
-  "tips": {
-   "expect": "Counter-service mishti.",
-   "tip": "A sweet stop on the Hatibagan and Maniktala side."
-  }
- },
- {
-  "slug": "girish-chandra-dey-nakur-chandra-nandy",
-  "name": "Girish Ch. Dey & Nakur Ch. Nandy",
-  "lat": 22.5877111,
-  "lng": 88.3673613,
-  "category": "sweets",
-  "cuisines": [
-   "mishti"
-  ],
-  "vibes": [
-   "quick_bite",
-   "heritage"
-  ],
-  "tags": [
-   "heritage",
-   "foodie"
-  ],
-  "priceLevel": 1,
-  "blurb": "A famous Bagbazar sweet shop, rated about 4.6 from nearly 11,000 reviews.",
-  "tips": {
-   "expect": "Classic Bengali sweets.",
-   "good": "The very high rating from many reviewers.",
-   "tip": "Slot it into the Baghbazar and Kumartuli loop."
-  }
- },
- {
-  "slug": "putiram",
-  "name": "Putiram Sweets",
-  "lat": 22.5740341,
-  "lng": 88.3635836,
-  "category": "sweets",
-  "cuisines": [
-   "mishti",
-   "street_food"
-  ],
-  "vibes": [
-   "quick_bite",
-   "heritage"
-  ],
-  "tags": [
-   "heritage"
-  ],
-  "priceLevel": 1,
-  "blurb": "Putiram Sweets on College Street, rated about 4.3 from nearly 4,000 reviews.",
-  "tips": {
-   "expect": "A busy counter with sweets and savouries.",
-   "tip": "Pair with College Square and the Indian Coffee House."
-  }
- },
- {
-  "slug": "bhim-chandra-nag",
-  "name": "Bhim Chandra Nag",
-  "lat": 22.5688804,
-  "lng": 88.3602721,
-  "category": "sweets",
-  "cuisines": [
-   "mishti"
-  ],
-  "vibes": [
-   "quick_bite",
-   "heritage"
-  ],
-  "tags": [
-   "heritage"
-  ],
-  "priceLevel": 1,
-  "blurb": "A traditional mishti shop in Bowbazar, rated about 4.4.",
-  "tips": {
-   "expect": "Classic sandesh-and-sweets counter.",
-   "tip": "Near the Central heritage circuit."
-  }
- },
- {
-  "slug": "balaram-mullick-radharaman-mullick",
-  "name": "Balaram Mullick & Radharaman Mullick",
-  "lat": 22.5331411,
-  "lng": 88.3470082,
-  "category": "sweets",
-  "cuisines": [
-   "mishti"
-  ],
-  "vibes": [
-   "quick_bite",
-   "heritage"
-  ],
-  "tags": [
-   "heritage",
-   "foodie"
-  ],
-  "priceLevel": 1,
-  "blurb": "A Bhowanipore mishti institution that won Best Mishti at the Kolkata EazyDiner Foodie Awards 2026. Rated about 4.3 from nearly 9,700 reviews.",
-  "tips": {
-   "expect": "A long-standing sweet shop.",
-   "tip": "Near the Bhowanipore and Kalighat routes."
-  }
- }
 ]

@@ -203,18 +203,21 @@ const inRegions = (p: Place, regions: Region[]) => regions.length === 0 || regio
 function pickMeal(ctx: Ctx, slot: (typeof SLOTS)[number], from: Place | Point, time: number, used: Set<string>) {
   const r = ctx.r;
   let best: { p: Place; score: number; t: Hop } | null = null;
-  for (const p of ctx.food) {
-    if (used.has(p.slug) || p.closed) continue;
-    if (p.priceLevel && p.priceLevel > r.budget) continue;
-    if (r.diet === "veg" && p.diet && !p.diet.includes("veg")) continue;
-    const km = haversineKm(from, p);
-    if (km > 2.2) continue;
-    const t = travel(ctx, from, p, time);
-    const arrive = time + t.minutes;
-    if (arrive > slot.to + 20) continue;
-    if (!openDuring(p, ctx.weekday, arrive, arrive + Math.min(slot.dwell, 30))) continue;
-    const score = mealScore(p, slot.id, r, km);
-    if (!best || score > best.score || (score === best.score && p.slug < best.p.slug)) best = { p, score, t };
+  for (const maxKm of [2.5, 6.0]) {
+    for (const p of ctx.food) {
+      if (used.has(p.slug) || p.closed) continue;
+      if (p.priceLevel && p.priceLevel > r.budget) continue;
+      if (r.diet === "veg" && p.diet && !p.diet.includes("veg")) continue;
+      const km = haversineKm(from, p);
+      if (km > maxKm) continue;
+      const t = travel(ctx, from, p, time);
+      const arrive = time + t.minutes;
+      if (arrive > slot.to + 20) continue;
+      if (!openDuring(p, ctx.weekday, arrive, arrive + Math.min(slot.dwell, 30))) continue;
+      const score = mealScore(p, slot.id, r, km);
+      if (!best || score > best.score || (score === best.score && p.slug < best.p.slug)) best = { p, score, t };
+    }
+    if (best) break;
   }
   return best;
 }
@@ -293,11 +296,11 @@ export function planDay(allPlaces: Place[], r: PlanRequest): Itinerary {
 
     const slot = pickSlot();
     if (slot) {
-      doneMeals.add(slot.id);
       const from = cur ?? ctx.sights[0];
       if (from) {
         const m = pickMeal(ctx, slot, from, time, used);
         if (m) {
+          doneMeals.add(slot.id);
           const arrive = time + m.t.minutes;
           const depart = arrive + Math.round(slot.dwell * PACE_DWELL[r.pace]);
           items.push({

@@ -38,6 +38,8 @@ export type Cuisine = (typeof CUISINES)[number];
 
 export const VIBES = [
   "heritage",
+  "classic",
+  "fine_dining",
   "adda",
   "family",
   "quick_bite",
@@ -125,6 +127,8 @@ export const placeSchema = z.object({
   needsReview: z.boolean().optional(),
   // Pandal facts
   theme: z.string().optional(),
+  artist: z.string().optional(),
+  awards: z.array(z.string()).optional(),
   opensOn: z.enum(OPENS_ON).optional(),
   peakHours: z.string().optional(),
   pushpanjali: z.string().optional(),

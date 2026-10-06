@@ -10,7 +10,7 @@ const run = (patch = {}, ids: Set<string> | null = null) =>
 describe("applyFilters", () => {
   it("shows only the active layers (baris + pandals by default, no food)", () => {
     const { visible } = run();
-    expect(visible).toHaveLength(77);
+    expect(visible).toHaveLength(82);
     expect(visible.every((p) => ["bonedi_bari", "pandal"].includes(p.category))).toBe(true);
   });
 

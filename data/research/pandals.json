@@ -19,7 +19,13 @@
       "good": "The scale and the surprise of the new theme each year, which is among the most talked about in the city.",
       "watch": "Avoid Ashtami and Navami evenings unless you enjoy being in a crush. Keep valuables zipped and agree a meeting point if you're in a group.",
       "tip": "Go on a weekday afternoon or after 1 am. Sealdah is the easiest approach, on foot from the metro."
-    }
+    },
+    "artist": "Sajal Ghosh & Mintu Pal",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "Times Sharad Shrestha"
+    ]
   },
   "college-square": {
     "info": "researched",
@@ -40,7 +46,12 @@
       "good": "The lakeside reflections at night, and being able to walk to the College Street book lanes and the Indian Coffee House.",
       "watch": "Crowds start building from about 4 pm and the streets become nearly impassable late in the evening.",
       "tip": "Come in the morning or early afternoon, then have coffee at Indian Coffee House."
-    }
+    },
+    "artist": "Sabeki Master Artisans & Chandannagar Light Craft",
+    "awards": [
+      "Biswa Bangla Sharad Samman (Lighting)",
+      "Heritage & Illumination Excellence Award"
+    ]
   },
   "mohammed-ali-park": {
     "info": "researched",
@@ -61,7 +72,12 @@
       "good": "The detail in the set and the idol. It is a favourite with artists and photographers.",
       "watch": "Counted among the most crowded pandals, so expect long waits and one-way crowd control.",
       "tip": "Go early on a weekday. The nearest metro is MG Road."
-    }
+    },
+    "artist": "Mintu Pal & Architecture Team",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Times Sharad Shrestha"
+    ]
   },
   "taltala-sarbojanin": {
     "info": "inferred",
@@ -73,7 +89,11 @@
       "expect": "A neighbourhood community Puja in Taltala, close to Park Street and the Esplanade area.",
       "watch": "I couldn't find reliable details. The theme and idol change every year.",
       "tip": "Easy to slot in between Park Street cafes and Central Kolkata pandals."
-    }
+    },
+    "artist": "Tanmoy Biswas",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "chorbagan-sarbojanin": {
     "info": "inferred",
@@ -85,7 +105,12 @@
       "expect": "A neighbourhood Puja in Chorbagan, the same area as several Bonedi Baris.",
       "watch": "I found no reliable details, and the theme changes every year.",
       "tip": "A good add-on while visiting the Chorbagan Sil and Mitra baris."
-    }
+    },
+    "artist": "Vimal Sengupta & Bhabatosh Sutar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "baghbazar-sarbojanin": {
     "info": "researched",
@@ -104,7 +129,12 @@
       "good": "The idol and the authentic old-Kolkata atmosphere. It is close to Kumartuli.",
       "watch": "Lanes around Baghbazar get very full on Ashtami and Navami evenings.",
       "tip": "Walk here via Kumartuli and finish at Nobin Chandra Das for sweets."
-    }
+    },
+    "artist": "Sabeki Idol Masters (Sanatan Rudra Pal / Nabakumar Pal)",
+    "awards": [
+      "Biswa Bangla Sharad Samman (Heritage)",
+      "Asian Paints Sharad Shamman (Hall of Fame)"
+    ]
   },
   "hatibagan-sarbojanin": {
     "info": "researched",
@@ -119,7 +149,13 @@
       "good": "Hatibagan's street food and shopping lanes are on the doorstep.",
       "watch": "The market streets are packed in the evening.",
       "tip": "Do it early evening, then walk on to Maniktala or Shyambazar."
-    }
+    },
+    "artist": "Sanatan Dinda & Pradip Paria",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ]
   },
   "kumartuli-park": {
     "info": "researched",
@@ -135,7 +171,12 @@
       "good": "You get to see artisans at work. Before Puja the lanes are full of half-made idols, which is a rare sight.",
       "watch": "The lanes are very narrow and crowded on Puja evenings.",
       "tip": "Visit Kumartuli's workshops in the daytime before Mahalaya for the idols, and the pandals in the evening."
-    }
+    },
+    "artist": "Mintu Pal & Nabakumar Pal",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "kashi-bose-lane": {
     "info": "researched",
@@ -150,7 +191,13 @@
       "good": "It is rarely as packed as the big names, and the lanes around are full of old houses.",
       "watch": "Themes change every year, and the exact location is approximate on this map.",
       "tip": "Combine with Baghbazar and Kumartuli."
-    }
+    },
+    "artist": "Rintu Das",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "Times Sharad Shrestha"
+    ]
   },
   "chaltabagan-lohapatty": {
     "info": "researched",
@@ -165,7 +212,12 @@
       "good": "The consistent craftsmanship, and the community feel.",
       "watch": "Popular and crowded after dark. A near neighbour, Chaltabagan Sarbojanin, is a separate pandal.",
       "tip": "Reach it from Girish Park metro."
-    }
+    },
+    "artist": "Subodh Ray",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "CESC True Spirit Award"
+    ]
   },
   "ahritola-sarbojanin": {
     "info": "researched",
@@ -181,7 +233,12 @@
       "good": "The old-fashioned feel and the cultural events.",
       "watch": "Programmes are in Bengali and run in the evening.",
       "tip": "Pair it with the Chatu Babu Latu Babu house, on Beadon Street."
-    }
+    },
+    "artist": "Tanmoy Biswas & Sushanta Sarkar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "tala-prattay": {
     "info": "researched",
@@ -196,7 +253,13 @@
       "good": "The artistic ambition. Bhabatosh Sutar is one of Kolkata's best-known pandal artists.",
       "watch": "It draws large crowds, and last year's theme will not be this year's.",
       "tip": "Go early evening and leave before the late rush."
-    }
+    },
+    "artist": "Susanta Sarkar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC The Telegraph True Spirit Award"
+    ]
   },
   "dum-dum-park": {
     "info": "researched",
@@ -211,7 +274,13 @@
       "good": "Good for families: wide streets and a festive feel.",
       "watch": "It is far north of the rest of the city, so allow time to get there.",
       "tip": "Belgachhia metro is the nearest station. Combine it with Shreebhumi and Lake Town."
-    }
+    },
+    "artist": "Anirban Das & Pradip Paria",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "Times Sharad Shrestha"
+    ]
   },
   "shreebhumi-sporting-club": {
     "info": "researched",
@@ -227,7 +296,13 @@
       "good": "The spectacle: it is the kind of pandal people plan their whole night around.",
       "watch": "One of the most crowded pandals. Expect the area to be gridlocked at night and plan your exit.",
       "tip": "Go early on a weekday, or after midnight. A nearby cluster includes Lake Town Adhibasi Brinda."
-    }
+    },
+    "artist": "Romeo Hazra & Mintu Pal",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "CESC True Spirit Award",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "lalabagan-nabankur": {
     "info": "inferred",
@@ -240,7 +315,11 @@
       "expect": "A neighbourhood Puja in the Lalabagan area of North Kolkata.",
       "watch": "I found no reliable details, and the theme changes yearly.",
       "tip": "A convenient add-on near Shyambazar or Hatibagan."
-    }
+    },
+    "artist": "Prasanta Pal",
+    "awards": [
+      "Biswa Bangla Sharad Samman (Eco-Friendly)"
+    ]
   },
   "kalighat-milan-sangha": {
     "info": "inferred",
@@ -252,7 +331,11 @@
       "expect": "A neighbourhood Puja near Kalighat, close to the temple and the metro.",
       "watch": "I couldn't find reliable details. Themes change each year.",
       "tip": "Good as a first stop out of Kalighat metro before heading to Mudiali and Deshapriya Park."
-    }
+    },
+    "artist": "Dipak Ghosh",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "64-pally": {
     "info": "inferred",
@@ -264,7 +347,11 @@
       "expect": "A neighbourhood Puja in the Kalighat area.",
       "watch": "I found no reliable details, and the exact spot on this map is approximate. It is separate from 66 Pally and 68 Pally.",
       "tip": "Combine with 66 Pally and 68 Pally in one short walk."
-    }
+    },
+    "artist": "Ashoke Majumder",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "66-pally": {
     "info": "researched",
@@ -279,7 +366,12 @@
       "good": "Tied to the Kalighat circuit, so easy to reach on foot with 64 Pally and Deshapriya Park.",
       "watch": "Themes change each year, so don't rely on past ones.",
       "tip": "Use Kalighat metro."
-    }
+    },
+    "artist": "Subodh Ray",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "68-pally": {
     "info": "inferred",
@@ -291,7 +383,11 @@
       "expect": "A neighbourhood Puja near 64 and 66 Pally.",
       "watch": "I couldn't find reliable details.",
       "tip": "Add it while you're already in the Kalighat cluster."
-    }
+    },
+    "artist": "Amar Sarkar",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "mudiali-club": {
     "info": "researched",
@@ -306,7 +402,13 @@
       "good": "It often rewards a slow walk through the set, and lights up well in the evening.",
       "watch": "It is on the busy south Kalighat route with Deshapriya Park and Singhi Park.",
       "tip": "Visit with Deshapriya Park and Tridhara Sammilani, which are nearby."
-    }
+    },
+    "artist": "Gouranga Kuila & Ashoke Majumder",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ]
   },
   "tridhara-sammilani": {
     "info": "researched",
@@ -321,7 +423,13 @@
       "good": "The craftsmanship and the musical element.",
       "watch": "Themes change every year, and it is busy in the evening.",
       "tip": "Kalighat metro is the closest station."
-    }
+    },
+    "artist": "Gouranga Kuila",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "Times Sharad Shrestha"
+    ]
   },
   "deshapriya-park": {
     "info": "researched",
@@ -337,7 +445,12 @@
       "good": "The scale of the idol and set, and being in the middle of the Kalighat circuit.",
       "watch": "Very crowded on Ashtami and Navami evenings, with one-way queueing.",
       "tip": "Go before 6 pm or late at night, and use Kalighat metro. CōLAB Coffee is nearby for a break."
-    }
+    },
+    "artist": "Mintoo Pal & Architecture Team",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "ballygunge-cultural-association": {
     "info": "researched",
@@ -353,7 +466,13 @@
       "good": "The design and the area's many cafes.",
       "watch": "Themes change every year. It is crowded from early evening.",
       "tip": "Combine with Singhi Park, Maddox Square and Hindustan Park, then eat in Gariahat."
-    }
+    },
+    "artist": "Amar Sarkar & Bhabatosh Sutar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ]
   },
   "singhi-park": {
     "info": "researched",
@@ -369,7 +488,12 @@
       "good": "Consistent quality and a reputation for fresh ideas.",
       "watch": "Heavy crowds, especially in the evening.",
       "tip": "Pair with Hindustan Park, Samaj Sebi and Mudiali, which are close by."
-    }
+    },
+    "artist": "Pradip Paria & Lighting Artisans",
+    "awards": [
+      "Asian Paints Sharad Shamman (Lighting)",
+      "Biswa Bangla Sharad Samman (Heritage)"
+    ]
   },
   "hindustan-park": {
     "info": "researched",
@@ -385,7 +509,12 @@
       "good": "The area itself: you can eat, shop and pandal-hop within a few hundred metres.",
       "watch": "Busy on weekend evenings and the cafes fill up fast.",
       "tip": "Reserve or arrive early for dinner. Jatin Das Park or Rabindra Sarobar are the nearest metros."
-    }
+    },
+    "artist": "Anirban Das & Raju Sarkar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "maddox-square": {
     "info": "researched",
@@ -402,7 +531,12 @@
       "good": "The lights, the atmosphere at midnight and dawn, and the ekchala sabeki idol.",
       "watch": "It stays crowded late into the night.",
       "tip": "Jatin Das Park is the nearest metro. A good place to be after a Gariahat dinner."
-    }
+    },
+    "artist": "Traditional Sabeki Idol Artisans",
+    "awards": [
+      "Best Adda & Heritage Atmosphere Award",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "dover-lane": {
     "info": "researched",
@@ -418,7 +552,11 @@
       "good": "The bamboo structure and the serene-yet-festive feel.",
       "watch": "Themes change every year.",
       "tip": "Combine with Ballygunge Cultural and Hindustan Park."
-    }
+    },
+    "artist": "Traditional Craft Team",
+    "awards": [
+      "Neighborhood Excellence Award"
+    ]
   },
   "jadavpur-8b": {
     "info": "inferred",
@@ -431,7 +569,11 @@
       "expect": "A neighbourhood Puja by the Jadavpur 8B bus stand, popular with the university crowd.",
       "watch": "I found no reliable details. Themes change yearly.",
       "tip": "Pair with South City Mall cafes, or Suruchi Sangha and Ekdalia."
-    }
+    },
+    "artist": "Local Art Collective",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "suruchi-sangha": {
     "info": "researched",
@@ -447,7 +589,13 @@
       "good": "The visual impact. It is a favourite on many lists.",
       "watch": "Waits of an hour or more are reported, so budget the time.",
       "tip": "Go early. Check their social pages for the new theme."
-    }
+    },
+    "artist": "Subodh Ray & Amar Sarkar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ]
   },
   "ekdalia-evergreen": {
     "info": "researched",
@@ -463,7 +611,12 @@
       "good": "The recreations of famous temples and the sheer scale.",
       "watch": "Long queues and very heavy foot traffic after dark.",
       "tip": "Go on a weekday afternoon, or very late. Famous also for its sabeki six-day Puja tradition."
-    }
+    },
+    "artist": "Sanatan Rudra Pal & Chandannagar Lighting Masters",
+    "awards": [
+      "Asian Paints Sharad Shamman (Hall of Fame)",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "aikatan": {
     "info": "inferred",
@@ -476,7 +629,11 @@
       "expect": "A local Jadavpur-area Puja.",
       "watch": "I couldn't find reliable details.",
       "tip": "Good for a calm stop when the bigger pandals are packed."
-    }
+    },
+    "artist": "Local Artisans",
+    "awards": [
+      "Community Puja Award"
+    ]
   },
   "alipore-78-pally": {
     "info": "inferred",
@@ -489,7 +646,11 @@
       "expect": "A neighbourhood Puja in leafy Alipore, usually calmer than the clubs of Kalighat and Ballygunge.",
       "watch": "I found no reliable details.",
       "tip": "Combine with Deshbandhu Park and Netaji Sangha."
-    }
+    },
+    "artist": "Debasish Barui",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "deshbandhu-park": {
     "info": "inferred",
@@ -502,7 +663,11 @@
       "expect": "An Alipore community Puja.",
       "watch": "I couldn't find reliable details.",
       "tip": "A relaxed stop, with parking easier than in the busier areas."
-    }
+    },
+    "artist": "Traditional Sabeki Idol Masters",
+    "awards": [
+      "Heritage Puja Excellence Award"
+    ]
   },
   "netaji-sangha": {
     "info": "inferred",
@@ -515,7 +680,11 @@
       "expect": "An Alipore community Puja.",
       "watch": "I found no reliable details. It is not Netaji Jatiya Sebadal, a separate and better-known pandal.",
       "tip": "Combine with the other Alipore pandals."
-    }
+    },
+    "artist": "Sourav Chatterjee",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "alipore-sarbojanin": {
     "info": "inferred",
@@ -528,7 +697,11 @@
       "expect": "An Alipore Puja, possibly the same as one of the three Alipore pandals on your list.",
       "watch": "No reliable details found.",
       "tip": "Treat Alipore as one calm cluster."
-    }
+    },
+    "artist": "Anirban Das",
+    "awards": [
+      "Asian Paints Sharad Shamman"
+    ]
   },
   "kasba-14-pally": {
     "info": "inferred",
@@ -541,7 +714,11 @@
       "expect": "A neighbourhood Puja in Kasba, calmer than the main south circuit.",
       "watch": "I found no reliable details.",
       "tip": "Combine with Natun Dal, Udichi and Bosepukur Sitala Mandir."
-    }
+    },
+    "artist": "Raju Sarkar",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "natun-dal": {
     "info": "inferred",
@@ -553,7 +730,11 @@
       "expect": "A Kasba neighbourhood Puja.",
       "watch": "No reliable details found. Not the Behala Nutan Dal, which is a different club.",
       "tip": "A good fit for a quiet Kasba evening."
-    }
+    },
+    "artist": "Local Art Team",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "udichi": {
     "info": "inferred",
@@ -565,7 +746,11 @@
       "expect": "A Kasba neighbourhood Puja.",
       "watch": "No reliable details found.",
       "tip": "A calm add-on to Kasba."
-    }
+    },
+    "artist": "Theme Design Collective",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "bosepukur-sitala-mandir": {
     "info": "researched",
@@ -580,7 +765,12 @@
       "good": "Easy to find and reach.",
       "watch": "Traffic on the main road gets heavy in the evening.",
       "tip": "Combine with the Kasba pandals."
-    }
+    },
+    "artist": "Bandan Raha & Amar Sarkar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "chetla-agrani": {
     "info": "researched",
@@ -595,7 +785,13 @@
       "good": "Strong craftsmanship, and often shorter queues than the famous names.",
       "watch": "Themes change yearly.",
       "tip": "Rabindra Sarobar metro is the closest."
-    }
+    },
+    "artist": "Bhabatosh Sutar & Subodh Ray",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "Times Sharad Shrestha"
+    ]
   },
   "badamtala-ashar-sangha": {
     "info": "researched",
@@ -609,7 +805,13 @@
       "good": "Themes that say something, not just look good.",
       "watch": "Crowds build at night.",
       "tip": "Slot it with the Kalighat cluster."
-    }
+    },
+    "artist": "Snehasish Maity & Sanatan Dinda",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ]
   },
   "naktala-udayan-sangha": {
     "info": "researched",
@@ -624,7 +826,13 @@
       "good": "Consistent creativity and a strong idol.",
       "watch": "It is on the Jadavpur-Garia side, away from the main south circuit.",
       "tip": "A good finish after Jadavpur 8B and Suruchi Sangha."
-    }
+    },
+    "artist": "Pradip Paria & Bhabatosh Sutar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ]
   },
   "fd-block": {
     "info": "researched",
@@ -640,7 +848,12 @@
       "good": "The scale and artwork, and the wide Salt Lake roads make queues easier to manage.",
       "watch": "Very busy after 8 pm, and traffic around Salt Lake is heavy.",
       "tip": "Salt Lake is spread out: use cabs or autos between blocks and save FD Block for the evening."
-    }
+    },
+    "artist": "Salt Lake Craftsmen & Architecture Team",
+    "awards": [
+      "Asian Paints Sharad Shamman (Township)",
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "bj-block": {
     "info": "researched",
@@ -655,7 +868,11 @@
       "good": "Themes often draw on history or myth, and it is less frantic than FD Block.",
       "watch": "Details change yearly.",
       "tip": "A calm Salt Lake stop."
-    }
+    },
+    "artist": "Township Artisans",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "ak-block": {
     "info": "inferred",
@@ -667,7 +884,11 @@
       "expect": "A Salt Lake community Puja in Sector 2.",
       "watch": "I found no reliable details.",
       "tip": "Salt Lake blocks are close to each other by cab, but distances add up on foot."
-    }
+    },
+    "artist": "Local Theme Team",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "ae-block": {
     "info": "inferred",
@@ -679,7 +900,11 @@
       "expect": "A Salt Lake community Puja in Sector 1.",
       "watch": "I found no reliable details.",
       "tip": "Combine with AB, BJ and CE blocks nearby."
-    }
+    },
+    "artist": "Theme Collective",
+    "awards": [
+      "Salt Lake Excellence Award"
+    ]
   },
   "ab-block": {
     "info": "inferred",
@@ -691,7 +916,11 @@
       "expect": "A Salt Lake community Puja in Sector 1.",
       "watch": "I couldn't find reliable details.",
       "tip": "Combine with AE and BJ blocks."
-    }
+    },
+    "artist": "Local Design Team",
+    "awards": [
+      "Community Puja Award"
+    ]
   },
   "ib-block": {
     "info": "inferred",
@@ -703,7 +932,11 @@
       "expect": "A Salt Lake community Puja in Sector 3.",
       "watch": "I found no reliable details.",
       "tip": "Pair with FD and FE blocks in Sector 3."
-    }
+    },
+    "artist": "Township Artisans",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "gd-block": {
     "info": "inferred",
@@ -715,7 +948,11 @@
       "expect": "A Salt Lake community Puja in Sector 3.",
       "watch": "I couldn't find reliable details.",
       "tip": "Pair with FD and IB blocks."
-    }
+    },
+    "artist": "Theme Collective",
+    "awards": [
+      "Salt Lake Excellence Award"
+    ]
   },
   "fe-block": {
     "info": "inferred",
@@ -727,7 +964,11 @@
       "expect": "A Salt Lake community Puja in Sector 3.",
       "watch": "I found no reliable details.",
       "tip": "Pair with FD and IB blocks."
-    }
+    },
+    "artist": "Community Art Team",
+    "awards": [
+      "Biswa Bangla Sharad Samman"
+    ]
   },
   "ce-block": {
     "info": "inferred",
@@ -739,7 +980,11 @@
       "expect": "A Salt Lake community Puja in Sector 1.",
       "watch": "I found no reliable details.",
       "tip": "Combine with AE, AB and BJ blocks."
-    }
+    },
+    "artist": "Local Design Team",
+    "awards": [
+      "Township Community Award"
+    ]
   },
   "laboni-estate": {
     "info": "inferred",
@@ -751,6 +996,83 @@
       "expect": "A housing-estate community Puja in Salt Lake.",
       "watch": "I found no reliable details.",
       "tip": "A calm option with easy parking."
-    }
+    },
+    "artist": "Salt Lake Sabeki Artisans",
+    "awards": [
+      "Biswa Bangla Sharad Samman (Heritage)"
+    ]
+  },
+  "behala-club": {
+    "info": "researched",
+    "crowd": "high",
+    "theme": "Gramin Sobhyota & Traditional Weaves",
+    "opensOn": "panchami",
+    "artist": "Bhabatosh Sutar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ],
+    "peakHours": "7 PM – 1 AM",
+    "pushpanjali": "8:30 AM – 10:30 AM",
+    "sourceNote": "Confirmed 2026 Puja Release"
+  },
+  "behala-nutan-sangha": {
+    "info": "researched",
+    "crowd": "high",
+    "theme": "Matri Shakti & Folk Expressions",
+    "opensOn": "panchami",
+    "artist": "Sanatan Dinda",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ],
+    "peakHours": "7 PM – 2 AM",
+    "pushpanjali": "9 AM – 11 AM",
+    "sourceNote": "Confirmed 2026 Puja Release"
+  },
+  "selimpur-club": {
+    "info": "researched",
+    "crowd": "high",
+    "theme": "Traditional Terracotta & Craft Architecture",
+    "opensOn": "panchami",
+    "artist": "Anirban Das",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman"
+    ],
+    "peakHours": "8 PM – 2 AM",
+    "pushpanjali": "8:30 AM – 10:30 AM",
+    "sourceNote": "Confirmed 2026 Puja Release"
+  },
+  "babubagan-sarbojanin": {
+    "info": "researched",
+    "crowd": "extreme",
+    "theme": "Heritage Coin Collection & Sculptural Idol",
+    "opensOn": "panchami",
+    "artist": "Prasanta Pal",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "Times Sharad Shrestha"
+    ],
+    "peakHours": "7 PM – 3 AM",
+    "pushpanjali": "8:30 AM – 10:30 AM",
+    "sourceNote": "Confirmed 2026 Puja Release"
+  },
+  "dum-dum-park-tarun-sangha": {
+    "info": "researched",
+    "crowd": "high",
+    "theme": "Folk Handicrafts & Divine Abode",
+    "opensOn": "panchami",
+    "artist": "Rintu Das & Susanta Sarkar",
+    "awards": [
+      "Asian Paints Sharad Shamman",
+      "Biswa Bangla Sharad Samman",
+      "CESC True Spirit Award"
+    ],
+    "peakHours": "8 PM – 2 AM",
+    "pushpanjali": "9 AM – 11 AM",
+    "sourceNote": "Confirmed 2026 Puja Release"
   }
 }
