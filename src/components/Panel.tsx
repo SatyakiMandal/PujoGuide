@@ -263,9 +263,10 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
                   onClick={() => setFilterSectionCollapsed(true)}
                   aria-label="Collapse filters section"
                   title="Collapse filters section"
-                  className="grid size-9 shrink-0 place-items-center rounded-full border border-line bg-surface text-muted hover:bg-surface2 hover:text-fg active:scale-95"
+                  className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-xs font-semibold text-muted hover:bg-surface2 hover:text-fg active:scale-95 transition-all"
                 >
-                  <CaretUp size={16} weight="bold" />
+                  <span>Collapse</span>
+                  <CaretUp size={14} weight="bold" />
                 </button>
               </div>
             </div>

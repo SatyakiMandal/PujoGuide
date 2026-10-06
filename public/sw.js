@@ -2,7 +2,7 @@
  * - Static assets (/_next/static, icons, MapLibre worker): cache-first.
  * - Map tiles, styles, fonts (CARTO / MapLibre): cache-first with network fallback.
  * - Page loads: network-first, falling back to cached offline shell. */
-const CACHE = "pujoguide-v1";
+const CACHE = "pujoguide-v2-amenities";
 const TILE_CACHE = "pujoguide-tiles-v1";
 
 self.addEventListener("install", () => self.skipWaiting());
