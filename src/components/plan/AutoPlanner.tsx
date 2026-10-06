@@ -206,13 +206,19 @@ export function AutoPlanner({ hasRoute, onDone }: { hasRoute: boolean; onDone: (
         </div>
       </Field>
 
-      <Field label="Pace">
+      <Field label="Pace &amp; Weather">
         <div className="flex flex-wrap gap-2">
           {PACES.map((p) => (
             <Chip key={p} active={req.pace === p} onClick={() => patch({ pace: p })}>
               {PACE_LABEL[p]}
             </Chip>
           ))}
+          <Chip
+            active={!!req.rainAware}
+            onClick={() => patch({ rainAware: !req.rainAware })}
+          >
+            🌧️ Rain-aware (indoor focus)
+          </Chip>
         </div>
       </Field>
 

@@ -25,6 +25,7 @@ import { fmtFare, fmtMin, MODE_META } from "@/lib/route/modeMeta";
 import { placeDwellMin } from "@/lib/route/dwell";
 import { isFood, type Place } from "@/lib/schema";
 import type { Leg } from "@/lib/route/useLegs";
+import { haversineKm } from "@/lib/route/geo";
 import { useUI } from "@/store/ui";
 import { clsx } from "clsx";
 
@@ -47,6 +48,7 @@ export function LiveTourMode({
   const select = useUI((s) => s.select);
   const toggleVisited = useUI((s) => s.toggleVisited);
   const visited = useUI((s) => s.visited.includes(current?.slug));
+  const userPos = useUI((s) => s.userPos);
   const pujaNight = useUI((s) => s.route.pujaNight);
   const [completedAnim, setCompletedAnim] = useState(false);
 
@@ -54,6 +56,23 @@ export function LiveTourMode({
   useEffect(() => {
     if (current) select(current.slug);
   }, [activeIndex, current, select]);
+
+  // GPS Proximity Auto-checkin: Auto advance when user comes within 50 meters of the stop
+  useEffect(() => {
+    if (!current || !userPos || completedAnim) return;
+    const distKm = haversineKm(userPos, { lat: current.lat, lng: current.lng });
+    if (distKm <= 0.05) {
+      if (!visited) toggleVisited(current.slug);
+      setCompletedAnim(true);
+      const timer = setTimeout(() => {
+        setCompletedAnim(false);
+        if (activeIndex < places.length - 1) {
+          onChangeIndex(activeIndex + 1);
+        }
+      }, 1200);
+      return () => clearTimeout(timer);
+    }
+  }, [userPos, current, activeIndex, places.length, visited, completedAnim, onChangeIndex, toggleVisited]);
 
   if (!current) return null;
 
@@ -160,6 +179,11 @@ export function LiveTourMode({
           )}
 
           <div className="flex flex-wrap gap-2 text-xs">
+            {userPos && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-blue-500/15 px-3 py-1 font-semibold text-blue-600 dark:text-blue-400">
+                <CrosshairSimple size={15} weight="bold" /> {(haversineKm(userPos, { lat: current.lat, lng: current.lng }) * 1000).toFixed(0)}m away (GPS live)
+              </span>
+            )}
             {dwell.queue > 0 && (
               <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/15 px-3 py-1 font-semibold text-amber-600 dark:text-amber-400">
                 <Clock size={15} weight="bold" /> ⌛ ~{dwell.queue}m queue wait

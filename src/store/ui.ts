@@ -31,6 +31,8 @@ type UIState = {
   setEssentials: (open: boolean) => void;
   showMetro: boolean;
   showAmenities: boolean;
+  pujaDayMode: boolean;
+  togglePujaDayMode: () => void;
   route: RouteState;
   /** Slugs you saved / visited, and your own notes per place. Persisted on this device. */
   saved: string[];
@@ -93,6 +95,17 @@ export const useUI = create<UIState>()(
       setEssentials: (essentials) => set({ essentials }),
       showMetro: true,
       showAmenities: false,
+      pujaDayMode: false,
+      togglePujaDayMode: () =>
+        set((s) => {
+          const next = !s.pujaDayMode;
+          return {
+            pujaDayMode: next,
+            showAmenities: next ? true : s.showAmenities,
+            showMetro: true,
+            filters: next ? { ...s.filters, openNow: true } : s.filters,
+          };
+        }),
       route: emptyRoute,
       saved: [],
       visited: [],
@@ -175,7 +188,7 @@ export const useUI = create<UIState>()(
     {
       name: "pujoguide:v1",
       // Persist only what the user built; skipHydration + manual rehydrate avoids SSR mismatches.
-      partialize: (s) => ({ route: s.route, planReq: s.planReq, showMetro: s.showMetro, mode: s.mode, saved: s.saved, visited: s.visited, notes: s.notes }),
+      partialize: (s) => ({ route: s.route, planReq: s.planReq, showMetro: s.showMetro, pujaDayMode: s.pujaDayMode, mode: s.mode, saved: s.saved, visited: s.visited, notes: s.notes }),
       skipHydration: true,
     },
   ),

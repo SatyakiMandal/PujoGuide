@@ -3,6 +3,7 @@
 import { CloudRain, CloudSun, Confetti } from "@phosphor-icons/react";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { useUI } from "@/store/ui";
+import { clsx } from "clsx";
 
 import { PUJA_CAL } from "@/lib/calendar";
 import { fmtClock } from "@/lib/hours";
@@ -71,28 +72,52 @@ export function TodayStrip() {
   );
   const forecast = useForecast();
   const setTab = useUI((s) => s.setTab);
+  const pujaDayMode = useUI((s) => s.pujaDayMode);
+  const togglePujaDayMode = useUI((s) => s.togglePujaDayMode);
+
   if (!today) return null;
 
   const wet = forecast !== null && forecast.rain >= 50;
   return (
-    <div className="relative overflow-hidden flex items-center justify-between gap-3 rounded-2xl border border-line bg-surface p-3 text-xs shadow-sm">
-      <div className="absolute -right-2 -top-4 -bottom-4 w-32 opacity-15 pointer-events-none overflow-hidden">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className="w-full h-full text-accent">
-          <circle cx="80" cy="50" r="30" strokeWidth="1.5" strokeDasharray="3 3" />
-          <path d="M50 30 Q 70 50 50 70 Q 30 50 50 30 Z" strokeWidth="1.5" />
-          <circle cx="50" cy="50" r="6" fill="currentColor" />
-        </svg>
+    <div className="space-y-2">
+      <div className="relative overflow-hidden flex items-center justify-between gap-3 rounded-2xl border border-line bg-surface p-3 text-xs shadow-sm">
+        <div className="absolute -right-2 -top-4 -bottom-4 w-32 opacity-15 pointer-events-none overflow-hidden">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className="w-full h-full text-accent">
+            <circle cx="80" cy="50" r="30" strokeWidth="1.5" strokeDasharray="3 3" />
+            <path d="M50 30 Q 70 50 50 70 Q 30 50 50 30 Z" strokeWidth="1.5" />
+            <circle cx="50" cy="50" r="6" fill="currentColor" />
+          </svg>
+        </div>
+        <button type="button" onClick={() => setTab("plan")} className="relative z-10 flex min-w-0 items-center gap-2 text-left font-medium">
+          <Confetti size={18} weight="duotone" className="shrink-0 text-accent" />
+          <span className="truncate">{festivalLine(today, kolkataNow().minute)}</span>
+        </button>
+        {forecast && (
+          <span className="relative z-10 flex shrink-0 items-center gap-1.5 rounded-full bg-surface2/90 backdrop-blur-sm px-2.5 py-1 text-muted" title="Next six hours, Kolkata">
+            {wet ? <CloudRain size={16} weight="duotone" className="text-primary" /> : <CloudSun size={16} weight="duotone" />}
+            {forecast.temp}°{wet ? ` · rain ${forecast.rain}%` : ""}
+          </span>
+        )}
       </div>
-      <button type="button" onClick={() => setTab("plan")} className="relative z-10 flex min-w-0 items-center gap-2 text-left font-medium">
-        <Confetti size={18} weight="duotone" className="shrink-0 text-accent" />
-        <span className="truncate">{festivalLine(today, kolkataNow().minute)}</span>
-      </button>
-      {forecast && (
-        <span className="relative z-10 flex shrink-0 items-center gap-1.5 rounded-full bg-surface2/90 backdrop-blur-sm px-2.5 py-1 text-muted" title="Next six hours, Kolkata">
-          {wet ? <CloudRain size={16} weight="duotone" className="text-primary" /> : <CloudSun size={16} weight="duotone" />}
-          {forecast.temp}°{wet ? ` · rain ${forecast.rain}%` : ""}
+
+      <button
+        type="button"
+        onClick={togglePujaDayMode}
+        className={clsx(
+          "flex w-full items-center justify-between rounded-2xl border px-3 py-2 text-xs font-bold transition-all active:scale-98 shadow-sm",
+          pujaDayMode
+            ? "border-amber-500/60 bg-gradient-to-r from-amber-500/20 via-primary/20 to-accent/20 text-fg ring-1 ring-amber-500/40"
+            : "border-line bg-surface hover:bg-surface2 text-muted hover:text-fg"
+        )}
+      >
+        <div className="flex items-center gap-2">
+          <span className="text-sm">🪔</span>
+          <span>{pujaDayMode ? "Puja Day Mode Active" : "Enable Puja Day Mode"}</span>
+        </div>
+        <span className={clsx("rounded-full px-2 py-0.5 text-[10px] uppercase font-extrabold tracking-wider", pujaDayMode ? "bg-amber-500 text-black shadow-xs" : "bg-surface2 text-muted")}>
+          {pujaDayMode ? "ON" : "OFF"}
         </span>
-      )}
+      </button>
     </div>
   );
 }

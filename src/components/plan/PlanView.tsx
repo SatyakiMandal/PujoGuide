@@ -6,6 +6,8 @@ import { fmtClock } from "@/lib/hours";
 import {
   ArrowSquareOut,
   CaretDown,
+  ChatCircleText,
+  CheckCircle,
   Clock,
   Copy,
   CurrencyInr,
@@ -21,10 +23,12 @@ import {
   PencilSimple,
   Play,
   Plus,
+  Printer,
   QrCode,
   Ruler,
   Shuffle,
   Trash,
+  UploadSimple,
   X,
 } from "@phosphor-icons/react";
 import { AnimatePresence, Reorder, useDragControls, motion } from "motion/react";
@@ -39,6 +43,8 @@ import { placeDwellMin } from "@/lib/route/dwell";
 import { findNearbyFood } from "@/lib/route/geo";
 import { isFood, type Place } from "@/lib/schema";
 import { generateQRCodeSVG } from "@/lib/qrcode";
+import { downloadBackupFile, restoreBackupJSON } from "@/lib/personalData";
+import { precacheKolkataMapTiles, type CacheProgress } from "@/lib/offlineTileCacher";
 import { PlansCatalog } from "./PlansCatalog";
 import { LiveTourMode } from "./LiveTourMode";
 import { EditRouteModal } from "./EditRouteModal";
@@ -60,9 +66,16 @@ export function PlanView() {
   const [editOpen, setEditOpen] = useState(false);
   const [activeTourIndex, setActiveTourIndex] = useState<number | null>(null);
 
+  const [backupOpen, setBackupOpen] = useState(false);
+
   const startCustomRoute = () => {
     setBrowse(false);
     setEditOpen(true);
+  };
+
+  const shareWhatsApp = () => {
+    const text = formattedShareText(location.origin, routePlacesList);
+    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank");
   };
 
   if ((routePlacesList.length === 0 || browse) && !editOpen) {
@@ -195,6 +208,15 @@ export function PlanView() {
         <Action onClick={() => setQrOpen(true)} icon={<QrCode size={17} weight="bold" />}>
           QR Code
         </Action>
+        <Action onClick={shareWhatsApp} icon={<ChatCircleText size={17} weight="bold" />}>
+          WhatsApp
+        </Action>
+        <Action onClick={() => window.print()} icon={<Printer size={17} weight="bold" />}>
+          Print
+        </Action>
+        <Action onClick={() => setBackupOpen(true)} icon={<DownloadSimple size={17} weight="bold" />}>
+          Backup / Restore
+        </Action>
         {links.map((href, i) => (
           <a
             key={href}
@@ -218,6 +240,7 @@ export function PlanView() {
       <EditRouteModal open={editOpen} onClose={() => setEditOpen(false)} />
       <OfflinePlanModal open={offlineOpen} onClose={() => setOfflineOpen(false)} places={routePlacesList} />
       <QRCodeModal open={qrOpen} onClose={() => setQrOpen(false)} url={shareUrl(location.origin, stops)} />
+      <BackupModal open={backupOpen} onClose={() => setBackupOpen(false)} />
 
       <p className="text-xs leading-relaxed text-muted">
         Times and fares are estimates. Pins are approximate until verified, and auto, cab and bike prices are rough
@@ -631,6 +654,88 @@ function QRCodeModal({ open, onClose, url }: { open: boolean; onClose: () => voi
           <p className="mt-4 text-xs leading-relaxed text-muted">
             Point any phone camera at this screen to instantly open and clone this exact Puja route!
           </p>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
+function BackupModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const [statusMsg, setStatusMsg] = useState<string | null>(null);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  if (!open) return null;
+
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      const content = evt.target?.result as string;
+      const res = restoreBackupJSON(content);
+      setStatusMsg(res.message);
+      setIsSuccess(res.success);
+    };
+    reader.readAsText(file);
+  };
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-50 grid place-items-center bg-black/60 p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+      >
+        <motion.div
+          role="dialog"
+          aria-label="Backup and restore personal data"
+          onClick={(e) => e.stopPropagation()}
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.95, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 400, damping: 32 }}
+          className="w-full max-w-sm rounded-3xl border border-line bg-bg p-6 shadow-float space-y-4"
+        >
+          <div className="flex items-center justify-between pb-3 border-b border-line">
+            <h3 className="flex items-center gap-2 font-display text-base font-semibold">
+              <DownloadSimple size={20} weight="duotone" className="text-primary" /> Backup &amp; Restore
+            </h3>
+            <button
+              type="button"
+              onClick={onClose}
+              className="grid size-8 place-items-center rounded-full text-muted hover:bg-surface2"
+            >
+              <X size={18} weight="bold" />
+            </button>
+          </div>
+
+          <p className="text-xs leading-relaxed text-muted">
+            Export your saved places, visited check-ins, custom notes, and itinerary to a JSON file, or restore from a previous backup.
+          </p>
+
+          <div className="space-y-2.5">
+            <motion.button
+              type="button"
+              whileTap={{ scale: 0.95 }}
+              onClick={downloadBackupFile}
+              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 font-bold text-primary-fg shadow-xs"
+            >
+              <DownloadSimple size={18} weight="bold" /> Download Backup (.json)
+            </motion.button>
+
+            <label className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-2xl border border-line bg-surface px-4 font-semibold text-fg hover:bg-surface2 cursor-pointer transition-colors text-xs">
+              <UploadSimple size={18} weight="bold" /> Restore from File
+              <input type="file" accept=".json" onChange={handleFileUpload} className="hidden" />
+            </label>
+          </div>
+
+          {statusMsg && (
+            <p className={clsx("text-xs font-semibold text-center p-2.5 rounded-xl border", isSuccess ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-600 dark:text-emerald-400" : "bg-rose-500/10 border-rose-500/30 text-rose-600 dark:text-rose-400")}>
+              {statusMsg}
+            </p>
+          )}
         </motion.div>
       </motion.div>
     </AnimatePresence>

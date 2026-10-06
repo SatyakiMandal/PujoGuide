@@ -31,6 +31,8 @@ export type PlanRequest = {
   diet: "any" | "veg";
   meals: Meals;
   pace: Pace;
+  /** Prefer indoor/covered venues (Bonedi Baris & indoor pandals) when rain is likely. */
+  rainAware?: boolean;
   /** Slugs not to suggest (visited, or used on another day). */
   avoid?: string[];
   /** Where you are starting from; defaults to the first stop. */
@@ -124,6 +126,14 @@ export function sightScore(p: Place, r: PlanRequest, arrive?: number): { score: 
     if (p.category === "bonedi_bari" && arrive > 18 * 60) s -= 0.6;
     if (p.category === "bonedi_bari" && arrive >= 9 * 60 && arrive <= 17 * 60) s += 0.2;
   }
+  if (r.rainAware) {
+    if (p.category === "bonedi_bari" || has("indoor") || has("heritage")) {
+      add(1.2, "rain safe / indoor venue");
+    } else {
+      s -= 0.4;
+    }
+  }
+
   if (p.coordConfidence === "area") s -= 0.15;
   return { score: s, why: [...new Set(why)].slice(0, 3) };
 }
