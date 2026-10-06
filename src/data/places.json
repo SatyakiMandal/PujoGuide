@@ -39116,5 +39116,779 @@
     "peakHours": "8 PM – 2 AM",
     "pushpanjali": "9 AM – 11 AM",
     "sourceNote": "Confirmed 2026 Puja Release"
+  },
+  {
+    "id": "beniatola-sarbojanin",
+    "slug": "beniatola-sarbojanin",
+    "category": "pandal",
+    "name": {
+      "en": "Beniatola Sarbojanin",
+      "bn": "বেনিয়াতোলা সার্বজনীন"
+    },
+    "aliases": [
+      "Beniyatala",
+      "Beniatola Pujo",
+      "Beniatola Sarbojanin Durgotsav"
+    ],
+    "zones": [
+      "shobhabazar",
+      "north"
+    ],
+    "region": "north",
+    "area": "Beniatola / Shobhabazar",
+    "lat": 22.5936,
+    "lng": 88.3582,
+    "coordConfidence": "verified",
+    "metro": [
+      "Shobhabazar Sutanuti"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "heritage",
+      "award"
+    ],
+    "blurb": "Renowned North Kolkata traditional pandal near Ahiritola and Kumartuli, celebrated for its artistic traditional idols and heritage lighting.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Traditional artistic Durga idol and heritage lighting in historic North Kolkata lanes.",
+      "good": "Visit early evening to experience the traditional dhaki drumming.",
+      "watch": "Heavy foot traffic near Ahiritola crossing."
+    }
+  },
+  {
+    "id": "jagat-mukherjee-park",
+    "slug": "jagat-mukherjee-park",
+    "category": "pandal",
+    "name": {
+      "en": "Jagat Mukherjee Park",
+      "bn": "জগত মুখার্জী পার্ক"
+    },
+    "aliases": [
+      "Jagat Mukherjee Park Pandal",
+      "Jatindra Mohan Ave Pandal"
+    ],
+    "zones": [
+      "shobhabazar",
+      "north"
+    ],
+    "region": "north",
+    "area": "Shobhabazar / Kumartuli",
+    "lat": 22.5977,
+    "lng": 88.3644,
+    "coordConfidence": "verified",
+    "metro": [
+      "Shobhabazar Sutanuti",
+      "Shyambazar"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "creative"
+    ],
+    "blurb": "Famous heritage North Kolkata pandal near Kumartuli Park, known for unique theme concepts and water installations.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Innovative artistic theme concepts and water installations.",
+      "good": "Great photo spot near Jatindra Mohan Avenue.",
+      "watch": "Queue lines extend onto main road during peak hours."
+    }
+  },
+  {
+    "id": "tal-betal-sarbojanin",
+    "slug": "tal-betal-sarbojanin",
+    "category": "pandal",
+    "name": {
+      "en": "Tal Betal Sarbojanin",
+      "bn": "তাল বেতাল সার্বজনীন"
+    },
+    "aliases": [
+      "Tal Betal",
+      "Talbetal Pandal"
+    ],
+    "zones": [
+      "shobhabazar",
+      "north"
+    ],
+    "region": "north",
+    "area": "Hatibagan / Maniktala",
+    "lat": 22.5901,
+    "lng": 88.3712,
+    "coordConfidence": "verified",
+    "metro": [
+      "Shyambazar",
+      "Girish Park"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "theme"
+    ],
+    "blurb": "Popular North Kolkata neighbourhood pandal between Hatibagan and Maniktala known for vibrant folklore themes.",
+    "crowd": "medium",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Vibrant folklore theme artwork between Hatibagan and Maniktala.",
+      "good": "Easily accessible from Shyambazar or Girish Park metro.",
+      "watch": "Narrow entry alley."
+    }
+  },
+  {
+    "id": "hatibagan-nabin-pally",
+    "slug": "hatibagan-nabin-pally",
+    "category": "pandal",
+    "name": {
+      "en": "Hatibagan Nabin Pally",
+      "bn": "হাতিবাগান নবীন পল্লী"
+    },
+    "aliases": [
+      "Nabin Pally",
+      "Hatibagan Nabin Pally Durgotsav"
+    ],
+    "zones": [
+      "shobhabazar",
+      "north"
+    ],
+    "region": "north",
+    "area": "Hatibagan",
+    "lat": 22.5928,
+    "lng": 88.3705,
+    "coordConfidence": "verified",
+    "metro": [
+      "Shyambazar"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "award",
+      "theme"
+    ],
+    "blurb": "Top award-winning North Kolkata theme pandal located in the heart of Hatibagan market.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Top award-winning theme pandal located in the heart of Hatibagan.",
+      "good": "Combines easily with Nalin Sarkar Street and Hatibagan Sarbojanin.",
+      "watch": "Crowded market lanes after 7 PM."
+    }
+  },
+  {
+    "id": "nalin-sarkar-street",
+    "slug": "nalin-sarkar-street",
+    "category": "pandal",
+    "name": {
+      "en": "Nalin Sarkar Street",
+      "bn": "নলিনী সরকার স্ট্রিট"
+    },
+    "aliases": [
+      "Nalini Sarkar Street",
+      "Nalin Sarkar Street Sarbojanin"
+    ],
+    "zones": [
+      "shobhabazar",
+      "north"
+    ],
+    "region": "north",
+    "area": "Hatibagan / Khanna",
+    "lat": 22.5939,
+    "lng": 88.3724,
+    "coordConfidence": "verified",
+    "metro": [
+      "Shyambazar"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "award",
+      "theme"
+    ],
+    "blurb": "Multiple Asian Paints Sharad Samman awardee, renowned for intricate handcraft and immersive artwork.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Sharad Samman winner featuring intricate handcraft and immersive artwork.",
+      "good": "Must-see installation for theme lovers.",
+      "watch": "Slow-moving queue due to detailed indoor artwork."
+    }
+  },
+  {
+    "id": "tala-barowari",
+    "slug": "tala-barowari",
+    "category": "pandal",
+    "name": {
+      "en": "Tala Barowari",
+      "bn": "টালা বারোয়ারী"
+    },
+    "aliases": [
+      "Tala Barowari Durgotsav",
+      "Tala Barowari Pujo"
+    ],
+    "zones": [
+      "north"
+    ],
+    "region": "north",
+    "area": "Tala Park / Belgachia",
+    "lat": 22.6072,
+    "lng": 88.3745,
+    "coordConfidence": "verified",
+    "metro": [
+      "Belgachia"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "heritage"
+    ],
+    "blurb": "Century-old historic North Kolkata barowari Puja situated near Tala Park and Tala Prattay.",
+    "crowd": "medium",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Century-old historic barowari Puja near Tala Park.",
+      "good": "Spacious park surroundings with shorter queues.",
+      "watch": "Short walk from Belgachia metro."
+    }
+  },
+  {
+    "id": "sikdar-bagan-sadharan",
+    "slug": "sikdar-bagan-sadharan",
+    "category": "pandal",
+    "name": {
+      "en": "Sikdar Bagan Sadharan",
+      "bn": "সিকদার বাগান সাধারণ"
+    },
+    "aliases": [
+      "Sikdar Bagan",
+      "Sikdar Bagan Pujo"
+    ],
+    "zones": [
+      "shobhabazar",
+      "north"
+    ],
+    "region": "north",
+    "area": "Shyambazar / Hatibagan",
+    "lat": 22.5945,
+    "lng": 88.3701,
+    "coordConfidence": "verified",
+    "metro": [
+      "Shyambazar"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "heritage",
+      "award"
+    ],
+    "blurb": "One of the oldest barowari Pujas of North Kolkata (since 1913), famous for its grand traditional Pratima and exquisite lighting.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Historic 1913 barowari Puja with grand traditional Pratima.",
+      "good": "Located right near Shyambazar 5-point crossing.",
+      "watch": "High crowd density at peak night."
+    }
+  },
+  {
+    "id": "simla-byam-samity",
+    "slug": "simla-byam-samity",
+    "category": "pandal",
+    "name": {
+      "en": "Simla Byam Samity",
+      "bn": "শিমলা ব্যায়াম সমিতি"
+    },
+    "aliases": [
+      "Simla Byam Samiti",
+      "Shimla Byam Samiti"
+    ],
+    "zones": [
+      "girish_park",
+      "north"
+    ],
+    "region": "north",
+    "area": "Girish Park / Simla",
+    "lat": 22.5855,
+    "lng": 88.3688,
+    "coordConfidence": "verified",
+    "metro": [
+      "Girish Park"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "heritage"
+    ],
+    "blurb": "Historic 100+ year old Puja founded by freedom fighters near Swami Vivekananda ancestral home, famous for traditional Ekchala idol.",
+    "crowd": "medium",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Historic 100+ year old freedom fighters Puja with traditional Ekchala idol.",
+      "good": "Atmospheric heritage neighborhood near Vivekananda ancestral house.",
+      "watch": "Narrow residential lanes."
+    }
+  },
+  {
+    "id": "sorasakho-sadharan",
+    "slug": "sorasakho-sadharan",
+    "category": "pandal",
+    "name": {
+      "en": "Sorasakho Sadharan",
+      "bn": "ছোড়াসাঁকো সাধারণ"
+    },
+    "aliases": [
+      "Sorasakho",
+      "Sorasakho Pandal"
+    ],
+    "zones": [
+      "girish_park",
+      "north"
+    ],
+    "region": "north",
+    "area": "Girish Park / Maniktala",
+    "lat": 22.5832,
+    "lng": 88.3695,
+    "coordConfidence": "verified",
+    "metro": [
+      "Girish Park"
+    ],
+    "tags": [
+      "pandal",
+      "north",
+      "traditional"
+    ],
+    "blurb": "Classic North Kolkata neighbourhood pandal near Girish Park celebrating traditional heritage idol artwork.",
+    "crowd": "medium",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Classic North Kolkata neighbourhood pandal celebrating traditional heritage idols.",
+      "good": "Quick stop along the Girish Park route.",
+      "watch": "Parking is unavailable nearby."
+    }
+  },
+  {
+    "id": "malapara-baishnabdas-mullick-bari",
+    "slug": "malapara-baishnabdas-mullick-bari",
+    "category": "bonedi_bari",
+    "name": {
+      "en": "Malapara Baishnabdas Mullick Bari",
+      "bn": "মালা পাড়া বৈষ্ণবদাস মল্লিক বাড়ি"
+    },
+    "aliases": [
+      "Malapara Mullick Bari",
+      "Baishnabdas Mullick Bari"
+    ],
+    "zones": [
+      "girish_park",
+      "north"
+    ],
+    "region": "north",
+    "area": "Pathuriaghata / Malapara",
+    "lat": 22.5878,
+    "lng": 88.3565,
+    "coordConfidence": "verified",
+    "metro": [
+      "Girish Park",
+      "MG Road"
+    ],
+    "tags": [
+      "bonedi_bari",
+      "north",
+      "heritage"
+    ],
+    "blurb": "Heritage 150+ year old ancestral family Puja in Malapara Pathuriaghata, featuring traditional Thakur Dalan ritual worship.",
+    "crowd": "medium",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Heritage 150+ year old ancestral family Puja with ornate Thakur Dalan.",
+      "good": "Quiet traditional ritual atmosphere.",
+      "watch": "Private residence; maintain quiet reverence."
+    }
+  },
+  {
+    "id": "chorbagan-chatterjee-bari",
+    "slug": "chorbagan-chatterjee-bari",
+    "category": "bonedi_bari",
+    "name": {
+      "en": "Chorbagan Chatterjee Bari",
+      "bn": "চোরবাগান চ্যাটার্জী বাড়ি"
+    },
+    "aliases": [
+      "Chatterjee Bari Chorbagan",
+      "Muktaram Babu St Chatterjee Bari"
+    ],
+    "zones": [
+      "mg_road",
+      "central"
+    ],
+    "region": "central",
+    "area": "Chorbagan / Muktaram Babu Street",
+    "lat": 22.5829,
+    "lng": 88.3621,
+    "coordConfidence": "verified",
+    "metro": [
+      "MG Road"
+    ],
+    "tags": [
+      "bonedi_bari",
+      "central",
+      "heritage"
+    ],
+    "blurb": "Traditional ancestral family Puja in the historic Chorbagan lane with ornate antique Thakur Dalan rituals.",
+    "crowd": "low",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Traditional ancestral family Puja in historic Chorbagan lane.",
+      "good": "Serene courtyard worship without long queues.",
+      "watch": "Located in narrow inner alley."
+    }
+  },
+  {
+    "id": "thanthaniya-laha-bari",
+    "slug": "thanthaniya-laha-bari",
+    "category": "bonedi_bari",
+    "name": {
+      "en": "Thanthaniya Laha Bari",
+      "bn": "ঠনঠনিয়া লাহা বাড়ি"
+    },
+    "aliases": [
+      "Laha Bari",
+      "Thanthania Laha Bari Pujo"
+    ],
+    "zones": [
+      "mg_road",
+      "central"
+    ],
+    "region": "central",
+    "area": "Thanthania / College Street",
+    "lat": 22.5798,
+    "lng": 88.3655,
+    "coordConfidence": "verified",
+    "metro": [
+      "MG Road"
+    ],
+    "tags": [
+      "bonedi_bari",
+      "central",
+      "heritage"
+    ],
+    "blurb": "200+ year old historic merchant family Puja famous for Goddess Durga seated without Mahishasura on Shiva lap.",
+    "crowd": "medium",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "200+ year old merchant family Puja featuring Goddess Durga on Shiva lap.",
+      "good": "Unique iconographic tradition.",
+      "watch": "Visitors allowed in courtyard during afternoon bhog time."
+    }
+  },
+  {
+    "id": "jhamapukur-chandra-bari",
+    "slug": "jhamapukur-chandra-bari",
+    "category": "bonedi_bari",
+    "name": {
+      "en": "Jhamapukur Chandra Bari",
+      "bn": "ঝামাপুকুর চন্দ্র বাড়ি"
+    },
+    "aliases": [
+      "Chandra Bari Jhamapukur",
+      "Amherst St Chandra Bari"
+    ],
+    "zones": [
+      "mg_road",
+      "central"
+    ],
+    "region": "central",
+    "area": "Jhamapukur / Amherst Street",
+    "lat": 22.5782,
+    "lng": 88.3698,
+    "coordConfidence": "verified",
+    "metro": [
+      "MG Road"
+    ],
+    "tags": [
+      "bonedi_bari",
+      "central",
+      "heritage"
+    ],
+    "blurb": "Historic 180+ year old family Puja visited by Sri Ramakrishna Paramahamsa in his youth, preserving ancient rituals.",
+    "crowd": "low",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "180+ year old family Puja associated with Sri Ramakrishna Paramahamsa.",
+      "good": "Deep historical and spiritual heritage.",
+      "watch": "Located off Amherst Street."
+    }
+  },
+  {
+    "id": "sanghamitra-club",
+    "slug": "sanghamitra-club",
+    "category": "pandal",
+    "name": {
+      "en": "Sanghamitra Club",
+      "bn": "সংঘমিত্রা ক্লাব"
+    },
+    "aliases": [
+      "Sanghamitra Pandal",
+      "Lake Gardens Sanghamitra"
+    ],
+    "zones": [
+      "kalighat",
+      "south"
+    ],
+    "region": "south",
+    "area": "Mudiali / Lake Gardens",
+    "lat": 22.5115,
+    "lng": 88.3498,
+    "coordConfidence": "verified",
+    "metro": [
+      "Rabindra Sarobar"
+    ],
+    "tags": [
+      "pandal",
+      "south",
+      "neighborhood"
+    ],
+    "blurb": "Popular South Kolkata pandal right near Mudiali and Lake Gardens known for artistic community decorations.",
+    "crowd": "medium",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Vibrant neighbourhood pandal near Mudiali and Lake Gardens.",
+      "good": "Smooth flow between Mudiali Club and Suruchi Sangha.",
+      "watch": "Mind vehicle traffic along Southern Avenue."
+    }
+  },
+  {
+    "id": "rajdanga-naba-udyan",
+    "slug": "rajdanga-naba-udyan",
+    "category": "pandal",
+    "name": {
+      "en": "Rajdanga Naba Udyan",
+      "bn": "রাজডাঙ্গা নব উদ্যান"
+    },
+    "aliases": [
+      "Rajdanga Naba Udyan Sangha",
+      "Rajdanga Pandal"
+    ],
+    "zones": [
+      "kasba",
+      "south"
+    ],
+    "region": "south",
+    "area": "Kasba / Rajdanga",
+    "lat": 22.5152,
+    "lng": 88.3932,
+    "coordConfidence": "verified",
+    "metro": [
+      "Hemanta Mukhopadhyay (Ruby)"
+    ],
+    "tags": [
+      "pandal",
+      "south",
+      "theme",
+      "award"
+    ],
+    "blurb": "Major South-East Kolkata theme pandal in Rajdanga Kasba, famous for large-scale creative installations.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Major South-East Kolkata theme pandal with grand structures.",
+      "good": "Easy cab drop near Ruby crossing.",
+      "watch": "Substantial walking loop inside Rajdanga."
+    }
+  },
+  {
+    "id": "samaj-sebi-sangha",
+    "slug": "samaj-sebi-sangha",
+    "category": "pandal",
+    "name": {
+      "en": "Samaj Sebi Sangha",
+      "bn": "সমাজ সেবী সংঘ"
+    },
+    "aliases": [
+      "Samaj Sebi",
+      "Samaj Sebi Pujo",
+      "Lake Road Samaj Sebi"
+    ],
+    "zones": [
+      "kalighat",
+      "south"
+    ],
+    "region": "south",
+    "area": "Lake Road / Kalighat",
+    "lat": 22.5168,
+    "lng": 88.3534,
+    "coordConfidence": "verified",
+    "metro": [
+      "Kalighat"
+    ],
+    "tags": [
+      "pandal",
+      "south",
+      "award",
+      "theme"
+    ],
+    "blurb": "Top award-winning South Kolkata pandal on Lake Road, celebrated for social message themes and artistic craftsmanship.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Top award-winning Lake Road theme pandal with social message themes.",
+      "good": "Combines perfectly with Ballygunge Cultural and Tridhara.",
+      "watch": "Strict one-way pedestrian barricades."
+    }
+  },
+  {
+    "id": "jadavpur-park-sarbojanin",
+    "slug": "jadavpur-park-sarbojanin",
+    "category": "pandal",
+    "name": {
+      "en": "Jadavpur Park Sarbojanin",
+      "bn": "যাদবপুর পার্ক সার্বজনীন"
+    },
+    "aliases": [
+      "Jadavpur Park",
+      "Jadavpur Park Pujo"
+    ],
+    "zones": [
+      "jadavpur",
+      "south"
+    ],
+    "region": "south",
+    "area": "Jadavpur Park / Selimpur",
+    "lat": 22.5028,
+    "lng": 88.3665,
+    "coordConfidence": "verified",
+    "metro": [
+      "Kavi Subhash",
+      "Kalighat"
+    ],
+    "tags": [
+      "pandal",
+      "south",
+      "creative"
+    ],
+    "blurb": "Classic South Kolkata pandal in Jadavpur Park, forming a seamless cluster with Selimpur Club and Babubagan.",
+    "crowd": "high",
+    "opensOn": "shashthi",
+    "info": "researched",
+    "tips": {
+      "expect": "Classic South Kolkata pandal forming a popular cluster with Selimpur and Babubagan.",
+      "good": "Plenty of local street food stalls along the route.",
+      "watch": "Heavy foot traffic near Jadavpur 8B bus stand."
+    }
+  },
+  {
+    "id": "the-oven-diner-kankurgachi",
+    "slug": "the-oven-diner-kankurgachi",
+    "category": "restaurant",
+    "name": {
+      "en": "The Oven Diner",
+      "bn": "দি ওভেন ডাইনার"
+    },
+    "aliases": [
+      "The Oven Diner Kankurgachi",
+      "Oven Diner"
+    ],
+    "zones": [
+      "north"
+    ],
+    "region": "north",
+    "area": "Kankurgachi / Maniktala",
+    "lat": 22.5778,
+    "lng": 88.3892,
+    "coordConfidence": "verified",
+    "metro": [
+      "Phoolbagan"
+    ],
+    "tags": [
+      "restaurant",
+      "north",
+      "continental",
+      "family"
+    ],
+    "cuisines": [
+      "continental",
+      "north_indian",
+      "chinese"
+    ],
+    "vibes": [
+      "fine_dining",
+      "family"
+    ],
+    "priceLevel": 2,
+    "blurb": "Popular multi-cuisine diner in Kankurgachi famous for sizzlers, thin-crust pizzas, and north Indian delicacies.",
+    "rating": 4.4,
+    "ratingCount": 380,
+    "info": "researched",
+    "tips": {
+      "expect": "Multi-cuisine diner famous for sizzlers, thin-crust pizzas, and kebabs.",
+      "good": "Spacious air-conditioned seating for family meals.",
+      "watch": "Weekend dinner rush; reserve ahead."
+    }
+  },
+  {
+    "id": "tring-tring-lake-market",
+    "slug": "tring-tring-lake-market",
+    "category": "cafe",
+    "name": {
+      "en": "TRING TRING",
+      "bn": "ট্রিং ট্রিং"
+    },
+    "aliases": [
+      "Tring Tring Cafe",
+      "Tring Tring Lake Market"
+    ],
+    "zones": [
+      "kalighat",
+      "south"
+    ],
+    "region": "south",
+    "area": "Lake Market / Kalighat",
+    "lat": 22.5175,
+    "lng": 88.3508,
+    "coordConfidence": "verified",
+    "metro": [
+      "Kalighat"
+    ],
+    "tags": [
+      "cafe",
+      "south",
+      "adda",
+      "aesthetic"
+    ],
+    "cuisines": [
+      "coffee",
+      "continental",
+      "bakery"
+    ],
+    "vibes": [
+      "adda",
+      "aesthetic",
+      "quick_bite"
+    ],
+    "priceLevel": 2,
+    "blurb": "Trendy bicycle-themed aesthetic cafe near Lake Market serving specialty coffees, coolers, and artisan bakes.",
+    "rating": 4.5,
+    "ratingCount": 290,
+    "info": "researched",
+    "tips": {
+      "expect": "Bicycle-themed aesthetic cafe serving specialty coffees and artisan pastries.",
+      "good": "Great stop for coffee and adda near Lake Market.",
+      "watch": "Limited seating during evening peak."
+    }
   }
 ]
