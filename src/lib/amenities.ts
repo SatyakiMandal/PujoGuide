@@ -2,6 +2,8 @@ import amenitiesRaw from "@/data/amenities.json";
 import { haversineKm } from "./route/geo";
 import { type Amenity, type AmenityType, amenitySchema } from "./schema";
 
+export type { Amenity, AmenityType };
+
 const AMENITIES: Amenity[] = (amenitiesRaw as unknown[]).map((a) => amenitySchema.parse(a));
 
 export function getAmenities(type?: AmenityType): Amenity[] {

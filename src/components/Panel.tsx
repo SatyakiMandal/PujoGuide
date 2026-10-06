@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { CaretDown, CaretUp, CheckCircle, Heart, MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
+import { CaretDown, CaretUp, CheckCircle, FirstAid, Heart, MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
 import { FilterGroups, FilterToggle } from "@/components/filters/Filters";
 import { PlaceDetail } from "@/components/place/PlaceDetail";
 import { PlanView } from "@/components/plan/PlanView";
@@ -24,11 +24,11 @@ const MODES: { id: FilterMode; label: string; hint: string }[] = [
 
 export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
   const { list, matched, visibleCount } = useFiltered();
-  const { query, mode, selected, filters, tab } = useUI();
+  const { query, mode, selected, filters, tab, showAmenities } = useUI();
   const stopCount = useUI((s) => s.route.stops.length);
   const savedCount = useUI((s) => s.saved.length);
   const visitedCount = useUI((s) => s.visited.length);
-  const { setQuery, setMode, toggleLayer, setTab, select, setPersonal } = useUI.getState();
+  const { setQuery, setMode, toggleLayer, setTab, select, setPersonal, toggleAmenities } = useUI.getState();
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [filterSectionCollapsed, setFilterSectionCollapsed] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
@@ -153,21 +153,27 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
 
         {filterSectionCollapsed ? (
           <div className="flex items-center justify-between rounded-2xl border border-line bg-surface p-2.5 text-xs">
-            <span className="font-semibold text-muted">
+            <span className="font-semibold text-muted truncate pr-2">
               Filters collapsed · {filters.layers.length} categories active
             </span>
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-1.5 shrink-0">
               <button
                 type="button"
-                onClick={() => useUI.getState().setEssentials(true)}
-                className="rounded-full border border-line/80 bg-surface2 px-2.5 py-1 font-semibold text-fg hover:bg-surface2/80"
+                onClick={toggleAmenities}
+                className={clsx(
+                  "inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-semibold transition-colors",
+                  showAmenities
+                    ? "border-primary/50 bg-primary/15 text-primary"
+                    : "border-line bg-surface2 text-fg hover:bg-surface2/80"
+                )}
               >
-                🚽 Amenities
+                <FirstAid size={14} weight={showAmenities ? "fill" : "bold"} />
+                <span>Amenities</span>
               </button>
               <button
                 type="button"
                 onClick={() => setFilterSectionCollapsed(false)}
-                className="flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 font-bold text-primary hover:bg-primary/20"
+                className="flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 font-bold text-primary hover:bg-primary/20 transition-colors"
               >
                 <span>Expand</span>
                 <CaretDown size={14} weight="bold" />
@@ -227,47 +233,54 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
               })}
             </div>
 
-            <div className="flex items-center justify-between gap-2">
-              <div className="flex items-center gap-2">
-                <FilterToggle open={filtersOpen} onToggle={() => setFiltersOpen((o) => !o)} />
-                <button
-                  type="button"
-                  onClick={() => useUI.getState().setEssentials(true)}
-                  className="inline-flex min-h-9 items-center gap-1 rounded-full border border-line bg-surface px-3 text-sm font-medium hover:bg-surface2"
-                >
-                  <span>🚽</span> Amenities
-                </button>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <div role="radiogroup" aria-label="How filters apply" className="flex rounded-full border border-line bg-surface p-0.5">
-                  {MODES.map((m) => (
-                    <button
-                      key={m.id}
-                      type="button"
-                      role="radio"
-                      aria-checked={mode === m.id}
-                      title={m.hint}
-                      onClick={() => setMode(m.id)}
-                      className={clsx(
-                        "min-h-8 rounded-full px-3 text-sm font-medium transition-colors",
-                        mode === m.id ? "bg-fg text-bg" : "text-muted hover:text-fg",
-                      )}
-                    >
-                      {m.label}
-                    </button>
-                  ))}
+            <div className="space-y-2 border-t border-line/40 pt-2">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  <FilterToggle open={filtersOpen} onToggle={() => setFiltersOpen((o) => !o)} />
+                  <button
+                    type="button"
+                    onClick={toggleAmenities}
+                    className={clsx(
+                      "inline-flex min-h-9 items-center gap-1.5 rounded-full border px-3 text-xs font-semibold transition-all active:scale-95",
+                      showAmenities
+                        ? "border-primary/50 bg-primary/15 text-primary shadow-xs"
+                        : "border-line bg-surface text-fg hover:bg-surface2"
+                    )}
+                  >
+                    <FirstAid size={16} weight={showAmenities ? "fill" : "bold"} />
+                    <span>Amenities</span>
+                  </button>
                 </div>
+
                 <button
                   type="button"
                   onClick={() => setFilterSectionCollapsed(true)}
                   aria-label="Collapse filters section"
                   title="Collapse filters section"
-                  className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-xs font-semibold text-muted hover:bg-surface2 hover:text-fg active:scale-95 transition-all"
+                  className="inline-flex min-h-9 items-center gap-1 rounded-full border border-line bg-surface px-2.5 text-xs font-semibold text-muted hover:bg-surface2 hover:text-fg active:scale-95 transition-all shrink-0"
                 >
                   <span>Collapse</span>
                   <CaretUp size={14} weight="bold" />
                 </button>
+              </div>
+
+              <div role="radiogroup" aria-label="How filters apply" className="flex w-full rounded-full border border-line bg-surface p-0.5">
+                {MODES.map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={mode === m.id}
+                    title={m.hint}
+                    onClick={() => setMode(m.id)}
+                    className={clsx(
+                      "flex-1 min-h-8 rounded-full px-3 text-xs font-semibold transition-colors text-center",
+                      mode === m.id ? "bg-fg text-bg shadow-xs" : "text-muted hover:text-fg",
+                    )}
+                  >
+                    {m.label}
+                  </button>
+                ))}
               </div>
             </div>
           </>

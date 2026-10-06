@@ -30,6 +30,7 @@ type UIState = {
   essentials: boolean;
   setEssentials: (open: boolean) => void;
   showMetro: boolean;
+  showAmenities: boolean;
   route: RouteState;
   /** Slugs you saved / visited, and your own notes per place. Persisted on this device. */
   saved: string[];
@@ -47,6 +48,7 @@ type UIState = {
   setMode: (m: FilterMode) => void;
   setTab: (t: Tab) => void;
   toggleMetro: () => void;
+  toggleAmenities: () => void;
   addStop: (slug: string) => void;
   insertStop: (slug: string, afterSlug: string) => void;
   removeStop: (slug: string) => void;
@@ -90,6 +92,7 @@ export const useUI = create<UIState>()(
       essentials: false,
       setEssentials: (essentials) => set({ essentials }),
       showMetro: true,
+      showAmenities: false,
       route: emptyRoute,
       saved: [],
       visited: [],
@@ -104,6 +107,7 @@ export const useUI = create<UIState>()(
       setMode: (mode) => set({ mode }),
       setTab: (tab) => set({ tab }),
       toggleMetro: () => set((s) => ({ showMetro: !s.showMetro })),
+      toggleAmenities: () => set((s) => ({ showAmenities: !s.showAmenities })),
       // Any manual change to the stops invalidates the auto-planner's times, so drop them.
       addStop: (slug) =>
         set((s) =>

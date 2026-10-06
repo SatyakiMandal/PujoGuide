@@ -1,7 +1,7 @@
 "use client";
 
 import "maplibre-gl/dist/maplibre-gl.css";
-import { CrosshairSimple, ShieldCheck, TrainSimple } from "@phosphor-icons/react";
+import { CrosshairSimple, FirstAid, ShieldCheck, TrainSimple, X } from "@phosphor-icons/react";
 import * as maplibregl from "maplibre-gl";
 import { useTheme } from "next-themes";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -16,6 +16,9 @@ import { useUI } from "@/store/ui";
 import { PlacePin, type PinState } from "./PlacePin";
 import { useClusters, type View } from "./useClusters";
 import { RouteLayer } from "./RouteLayer";
+import { getAmenities, AMENITY_LABELS, type Amenity } from "@/lib/amenities";
+import { haversineKm } from "@/lib/route/geo";
+import { clsx } from "clsx";
 
 if (typeof window !== "undefined") maplibregl.setWorkerUrl("/maplibre/maplibre-gl-worker.mjs");
 
@@ -41,11 +44,15 @@ export function FreeMapCanvas() {
   const selected = useUI((s) => s.selected);
   const mode = useUI((s) => s.mode);
   const showMetro = useUI((s) => s.showMetro);
+  const showAmenities = useUI((s) => s.showAmenities);
   const userPos = useUI((s) => s.userPos);
   const stops = useUI((s) => s.route.stops);
   const visited = useUI((s) => s.visited);
   const tab = useUI((s) => s.tab);
   const filtersActive = matched.size !== rendered.length || mode === "filter";
+
+  const [selectedAmenity, setSelectedAmenity] = useState<Amenity | null>(null);
+  const amenitiesList = useMemo(() => (showAmenities ? getAmenities() : []), [showAmenities]);
 
   const syncView = useCallback(() => {
     const map = mapRef.current?.getMap();
@@ -278,6 +285,98 @@ export function FreeMapCanvas() {
 
         {routePins.map(pinMarker)}
 
+        {showAmenities &&
+          amenitiesList.map((a) => {
+            const isSel = selectedAmenity?.id === a.id;
+            const meta = AMENITY_LABELS[a.type];
+            const badgeBg =
+              a.type === "toilet"
+                ? "bg-blue-600 text-white"
+                : a.type === "water"
+                ? "bg-cyan-600 text-white"
+                : a.type === "police_booth"
+                ? "bg-amber-600 text-white"
+                : "bg-rose-600 text-white";
+
+            return (
+              <Marker
+                key={a.id}
+                longitude={a.lng}
+                latitude={a.lat}
+                anchor="bottom"
+                style={{ zIndex: isSel ? 600 : 250 }}
+                onClick={(e) => {
+                  e.originalEvent.stopPropagation();
+                  setSelectedAmenity(a);
+                }}
+              >
+                <button
+                  type="button"
+                  aria-label={`${meta.label}: ${a.name}`}
+                  className={clsx(
+                    "group relative flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-bold shadow-md transition-transform hover:scale-110 active:scale-95 border border-white/30",
+                    badgeBg,
+                    isSel && "ring-2 ring-white ring-offset-2 ring-offset-black scale-110"
+                  )}
+                >
+                  <span className="text-xs">{meta.icon}</span>
+                  <span className="max-w-[90px] truncate text-[10px] font-bold tracking-tight">{a.area}</span>
+                </button>
+              </Marker>
+            );
+          })}
+
+        {selectedAmenity && (
+          <Marker
+            longitude={selectedAmenity.lng}
+            latitude={selectedAmenity.lat}
+            anchor="bottom"
+            offset={[0, -36]}
+            style={{ zIndex: 700 }}
+          >
+            <div className="w-72 rounded-2xl border border-line bg-surface/95 p-3.5 shadow-2xl backdrop-blur-md text-fg relative animate-in fade-in zoom-in-95 duration-150">
+              <button
+                type="button"
+                onClick={() => setSelectedAmenity(null)}
+                className="absolute right-2.5 top-2.5 grid size-6 place-items-center rounded-full text-muted hover:bg-surface2 hover:text-fg"
+                aria-label="Close"
+              >
+                <X size={14} weight="bold" />
+              </button>
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="text-lg">{AMENITY_LABELS[selectedAmenity.type].icon}</span>
+                <span className="rounded-full bg-surface2 px-2 py-0.5 text-[10px] font-bold text-primary uppercase tracking-wider">
+                  {AMENITY_LABELS[selectedAmenity.type].label}
+                </span>
+              </div>
+              <h3 className="font-semibold text-sm leading-tight text-fg pr-5">{selectedAmenity.name}</h3>
+              <p className="mt-1 text-xs text-muted leading-relaxed">{selectedAmenity.address}</p>
+              {selectedAmenity.notes && (
+                <p className="mt-1.5 text-[11px] font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-lg">
+                  {selectedAmenity.notes}
+                </p>
+              )}
+              <div className="mt-3 flex items-center justify-between gap-2 border-t border-line/60 pt-2 text-xs">
+                {userPos ? (
+                  <span className="text-[11px] font-medium text-muted">
+                    {haversineKm(userPos, { lat: selectedAmenity.lat, lng: selectedAmenity.lng }).toFixed(1)} km away
+                  </span>
+                ) : (
+                  <span className="text-[11px] font-medium text-muted">{selectedAmenity.area}</span>
+                )}
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${selectedAmenity.lat},${selectedAmenity.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-auto inline-flex items-center gap-1 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-fg hover:opacity-90"
+                >
+                  Navigate
+                </a>
+              </div>
+            </div>
+          </Marker>
+        )}
+
         {userPos && (
           <Marker longitude={userPos.lng} latitude={userPos.lat}>
             <div className="size-4 rounded-full border-[3px] border-white bg-[#2b6cff] shadow-[0_0_0_8px_rgb(43_108_255/0.25)]" />
@@ -289,8 +388,12 @@ export function FreeMapCanvas() {
         <MapButton label="Show my location" onClick={locate}>
           <CrosshairSimple size={22} weight="bold" />
         </MapButton>
-        <MapButton label="Essentials and safety" onClick={() => useUI.getState().setEssentials(true)}>
-          <ShieldCheck size={22} weight="bold" />
+        <MapButton
+          label={showAmenities ? "Hide amenities on map" : "Show amenities on map"}
+          active={showAmenities}
+          onClick={() => useUI.getState().toggleAmenities()}
+        >
+          <FirstAid size={22} weight={showAmenities ? "fill" : "bold"} />
         </MapButton>
         <MapButton
           label={showMetro ? "Hide metro lines" : "Show metro lines"}

@@ -2,7 +2,7 @@
 
 import { AdvancedMarker, APIProvider, Map, useMap } from "@vis.gl/react-google-maps";
 import { MarkerClusterer, SuperClusterAlgorithm } from "@googlemaps/markerclusterer";
-import { CrosshairSimple, ShieldCheck, TrainSimple } from "@phosphor-icons/react";
+import { CrosshairSimple, FirstAid, ShieldCheck, TrainSimple } from "@phosphor-icons/react";
 import { useTheme } from "next-themes";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
@@ -118,6 +118,7 @@ function UserMarker() {
 function MapControls() {
   const map = useMap();
   const showMetro = useUI((s) => s.showMetro);
+  const showAmenities = useUI((s) => s.showAmenities);
   const locate = () =>
     navigator.geolocation?.getCurrentPosition(
       ({ coords }) => {
@@ -135,8 +136,12 @@ function MapControls() {
       <MapButton label="Show my location" onClick={locate}>
         <CrosshairSimple size={22} weight="bold" />
       </MapButton>
-      <MapButton label="Essentials and safety" onClick={() => useUI.getState().setEssentials(true)}>
-        <ShieldCheck size={22} weight="bold" />
+      <MapButton
+        label={showAmenities ? "Hide amenities on map" : "Show amenities on map"}
+        active={showAmenities}
+        onClick={() => useUI.getState().toggleAmenities()}
+      >
+        <FirstAid size={22} weight={showAmenities ? "fill" : "bold"} />
       </MapButton>
       <MapButton
         label={showMetro ? "Hide metro lines" : "Show metro lines"}
