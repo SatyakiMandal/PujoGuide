@@ -21,12 +21,12 @@ const isStatic = (url) =>
   url.pathname.startsWith("/icons/") ||
   url.pathname.startsWith("/maplibre/");
 
+const MAP_HOSTS = ["cartocdn.com", "openstreetmap.org", "maplibre.org"];
+
+// Exact host or a proper subdomain of it — substring matching (e.g. `includes`) would
+// let a lookalike host like "cartocdn.com.evil.tld" pass and get cached as trusted.
 const isMapResource = (url) =>
-  url.hostname.includes("cartocdn.com") ||
-  url.hostname.includes("openstreetmap.org") ||
-  url.hostname.includes("maplibre.org") ||
-  url.pathname.includes("style.json") ||
-  url.pathname.includes("/font/");
+  MAP_HOSTS.some((host) => url.hostname === host || url.hostname.endsWith(`.${host}`));
 
 self.addEventListener("fetch", (event) => {
   const req = event.request;
