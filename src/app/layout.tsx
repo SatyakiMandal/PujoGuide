@@ -13,9 +13,16 @@ const bengali = Hind_Siliguri({
 });
 
 export const metadata: Metadata = {
-  title: "PujoGuide — Kolkata Durga Puja map & route planner",
+  title: "PujoGuide: Kolkata Durga Puja map & route planner",
   description:
     "Every Bonedi Bari and pandal in Kolkata on one map. Filter by area, find great food nearby, and plan your pandal-hopping route.",
+  openGraph: {
+    type: "website",
+    siteName: "PujoGuide",
+    title: "PujoGuide: Kolkata Durga Puja map & route planner",
+    description:
+      "Every Bonedi Bari and pandal in Kolkata on one map. Filter by area, find great food nearby, and plan your pandal-hopping route.",
+  },
 };
 
 export const viewport: Viewport = {
