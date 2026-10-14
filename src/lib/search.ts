@@ -5,9 +5,16 @@ import type { Place, Zone } from "./schema";
 export function buildSearch(places: Place[], zones: Zone[]) {
   const zoneName = new Map(zones.map((z) => [z.id, z.name]));
   const index = new MiniSearch<
-    Place & { zoneNames: string; nameEn: string; aliasText: string; categoryText: string; attrText: string }
+    Place & {
+      zoneNames: string;
+      nameEn: string;
+      aliasText: string;
+      categoryText: string;
+      attrText: string;
+      dishText: string;
+    }
   >({
-    fields: ["nameEn", "aliasText", "zoneNames", "area", "categoryText", "attrText"],
+    fields: ["nameEn", "aliasText", "zoneNames", "area", "categoryText", "attrText", "dishText"],
     storeFields: ["id"],
     searchOptions: { prefix: true, fuzzy: 0.2, boost: { nameEn: 3, aliasText: 2, categoryText: 1.5 }, combineWith: "AND" },
   });
@@ -21,6 +28,14 @@ export function buildSearch(places: Place[], zones: Zone[]) {
         p.pureVeg ? "pure veg" : "",
         ...p.tags.map((t) => t.replace(/_/g, " ")),
       ].join(" ");
+      // Lets "chicken", "biryani", "rolls", etc. find places by what's actually on the menu.
+      const dishText = [
+        ...(p.dishes ?? []),
+        ...(p.mustTry?.veg ?? []),
+        ...(p.mustTry?.nonveg ?? []),
+        ...(p.mustTry?.drinks ?? []),
+        ...(p.menu ?? []).map((m) => m.name),
+      ].join(" ");
       return {
         ...p,
         nameEn: p.name.en,
@@ -29,6 +44,7 @@ export function buildSearch(places: Place[], zones: Zone[]) {
         area: p.area.replace(/_/g, " "),
         categoryText: CATEGORY_META[p.category].plural,
         attrText,
+        dishText,
       };
     }),
   );
