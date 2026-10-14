@@ -197,7 +197,7 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
                 {[
                   ["Bonedi Bari", "bonedi bari"],
                   ["North Kolkata", "North Kolkata"],
-                  ["Pure Veg", "veg"],
+                  ["Pure Veg", "pure veg"],
                   ["College Street", "College Street"],
                 ].map(([label, q]) => (
                   <button
