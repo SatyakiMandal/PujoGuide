@@ -173,14 +173,6 @@ npm run build
 npm start
 ```
 
-### "People here now" counter
-
-The header shows a small live-looking "N people here now" badge (`src/lib/liveCount.ts`). It needs no
-setup and no backend — the app has none — so the number is a simulated estimate (higher during
-festival days and evening hours, drifting slowly so it never jumps unrealistically), not a real
-visitor count. See the comment at the top of that file if you ever want to wire it to a real
-backend instead.
-
 ---
 
 ## 📄 License & Attribution

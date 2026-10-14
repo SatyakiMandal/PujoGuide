@@ -8,7 +8,6 @@ import { PlaceDetail } from "@/components/place/PlaceDetail";
 import { PlanView } from "@/components/plan/PlanView";
 import { PlaceList } from "@/components/place/PlaceList";
 import { Chip } from "@/components/ui/Chip";
-import { LiveCounter } from "@/components/ui/LiveCounter";
 import { TodayStrip } from "@/components/TodayStrip";
 import { LogoMark } from "@/components/ui/Logo";
 import { CATEGORY_META } from "@/lib/categories";
@@ -70,7 +69,6 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
             <span>
               Pujo<span className="text-primary">Guide</span>
             </span>
-            <LiveCounter className="hidden sm:inline-flex" />
           </h1>
           {tab === "explore" && (
             <span className="text-[11px] lg:text-xs text-muted" aria-live="polite">
