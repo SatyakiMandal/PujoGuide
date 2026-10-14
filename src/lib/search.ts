@@ -34,6 +34,9 @@ export function buildSearch(places: Place[], zones: Zone[]) {
         ...(p.cuisines ?? []).map((c) => CUISINE_LABEL[c]),
         ...(p.vibes ?? []).map((v) => VIBE_LABEL[v]),
         ...(p.diet ?? []).map((d) => DIET_LABEL[d]),
+        // "Non-veg" tokenizes to "non"+"veg", so a one-word "nonveg" query (how people often type it,
+        // especially on mobile) wouldn't prefix-match either half. Add the unspaced form explicitly.
+        p.diet?.includes("nonveg") ? "nonveg" : "",
         p.pureVeg ? "pure veg" : "",
         ...p.tags.map((t) => t.replace(/_/g, " ")),
       ].join(" ");
