@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CaretDown, CaretUp, CheckCircle, FirstAid, Heart, MagnifyingGlass, MapTrifold, Path, X } from "@phosphor-icons/react";
 import { FilterGroups, FilterToggle } from "@/components/filters/Filters";
 import { PlaceDetail } from "@/components/place/PlaceDetail";
@@ -33,6 +33,10 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
   const [filterSectionCollapsed, setFilterSectionCollapsed] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
   const place = selected ? placeBySlug.get(selected) : undefined;
+  const hasQuery = query.trim().length > 0;
+  // While searching, a category can have results even with its own layer toggled off (search
+  // ignores layers, see applyFilters) — light up its chip too, so it's clear where those came from.
+  const searchCategories = useMemo(() => (hasQuery ? new Set(list.map((p) => p.category)) : null), [hasQuery, list]);
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -232,8 +236,9 @@ export function Panel({ onSearchFocus }: { onSearchFocus?: () => void }) {
               {CATEGORIES.map((c) => {
                 const meta = CATEGORY_META[c];
                 const Icon = meta.icon;
+                const active = filters.layers.includes(c) || (searchCategories?.has(c) ?? false);
                 return (
-                  <Chip key={c} color={meta.cssVar} active={filters.layers.includes(c)} onClick={() => toggleLayer(c)}>
+                  <Chip key={c} color={meta.cssVar} active={active} onClick={() => toggleLayer(c)}>
                     <Icon size={15} weight="duotone" className="lg:hidden" />
                     <Icon size={17} weight="duotone" className="hidden lg:block" />
                     {meta.plural}
