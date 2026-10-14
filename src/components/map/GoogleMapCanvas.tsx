@@ -33,7 +33,10 @@ function Markers() {
   const { rendered, matched } = useFiltered();
   const selected = useUI((s) => s.selected);
   const mode = useUI((s) => s.mode);
-  const filtersActive = matched.size !== rendered.length || mode === "filter";
+  const hasQuery = useUI((s) => s.query.trim().length > 0);
+  // rendered is already matched-only while searching, so the size check alone can't tell — a
+  // search in progress always counts as "filters active" so matches get the highlighted pin style.
+  const filtersActive = matched.size !== rendered.length || mode === "filter" || hasQuery;
   const refs = useRef<Record<string, google.maps.marker.AdvancedMarkerElement>>({});
   const clusterer = useRef<MarkerClusterer | null>(null);
 

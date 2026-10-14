@@ -49,7 +49,10 @@ export function FreeMapCanvas() {
   const stops = useUI((s) => s.route.stops);
   const visited = useUI((s) => s.visited);
   const tab = useUI((s) => s.tab);
-  const filtersActive = matched.size !== rendered.length || mode === "filter";
+  const hasQuery = useUI((s) => s.query.trim().length > 0);
+  // rendered is already matched-only while searching, so the size check alone can't tell — a
+  // search in progress always counts as "filters active" so matches get the highlighted pin style.
+  const filtersActive = matched.size !== rendered.length || mode === "filter" || hasQuery;
 
   const [selectedAmenity, setSelectedAmenity] = useState<Amenity | null>(null);
   const amenitiesList = useMemo(() => (showAmenities ? getAmenities() : []), [showAmenities]);

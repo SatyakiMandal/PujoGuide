@@ -85,6 +85,10 @@ export function applyFilters(places: Place[], f: FilterState, searchIds: Set<str
       if (f.personal === "saved" && mine.saved.has(p.slug)) return true;
       if (f.personal === "visited" && mine.visited.has(p.slug)) return true;
     }
+    // A place a search explicitly found stays visible even if its category's layer is off —
+    // e.g. searching an area made only of cafes shouldn't come up empty just because the
+    // Cafes layer happens to be toggled off.
+    if (searchIds !== null && searchIds.has(p.id)) return true;
     return f.layers.includes(p.category);
   });
   const matched = new Set(
