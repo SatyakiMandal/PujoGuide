@@ -16,7 +16,15 @@ export function buildSearch(places: Place[], zones: Zone[]) {
   >({
     fields: ["nameEn", "aliasText", "zoneNames", "area", "categoryText", "attrText", "dishText"],
     storeFields: ["id"],
-    searchOptions: { prefix: true, fuzzy: 0.2, boost: { nameEn: 3, aliasText: 2, categoryText: 1.5 }, combineWith: "AND" },
+    searchOptions: {
+      prefix: true,
+      // 0.2 of a short word rounds up to a whole letter of wiggle room (e.g. 1 of "sex"'s 3 letters),
+      // which turns any 4-letter-or-shorter query into a near-random match against similar-length
+      // words elsewhere in the data. Only forgive typos once there's enough word to spare one.
+      fuzzy: (term) => (term.length > 4 ? 0.2 : 0),
+      boost: { nameEn: 3, aliasText: 2, categoryText: 1.5 },
+      combineWith: "AND",
+    },
   });
   index.addAll(
     places.map((p) => {
