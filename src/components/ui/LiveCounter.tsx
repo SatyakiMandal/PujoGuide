@@ -1,6 +1,6 @@
 "use client";
 
-import { useLiveCount } from "@/lib/presence";
+import { useLiveCount } from "@/lib/liveCount";
 import { clsx } from "clsx";
 
 export function LiveCounter({ className }: { className?: string }) {

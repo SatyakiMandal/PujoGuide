@@ -173,41 +173,13 @@ npm run build
 npm start
 ```
 
-### Optional: Live "people here now" counter
+### "People here now" counter
 
-Off by default. To turn it on, you need a free Firebase project (one-time setup, a few minutes):
-
-1. Go to the [Firebase Console](https://console.firebase.google.com/), create a project (skip Google Analytics, not needed).
-2. **Build > Realtime Database > Create Database** — start in **locked mode**, pick any region.
-3. In the Database's **Rules** tab, paste:
-   ```json
-   {
-     "rules": {
-       "presence": {
-         ".read": true,
-         "$uid": {
-           ".write": "auth != null && auth.uid === $uid",
-           ".validate": "newData.val() === now || newData.val() === null"
-         }
-       },
-       ".read": false,
-       ".write": false
-     }
-   }
-   ```
-   This lets anyone read the live count, but each visitor can only create/delete their *own* presence entry — never anyone else's.
-4. **Build > Authentication > Get started > Sign-in method > Anonymous** — enable it. (No user data is collected; it just gives each open tab a throwaway id so it can be removed the instant that tab closes.)
-5. **Project settings (gear icon) > General > Your apps > Web app (`</>`)** — register an app (nickname can be anything), copy the five config values into `.env.local`:
-   ```
-   NEXT_PUBLIC_FIREBASE_API_KEY=...
-   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=...
-   NEXT_PUBLIC_FIREBASE_DATABASE_URL=...
-   NEXT_PUBLIC_FIREBASE_PROJECT_ID=...
-   NEXT_PUBLIC_FIREBASE_APP_ID=...
-   ```
-6. If deploying on Vercel, add the same five variables in Project Settings > Environment Variables.
-
-The Firebase web config is a public client identifier, not a secret — it's safe to ship in the bundle. Access is enforced entirely by the database rules above.
+The header shows a small live-looking "N people here now" badge (`src/lib/liveCount.ts`). It needs no
+setup and no backend — the app has none — so the number is a simulated estimate (higher during
+festival days and evening hours, drifting slowly so it never jumps unrealistically), not a real
+visitor count. See the comment at the top of that file if you ever want to wire it to a real
+backend instead.
 
 ---
 
